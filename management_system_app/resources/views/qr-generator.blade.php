@@ -35,24 +35,19 @@
 		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
 	</div>
 
-	<!-- Footer Bar-->
+    <!-- Footer Bar-->
     <div id="footer-bar" class="footer-bar footer-bar-detached">
-		<a href="#"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
+        <a href="#"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
         <a href="#"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
         <a href="{{url('/')}} " class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
         <a href="#"><i class="bi bi-image font-16"></i><span>Media</span></a>
         <a href="#"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
     </div>
 
-	<!-- Main Sidebar-->
-	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
-		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
-	</div>
-	<!-- Menu Highlights-->
-	<div id="menu-color" data-menu-load="menu-highlights.html"
-		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
-	</div>
-
+    <!-- Main Sidebar-->
+    <div id="menu-main" data-menu-active="nav-homes" data-menu-load="{{url('menu-main')}}"
+        style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+    </div>
     <!-- Your Page Content Goes Here-->
     <div class="page-content header-clear-medium">
 
@@ -96,6 +91,4 @@
 </div>
 <!--End of Page ID-->
 
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/custom.js"></script>
 </body>

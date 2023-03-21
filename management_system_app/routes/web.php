@@ -31,5 +31,14 @@ Route::get('/qr-generator', function () {
     return view('qr-generator');
 })->name('qr-generator');
 
+Route::get('/equipos', function () {
+    return view('equipos');
+})->name('equipos');
+
+//Offline mode PWA
+Route::get('/offline', function(){
+    return view('vendor.laravelpwa.offline');
+});
+
 
 
