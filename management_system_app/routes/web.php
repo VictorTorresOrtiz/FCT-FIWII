@@ -35,5 +35,10 @@ Route::get('/equipos', function () {
     return view('equipos');
 })->name('equipos');
 
+//Offline mode PWA
+Route::get('/offline', function(){
+    return view('vendor.laravelpwa.offline');
+});
+
 
 
