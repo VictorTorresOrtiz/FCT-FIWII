@@ -117,7 +117,7 @@
                 </a>
                 <a class="col" href="#" title="Ice Cube">
                     <img src="{{URL::asset('images/cards/loading.gif')}}" data-src="{{URL::asset('images/cards/content-management-system.png')}}" class="preload-img img-fluid rounded-xs" alt="img">
-                    <p class="font-600 color-theme font-12 pb-3">PENSAR ALGO</p>
+                    <p class="font-600 color-theme font-12 pb-3">Mantenimiento</p>
                 </a>
             </div>
         </div>
@@ -128,14 +128,33 @@
     <!-- Banner-->
     <div class="card card-style py-3">
         <div class="content px-2 text-center">
-            <h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
-            <h2>Get Duo Mobile Today</h2>
+            <h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Soporte</h5>
+            <h2>¿Algún Problema?</h2>
             <p class="mb-3">
-                Start your next project with Duo and enjoy the power of a Progressive Web App.
+                ¿Estás teniendo problemas con nuestra Aplicación?.
             </p>
-            <a href="#" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+            <a href="#"  data-bs-toggle="offcanvas" data-bs-target="#menu-call" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Contacto Gratutito</a>
         </div>
     </div>
+   <!-- Call -->
+   <div class="offcanvas offcanvas-modal rounded-m offcanvas-detached bg-theme" style="width:340px" id="menu-call">
+    <div class="content">
+        <div class="d-flex pb-2">
+            <div class="align-self-center">
+                <h1 class="font-700">Soporte Técnico</h1>
+            </div>
+            <div class="align-self-center ms-auto">
+                <a href="#"  data-bs-dismiss="offcanvas" class="icon icon-m"><i class="bi bi-x-circle-fill color-red-dark font-18 me-n4"></i></a>
+            </div>
+        </div>
+        <p>
+         Siempre estamos aquí para ayudar. Llámenos hoy.<br> Simplemente toque el botón y póngase en contacto con nosotros..
+        </p>
+        <a href="tel:+1 234 567 8021" class="default-link btn btn-full btn-s gradient-green shadow-bg shadow-bg-s">Llamar Ahora</a>
+    </div>
+</div>
+<!-- Call -->
+
 
      <!-- Info-->
 		<div class="card card-style">
