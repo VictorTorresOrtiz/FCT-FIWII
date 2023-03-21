@@ -1,0 +1,21 @@
+/*Toasts*/
+
+
+.snackbar{
+	font-family: $font-heading-family;
+	opacity:1!important;
+	position:fixed;
+	left:$globalMargin/2-5;
+	right:$globalMargin/2-5;
+	z-index:10;
+	border:none;
+	transition:all 350ms ease;
+	padding:10px 15px;
+	background-color:transparent;
+	box-shadow: none;
+	display:block;
+}
+
+
+.snackbar{bottom:calc(80px + (env(safe-area-inset-bottom))*1.1); transform:translateY(200px);}
+.snackbar.show{transform:translateY(0px); transition:all 250ms ease;}
