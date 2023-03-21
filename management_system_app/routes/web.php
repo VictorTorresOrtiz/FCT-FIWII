@@ -26,3 +26,8 @@ Route::get('/menu-main', function () {
     return view('menu-main');
 })->name('menu-main');
 
+Route::get('/menu-highlights', function () {
+    return view('menu-highlights');
+})->name('menu-highlights');
+
+

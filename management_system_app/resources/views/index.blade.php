@@ -11,7 +11,6 @@
     <div class="header-bar header-fixed header-app header-bar-detached">
         <a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
         <a href="#" class="header-title color-theme">Gestión de Sistemas</a>
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-color"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
 		<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-bell"><em class="badge bg-highlight ms-1">3</em><i class="font-14 bi bi-bell-fill"></i></a>
         <a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
         <a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
@@ -29,11 +28,6 @@
 	<!-- Main Sidebar-->
 	<div id="menu-main" data-menu-active="nav-homes" data-menu-load="{{url('menu-main')}}"
 		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
-	</div>
-
-	<!-- Menu Highlights-->
-	<div id="menu-color" data-menu-load="menu-highlights.html"
-		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
 	</div>
 
 	<!-- Main Bell-->
