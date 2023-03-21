@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>System Management</title>
+<title>Fiwoo - System Management</title>
 <!--CSS, JS AND Fonts-->
 <link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.css')}}">
 <link rel="stylesheet" type="text/css" href="{{URL::asset('fonts/bootstrap-icons.css')}}">
@@ -32,7 +32,7 @@
     <div class="header-bar header-fixed header-app header-bar-detached">
         <a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
         <a href="#" class="header-title color-theme">Gestión de Sistemas</a>
-		<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-bell"><em class="badge bg-highlight ms-1">3</em><i class="font-14 bi bi-bell-fill"></i></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-login"><i class="font-14 bi bi-person-fill"></i></a>
         <a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
         <a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
     </div>
@@ -56,7 +56,27 @@
 		style="height:400px;" class="offcanvas offcanvas-top offcanvas-detached rounded-m">
 	</div>
 
-    <!-- Content-->
+    <!--Login Modal-->
+    <div class="offcanvas offcanvas-modal rounded-m offcanvas-detached bg-theme" style="width:340px" id="menu-login">
+		<div class="content">
+			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">Bienvenido</h5>
+			<h1 class="font-24 font-800 mb-3">Login</h1>
+			<div class="form-custom form-label form-border form-icon mb-3 bg-transparent">
+				<i class="bi bi-person-circle font-13"></i>
+				<input type="text" class="form-control rounded-xs" id="c1" placeholder="Nombre" name="nombre"/>
+				<label for="c1" class="color-theme">Nombre</label>
+			</div>
+			<div class="form-custom form-label form-border form-icon mb-4 bg-transparent">
+				<i class="bi bi-asterisk font-13"></i>
+				<input type="password" class="form-control rounded-xs" id="c2" placeholder="Contraseña" name="contraseña" />
+				<label for="c2" class="color-theme">Contraseña</label>
+			</div>
+			<a href="#" class="btn btn-full gradient-green shadow-bg shadow-bg-s mt-4">Acceder a su cuenta</a>
+		</div>
+   </div>
+
+
+    <!-- Banner-->
     <div class="page-content header-clear-medium">
 
 		<div class="splide single-slider slider-no-dots slider-no-arrows slider-boxed text-center mt-n2" id="single-slider-3">
@@ -65,7 +85,7 @@
 					<div class="splide__slide">
 						<div class="card card-style mx-0 shadow-card shadow-card-m bg-14" data-card-height="230">
 							<div class="card-bottom pb-3 px-3">
-								<h3 class="color-white mb-1">Fiwoo System</h3>
+								<h3 class="color-white mb-1">Fiwoo Systems</h3>
 								<p class="color-white opacity-80 mb-0 mt-n1 font-14">Gestón y mantenimiento de sistemas</p>
 							</div>
 							<div class="card-overlay bg-gradient-fade"></div>
@@ -83,7 +103,41 @@
 				</div>
 			</div>
 		</div>
+    <!-- Cards-->
+    <div class="card card-style">
+        <div class="content mb-0">
+            <div class="row text-center row-cols-3 mb-0">
+                <a class="col" href="index.html" title="Jelly Fish">
+                    <img src="{{URL::asset('images/cards/loading.gif')}}" data-src="{{URL::asset('images/cards/qr-code.png')}}" class="preload-img img-fluid rounded-xs" alt="img">
+                    <p class="font-600 color-theme font-12 pb-3">Lector QR</p>
+                </a>
+                <a class="col" href="#" title="Jelly Fish">
+                    <img src="{{URL::asset('images/cards/loading.gif')}}" data-src="{{URL::asset('images/cards/scan.png')}}" class="preload-img img-fluid rounded-xs" alt="img">
+                    <p class="font-600 color-theme font-12 pb-3">Generador QR</p>
+                </a>
+                <a class="col" href="#" title="Ice Cube">
+                    <img src="{{URL::asset('images/cards/loading.gif')}}" data-src="{{URL::asset('images/cards/content-management-system.png')}}" class="preload-img img-fluid rounded-xs" alt="img">
+                    <p class="font-600 color-theme font-12 pb-3">PENSAR ALGO</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Cards-->
 
+
+    <!-- Banner-->
+    <div class="card card-style py-3">
+        <div class="content px-2 text-center">
+            <h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+            <h2>Get Duo Mobile Today</h2>
+            <p class="mb-3">
+                Start your next project with Duo and enjoy the power of a Progressive Web App.
+            </p>
+            <a href="#" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+        </div>
+    </div>
+
+     <!-- Info-->
 		<div class="card card-style">
 			<div class="card-body text-center">
 				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">The Future is Now</h5>
@@ -123,83 +177,7 @@
 				</div>
 			</div>
 		</div>
-
-
-		<div class="card card-style bg-14 text-center shadow-card shadow-card-l" data-card-height="340">
-			<div class="card-center">
-				<h1 class="color-white mb-0">35k+ Happy Customers</h1>
-				<p class="color-white opacity-60 mb-2">No stone left unturned, no aspect overlooked!</p>
-				<p class="text-center color-yellow-dark py-2 mb-2">
-					<i class="bi bi-star-fill color-yellow-light font-20"></i>
-					<i class="bi bi-star-fill color-yellow-light font-24 px-1"></i>
-					<i class="bi bi-star-fill color-yellow-light font-28 px-1"></i>
-					<i class="bi bi-star-fill color-yellow-light font-24 px-1"></i>
-					<i class="bi bi-star-fill color-yellow-light font-20"></i>
-				</p>
-				<div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-quotes">
-					<div class="splide__track">
-						<div class="splide__list">
-							<div class="splide__slide">
-								<p class="font-16 font-400 color-white line-height-xl mx-4 mb-0">
-									The best support I have ever had, it's so good I purchased another template. Highlighy Recommended.
-									<br>
-									<a href="#" class="pt-4 color-highlight font-13 mb-0">Envato Customer</a>
-								</p>
-							</div>
-							<div class="splide__slide">
-								<p class="font-16 font-400 color-white line-height-xl mx-4 mb-0">
-									The code is always great with any Enabled template, but it's the customer support that wins me over.<br>
-									<a href="#" class="pt-4 color-highlight font-13 mb-0">Envato Customer</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card-overlay bg-black opacity-70"></div>
-		</div>
-
-		<div class="card card-style">
-			<div class="content px-2 text-center">
-				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Things we do</h5>
-				<h2>Featured Projects</h2>
-				<p class="mb-3">
-					Products we are proud to showcase and show off to the world. We think you'll love them!
-				</p>
-				<div class="row text-center row-cols-3 mb-n1">
-					<a class="col p-1" data-gallery="gallery-1" href="images/pictures/7t.jpg" title="Vynil and Typerwritter">
-						<img src="images/empty.png" data-src="images/pictures/7s.jpg" class="preload-img img-fluid rounded-m" alt="img">
-					</a>
-					<a class="col p-1" data-gallery="gallery-1" href="images/pictures/23t.jpg" title="Cream Cookie">
-						<img src="images/empty.png" data-src="images/pictures/23s.jpg" class="preload-img img-fluid rounded-m" alt="img">
-					</a>
-					<a class="col p-1" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Cookies and Flowers">
-						<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-m" alt="img">
-					</a>
-					<a class="col p-1" data-gallery="gallery-1" href="images/pictures/11t.jpg" title="Vynil and Typerwritter">
-						<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-m" alt="img">
-					</a>
-					<a class="col p-1" data-gallery="gallery-1" href="images/pictures/5t.jpg" title="Cream Cookie">
-						<img src="images/empty.png" data-src="images/pictures/5s.jpg" class="preload-img img-fluid rounded-m" alt="img">
-					</a>
-					<a class="col p-1" data-gallery="gallery-1" href="images/pictures/15t.jpg" title="Cookies and Flowers">
-						<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-m" alt="img">
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="card card-style py-3">
-			<div class="content px-2 text-center">
-				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
-				<h2>Get Duo Mobile Today</h2>
-				<p class="mb-3">
-					Start your next project with Duo and enjoy the power of a Progressive Web App.
-				</p>
-				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
-			</div>
-		</div>
-
+        <!-- Info-->
     </div>
 	<!-- End of Page Content-->
 
