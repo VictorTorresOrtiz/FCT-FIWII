@@ -1,5 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>System Management</title>
+<!--CSS, JS AND Fonts-->
+<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.css')}}">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('fonts/bootstrap-icons.css')}}">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('css/style.css')}}">
+<script  defer src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+<script  defer src="{{URL::asset('js/custom.js')}}"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-@extends('templates.general')
+
+<!--PWA READY-->
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
 
 <body class="theme-light">
 
@@ -66,37 +87,37 @@
 		<div class="card card-style">
 			<div class="card-body text-center">
 				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">The Future is Now</h5>
-				<h2>Powerful Features</h2>
+				<h2>Potentes Herramientas</h2>
 				<p class="mb-3">
 					Duo brings best in class features for your website. Speed and flexibility plus ease of use.
 				</p>
 				<div class="row mb-n3 pt-4">
 					<div class="col-6">
 						<i class="bi bi-lightning-charge color-yellow-dark font-50 d-block pb-2"></i>
-						<h5 class="pt-2">Lightning Fast</h5>
+						<h5 class="pt-2">Rápido</h5>
 						<p>
-							Ready when you are. Tap and enjoy.
+							Fiwoo esta totalmente optimizado para un rendimiento excepcional.
 						</p>
 					</div>
 					<div class="col-6">
-						<i class="bi bi-award color-red-light font-50 d-block pb-2"></i>
-						<h5 class="pt-2">Best Support</h5>
+						<i class="bi bi-lock color-red-light font-50 d-block pb-2"></i>
+						<h5 class="pt-2">Seguridad</h5>
 						<p>
-							We treat others like we want to be treated.
+							Protección y Seguridad para sus bases de datos etc...
 						</p>
 					</div>
 					<div class="col-6">
 						<i class="bi bi-phone color-gray-dark font-50 d-block pb-2"></i>
 						<h5 class="pt-2">PWA Ready</h5>
 						<p>
-							Add it to your home screen and enjoy.
+							Compatibilidad en dispositivos móbiles.
 						</p>
 					</div>
 					<div class="col-6">
-						<i class="bi bi-code-slash color-green-light font-50 d-block pb-2"></i>
-						<h5 class="pt-2">Bootstrap 5</h5>
+						<i class="bi bi-gear color-green-light font-50 d-block pb-2"></i>
+						<h5 class="pt-2">Soporte</h5>
 						<p>
-							Vanilla JavaScript, no jQuery Dependency.
+							Soporte 24/7.
 						</p>
 					</div>
 				</div>
@@ -209,4 +230,5 @@
 <!--End of Page ID-->
 
 </body>
+</html>
 

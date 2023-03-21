@@ -34,25 +34,22 @@
 	</div>
 </div>
 
-<span class="menu-divider">NAVIGATION</span>
+<span class="menu-divider">Menu</span>
 <div class="menu-list">
 	<div class="card card-style rounded-m p-3 py-2 mb-0">
-		<a href="index.html" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi bi-house-fill"></i><span>Homepage</span><i class="bi bi-chevron-right"></i></a>
-		<a href="index-components.html" id="nav-comps"><i class="gradient-red shadow-bg shadow-bg-xs bi bi-gear-fill"></i><span>Components</span><i class="bi bi-chevron-right"></i></a>
+		<a href="{{url('/')}}" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi bi-house-fill"></i><span>Inicio</span><i class="bi bi-chevron-right"></i></a>
+		<a href="#" id="nav-comps"><i class="gradient-red shadow-bg shadow-bg-xs bi bi-qr-code-scan"></i><span>Lector QR</span><i class="bi bi-chevron-right"></i></a>
+        <!----
 		<a href="index-pages.html" id="nav-pages"><i class="gradient-green shadow-bg shadow-bg-xs bi bi-heart-fill"></i><span>Site Pages</span><i class="bi bi-chevron-right"></i></a>
 		<a href="index-media.html" id="nav-media"><i class="gradient-yellow shadow-bg shadow-bg-xs bi bi-image-fill"></i><span>Media Styles</span><i class="bi bi-chevron-right"></i></a>
 		<a href="index-contact.html" id="nav-mails"><i class="gradient-magenta shadow-bg shadow-bg-xs bi bi-envelope-fill"></i><span>Contact</span><i class="bi bi-chevron-right"></i></a>
+        ---->
 	</div>
 </div>
 
-<span class="menu-divider mt-4">SETTINGS</span>
+<span class="menu-divider mt-4">Configuración</span>
 <div class="menu-list">
 	<div class="card card-style rounded-m p-3 py-2 mb-0">
-		<a href="#">
-			<i class="gradient-highlight shadow-bg shadow-bg-xs bi bi-palette-fill"></i>
-			<span>Highlights</span>
-			<i class="bi bi-chevron-right"></i>
-		</a>
 		<a href="#" data-toggle-theme data-trigger-switch="switch-1">
 			<i class="gradient-dark shadow-bg shadow-bg-xs bi bi-moon-fill font-13"></i>
 			<span>Dark Mode</span>
@@ -75,7 +72,7 @@
 	</div>
 </div>
 
-<span class="menu-divider mt-4">Latest Updates</span>
+<span class="menu-divider mt-4">Actualizaciones</span>
 <div class="menu-content px-3">
 	<div class="card card-style rounded-m p-2 mx-0 bg-theme">
 		<a href="#">
@@ -122,4 +119,4 @@
 	</div>
 </div>
 
-<p class="text-center mb-0 mt-n3 pb-3 font-9 text-uppercase font-600 color-theme">Made with <i class=" font-9 px-1 bi bi-heart-fill color-red-dark"></i> by Enabled in <span class="copyright-year"></span>.</p>
+<p class="text-center mb-0 mt-n3 pb-3 font-9 text-uppercase font-600 color-theme">Made with <i class=" font-9 px-1 bi bi-heart-fill color-red-dark"></i> by Ilerna Daw Team</p>

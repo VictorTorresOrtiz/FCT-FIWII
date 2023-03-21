@@ -7,14 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
 <title>System Management</title>
 <!--CSS, JS AND Fonts-->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.css')}}">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('fonts/bootstrap-icons.css')}}">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('css/style.css')}}">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-<script defer src="js/bootstrap.min.js"></script>
-<script defer src="js/custom.js"></script>
+
 <!--PWA READY-->
 <link rel="manifest" href="_manifest.json">
 <meta id="theme-check" name="theme-color" content="#FFFFFF">
@@ -23,5 +22,6 @@
 
 
 
-
+<script  src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+<script  src="{{URL::asset('js/custom.js')}}"></script>
 </html>
