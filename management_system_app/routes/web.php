@@ -27,3 +27,9 @@ Route::get('/menu-main', function () {
 })->name('menu-main');
 
 
+Route::get('/qr-generator', function () {
+    return view('qr-generator');
+})->name('qr-generator');
+
+
+

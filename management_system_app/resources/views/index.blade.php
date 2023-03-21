@@ -31,7 +31,7 @@
     <!-- Header -->
     <div class="header-bar header-fixed header-app header-bar-detached">
         <a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
-        <a href="#" class="header-title color-theme">Gestión de Sistemas</a>
+        <a href="#" class="header-title color-theme">Fiwoo</a>
         <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-login"><i class="font-14 bi bi-person-fill"></i></a>
         <a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
         <a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
@@ -39,21 +39,16 @@
 
 	<!-- Footer Bar-->
     <div id="footer-bar" class="footer-bar footer-bar-detached">
-		<a href="#"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
-        <a href="index-components.html"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
-        <a href="index.html" class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
-        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+		<a href="#"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
+        <a href="#"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="{{url('/')}} " class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
+        <a href="#"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
     </div>
 
 	<!-- Main Sidebar-->
 	<div id="menu-main" data-menu-active="nav-homes" data-menu-load="{{url('menu-main')}}"
 		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
-	</div>
-
-	<!-- Main Bell-->
-	<div id="menu-bell"	data-menu-load="menu-bell.html"
-		style="height:400px;" class="offcanvas offcanvas-top offcanvas-detached rounded-m">
 	</div>
 
     <!--Login Modal-->
@@ -111,7 +106,7 @@
                     <img src="{{URL::asset('images/cards/loading.gif')}}" data-src="{{URL::asset('images/cards/qr-code.png')}}" class="preload-img img-fluid rounded-xs" alt="img">
                     <p class="font-600 color-theme font-12 pb-3">Lector QR</p>
                 </a>
-                <a class="col" href="#" title="Jelly Fish">
+                <a class="col" href="{{url('qr-generator')}}" title="Jelly Fish">
                     <img src="{{URL::asset('images/cards/loading.gif')}}" data-src="{{URL::asset('images/cards/scan.png')}}" class="preload-img img-fluid rounded-xs" alt="img">
                     <p class="font-600 color-theme font-12 pb-3">Generador QR</p>
                 </a>
