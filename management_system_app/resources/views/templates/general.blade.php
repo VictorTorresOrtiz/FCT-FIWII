@@ -13,15 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-
 <!--PWA READY-->
-<link rel="manifest" href="_manifest.json">
-<meta id="theme-check" name="theme-color" content="#FFFFFF">
-<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
-</head>
+@laravelPWA
 
-
-
-<script  src="{{URL::asset('js/bootstrap.min.js')}}"></script>
-<script  src="{{URL::asset('js/custom.js')}}"></script>
+<script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+<script src="{{URL::asset('js/custom.js')}}"></script>
 </html>
