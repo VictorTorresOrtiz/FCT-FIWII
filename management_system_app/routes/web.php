@@ -39,6 +39,10 @@ Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
 
+Route::get('/signin', function () {
+    return view('signin');
+})->name('signin');
+
 //Offline mode PWA
 Route::get('/offline', function(){
     return view('vendor.laravelpwa.offline');

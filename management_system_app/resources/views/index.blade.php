@@ -194,13 +194,14 @@
     </div>
 	<!-- End of Page Content-->
 
+    <!--PWA MODAL ADD TO SCREEN-->
 	<div class="offcanvas offcanvas-bottom rounded-m offcanvas-detached" id="menu-install-pwa-ios">
 	   <div class="content">
 			 <img src="app/icons/icon-128x128.png" alt="img" width="80" class="rounded-l mx-auto my-4">
-		  <h1 class="text-center font-800 font-20">Add Duo to Home Screen</h1>
+		  <h1 class="text-center font-800 font-20">Instalar FIWOO</h1>
 		  <p class="boxed-text-xl">
-			  Install Duo on your home screen, and access it just like a regular app. Open your Safari menu and tap "Add to Home Screen".
-		  </p>
+            Instale Fiwoo en su pantalla de inicio y acceda a él como una aplicación normal. Abra su menú Safari y toque "Agregar a la pantalla de inicio".
+        </p>
 		   <a href="#" class="pwa-dismiss close-menu gradient-blue shadow-bg shadow-bg-s btn btn-s btn-full text-uppercase font-700  mt-n2" data-bs-dismiss="offcanvas">Maybe Later</a>
 	   </div>
    </div>
@@ -208,12 +209,12 @@
    <div class="offcanvas offcanvas-bottom rounded-m offcanvas-detached" id="menu-install-pwa-android">
 	   <div class="content">
 		   <img src="app/icons/icon-128x128.png" alt="img" width="80" class="rounded-m mx-auto my-4">
-		   <h1 class="text-center font-700 font-20">Install Duo</h1>
+		   <h1 class="text-center font-700 font-20">Instalar FIWOO</h1>
 		   <p class="boxed-text-l">
-			   Install Duo to your Home Screen to enjoy a unique and native experience.
-		   </p>
-		   <a href="#" class="pwa-install btn btn-m rounded-s text-uppercase font-900 gradient-highlight shadow-bg shadow-bg-s btn-full">Add to Home Screen</a><br>
-		   <a href="#" data-bs-dismiss="offcanvas" class="pwa-dismiss close-menu color-theme text-uppercase font-900 opacity-50 font-11 text-center d-block mt-n1">Maybe later</a>
+            Instale Fiwoo en su pantalla de inicio para disfrutar de una experiencia única y nativa.
+            </p>
+		   <a href="#" class="pwa-install btn btn-m rounded-s text-uppercase font-900 gradient-highlight shadow-bg shadow-bg-s btn-full">Instalar</a><br>
+		   <a href="#" data-bs-dismiss="offcanvas" class="pwa-dismiss close-menu color-theme text-uppercase font-900 opacity-50 font-11 text-center d-block mt-n1">Cancelar</a>
 	   </div>
    </div>
 
