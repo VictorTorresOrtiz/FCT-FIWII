@@ -35,11 +35,11 @@
 		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
 	</div>
 
-    <!-- Footer Bar-->
+	<!-- Footer Bar-->
     <div id="footer-bar" class="footer-bar footer-bar-detached">
-        <a href="#"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
-        <a href="#"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
-        <a href="{{url('/')}} " class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
+        <a href="{{url('profile')}}"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
+        <a href="#" class="active-nav"><i class="bi bi-qr-code-scan font-17"></i><span>Escaner</span></a>
+        <a href="{{url('/')}} "><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
         <a href="#"><i class="bi bi-image font-16"></i><span>Media</span></a>
         <a href="#"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
     </div>
