@@ -7,13 +7,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
 <title>Fiwoo - System Management</title>
 <!--CSS, JS AND Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.css')}}">
 <link rel="stylesheet" type="text/css" href="{{URL::asset('fonts/bootstrap-icons.css')}}">
 <link rel="stylesheet" type="text/css" href="{{URL::asset('css/style.css')}}">
-<script  defer src="{{URL::asset('js/bootstrap.min.js')}}"></script>
-<script  defer src="{{URL::asset('js/custom.js')}}"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<script defer src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+<script defer src="{{URL::asset('js/custom.js')}}"></script>
+
 
 <!--PWA READY-->
 @laravelPWA
@@ -37,8 +38,8 @@
 
 	<!-- Footer Bar-->
     <div id="footer-bar" class="footer-bar footer-bar-detached">
-		<a href="#"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
-        <a href="#"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+		<a href="{{url('profile')}}"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
+        <a href="#"><i class="bi bi-qr-code-scan font-17"></i><span>Escaner</span></a>
         <a href="{{url('/')}} " class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
         <a href="#"><i class="bi bi-image font-16"></i><span>Media</span></a>
         <a href="#"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
@@ -110,7 +111,7 @@
                 </a>
                 <a class="col" href="{{url('equipos')}}">
                     <img src="{{URL::asset('images/cards/loading.gif')}}" data-src="{{URL::asset('images/cards/content-management-system.png')}}" class="preload-img img-fluid rounded-xs" alt="img">
-                    <p class="font-600 color-theme font-12 pb-3">Mantenimiento</p>
+                    <p class="font-600 color-theme font-12 pb-3">Sistemas</p>
                 </a>
             </div>
         </div>
