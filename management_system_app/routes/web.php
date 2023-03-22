@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+
+Route::get('/fiwoo', function () {
+    return view('fiwoo');
+})->name('fiwoo');
+
 Route::get('/index-pages', function () {
     return view('index-pages');
 })->name('index-pages');
