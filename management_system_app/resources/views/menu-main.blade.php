@@ -39,10 +39,12 @@
 	<div class="card card-style rounded-m p-3 py-2 mb-0">
 		<a href="{{url('/')}}" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi bi-house-fill"></i><span>Inicio</span><i class="bi bi-chevron-right"></i></a>
 		<a href="#" id="nav-comps"><i class="gradient-red shadow-bg shadow-bg-xs bi bi-qr-code-scan"></i><span>Lector QR</span><i class="bi bi-chevron-right"></i></a>
+        <a href="#l" id="nav-mails"><i class="gradient-magenta shadow-bg shadow-bg-xs bi bi-envelope-fill"></i><span>Atención al Cliente</span><i class="bi bi-chevron-right"></i></a>
+
         <!----
-		<a href="index-pages.html" id="nav-pages"><i class="gradient-green shadow-bg shadow-bg-xs bi bi-heart-fill"></i><span>Site Pages</span><i class="bi bi-chevron-right"></i></a>
-		<a href="index-media.html" id="nav-media"><i class="gradient-yellow shadow-bg shadow-bg-xs bi bi-image-fill"></i><span>Media Styles</span><i class="bi bi-chevron-right"></i></a>
-		<a href="index-contact.html" id="nav-mails"><i class="gradient-magenta shadow-bg shadow-bg-xs bi bi-envelope-fill"></i><span>Contact</span><i class="bi bi-chevron-right"></i></a>
+		<a href="#" id="nav-pages"><i class="gradient-green shadow-bg shadow-bg-xs bi bi-heart-fill"></i><span>Site Pages</span><i class="bi bi-chevron-right"></i></a>
+		<a href="#" id="nav-media"><i class="gradient-yellow shadow-bg shadow-bg-xs bi bi-image-fill"></i><span>Media Styles</span><i class="bi bi-chevron-right"></i></a>
+		<a href="#l" id="nav-mails"><i class="gradient-magenta shadow-bg shadow-bg-xs bi bi-envelope-fill"></i><span>Contact</span><i class="bi bi-chevron-right"></i></a>
         ---->
 	</div>
 </div>

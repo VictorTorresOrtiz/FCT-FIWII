@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+
+Route::get('/fiwoo', function () {
+    return view('fiwoo');
+})->name('fiwoo');
+
 Route::get('/index-pages', function () {
     return view('index-pages');
 })->name('index-pages');
@@ -38,6 +43,10 @@ Route::get('/equipos', function () {
 Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
+
+Route::get('/signin', function () {
+    return view('signin');
+})->name('signin');
 
 //Offline mode PWA
 Route::get('/offline', function(){
