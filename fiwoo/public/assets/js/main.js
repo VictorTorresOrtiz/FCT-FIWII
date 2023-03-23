@@ -1,40 +1,4 @@
-/*----------------------------------------------
 
-[Main JavaScript]
-
-Theme   : Shock
-Version : 1.0.0
-Author  : Codings
-Support : codings.dev
-
-----------------------------------------------*/
-
-/*----------------------------------------------
-
-[Content Index]
-
-1. Preloader
-2. Popup
-3. Side Widget
-4. Icon
-5. One Page Link
-6. Helper
-7. Slider
-8. Shuffle
-9. Lax
-10. Lightbox
-11. Load More
-12. Form Sending
-13. Tooltip
-14. Animated Underline
-15. Progress bar
-16. Typed Text
-17. Circular Text
-18. Price Switch
-19. Scroll Down
-20. ZZZ Divider
-
-----------------------------------------------*/
 
 /*----------------------------------------------
 1. Preloader
@@ -52,13 +16,13 @@ jQuery(function ($) {
 	imagesLoaded(images, function() {
 
 		if ( ! delay ) { delay = 0; }
-		
+
 		setTimeout(function() {
 			preloader.addClass('loaded');
 
 		}, delay);
 	})
-		
+
 	setTimeout(function() {
 		preloader.addClass('loaded');
 
@@ -77,10 +41,10 @@ void ( function (root, factory) {
 
 	if ( typeof define === 'function' && define.amd ) {
 		define(factory);
-	
+
 	} else if ( typeof exports === 'object' ) {
 		module.exports = factory();
-	
+
 	} else {
 		root.PopupBar = factory();
 	}
@@ -90,13 +54,13 @@ void ( function (root, factory) {
 		function PopupBar() {
 			ready(run);
 		}
-	
+
 		const navbar = document.querySelector('.navbar.auto-hide');
 
 		function run() {
 			if ( window.localStorage.PopupBarDismissed ) {
 				return;
-			} 
+			}
 
 			show();
 		}
@@ -169,7 +133,7 @@ void (function (root, factory) {
 
 	} else if ( typeof exports === 'object' ) {
 		module.exports = factory();
-	
+
 	}	else {
 		root.PopupBox = factory()
 	}
@@ -198,7 +162,7 @@ void (function (root, factory) {
 			if ( notice ) {
 				notice.classList.add('bounce-out-down-animation');
 			}
-			
+
 			window.localStorage.PopupBoxDismissed = true;
 		}
 
@@ -230,7 +194,7 @@ void (function (root, factory) {
 				document.attachEvent('onreadystatechange', function () {
 					if ( document.readyState === 'interactive' ) {
 						fn();
-					} 
+					}
 				})
 			}
 		}
@@ -265,16 +229,16 @@ jQuery(function ($) {
 
 			if ( $(this).is('[data-position]') ) {
 				var display_in = $(this).data('position');
-	
+
 			} else {
 				var display_in = window.innerHeight;
 			}
 
 			if ( ! $(this).hasClass('active') ) {
-	
+
 				if ( current_position > display_in ) {
 					$(this).addClass('show');
-	
+
 				} else {
 					$(this).removeClass('show');
 				}
@@ -335,7 +299,7 @@ jQuery(function ($) {
 		})
 	}
 
-	$('[data-shock-icon]').svgIconInit();	
+	$('[data-shock-icon]').svgIconInit();
 })
 
 // #endregion Icon
@@ -582,7 +546,7 @@ jQuery(function ($) {
 8. Shuffle
 ----------------------------------------------*/
 
-// #region Shuffle 
+// #region Shuffle
 
 jQuery(function ($) {
 	'use strict';
@@ -626,7 +590,7 @@ jQuery(function ($) {
 	})
 })
 
-// #endregion Shuffle 
+// #endregion Shuffle
 
 /*----------------------------------------------
 9. Lax
@@ -749,7 +713,7 @@ jQuery(function ($) {
 	var display = $('#load-more').data('display');
 	var button  = $('#load-more-button');
 	var item    = $('.load-more-item').hide();
-	
+
 	item.slice(0, display).show();
 
 	button.on('click', function(e) {
@@ -808,11 +772,11 @@ jQuery(function ($) {
 		// Form
 		var form   = $(this);
 		var input  = form.find('.form-control, .form-check-input');
-	
+
 		// Alert
 		var success_alert = form.find('.form-alert.success');
 		var error_alert   = form.find('.form-alert.error');
-	
+
 		// Submit
 		form.submit(function (e) {
 			e.preventDefault();
@@ -820,13 +784,13 @@ jQuery(function ($) {
 			if ( form[0].checkValidity() === false ) {
 				e.stopPropagation();
 
-			} else {	
-				form.addClass('sending');    		
+			} else {
+				form.addClass('sending');
 
 				// Add Current URL
 				var formData = form.serialize();
 				formData += '&URL=' + window.location.href;
-		
+
 				// Ajax Call
 				$.ajax({
 					type: 'POST',
@@ -836,20 +800,20 @@ jQuery(function ($) {
 						try {
 							JSON.parse(response);
 							var obj = JSON.parse(response);
-		
+
 							if (obj.status == 'success') {
 								success_alert.fadeIn();
 								error_alert.hide();
 								input.val('');
 								input.prop( 'checked', false );
 								form.removeClass('sending was-validated');
-		
+
 							} else {
 								error_alert.fadeIn();
 								success_alert.hide();
 								form.removeClass('sending was-validated');
 							}
-		
+
 						} catch (e) {
 							error_alert.fadeIn();
 							success_alert.hide();
@@ -1103,7 +1067,7 @@ jQuery(function ($) {
 jQuery(function ($) {
 	'use strict';
 
-	if (document.querySelector('.typed-text') !== null) {	
+	if (document.querySelector('.typed-text') !== null) {
 		var options = {
 			stringsElement: '#typed-strings',
 			typeSpeed: 60,
@@ -1140,7 +1104,7 @@ jQuery(function ($) {
 	'use strict';
 
 	var CircularText = {
-		
+
 		init: function(el, str) {
 
 			var element = document.querySelector(el);
@@ -1190,7 +1154,7 @@ jQuery(function ($) {
 	function countUp(countFrom, countTo) {
 
 		var selector = { countNum: countFrom.text() };
-		
+
 		$(selector).animate({ countNum: countTo },
 			{
 				duration: 1000,
