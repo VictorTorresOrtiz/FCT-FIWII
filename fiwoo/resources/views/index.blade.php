@@ -101,7 +101,7 @@
                             </a>
                             <ul class="dropdown-menu animate fade-down">
                               <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{url('en')}}" class="nav-link">
                                   <span class="text">English</span>
                                 </a>
                               </li>
