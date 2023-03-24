@@ -545,7 +545,7 @@
                   </div>
                 </div>
                 <!-- Link -->
-                <a href="#your-link" class="full-link"></a>
+                <a href="{{url('account-en')}}" class="full-link"></a>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="400">
@@ -602,7 +602,7 @@
                   </div>
                 </div>
                 <!-- Link -->
-                <a href="#your-link" class="full-link"></a>
+                <a href="{{url('account-en')}}" class="full-link"></a>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="600">
@@ -653,7 +653,7 @@
                   </div>
                 </div>
                 <!-- Link -->
-                <a href="#your-link" class="full-link"></a>
+                <a href="{{url('account-en')}}" class="full-link"></a>
               </div>
             </div>
           </div>
