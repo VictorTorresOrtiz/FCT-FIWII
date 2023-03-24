@@ -39,6 +39,7 @@
 	<div class="card card-style rounded-m p-3 py-2 mb-0">
 		<a href="{{url('/')}}" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi bi-house-fill"></i><span>Inicio</span><i class="bi bi-chevron-right"></i></a>
 		<a href="#" id="nav-comps"><i class="gradient-red shadow-bg shadow-bg-xs bi bi-qr-code-scan"></i><span>Lector QR</span><i class="bi bi-chevron-right"></i></a>
+        <a href="{{url('qr-generator')}}" id="nav-pages"><i class="gradient-green shadow-bg shadow-bg-xs bi bi-qr-code"></i><span>Generador QR</span><i class="bi bi-chevron-right"></i></a>
         <a href="#l" id="nav-mails"><i class="gradient-magenta shadow-bg shadow-bg-xs bi bi-envelope-fill"></i><span>Atención al Cliente</span><i class="bi bi-chevron-right"></i></a>
 
         <!----
@@ -63,6 +64,7 @@
 	</div>
 </div>
 
+<!-----
 <span class="menu-divider mt-4">Messages</span>
 <div class="menu-content px-3">
 	<div class="card card-style rounded-m p-2 mx-0 bg-theme mb-0">
@@ -73,6 +75,7 @@
 		</div>
 	</div>
 </div>
+!---->
 
 <span class="menu-divider mt-4">Actualizaciones</span>
 <div class="menu-content px-3">

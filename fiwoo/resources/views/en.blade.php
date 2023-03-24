@@ -280,7 +280,7 @@
                     <!-- Action -->
                     <div class="navbar-nav navbar-action">
                       <div class="nav-item">
-                        <a href="{{url('account-en')}}" target="_blank" class="button small-button rounded primary-15 primary-hover button-collision">
+                        <a href="#pricing"  class="button small-button rounded primary-15 primary-hover button-collision">
                           <span class="button-text primary white-hover">Buy Fiwoo</span>
                         </a>
                       </div>
@@ -474,6 +474,7 @@
       </section>
 
       <!-- Pricing table -->
+      <a name="pricing"></a>
       <section class="shock-section pt-3 pb-3 bg-color gray-10 js-switch-price">
         <a name="pricing"></a>
         <div class="container">
@@ -545,7 +546,7 @@
                   </div>
                 </div>
                 <!-- Link -->
-                <a href="{{url('account-en')}}" class="full-link"></a>
+                <a href="{{url('plans.basic-en')}}" class="full-link"></a>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="400">
@@ -602,7 +603,7 @@
                   </div>
                 </div>
                 <!-- Link -->
-                <a href="{{url('account-en')}}" class="full-link"></a>
+                <a href="{{url('plans.enterprise-en')}}" class="full-link"></a>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="600">
@@ -653,7 +654,7 @@
                   </div>
                 </div>
                 <!-- Link -->
-                <a href="{{url('account-en')}}" class="full-link"></a>
+                <a href="{{url('plans.premium-en')}}" class="full-link"></a>
               </div>
             </div>
           </div>

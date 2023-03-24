@@ -31,7 +31,7 @@
     <div class="header-bar header-fixed header-app header-bar-detached">
         <a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
         <a href="#" class="header-title color-theme">Fiwoo</a>
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-login"><i class="font-14 bi bi-person-fill"></i></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="{{url('profile')}}"><i class="font-14 bi bi-person-fill"></i></a>
         <a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
         <a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
     </div>
@@ -42,34 +42,13 @@
         <a href="#"><i class="bi bi-qr-code-scan font-17"></i><span>Escaner</span></a>
         <a href="{{url('/')}} " class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
         <a href="#"><i class="bi bi-image font-16"></i><span>Media</span></a>
-        <a href="#"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
+        <a href="{{url('settings')}}"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
     </div>
 
 	<!-- Main Sidebar-->
 	<div id="menu-main" data-menu-active="nav-homes" data-menu-load="{{url('menu-main')}}"
 		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
 	</div>
-
-    <!--Login Modal-->
-    <div class="offcanvas offcanvas-modal rounded-m offcanvas-detached bg-theme" style="width:340px" id="menu-login">
-		<div class="content">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">Bienvenido</h5>
-			<h1 class="font-24 font-800 mb-3">Login</h1>
-			<div class="form-custom form-label form-border form-icon mb-3 bg-transparent">
-				<i class="bi bi-person-circle font-13"></i>
-				<input type="text" class="form-control rounded-xs" id="c1" placeholder="Nombre" name="nombre"/>
-				<label for="c1" class="color-theme">Nombre</label>
-			</div>
-			<div class="form-custom form-label form-border form-icon mb-4 bg-transparent">
-				<i class="bi bi-asterisk font-13"></i>
-				<input type="password" class="form-control rounded-xs" id="c2" placeholder="Contraseña" name="contraseña" />
-				<label for="c2" class="color-theme">Contraseña</label>
-			</div>
-			<a href="#" class="btn btn-full gradient-green shadow-bg shadow-bg-s mt-4">Acceder a su cuenta</a>
-		</div>
-   </div>
-
-
     <!-- Banner-->
     <div class="page-content header-clear-medium">
 
