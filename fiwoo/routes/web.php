@@ -20,3 +20,12 @@ Route::get('/', function () {
 Route::get('/en', function () {
     return view('en');
 })->name('en');
+
+Route::get('/account', function () {
+    return view('account');
+})->name('account');
+
+Route::get('/account-en', function () {
+    return view('account-en');
+})->name('account-en');
+

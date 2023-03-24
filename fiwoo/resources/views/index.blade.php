@@ -66,13 +66,13 @@
 
         <!-- Preloader -->
         <div id="preloader" class="preloader white" data-delay="0" data-limit="3000">
-          <img src="assets/images/logo-gradient.svg" class="emblem" alt="Emblem" />
+          <img src="{{URL::asset('assets/images/logo-gradient.svg')}}" class="emblem" alt="Emblem" />
         </div>
 
         <!-- Popup Bar -->
         <div id="popup-bar" class="popup-bar bg-gradient scheme-1 shadow d-none">
           <p class="description white-85">Aprovecha nuestras ofertas! en Fiwoo App.</p>
-          <a href="#ANCLA" target="_blank" class="button simple">
+          <a href="{{url('account')}}" target="_blank" class="button simple">
             <span class="button-text white white-hover"><mark class="animated-underline tertiary active">Comprar</mark></span>
             <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
           </a>
@@ -280,7 +280,7 @@
                         <!-- Action -->
                         <div class="navbar-nav navbar-action">
                           <div class="nav-item">
-                            <a href="#" target="_blank" class="button small-button rounded primary-15 primary-hover button-collision">
+                            <a href="{{url('account')}}" target="_blank" class="button small-button rounded primary-15 primary-hover button-collision">
                               <span class="button-text primary white-hover">Comprar Fiwoo</span>
                             </a>
                           </div>
@@ -879,5 +879,9 @@
           <circle class="cursor-effect-inner" cx="110" cy="110" r="20"></circle>
         </svg>
       </body>
+      <!--Mouse Hide--->
+    <script type="text/javascript">
+        document.body.style.cursor = 'none';
+    </script>
     </html>
 

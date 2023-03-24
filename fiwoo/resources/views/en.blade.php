@@ -72,7 +72,7 @@
     <!-- Popup Bar -->
     <div id="popup-bar" class="popup-bar bg-gradient scheme-1 shadow d-none">
       <p class="description white-85">Take advantage of our offers! in Fiwoo App.</p>
-      <a href="#ANCLA" target="_blank" class="button simple">
+      <a href="{{url('account-en')}}" target="_blank" class="button simple">
         <span class="button-text white white-hover"><mark class="animated-underline tertiary active">Buy</mark></span>
         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
       </a>
@@ -248,7 +248,7 @@
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-3">
                                   <div class="megamenu-item side-image">
-                                    <a href="#" target="_blank" class="megamenu-image black">
+                                    <a href="{{url('account-en')}}" target="_blank" class="megamenu-image black">
                                       <img src="assets/images/jpg/c-32.jpg" alt="Image name" class="image">
                                       <span class="title">Buy Fiwoo</span>
                                     </a>
@@ -280,7 +280,7 @@
                     <!-- Action -->
                     <div class="navbar-nav navbar-action">
                       <div class="nav-item">
-                        <a href="#" target="_blank" class="button small-button rounded primary-15 primary-hover button-collision">
+                        <a href="{{url('account-en')}}" target="_blank" class="button small-button rounded primary-15 primary-hover button-collision">
                           <span class="button-text primary white-hover">Buy Fiwoo</span>
                         </a>
                       </div>
@@ -879,5 +879,9 @@
       <circle class="cursor-effect-inner" cx="110" cy="110" r="20"></circle>
     </svg>
   </body>
+<!--Mouse Hide--->
+    <script type="text/javascript">
+        document.body.style.cursor = 'none';
+    </script>
 </html>
 

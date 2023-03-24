@@ -1,32 +1,3 @@
-/*----------------------------------------------
-
-[Main CSS]
-
-Theme   : Shock
-Version : 1.0.0
-Author  : Codings
-Support : codings.dev
-
-----------------------------------------------*/
-
-/*----------------------------------------------
-
-[Content Index]
-
-1. Feature
-2. Intro
-3. Banner
-4. Slider
-5. Gallery
-6. Button
-7. Card
-8. Form
-9. Content
-10. Essential
-11. Miscellaneous
-12. Footer
-
-----------------------------------------------*/
 
 /*----------------------------------------------
 1. Feature
@@ -56,6 +27,9 @@ Support : codings.dev
 		stroke-width: 1px;
 	}
 }
+
+.nocursor { cursor:none; }
+
 
 /* #endregion Cursor */
 
@@ -115,12 +89,12 @@ Support : codings.dev
 }
 
 @media (max-width: 575px) {
-	
+
 	.popup-bar {
     padding: 0 1rem;
 		justify-content: flex-start;
 	}
-	
+
 	.popup-bar .description {
     line-height: 1;
 	}
@@ -132,7 +106,7 @@ Support : codings.dev
     height: 50px;
     margin: 0;
 	}
-	
+
 	.popup-bar .button:not(.close-button) .button-text,
 	.popup-bar .button:not(.close-button) .button-icon {
 		display: none;
@@ -358,7 +332,7 @@ Support : codings.dev
 }
 
 @media (max-width: 1199px) {
-	
+
 	.extended-intro .wrapper {
     display: block;
 	}
@@ -366,7 +340,7 @@ Support : codings.dev
 	.extended-intro .text-2 {
     text-align: left;
 	}
-	
+
 	.extended-intro .description {
     max-width: 100%;
     margin: 1rem 0 0;
@@ -395,17 +369,17 @@ Support : codings.dev
 		line-height: 1.1;
 		color: var(--color);
 	}
-	
+
 	.side-intro .description {
 		margin: 1.5rem 0 0 0;
 		line-height: 1.5;
 		color: var(--color);
 	}
-	
+
 	.side-intro .description br {
 		display: none;
 	}
-	
+
 	.side-intro .button {
 		margin: 1.5rem 0 0 0;
 	}
@@ -521,7 +495,7 @@ Support : codings.dev
 	.banner-metadata {
     flex-direction: column;
 	}
-	
+
 	.banner-metadata .item:not(:first-child):not(:last-child) {
     margin: 1rem;
 	}
@@ -957,7 +931,7 @@ Support : codings.dev
 	.gallery .item .gallery-icon {
 		font-size: 3rem;
 	}
-	
+
 	.gallery .item:hover .gallery-icon {
 		font-size: 3.5rem;
 	}
@@ -1921,7 +1895,7 @@ button {
     height: 50vh;
     margin-bottom: 1rem;
 	}
-	
+
 	.card.is-featured-right {
     width: 100%;
     height: 50vh;
@@ -2599,7 +2573,7 @@ button {
 	.form-area .form-row {
     margin: 0 -0.75rem;
 	}
-	
+
 	.form-area .form-row .form-col {
     margin-bottom: 1rem;
 	}
@@ -2613,7 +2587,7 @@ button {
 
 /* #region Content */
 
-.shock-main {	
+.shock-main {
   -webkit-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -2728,7 +2702,7 @@ button {
 
 @media (max-width: 991px) {
 
-	.shock-main {	
+	.shock-main {
 		overflow: hidden;
 	}
 
@@ -3371,22 +3345,22 @@ table {
   color: var(--white-color);
 }
 
-.tooltip-item .bs-tooltip-top .tooltip-arrow::before, 
+.tooltip-item .bs-tooltip-top .tooltip-arrow::before,
 .tooltip-item .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
   border-top-color: var(--color);
 }
 
-.tooltip-item .bs-tooltip-right .tooltip-arrow::before, 
+.tooltip-item .bs-tooltip-right .tooltip-arrow::before,
 .tooltip-item .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
   border-right-color: var(--color);
 }
 
-.tooltip-item .bs-tooltip-bottom .tooltip-arrow::before, 
+.tooltip-item .bs-tooltip-bottom .tooltip-arrow::before,
 .tooltip-item .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
   border-bottom-color: var(--color);
 }
 
-.tooltip-item .bs-tooltip-left .tooltip-arrow::before, 
+.tooltip-item .bs-tooltip-left .tooltip-arrow::before,
 .tooltip-item .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
   border-left-color: var(--color);
 }
@@ -3570,13 +3544,13 @@ table {
 	.vertical-tab {
 		display: block;
 	}
-	
+
 	.vertical-tab .nav-pills {
 		width: 100%;
     display: block;
     margin-bottom: 1.5rem;
 	}
-	
+
 	.vertical-tab .tab-content {
 		width: 100%;
 		padding-top: 0;
@@ -3699,11 +3673,11 @@ table {
 
 /* #region Icon List */
 
-:root .icon-list.scheme-1 {	
+:root .icon-list.scheme-1 {
 	--color-1: var(--gray-25-color);
 }
 
-:root .icon-list.scheme-2 {	
+:root .icon-list.scheme-2 {
 	--color-1: var(--white-10-color);
 }
 
@@ -3905,7 +3879,7 @@ table {
 	.modal .modal-header {
 		padding: 1rem;
 	}
-	
+
 	.modal .modal-header .close-button {
 		top: 1rem;
 		right: 1rem;
@@ -3914,7 +3888,7 @@ table {
 	.modal .modal-body {
 		padding: 1rem;
 	}
-	
+
 	.modal .modal-footer {
 		padding: 1rem;
 	}
@@ -4064,7 +4038,7 @@ table {
 	color: var(--color);
 }
 
-@media (max-width: 991px) {	
+@media (max-width: 991px) {
 
 	.image-mirror .mirror-button .mirror-icon {
 		font-size: 4rem;
@@ -4151,7 +4125,7 @@ table {
 }
 
 @media (max-width: 991px) {
-	
+
 	.row *:last-child .animated-counter {
 		margin-bottom: 0;
 	}
@@ -4906,7 +4880,7 @@ table {
 }
 
 @media (max-width: 991px) {
-	
+
 	.shock-footer .container {
     max-width: 960px !important;
     padding-left: 1rem;
@@ -4929,7 +4903,7 @@ table {
 }
 
 @media (max-width: 767px) {
-	
+
 	.shock-footer .footer-content .row > *:not(:first-child) {
     margin-top: 0;
 	}
@@ -4942,7 +4916,7 @@ table {
 	.shock-footer .footer-content .footer-item:last-child {
     margin-bottom: 1.5rem;
 	}
-	
+
 	.shock-footer .footer-content .title {
 		padding-top: 1.5rem;
 		padding-bottom: 0;

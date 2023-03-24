@@ -1,27 +1,3 @@
-/*----------------------------------------------
-
-[Core CSS]
-
-Theme   : Shock
-Version : 1.0.0
-Author  : Codings
-Support : codings.dev
-
-----------------------------------------------*/
-
-/*----------------------------------------------
-
-[Content Index]
-
-1. General
-2. Layout
-3. Color
-4. Style
-5. Animation
-6. Hover
-7. Helper
-
-----------------------------------------------*/
 
 /*----------------------------------------------
 1. General
@@ -178,7 +154,7 @@ img, svg {
   vertical-align: middle;
 }
 
-@media (max-width: 991px) {	
+@media (max-width: 991px) {
 	.blockquote {
 		margin: 1.5rem auto 1.5rem 0;
 	}
@@ -991,7 +967,7 @@ img, svg {
 	box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%) !important;
 }
 
-.drop-shadow {	
+.drop-shadow {
 	filter: drop-shadow(5px 5px 5px var(--color));
 }
 
@@ -1876,15 +1852,15 @@ img, svg {
 }
 
 @media (max-width: 991px) {
-	
+
 	.d-only-desktop {
 		display: none !important;
 	}
-	
+
 	.d-only-mobile {
 		display: inline !important;
 	}
-	
+
 	.grid-holder-1-col,
 	.grid-holder-2-col,
 	.grid-holder-3-col,
@@ -1894,7 +1870,7 @@ img, svg {
 		display: inline-block;
 		text-align: center;
 	}
-	
+
 	.grid-holder-1-col > *,
 	.grid-holder-2-col > *,
 	.grid-holder-3-col > *,
