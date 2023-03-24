@@ -762,8 +762,6 @@
                         <li class="nav-item">
                           <a href="#" class="nav-link">
                             <span class="text">Terms of Use</span>
-                            <span class="badge flex ms-1 primary primary-hover">
-                            </span>
                           </a>
                         </li>
                         <li class="nav-item">
