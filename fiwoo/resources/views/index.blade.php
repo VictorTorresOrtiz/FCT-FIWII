@@ -755,88 +755,25 @@
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                  <div class="footer-item">
-                    <h6 class="title">Popular Searches</h6>
-                    <!-- Tag Cloud -->
-                    <div class="tag-cloud">
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Environment</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover floating-item-smooth">
-                          <span class="badge-text gray white-hover">Events</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Technology</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Web</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Mobile</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Design</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Branding</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Development</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Artificial</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Intelligence</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Engineering</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Innovation</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Social</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Fashion</span>
-                        </span>
-                      </a>
-                      <a href="#your-link" class="link">
-                        <span class="badge outline gray-50 primary-hover">
-                          <span class="badge-text gray white-hover">Product</span>
-                        </span>
-                      </a>
+                    <div class="footer-item">
+                      <h6 class="title">Links</h6>
+                      <!-- Links list -->
+                      <ul class="nav-list list-unstyled">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">
+                            <span class="text">Termisos de uso</span>
+                            <span class="badge flex ms-1 primary primary-hover">
+                            </span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#about" class="nav-link">
+                            <span class="text">Aviso Legal</span>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
                 <div class="col-12 col-md-6 col-lg-3">
                   <div class="footer-item">
                     <h6 class="title">Newsletter</h6>
@@ -879,9 +816,5 @@
           <circle class="cursor-effect-inner" cx="110" cy="110" r="20"></circle>
         </svg>
       </body>
-      <!--Mouse Hide--->
-    <script type="text/javascript">
-        document.body.style.cursor = 'none';
-    </script>
     </html>
 
