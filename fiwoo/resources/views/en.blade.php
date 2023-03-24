@@ -249,7 +249,7 @@
                                 <div class="col-12 col-md-6 col-lg-3">
                                   <div class="megamenu-item side-image">
                                     <a href="{{url('account-en')}}" target="_blank" class="megamenu-image black">
-                                      <img src="assets/images/jpg/c-32.jpg" alt="Image name" class="image">
+                                      <img src="{{URL::asset('assets/images/walpapers/comprar.gif')}}" alt="Image name" class="image">
                                       <span class="title">Buy Fiwoo</span>
                                     </a>
                                   </div>

@@ -248,9 +248,9 @@
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-3">
                                       <div class="megamenu-item side-image">
-                                        <a href="https://codings.dev/?buy=shock-html" target="_blank" class="megamenu-image black">
-                                          <img src="assets/images/jpg/c-32.jpg" alt="Image name" class="image">
-                                          <span class="title">Buy Shock</span>
+                                        <a href="{{url('account')}}" target="_blank" class="megamenu-image black">
+                                          <img src="{{URL::asset('assets/images/walpapers/comprar.gif')}}" alt="Image name" class="image">
+                                          <span class="title">Comprar Fiwoo</span>
                                         </a>
                                       </div>
                                     </div>
