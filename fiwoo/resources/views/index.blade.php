@@ -280,7 +280,7 @@
                         <!-- Action -->
                         <div class="navbar-nav navbar-action">
                           <div class="nav-item">
-                            <a href="{{url('account')}}" target="_blank" class="button small-button rounded primary-15 primary-hover button-collision">
+                            <a href="#comprar" class="button small-button rounded primary-15 primary-hover button-collision">
                               <span class="button-text primary white-hover">Comprar Fiwoo</span>
                             </a>
                           </div>
@@ -293,7 +293,6 @@
             </div>
           </nav>
         </header>
-
         <!-- Main -->
         <main id="main" class="shock-main">
 
@@ -474,6 +473,7 @@
           </section>
 
           <!-- Pricing table -->
+          <a name="comprar"></a>
           <section class="shock-section pt-3 pb-3 bg-color gray-10 js-switch-price">
             <a name="pricing"></a>
             <div class="container">
@@ -684,6 +684,8 @@
             </a>
           </div>
         </div>
+
+
 
         <!-- Footer -->
         <footer id="footer" class="shock-footer scheme-1 primary">
