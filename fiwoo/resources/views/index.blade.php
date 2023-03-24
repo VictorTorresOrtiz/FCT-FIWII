@@ -545,7 +545,7 @@
                       </div>
                     </div>
                     <!-- Link -->
-                    <a href="{{url('account')}}" class="full-link"></a>
+                    <a href="{{url('plans.basic')}}" class="full-link"></a>
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="400">
@@ -602,7 +602,7 @@
                       </div>
                     </div>
                     <!-- Link -->
-                    <a href="{{url('account')}}" class="full-link"></a>
+                    <a href="{{url('plans.enterprise')}}" class="full-link"></a>
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="600">
@@ -653,7 +653,7 @@
                       </div>
                     </div>
                     <!-- Link -->
-                    <a href="{{url('account')}}" class="full-link"></a>
+                    <a href="{{url('plans.premium')}}" class="full-link"></a>
                   </div>
                 </div>
               </div>
