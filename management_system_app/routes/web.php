@@ -48,6 +48,10 @@ Route::get('/signin', function () {
     return view('signin');
 })->name('signin');
 
+Route::get('/settings', function () {
+    return view('settings');
+})->name('settings');
+
 //Offline mode PWA
 Route::get('/offline', function(){
     return view('vendor.laravelpwa.offline');

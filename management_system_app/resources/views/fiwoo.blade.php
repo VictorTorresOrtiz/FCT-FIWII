@@ -42,7 +42,7 @@
         <a href="#"><i class="bi bi-qr-code-scan font-17"></i><span>Escaner</span></a>
         <a href="{{url('/')}} " class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
         <a href="#"><i class="bi bi-image font-16"></i><span>Media</span></a>
-        <a href="#"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
+        <a href="{{url('settings')}}"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
     </div>
 
 	<!-- Main Sidebar-->
