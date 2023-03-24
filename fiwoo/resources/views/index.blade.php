@@ -545,7 +545,7 @@
                       </div>
                     </div>
                     <!-- Link -->
-                    <a href="#your-link" class="full-link"></a>
+                    <a href="{{url('account')}}" class="full-link"></a>
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="400">
@@ -602,7 +602,7 @@
                       </div>
                     </div>
                     <!-- Link -->
-                    <a href="#your-link" class="full-link"></a>
+                    <a href="{{url('account')}}" class="full-link"></a>
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="600">
@@ -653,7 +653,7 @@
                       </div>
                     </div>
                     <!-- Link -->
-                    <a href="#your-link" class="full-link"></a>
+                    <a href="{{url('account')}}" class="full-link"></a>
                   </div>
                 </div>
               </div>
@@ -761,9 +761,7 @@
                       <ul class="nav-list list-unstyled">
                         <li class="nav-item">
                           <a href="#" class="nav-link">
-                            <span class="text">Termisos de uso</span>
-                            <span class="badge flex ms-1 primary primary-hover">
-                            </span>
+                            <span class="text">Términos de uso</span>
                           </a>
                         </li>
                         <li class="nav-item">
