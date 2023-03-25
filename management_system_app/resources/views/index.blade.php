@@ -61,7 +61,7 @@
                                         <a href="#" class="btn-full btn btn-m btn-border border-highlight color-highlight rounded-sm font-900 text-uppercase">Crear Cuenta</a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="#" class=" btn-full btn btn-m bg-highlight color-white rounded-sm font-900 text-uppercase scale-box">Acceder</a>
+                                        <a href="{{url('fiwii')}}" class=" btn-full btn btn-m bg-highlight color-white rounded-sm font-900 text-uppercase scale-box">Acceder</a>
                                     </div>
                                 </div>
                             </div>
