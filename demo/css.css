@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(90deg, #294e7e, #5D9CEC);
+        color: white;
+        height: 100%;
+    }
+
+    .web {
+        background-color: #1d1d1d;
+        height: 100vh;
+        width: 80%;
+        padding-top: 30vh;
+        display: none;
+    }
+
+    .formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #input {
+        background-color: rgb(75, 76, 96);
+        border: 0;
+        color: white;
+    }
+
+    #enviar {
+        background-color: white;
+        margin-top: 3rem;
+        border-radius: 3em;
+        padding: 0.5em 3em;
+    }
+
+    .loader-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
