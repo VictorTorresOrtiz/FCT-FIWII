@@ -19,11 +19,11 @@
 <script defer type="text/javascript" src="{{URL::asset('assets/js/custom.js')}}"></script>
 
 <!--PWA READY---->
-<link rel="manifest" href="{{URL::asset('assets/_manifest.json')}}" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="manifest" href="{{URL::asset('manifest.json')}}" data-pwa-version="set_in_manifest_and_pwa_js">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 
-<body class="theme-light" data-highlight="blue2">
+<body class="theme-light detect-theme">
 
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
 

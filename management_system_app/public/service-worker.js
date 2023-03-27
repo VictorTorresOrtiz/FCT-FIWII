@@ -1,7 +1,7 @@
 // To clear cache on devices, always increase APP_VER number after making changes.
 // The app will serve fresh content right away or after 2-3 refreshes (open / close)
-var APP_NAME = 'Azures';
-var APP_VER = '3.4.1L';
+var APP_NAME = 'Fiwii';
+var APP_VER = '0.4';
 var CACHE_NAME = APP_NAME + '-' + APP_VER;
 
 // Files required to make this app work offline.
@@ -9,13 +9,14 @@ var CACHE_NAME = APP_NAME + '-' + APP_VER;
 // Leave REQUIRED_FILES = [] to disable offline.
 var REQUIRED_FILES = [
 	// HTML Files
-	'index.html',
+	'../../resources/views/fiwii.blade.php',
+
 	// Styles
-	'styles/style.css',
-	'styles/bootstrap.css',
+	'css/style.css',
+	'css/bootstrap.css',
 	// Scripts
-	'scripts/custom.js',
-	'scripts/bootstrap.min.js',
+	'js/custom.js',
+	'js/bootstrap.min.js',
 	// Plugins
 	'plugins/charts/charts.js',
 	'plugins/charts/charts-call-graphs.js',
@@ -32,8 +33,7 @@ var REQUIRED_FILES = [
 	'fonts/webfonts/fa-brands-400.woff2',
 	'fonts/webfonts/fa-regular-400.woff2',
 	'fonts/webfonts/fa-solid-900.woff2',
-	// Images
-	'images/empty.png',
+
 ];
 
 // Service Worker Diagnostic. Set true to get console logs.
