@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 
-<body class="theme-light detect-theme">
+<body class="detect-theme">
 
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
 
