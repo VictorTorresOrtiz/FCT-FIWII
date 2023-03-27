@@ -1,5 +1,3 @@
-
-
     <!DOCTYPE HTML>
     <html lang="es">
 
@@ -14,7 +12,6 @@
         <link rel="shortcut icon" href="{{URL::asset('assets/images/favicon.ico')}}" type="image/x-icon" />
 
         <!-- Vendor Style Sheet -->
-        <!-- Option 1: Include in HTML -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="{{URL::asset('assets/css/vendor/preloader.min.css')}}" />
         <link rel="stylesheet" href="{{URL::asset('assets/css/vendor/font-family.min.css')}}" />
