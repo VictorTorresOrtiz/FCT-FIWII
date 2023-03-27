@@ -33,6 +33,11 @@ Route::get('/misc.menu', function () {
     return view('misc.menu');
 })->name('misc.menu');
 
+Route::get('/misc.menu-footer', function () {
+    return view('misc.menu-footer');
+})->name('misc.menu-footer');
+
+
 
 
 
