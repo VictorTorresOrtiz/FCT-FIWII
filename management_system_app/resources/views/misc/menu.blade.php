@@ -13,7 +13,7 @@
 
 <div class="menu-items mb-4">
     <h5 class="text-uppercase opacity-20 font-12 pl-3">Menu</h5>
-    <a id="nav-welcome" href="#">
+    <a id="nav-welcome" href="{{url('profile')}}">
         <i class="bi bi-person"></i>
         <span>Perfil</span>
         <i class="fa fa-circle"></i>

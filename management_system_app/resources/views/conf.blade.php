@@ -35,7 +35,7 @@
         <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
     </div>
     <div id="footer-bar" class="footer-bar-5">
-        <a href="#"><i class="bi bi-person"></i><span>Perfil</span></a>
+        <a href="{{url('profile')}}"><i class="bi bi-person"></i><span>Perfil</span></a>
         <a href="#"><i class="bi bi-list-nested"></i></i><span>Gestión</span></a>
         <a href="{{url('fiwii')}}"><i class="bi bi-house"></i><span>Home</span></a>
         <a href="#"><i class="bi bi-upc-scan"></i><span>QR</span></a>
