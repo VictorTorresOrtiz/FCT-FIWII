@@ -29,6 +29,11 @@ Route::get('/account', function () {
     return view('account');
 })->name('account');
 
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
+
+
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');
 })->name('misc.menu-share');
