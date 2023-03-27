@@ -16,7 +16,7 @@
 <script defer type="text/javascript" src="{{URL::asset('assets/js/custom.js')}}"></script>
 
 <!--PWA READY---->
-<link rel="manifest" href="{{URL::asset('assets/_manifest.json')}}" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="manifest" href="{{URL::asset('assets/manifest.json')}}" data-pwa-version="set_in_manifest_and_pwa_js">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 
@@ -60,7 +60,7 @@
                                         <a href="#" class="btn-full btn btn-m btn-border border-highlight color-highlight rounded-sm font-900 text-uppercase">Crear Cuenta</a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="{{url('fiwii')}}" class=" btn-full btn btn-m bg-highlight color-white rounded-sm font-900 text-uppercase scale-box">Acceder</a>
+                                        <a href="{{url('account')}}" class=" btn-full btn btn-m bg-highlight color-white rounded-sm font-900 text-uppercase scale-box">Acceder</a>
                                     </div>
                                 </div>
                             </div>
