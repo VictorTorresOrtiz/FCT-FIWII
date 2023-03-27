@@ -14,5 +14,39 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('index');
+})->name('index');
+
+Route::get('/fiwii', function () {
+    return view('fiwii');
+})->name('fiwii');
+
+Route::get('/conf', function () {
+    return view('conf');
+})->name('conf');
+
+Route::get('/account', function () {
+    return view('account');
+})->name('account');
+
+Route::get('/misc.menu-share', function () {
+    return view('misc.menu-share');
+})->name('misc.menu-share');
+
+Route::get('/misc.menu', function () {
+    return view('misc.menu');
+})->name('misc.menu');
+
+Route::get('/misc.menu-footer', function () {
+    return view('misc.menu-footer');
+})->name('misc.menu-footer');
+
+
+
+
+
+
+
+
+
+
