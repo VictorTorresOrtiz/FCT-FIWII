@@ -25,6 +25,10 @@ Route::get('/conf', function () {
     return view('conf');
 })->name('conf');
 
+Route::get('/account', function () {
+    return view('account');
+})->name('account');
+
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');
 })->name('misc.menu-share');
