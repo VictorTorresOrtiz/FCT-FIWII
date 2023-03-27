@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d1a2d1ef0ce46b17482395e2de5124828a453cd8
     <!DOCTYPE HTML>
     <html lang="es">
 
@@ -12,6 +17,10 @@
         <link rel="shortcut icon" href="<?php echo e(URL::asset('assets/images/favicon.ico')); ?>" type="image/x-icon" />
 
         <!-- Vendor Style Sheet -->
+<<<<<<< HEAD
+=======
+        <!-- Option 1: Include in HTML -->
+>>>>>>> d1a2d1ef0ce46b17482395e2de5124828a453cd8
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="<?php echo e(URL::asset('assets/css/vendor/preloader.min.css')); ?>" />
         <link rel="stylesheet" href="<?php echo e(URL::asset('assets/css/vendor/font-family.min.css')); ?>" />
