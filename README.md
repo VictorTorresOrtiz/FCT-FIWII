@@ -26,32 +26,24 @@ paper is published and available at journal.com
 - victor (Demo)
 
 # Technologies
-| Name      | Version              |
+| Name      | Version                  |
 | --------- | ------------------------ |
 | Laravel   | 9                        |
 | Bootstrap | 5.2                      |
 | HTML      | 5                        |
 | CSS       | 3                        |
 | MYSQL     | 8.0                      |
-| AJAX      | N/A                      |
-| GSAP      | N/A                      |
-
-# Code 
-*Associated code is present in the following repositories* 
+| GSAP      | 3.10.4                   |
+| JS        | ECMAScript 2020          |
+| JQUERY    | 3.6.0                    |
 
 ## Prerequisites
-*You may need to install the following dependencies*
+composer update
+php artisan db:seed
+php artisan migrate
 
 ## Install
-
-
-
-# Supplemental plots
-- Figure S1
-- Figure S2
-
-# Contact info 
-submit issues (here), email (person@email.com) for questions
+php artisan serve
 
 # License
 
