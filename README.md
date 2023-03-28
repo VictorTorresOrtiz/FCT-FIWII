@@ -47,12 +47,12 @@ Fiwii is an application oriented to the management and maintenance of fire fight
 | JQUERY    | 3.6.0                    |
 
 ## Prerequisites
-composer update
-php artisan db:seed
-php artisan migrate
+- composer update
+- php artisan db:seed
+- php artisan migrate
 
 ## Install
-php artisan serve
+- php artisan serve
 
 # License
 
