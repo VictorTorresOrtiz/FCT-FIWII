@@ -17,41 +17,41 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+Route::get('/fiwii', function () {
+    return view('fiwii');
+})->name('fiwii');
 
-Route::get('/fiwoo', function () {
-    return view('fiwoo');
-})->name('fiwoo');
+Route::get('/conf', function () {
+    return view('conf');
+})->name('conf');
 
-Route::get('/index-pages', function () {
-    return view('index-pages');
-})->name('index-pages');
-
-
-Route::get('/menu-main', function () {
-    return view('menu-main');
-})->name('menu-main');
-
-
-Route::get('/qr-generator', function () {
-    return view('qr-generator');
-})->name('qr-generator');
-
-Route::get('/equipos', function () {
-    return view('equipos');
-})->name('equipos');
+Route::get('/account', function () {
+    return view('account');
+})->name('account');
 
 Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
 
-Route::get('/signin', function () {
-    return view('signin');
-})->name('signin');
 
-//Offline mode PWA
-Route::get('/offline', function(){
-    return view('vendor.laravelpwa.offline');
-});
+Route::get('/misc.menu-share', function () {
+    return view('misc.menu-share');
+})->name('misc.menu-share');
+
+Route::get('/misc.menu', function () {
+    return view('misc.menu');
+})->name('misc.menu');
+
+Route::get('/misc.menu-footer', function () {
+    return view('misc.menu-footer');
+})->name('misc.menu-footer');
+
+
+
+
+
+
+
 
 
 

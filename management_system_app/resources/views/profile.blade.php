@@ -5,446 +5,146 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Fiwoo - Perfil</title>
-<!--CSS, JS AND Fonts-->
-<link rel="stylesheet" type="text/css" href="{{URL::asset('css/bootstrap.css')}}">
-<link rel="stylesheet" type="text/css" href="{{URL::asset('fonts/bootstrap-icons.css')}}">
-<link rel="stylesheet" type="text/css" href="{{URL::asset('css/style.css')}}">
-<script  defer src="{{URL::asset('js/bootstrap.min.js')}}"></script>
-<script  defer src="{{URL::asset('js/custom.js')}}"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<title>Fiwii - Inicio</title>
 
+<!--Assets---->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/bootstrap.css')}}">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{URL::asset('assets/fonts/css/fontawesome-all.min.css')}} ">
 
-<!--PWA READY-->
-<link rel="manifest" href="_manifest.json">
-<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<script defer type="text/javascript" src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>
+<script defer type="text/javascript" src="{{URL::asset('assets/js/custom.js')}}"></script>
+
+<!--PWA READY---->
+<link rel="manifest" href="{{URL::asset('manifest.json')}}" data-pwa-version="set_in_manifest_and_pwa_js">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
 
-<body class="theme-light">
+<body class="detect-theme">
 
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
 
 <div id="page">
 
-    <!-- Header -->
-    <div class="header-bar header-fixed header-app header-bar-detached">
-		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
-		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
-		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
-		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
-	</div>
-
-	<!-- Footer Bar-->
-    <div id="footer-bar" class="footer-bar footer-bar-detached">
-        <a href="{{url('profile')}}" class="active-nav"><i class="bi bi-person-fill font-15"></i><span>Perfil</span></a>
-        <a href="#"><i class="bi bi-qr-code-scan font-17"></i><span>Escaner</span></a>
-        <a href="{{url('/')}} "><i class="bi bi-house-fill font-16"></i><span>Inicio</span></a>
-        <a href="#"><i class="bi bi-image font-16"></i><span>Media</span></a>
-        <a href="#"><i class="bi bi-gear font-16"></i><span>Configuración</span></a>
+    <!-- header and footer bar go here-->
+    <div class="header header-fixed header-auto-show header-logo-app">
+        <a href="#" data-back-button class="header-title header-subtitle">Volver al Inicio</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-3"><i class="fas fa-bars"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-5">
+        <a href="{{url('profile')}}" class="active-nav"><i class="bi bi-person"></i><span>Perfil</span></a>
+        <a href="#"><i class="bi bi-list-nested"></i></i><span>Gestión</span></a>
+        <a href="{{url('fiwii')}}"><i class="bi bi-house"></i><span>Home</span></a>
+        <a href="#"><i class="bi bi-upc-scan"></i><span>QR</span></a>
+        <a href="{{url('conf')}}"><i class="bi bi-gear"></i><span>Configuración</span></a>
     </div>
 
-	<!-- Main Sidebar-->
-	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
-		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
-	</div>
+    <div class="page-content">
 
-    <div class="page-content header-clear-medium">
+        <div class="page-title page-title-small">
+            <h2><a href="#" data-back-button><i class="fa fa-arrow-left"></i></a>Perfil</h2>
+            <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img" data-src="{{URL::asset('assets/images/avatars/5s.png')}}"></a>
+        </div>
+        <div class="card header-card shape-rounded" data-card-height="150">
+            <div class="card-overlay bg-highlight opacity-95"></div>
+            <div class="card-overlay dark-mode-tint"></div>
+            <div class="card-bg preload-img" data-src="{{URL::asset('images/pictures/20s.jpg')}} "></div>
+        </div>
 
-		<div class="card card-style mt-5 overflow-visible">
-			<img src="images/empty.png" data-src="images/pictures/7t.jpg" width="150" height="150" class="mt-n5 preload-img mx-auto rounded-circle shadow-xl">
-			<div class="content text-center">
-				<div class="px-3 mb-n3">
-					<h1 class="font-700">Karla Black</h1>
-					<p class="mb-2 opacity-60 font-13">
-						Karla Black is a name used when you generate a text with an anonymous name.
-					</p>
-					<p class="font-10">
-						<strong class="color-theme pe-1">1k</strong>Followers
-						<strong class="color-theme ps-3 pe-1">342</strong>Following
-					</p>
-				</div>
-			</div>
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h3 class="font-600">Información</h3>
+                <p>
+                    Datos básicos sobre ti. Colócalos aquí.
+                </p>
 
-			<div class="content">
-				<div class="row mb-0">
-					<div class="col-6">
-						<a href="#" class="btn btn-full btn-s rounded-s text-uppercase font-900 gradient-highlight shadow-bg shadow-bg-s">Follow</a>
-					</div>
-					<div class="col-6">
-						<a href="#" class="btn btn-full btn-s btn-border rounded-s text-uppercase font-900 color-highlight border-blue-dark shadow-l">Message</a>
-					</div>
-				</div>
-			</div>
-			<div class="divider mb-4 mx-3 mt-1"></div>
-			<div class="row mb-0 px-3">
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-1" href="#"><img src="images/pictures/3s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Sheet 1</span>
-				</div>
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-2"  href="#"><img src="images/pictures/5s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Sheet 2</span>
-				</div>
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-3" href="#"><img src="images/pictures/12s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Sidebar 1</span>
-				</div>
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-4"  href="#"><img src="images/pictures/22s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Sidebar 2</span>
-				</div>
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-5" href="#"><img src="images/pictures/1s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Modal 1</span>
-				</div>
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-6"  href="#"><img src="images/pictures/4s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Modal 2</span>
-				</div>
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-7" href="#"><img src="images/pictures/18s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Top 1</span>
-				</div>
-				<div class="col-6">
-					<a data-bs-toggle="offcanvas" data-bs-target="#menu-gallery-8"  href="#"><img src="images/pictures/19s.jpg" class="rounded-m img-fluid d-block"></a>
-					<span class="font-700 color-theme font-14 text-center d-block mb-3">Album Top 2</span>
-				</div>
-			</div>
-		</div>
+                <div class="input-style has-borders hnoas-icon input-style-always-active validate-field mb-4">
+                    <input type="name" class="form-control validate-name" id="form1" placeholder="Nombre Actual">
+                    <label for="form1" class="color-highlight font-400 font-13">Nombre</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
 
-		<div class="card card-style py-3">
-			<div class="content px-2 text-center">
-				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
-				<h2>Get Duo Mobile Today</h2>
-				<p class="mb-3">
-					Start your next project with Duo and enjoy the power of a Progressive Web App.
-				</p>
-				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
-			</div>
-		</div>
+                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                    <input type="email" class="form-control validate-email" id="form2" placeholder="Email Actual">
+                    <label for="form2" class="color-highlight font-400 font-13">Email</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
 
+                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                    <input type="tel" class="form-control validate-tel" id="form3" placeholder="Numero actual">
+                    <label for="form3" class="color-highlight font-400 font-13">Numero de Teléfono</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+
+                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                    <input type="password" class="form-control validate-passord" id="form4" placeholder="******">
+                    <label for="form4" class="color-highlight font-400 font-13">Contraseña</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+            </div>
+            <a href="#" class="btn btn-full btn-margins bg-highlight rounded-sm shadow-xl btn-m text-uppercase font-900">Guardar Cambios</a>
+        </div>
+
+        <div class="card card-style">
+            <div class="content mb-2">
+                <h3 class="font-600">Configuración de la Cuenta</h3>
+                <p>
+                    Configuración Basica de la Cuenta.
+                </p>
+
+                <div class="list-group list-custom-small">
+                    <a href="#" data-trigger-switch="switch-1">
+                        <span>Notifications</span>
+                        <div class="custom-control scale-switch ios-switch">
+                            <input type="checkbox" class="ios-input" id="switch-1" checked>
+                            <label class="custom-control-label" for="switch-1"></label>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                    <a href="#" data-trigger-switch="switch-1a">
+                        <span>Newsletter</span>
+                        <div class="custom-control scale-switch ios-switch">
+                            <input type="checkbox" class="ios-input" id="switch-1a" checked>
+                            <label class="custom-control-label" for="switch-1"></label>
+                        </div>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                    <a href="#" data-toggle-theme data-trigger-switch="toggle-dark12" class="border-0">
+                        <span>Dark Mode</span>
+                        <div class="ms-auto me-4 pe-2">
+                            <div class="custom-control ios-switch scale-switch">
+                                <input data-toast="switched-color-scheme" data-toggle-theme type="checkbox" class="ios-input" id="toggle-dark12">
+                                <label class="custom-control-label" for="toggle-dark12"></label>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-	<!-- End of Page Content-->
+    <!-- end of page content-->
 
-	<!-- Sheet 1-->
-	<div class="offcanvas offcanvas-bottom rounded-m offcanvas-detached" id="menu-gallery-1">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">3 x 3 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-2">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-			<div class="row text-center row-cols-3 mb-0">
-				<a class="col" data-gallery="gallery-1" href="images/pictures/7t.jpg" title="Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Portrait</p>
-				</a>
-				<a class="col" data-gallery="gallery-1" href="images/pictures/10t.jpg" title="Abstracts">
-					<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Abstract</p>
-				</a>
-				<a class="col" data-gallery="gallery-1" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Red Leafs</p>
-				</a>
-				<a class="col" data-gallery="gallery-1" href="images/pictures/23t.jpg" title="Gamer Girl">
-					<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Gamer Girl</p>
-				</a>
-				<a class="col" data-gallery="gallery-1" href="images/pictures/14t.jpg" title="Jelly Fish">
-					<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Jelly Fish</p>
-				</a>
-				<a class="col" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Ice Cube">
-					<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Ice Cube</p>
-				</a>
-			</div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s mb-3">Close Album</a>
-		</div>
-	</div>
-
-	<!-- Sheet 2-->
-	<div class="offcanvas offcanvas-bottom rounded-m offcanvas-detached" id="menu-gallery-2">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">2 x 2 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-3">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-
-			<div class="row text-center row-cols-2 mb-0">
-				<a class="col" data-gallery="gallery-2" href="images/pictures/7t.jpg" title="Model Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Selfie</p>
-				</a>
-				<a class="col" data-gallery="gallery-2" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Nature</p>
-				</a>
-				<a class="col" data-gallery="gallery-2" href="images/pictures/2t.jpg" title="Smoke Flow">
-					<img src="images/empty.png" data-src="images/pictures/2t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Smoke Flow</p>
-				</a>
-				<a class="col" data-gallery="gallery-2" href="images/pictures/4t.jpg" title="Color Doughnuts">
-					<img src="images/empty.png" data-src="images/pictures/4s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Color Doughnuts</p>
-				</a>
-			</div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s mb-3">Close Album</a>
-		</div>
-	</div>
-
-	<!-- Sidebar 1-->
-	<div class="offcanvas offcanvas-start rounded-m offcanvas-detached" style="width:300px"  id="menu-gallery-3">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">3 x 3 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-2">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-			<div class="row text-center row-cols-3 mb-0">
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/7t.jpg" title="Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Portrait</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/10t.jpg" title="Abstracts">
-					<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Abstract</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Red Leafs</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/23t.jpg" title="Gamer Girl">
-					<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Gamer Girl</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/14t.jpg" title="Jelly Fish">
-					<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Jelly Fish</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/3t.jpg" title="Ice Cube">
-					<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Ice Cube</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/7t.jpg" title="Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Portrait</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/10t.jpg" title="Abstracts">
-					<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Abstract</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Red Leafs</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/23t.jpg" title="Gamer Girl">
-					<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Gamer Girl</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/14t.jpg" title="Jelly Fish">
-					<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Jelly Fish</p>
-				</a>
-				<a class="col" data-gallery="gallery-1a" href="images/pictures/3t.jpg" title="Ice Cube">
-					<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Ice Cube</p>
-				</a>
-			</div>
-			<div class="divider mt-3"></div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s">Close Album</a>
-		</div>
-	</div>
-
-	<!-- Sidebar 2-->
-	<div class="offcanvas offcanvas-end rounded-m offcanvas-detached" style="width:300px" id="menu-gallery-4">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">2 x 2 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-3">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-
-			<div class="row text-center row-cols-2 mb-0">
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/7t.jpg" title="Model Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Selfie</p>
-				</a>
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Nature</p>
-				</a>
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/2t.jpg" title="Smoke Flow">
-					<img src="images/empty.png" data-src="images/pictures/2t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Smoke Flow</p>
-				</a>
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/4t.jpg" title="Color Doughnuts">
-					<img src="images/empty.png" data-src="images/pictures/4s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Color Doughnuts</p>
-				</a>
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/7t.jpg" title="Model Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Selfie</p>
-				</a>
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Nature</p>
-				</a>
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/2t.jpg" title="Smoke Flow">
-					<img src="images/empty.png" data-src="images/pictures/2t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Smoke Flow</p>
-				</a>
-				<a class="col" data-gallery="gallery-2a" href="images/pictures/4t.jpg" title="Color Doughnuts">
-					<img src="images/empty.png" data-src="images/pictures/4s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-2">Color Doughnuts</p>
-				</a>
-			</div>
-			<div class="divider mt-3"></div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s">Close Album</a>
-		</div>
-	</div>
-
-	<!-- Modal 1-->
-	<div class="offcanvas offcanvas-modal rounded-m offcanvas-detached" style="width:300px" id="menu-gallery-5">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">3 x 3 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-2">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-			<div class="row text-center row-cols-3 mb-0">
-				<a class="col" data-gallery="gallery-1b" href="images/pictures/7t.jpg" title="Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Portrait</p>
-				</a>
-				<a class="col" data-gallery="gallery-1b" href="images/pictures/10t.jpg" title="Abstracts">
-					<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Abstract</p>
-				</a>
-				<a class="col" data-gallery="gallery-1b" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Red Leafs</p>
-				</a>
-				<a class="col" data-gallery="gallery-1b" href="images/pictures/23t.jpg" title="Gamer Girl">
-					<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Gamer Girl</p>
-				</a>
-				<a class="col" data-gallery="gallery-1b" href="images/pictures/14t.jpg" title="Jelly Fish">
-					<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Jelly Fish</p>
-				</a>
-				<a class="col" data-gallery="gallery-1b" href="images/pictures/3t.jpg" title="Ice Cube">
-					<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Ice Cube</p>
-				</a>
-			</div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s mb-4">Close Album</a>
-		</div>
-	</div>
-
-	<!-- Modal 2-->
-	<div class="offcanvas offcanvas-modal rounded-m offcanvas-detached" style="width:300px" id="menu-gallery-6">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">2 x 2 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-3">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-
-			<div class="row text-center row-cols-2 mb-0">
-				<a class="col" data-gallery="gallery-2b" href="images/pictures/7t.jpg" title="Model Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Selfie</p>
-				</a>
-				<a class="col" data-gallery="gallery-2b" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Nature</p>
-				</a>
-				<a class="col" data-gallery="gallery-2b" href="images/pictures/2t.jpg" title="Smoke Flow">
-					<img src="images/empty.png" data-src="images/pictures/2t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Smoke Flow</p>
-				</a>
-				<a class="col" data-gallery="gallery-2b" href="images/pictures/4t.jpg" title="Color Doughnuts">
-					<img src="images/empty.png" data-src="images/pictures/4s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Color Doughnuts</p>
-				</a>
-			</div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s mb-4">Close Album</a>
-		</div>
-	</div>
-
-	<!-- Top 1-->
-	<div class="offcanvas offcanvas-top rounded-m offcanvas-detached" style="height:480px" id="menu-gallery-7">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">3 x 3 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-2">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-			<div class="row text-center row-cols-3 mb-0">
-				<a class="col" data-gallery="gallery-1bc" href="images/pictures/7t.jpg" title="Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Portrait</p>
-				</a>
-				<a class="col" data-gallery="gallery-1bc" href="images/pictures/10t.jpg" title="Abstracts">
-					<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Abstract</p>
-				</a>
-				<a class="col" data-gallery="gallery-1bc" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Red Leafs</p>
-				</a>
-				<a class="col" data-gallery="gallery-1bc" href="images/pictures/23t.jpg" title="Gamer Girl">
-					<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Gamer Girl</p>
-				</a>
-				<a class="col" data-gallery="gallery-1bc" href="images/pictures/14t.jpg" title="Jelly Fish">
-					<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Jelly Fish</p>
-				</a>
-				<a class="col" data-gallery="gallery-1bc" href="images/pictures/3t.jpg" title="Ice Cube">
-					<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Ice Cube</p>
-				</a>
-			</div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s mb-4">Close Album</a>
-		</div>
-	</div>
-
-	<!-- Top 2-->
-	<div class="offcanvas offcanvas-top rounded-m offcanvas-detached" style="height:600px" id="menu-gallery-8">
-		<div class="content mb-0">
-			<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">2 x 2 Image Grid</h5>
-			<h1 class="font-24 font-800 mb-3">Album Thumbs</h1>
-			<p>
-				Simple thumbnails with caption attached to them. These will all open an album gallery when tapped.
-			</p>
-
-			<div class="row text-center row-cols-2 mb-0">
-				<a class="col" data-gallery="gallery-2bd" href="images/pictures/7t.jpg" title="Model Portrait">
-					<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Selfie</p>
-				</a>
-				<a class="col" data-gallery="gallery-2bd" href="images/pictures/11t.jpg" title="Red Leafs">
-					<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Nature</p>
-				</a>
-				<a class="col" data-gallery="gallery-2bd" href="images/pictures/2t.jpg" title="Smoke Flow">
-					<img src="images/empty.png" data-src="images/pictures/2t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Smoke Flow</p>
-				</a>
-				<a class="col" data-gallery="gallery-2bd" href="images/pictures/4t.jpg" title="Color Doughnuts">
-					<img src="images/empty.png" data-src="images/pictures/4s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
-					<p class="font-600 color-theme font-12 pb-3">Color Doughnuts</p>
-				</a>
-			</div>
-			<a href="#" data-bs-dismiss="offcanvas" class="btn btn-full gradient-red shadow-bg shadow-bg-s mb-4">Close Album</a>
-		</div>
-	</div>
-
+    <!--MENUS--->
+    <div id="menu-main"
+         class="menu menu-box-right menu-box-detached rounded-m"
+         data-menu-width="260"
+         data-menu-load="{{url('misc.menu')}}"
+         data-menu-active="nav-pages"
+         data-menu-effect="menu-over">
+    </div>
 </div>
-<!--End of Page ID-->
 </body>
