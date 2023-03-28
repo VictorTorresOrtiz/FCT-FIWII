@@ -41,7 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelectorAll('.greeting-text')[0].insertAdjacentHTML('beforeend', greetingMessage + ',<br>' +greetingUser);
             }
         }
-
+        //Extract locale time
+        var fecha_actual = new Date().toLocaleDateString();
+        document.getElementById("fecha_actual").innerHTML = fecha_actual;
 
         //Attaching Menu Hider
 		var menuHider = document.getElementsByClassName('menu-hider');
