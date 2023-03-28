@@ -41,9 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelectorAll('.greeting-text')[0].insertAdjacentHTML('beforeend', greetingMessage + ',<br>' +greetingUser);
             }
         }
-        //Extract locale time
-        var fecha_actual = new Date().toLocaleDateString();
-        document.getElementById("fecha_actual").innerHTML = fecha_actual;
+
 
         //Attaching Menu Hider
 		var menuHider = document.getElementsByClassName('menu-hider');
@@ -51,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		if(menuHider[0].classList.contains('menu-active')){menuHider[0].classList.remove('menu-active');}
 
 
+        //Demo function for programtic creation of Menu
         //menu('menu-settings', 'show', 250);
 
         //Activating Menus
@@ -144,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-		//OTP Boxes
+		//OTP Boxes - Azures 3.9
 		var otp = document.querySelectorAll('.otp');
 		if(otp[0]){
 			otp.forEach(el => {
