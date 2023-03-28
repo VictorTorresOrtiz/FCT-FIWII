@@ -33,6 +33,10 @@ Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
 
+Route::get('/to-do', function () {
+    return view('to-do');
+})->name('to-do');
+
 
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');
