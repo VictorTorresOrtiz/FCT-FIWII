@@ -13,13 +13,18 @@
 
 <div class="menu-items mb-4">
     <h5 class="text-uppercase opacity-20 font-12 pl-3">Menu</h5>
-    <a id="nav-welcome" href="{{url('profile')}}">
-        <i class="bi bi-person"></i>
-        <span>Perfil</span>
-        <i class="fa fa-circle"></i>
         <!-----
         <em class="badge bg-highlight color-white">EJEMPLO</em>
         !------>
+    <a id="nav-starters" href="{{url('fiwii')}}">
+        <i class="bi bi-house"></i>
+        <span>Inicio </span>
+        <i class="fa fa-circle"></i>
+    </a>
+    <a id="nav-starters" href="{{url('profile')}}">
+        <i class="bi bi-person"></i>
+        <span>Perfil </span>
+        <i class="fa fa-circle"></i>
     </a>
     <a id="nav-starters" href="#">
         <i class="bi bi-list-nested"></i>
