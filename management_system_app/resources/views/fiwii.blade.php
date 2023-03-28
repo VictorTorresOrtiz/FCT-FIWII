@@ -56,8 +56,6 @@
             <div class="card-overlay dark-mode-tint"></div>
             <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
         </div>
-
-
         <!-- Homepage Slider-->
         <div class="splide single-slider slider-no-arrows slider-no-dots homepage-slider" id="single-slider-1">
             <div class="splide__track">
@@ -113,9 +111,8 @@
                             <a href="{{url('#')}}">
                                 <i class="fa-solid fa-qrcode fa-3x pt-2"></i>
                                 <h5 class="font-16">Lector QR</h5>
-                                <p class="line-height-s font-11 pb-4">
-                                    Leer Código QR <br>en tiempo real
-                                </p>
+                                <p class="line-height-s font-11 pb-4">Leer Código QR 
+                                <br>en tiempo real</p>
                             </a>
                         </div>
                     </div>
