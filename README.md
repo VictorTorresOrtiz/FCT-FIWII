@@ -7,9 +7,6 @@ Fiwii is an application oriented to the management and maintenance of fire fight
 - Guillermo 
 - Víctor Torres
 
-pre-print: https://www.bioarxiv.org
-paper is published and available at journal.com
-
 **PWA READY:** Fiwii use PWA active tecnology
 
 # Repo Organization
@@ -23,7 +20,7 @@ paper is published and available at journal.com
 - main (Prodution)
 - guille (Demo)
 - javi (Demo)
-- victor (Demo)
+- victor-dev (Demo)
 
 # Technologies
 | Name      | Version                  |
@@ -34,6 +31,18 @@ paper is published and available at journal.com
 | CSS       | 3                        |
 | MYSQL     | 8.0                      |
 | GSAP      | 3.10.4                   |
+| JS        | ECMAScript 2020          |
+| JQUERY    | 3.6.0                    |
+
+# GSAP PLUGINS (FRONT-END)
+| Name      | Version                  |
+| --------- | ------------------------ |
+| AnimeJS   | 2.2.0                        |
+| AOS       | 2.3.4                      |
+| Bricklayer| 0.4.3                        |
+| Cursos Effects       | 1.0.0                        |
+| Dynamic Slider     | 1.0.0                     |
+| magnetic-effect      | 1.0.0                  |
 | JS        | ECMAScript 2020          |
 | JQUERY    | 3.6.0                    |
 
