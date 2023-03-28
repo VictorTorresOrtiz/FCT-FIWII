@@ -4,7 +4,7 @@ Fiwii is an application oriented to the management and maintenance of fire fight
 ----
 🚧 TEAM 🚧 
 - Javier Antequera
-- Guillermo 
+- Guillermo Neuman
 - Víctor Torres
 
 **PWA READY:** Fiwii use PWA active tecnology
