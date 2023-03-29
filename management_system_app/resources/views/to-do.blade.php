@@ -80,69 +80,14 @@
             <div class="content">
                 <div class="todo-list list-group list-custom-large">
                     <a href="#">
-                        <i class="fa fa-heart bg-fade-red-dark rounded-xl color-red-dark font-12 font-12"></i>
-                        <span>Create Appkit</span>
-                        <strong>Essential for Customers</strong>
-                        <div class="form-check icon-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check1">
-                            <label class="form-check-label disabled" for="check1">Checkbox 1</label>
-                            <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
-                            <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-check rounded-xl bg-fade-green-dark color-green-dark font-12"></i>
-                        <span>Create New Page</span>
-                        <strong>With New Design Patterns</strong>
-                        <div class="form-check icon-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check13">
-                            <label class="form-check-label disabled" for="check13">Checkbox 1</label>
-                            <i class="icon-check-1 fa fa-circle color-gray-dark font-16"></i>
-                            <i class="icon-check-2 fa fa-check-circle font-16 color-highlight"></i>
-                        </div>
-                    </a>
-                    <a href="#">
                         <i class="fa fa-cog rounded-xl bg-fade-magenta-dark color-magenta-dark font-12"></i>
-                        <span>Upgrade Components</span>
-                        <strong>More Poweful Features</strong>
+                        <span>Ejemplo</span>
+                        <strong>Desc Ejemplo</strong>
                         <div class="form-check icon-check">
                             <input class="form-check-input" type="checkbox" value="" id="check134">
                             <label class="form-check-label disabled" for="check134">Checkbox 1</label>
                             <i class="icon-check-1 far fa-square color-gray-dark font-16"></i>
                             <i class="icon-check-2 far fa-check-square font-16 color-highlight"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-bolt rounded-xl bg-fade-yellow-dark color-yellow-dark font-12"></i>
-                        <span>Load Faster</span>
-                        <strong>More Poweful Features</strong>
-                        <div class="form-check icon-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check1345">
-                            <label class="form-check-label disabled" for="check1345">Checkbox 1</label>
-                            <i class="icon-check-1 far fa-circle color-gray-dark font-16"></i>
-                            <i class="icon-check-2 far fa-check-circle font-16 color-highlight"></i>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-mobile-alt rounded-xl bg-fade-blue-dark color-blue-dark font-12"></i>
-                        <span>Release PWA Version</span>
-                        <strong>More Poweful Features</strong>
-                        <div class="form-check icon-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check13456">
-                            <label class="form-check-label disabled" for="check13456">Checkbox 1</label>
-                            <i class="icon-check-1 far fa-thumbs-down color-gray-dark font-16"></i>
-                            <i class="icon-check-2 far fa-thumbs-up font-16 color-highlight"></i>
-                        </div>
-                    </a>
-                    <a href="#" class="border-0">
-                        <i class="fa fa-book rounded-xl bg-fade-teal-dark color-blue-dark font-12"></i>
-                        <span>Rebuild Doc Files</span>
-                        <strong>Easier and More Details</strong>
-                        <div class="form-check icon-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check134567">
-                            <label class="form-check-label disabled" for="check134567">Checkbox 1</label>
-                            <i class="icon-check-1 far fa-frown color-gray-dark font-16"></i>
-                            <i class="icon-check-2 far fa-smile font-16 color-highlight"></i>
                         </div>
                     </a>
                 </div>
