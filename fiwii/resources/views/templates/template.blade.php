@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Identity -->
     <title>Fiwoo Systems</title>
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <!-- Vendor Style Sheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/preloader.min.css') }}" />
@@ -62,7 +62,7 @@
                         <div class="footer-item">
                             <!-- Brand -->
                             <a href="{{ url('/') }}" class="footer-brand">
-                                <img src="{{ URL::asset('assets/images/logo-white.svg') }}" alt="Shock Theme"
+                                <img src="{{ URL::asset('assets/images/logo/logo_white_transparent.png') }}" alt="Shock Theme"
                                     class="logo" />
                                 <span class="logo-after-text">Fiwii</span>
                             </a>

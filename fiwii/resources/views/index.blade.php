@@ -98,9 +98,9 @@
                                 <!-- Brand -->
                                 <a class="navbar-brand" href="/">
                                     <!-- <div class="site-title">Site Title</div> -->
-                                    <img src="{{ URL::asset('assets/images/logo.svg') }}"
-                                        data-logo-alt="{{ URL::asset('assets/images/logo.svg') }}"
-                                        data-logo-mobile="{{ URL::asset('assets/images/logo.svg') }}" alt="Shock Theme"
+                                    <img src="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
+                                        data-logo-alt="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
+                                        data-logo-mobile="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}" alt="Shock Theme"
                                         class="logo" />
                                     <span class="logo-after-text">Fiwoo Systems</span>
                                 </a>
@@ -146,9 +146,7 @@
                                                     alt="Icon name" data-shock-icon="32" />
                                                 <svg class="flutter-underline-graphic" width="300%" height="100%"
                                                     viewBox="0 0 1200 60" preserveAspectRatio="none">
-                                                    <path
-                                                        d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
-                                                    </path>
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
                                                 </svg>
                                             </a>
                                             <div class="dropdown-menu megamenu animate fade-down" role="menu">
@@ -168,12 +166,9 @@
                                                                                         class="nav-link parent">
                                                                                         <span class="text">Digital
                                                                                             Agency</span>
-                                                                                        <em class="tag hover-up-down">pricing
-                                                                                            table</em>
-                                                                                        <span
-                                                                                            class="badge ms-05 primary-15 primary-15-hover">
-                                                                                            <span
-                                                                                                class="badge-text primary primary-hover">Hot</span>
+                                                                                        <em class="tag hover-up-down">pricing table</em>
+                                                                                        <span class="badge ms-05 primary-15 primary-15-hover">
+                                                                                            <span class="badge-text primary primary-hover">Hot</span>
                                                                                         </span>
                                                                                     </a>
                                                                                 </li>
@@ -184,12 +179,9 @@
                                                                         <div class="megamenu-item">
                                                                             <ul class="nav-list list-unstyled">
                                                                                 <li class="nav-item">
-                                                                                    <a href="home-9.html"
-                                                                                        class="nav-link parent">
-                                                                                        <span class="text">Personal
-                                                                                            portfolio</span>
-                                                                                        <em class="tag hover-up-down">stylish
-                                                                                            dark</em>
+                                                                                    <a href="home-9.html" class="nav-link parent">
+                                                                                        <span class="text">Personal portfolio</span>
+                                                                                        <em class="tag hover-up-down">stylish dark</em>
                                                                                     </a>
                                                                                 </li>
                                                                             </ul>
@@ -203,22 +195,17 @@
                                                                     <ul class="nav-list list-unstyled">
                                                                         <li class="nav-item">
                                                                             <a href="inspiration-1.html" class="nav-link">
-                                                                                <span class="text">Dynamic
-                                                                                    Slider</span>
-                                                                                <em class="tag hover-up-down">stunning
-                                                                                    design</em>
+                                                                                <span class="text">Dynamic Slider</span>
+                                                                                <em class="tag hover-up-down">stunning design</em>
                                                                             </a>
                                                                         </li>
-
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-lg-3">
                                                                 <div class="megamenu-item side-image">
-                                                                    <a href="{{ url('account') }}" target="_blank"
-                                                                        class="megamenu-image black">
-                                                                        <img src="{{ URL::asset('assets/images/walpapers/comprar.gif') }}"
-                                                                            alt="Image name" class="image">
+                                                                    <a href="{{ url('account') }}" target="_blank" class="megamenu-image black">
+                                                                        <img src="{{ URL::asset('assets/images/walpapers/comprar.gif') }}" alt="Image name" class="image">
                                                                         <span class="title">Comprar Fiwoo</span>
                                                                     </a>
                                                                 </div>
@@ -234,8 +221,7 @@
                                                 <span class="text">Sobre Nosotros</span>
                                                 <svg class="flutter-underline-graphic" width="300%" height="100%"
                                                     viewBox="0 0 1200 60" preserveAspectRatio="none">
-                                                    <path
-                                                        d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
                                                     </path>
                                                 </svg>
                                             </a>
@@ -244,10 +230,8 @@
                                             <a class="nav-link dropdown-toggle has-icon flutter-underline"
                                                 href="#pricing">
                                                 <span class="text">Pricing</span>
-                                                <svg class="flutter-underline-graphic" width="300%" height="100%"
-                                                    viewBox="0 0 1200 60" preserveAspectRatio="none">
-                                                    <path
-                                                        d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+                                                <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
                                                     </path>
                                                 </svg>
                                             </a>
@@ -256,8 +240,7 @@
                                     <!-- Action -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
-                                            <a href="#comprar"
-                                                class="button small-button rounded primary-15 primary-hover button-collision">
+                                            <a href="#comprar" class="button small-button rounded primary-15 primary-hover button-collision">
                                                 <span class="button-text primary white-hover">Comprar Fiwoo</span>
                                             </a>
                                         </div>
@@ -389,7 +372,7 @@
                             <hr class="gray-25">
                             <figure class="blockquote">
                                 <blockquote class="blockquote-body text-style-11 black">
-                                    <p>"The design is not just what it looks like. The design is how it works".</p>
+                                    <p>"El diseño no es todo lo que parece. El diseño es cómo funciona".</p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
                                     <cite title="Source Title">Steve Jobs / Fundador Apple</cite>
@@ -423,8 +406,7 @@
                                     </div>
                                     <span class="text ms-05">Laura Garcia</span>
                                 </div>
-                                <p class="description">I am very satisfied with the service provided.
-                                    Congratulations to the development team.</p>
+                                <p class="description">Estoy muy satisfecha con el servicio. Mis felicitaciones al equipo de desarrollo.</p>
                             </div>
                         </div>
                     </div>
@@ -434,13 +416,11 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-2.jpg" alt="Image name"
-                                            class="image small-shadow" />
+                                        <img src="assets/images/jpg/p-2.jpg" alt="Image name" class="image small-shadow"/>
                                     </div>
                                     <span class="text ms-05">Alice Johnson</span>
                                 </div>
-                                <p class="description">This is the most amazing product I have ever seen. I am very
-                                    happy with the delivery time.</p>
+                                <p class="description">Este es el producto más increíble que he visto. Estoy muy contento con su facilidad de uso.</p>
                             </div>
                         </div>
                     </div>
@@ -450,13 +430,11 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-3.jpg" alt="Image name"
-                                            class="image small-shadow" />
+                                        <img src="assets/images/jpg/p-3.jpg" alt="Image name" class="image small-shadow" />
                                     </div>
-                                    <span class="text ms-05">Kaled Ahmad</span>
+                                    <span class="text ms-05">Eric Dier</span>
                                 </div>
-                                <p class="description">I had some problems, but the staff helped me to fix
-                                    everything and now everything is fine.</p>
+                                <p class="description">He tenido pequeños problemas, pero la velocidad del staff para solucionarlos ha sido increíble.</p>
                             </div>
                         </div>
                     </div>
