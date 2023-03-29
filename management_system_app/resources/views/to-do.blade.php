@@ -39,8 +39,8 @@
     </div>
     <div id="footer-bar" class="footer-bar-5">
         <a href="{{url('profile')}}"><i class="bi bi-person"></i><span>Perfil</span></a>
-        <a href="#"><i class="bi bi-list-nested"></i></i><span>Gestión</span></a>
-        <a href="{{url('fiwii')}}" class="active-nav"><i class="bi bi-house"></i><span>Home</span></a>
+        <a href="{{url('to-do')}}"  class="active-nav"><i class="bi bi-list-nested"></i></i><span>Trabajo</span></a>
+        <a href="{{url('fiwii')}}"><i class="bi bi-house"></i><span>Home</span></a>
         <a href="#"><i class="bi bi-upc-scan"></i><span>QR</span></a>
         <a href="{{url('conf')}}"><i class="bi bi-gear"></i><span>Configuración</span></a>
     </div>

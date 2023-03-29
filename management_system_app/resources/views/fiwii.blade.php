@@ -39,7 +39,7 @@
     </div>
     <div id="footer-bar" class="footer-bar-5">
         <a href="{{url('profile')}}"><i class="bi bi-person"></i><span>Perfil</span></a>
-        <a href="#"><i class="bi bi-list-nested"></i></i><span>Gestión</span></a>
+        <a href="{{url('to-do')}}"><i class="bi bi-list-nested"></i></i><span>Trabajo</span></a>
         <a href="{{url('fiwii')}}" class="active-nav"><i class="bi bi-house"></i><span>Home</span></a>
         <a href="#"><i class="bi bi-upc-scan"></i><span>QR</span></a>
         <a href="{{url('conf')}}"><i class="bi bi-gear"></i><span>Configuración</span></a>
@@ -113,17 +113,6 @@
                                 <h5 class="font-16">Lector QR</h5>
                                 <p class="line-height-s font-11 pb-4">Leer Código QR
                                 <br>en tiempo real</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="splide__slide ps-3">
-                        <div class="bg-theme rounded-m shadow-m text-center">
-                            <a href="{{url('to-do')}}">
-                                <i class="fa-solid fa-list fa-3x pt-2"></i>
-                                <h5 class="font-16">Trabajo</h5>
-                                <p class="line-height-s font-11 pb-4">
-                                    Lista de tareas <br>asignadas para usted
-                                </p>
                             </a>
                         </div>
                     </div>
