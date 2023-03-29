@@ -64,7 +64,7 @@
                             <a href="{{ url('/') }}" class="footer-brand">
                                 <img src="{{ URL::asset('assets/images/logo-white.svg') }}" alt="Shock Theme"
                                     class="logo" />
-                                <span class="logo-after-text">Fiwoo</span>
+                                <span class="logo-after-text">Fiwii</span>
                             </a>
                             <!-- Text -->
                             <div class="footer-text">
@@ -107,7 +107,7 @@
                             <ul class="nav-list list-unstyled">
                                 <li class="nav-item">
                                     <a href="{{ url('fiwoo-app') }}" class="nav-link">
-                                        <span class="text">Fiwoo App</span>
+                                        <span class="text">Fiwii App</span>
                                         <span class="badge flex ms-1 primary primary-hover">
                                             <span class="badge-text white white-hover">Hot</span>
                                         </span>
