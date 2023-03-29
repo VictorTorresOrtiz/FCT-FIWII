@@ -35,7 +35,7 @@
         <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
         <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
         <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
-        <a href="#" data-menu="menu-highlights" class="header-icon header-icon-3"><i class="fas fa-brush"></i></a>
+        <a href="{{url('conf')}}" class="header-icon header-icon-3"><i class="fa-solid fa-gear fa-spin"></i></a>
     </div>
     <div id="footer-bar" class="footer-bar-5">
         <a href="{{url('profile')}}"><i class="bi bi-person"></i><span>Perfil</span></a>
@@ -111,7 +111,7 @@
                             <a href="{{url('#')}}">
                                 <i class="fa-solid fa-qrcode fa-3x pt-2"></i>
                                 <h5 class="font-16">Lector QR</h5>
-                                <p class="line-height-s font-11 pb-4">Leer Código QR 
+                                <p class="line-height-s font-11 pb-4">Leer Código QR
                                 <br>en tiempo real</p>
                             </a>
                         </div>

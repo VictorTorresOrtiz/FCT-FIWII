@@ -35,7 +35,7 @@
         <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
         <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
         <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
-        <a href="#" data-menu="menu-main" class="header-icon header-icon-3"><i class="fas fa-bars"></i></a>
+        <a href="{{url('conf')}}" class="header-icon header-icon-3"><i class="fa-solid fa-gear fa-spin"></i></a>
     </div>
     <div id="footer-bar" class="footer-bar-5">
         <a href="{{url('profile')}}" class="active-nav"><i class="bi bi-person"></i><span>Perfil</span></a>
