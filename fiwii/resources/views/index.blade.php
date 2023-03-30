@@ -32,12 +32,9 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav">
                                         <li class="nav-item dropdown hover">
-                                            <a href="#" class="nav-link dropdown-toggle has-icon"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="#" class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <i class="fa-solid fa-earth-americas icon"></i>
-                                                <span class="text">Español</span><img class="image-icon dropdown-icon"
-                                                    src="assets/svg/chevron-down-outline.svg" alt="Icon name"
-                                                    data-shock-icon="32" />
+                                                <span class="text">Español</span><img class="image-icon dropdown-icon" src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
                                             </a>
                                             <ul class="dropdown-menu animate fade-down">
                                                 <li class="nav-item">
@@ -59,7 +56,7 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link has-icon">
+                                            <a href="https://goo.gl/maps/Lu3LjtCtgaxDCTrx9" class="nav-link has-icon" target="__blank">
                                                 <i class="fa-solid fa-location-dot icon"></i>
                                                 <span class="text">Ilerna Sevilla</span>
                                             </a>
@@ -71,17 +68,17 @@
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://es-es.facebook.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://twitter.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-twitter"></i>
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://www.linkedin.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-linkedin-in"></i>
                                             </a>
                                         </li>
@@ -229,7 +226,7 @@
                                         <li class="nav-item dropdown has-megamenu hover">
                                             <a class="nav-link dropdown-toggle has-icon flutter-underline"
                                                 href="#pricing">
-                                                <span class="text">Pricing</span>
+                                                <span class="text">Precios</span>
                                                 <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                                                     <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
                                                     </path>

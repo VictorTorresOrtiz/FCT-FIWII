@@ -58,7 +58,7 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link has-icon">
+                                            <a href="https://goo.gl/maps/Lu3LjtCtgaxDCTrx9" class="nav-link has-icon" target="__blank">
                                                 <i class="fa-solid fa-location-dot icon"></i>
                                                 <span class="text">Ilerna Sevilla</span>
                                             </a>
@@ -70,17 +70,17 @@
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://es-es.facebook.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://twitter.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-twitter"></i>
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://www.linkedin.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-linkedin-in"></i>
                                             </a>
                                         </li>
@@ -97,9 +97,9 @@
                                 <!-- Brand -->
                                 <a class="navbar-brand" href="/">
                                     <!-- <div class="site-title">Site Title</div> -->
-                                    <img src="{{ URL::asset('assets/images/logo.svg') }}"
-                                        data-logo-alt="{{ URL::asset('assets/images/logo.svg') }}"
-                                        data-logo-mobile="{{ URL::asset('assets/images/logo.svg') }}" alt="Shock Theme"
+                                    <img src="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
+                                        data-logo-alt="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
+                                        data-logo-mobile="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}" alt="Shock Theme"
                                         class="logo" />
                                     <span class="logo-after-text">Fiwoo Systems</span>
                                 </a>
