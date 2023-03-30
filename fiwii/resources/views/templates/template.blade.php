@@ -62,9 +62,8 @@
                         <div class="footer-item">
                             <!-- Brand -->
                             <a href="{{ url('/') }}" class="footer-brand">
-                                <img src="{{ URL::asset('assets/images/logo/logo_white_transparent.png') }}" alt="Shock Theme"
-                                    class="logo" />
-                                <span class="logo-after-text">Fiwii</span>
+                                <img src="{{ URL::asset('assets/images/logo/logo_white_transparent.png') }}" alt="Shock Theme" class="logo" />
+                                <span class="logo-after-text">Fiwoo</span>
                             </a>
                             <!-- Text -->
                             <div class="footer-text">
@@ -107,8 +106,8 @@
                             <ul class="nav-list list-unstyled">
                                 <li class="nav-item">
                                     <a href="{{ url('fiwoo-app') }}" class="nav-link">
-                                        <span class="text">Fiwii App</span>
-                                        <span class="badge flex ms-1 primary primary-hover">
+                                        <span class="text">Fiwoo App</span>
+                                        <span id="hover-blue" class="badge flex ms-1">
                                             <span class="badge-text white white-hover">Hot</span>
                                         </span>
                                     </a>
@@ -132,13 +131,13 @@
                             <!-- Links list -->
                             <ul class="nav-list list-unstyled">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span class="text">Terms of Use</span>
+                                    <a href="https://policies.google.com/terms?hl=es" target="__blank" class="nav-link">
+                                        <span class="text">Términos de uso</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#about" class="nav-link">
-                                        <span class="text">Legal Notice</span>
+                                    <a href="https://policies.google.com/privacy?hl=es" target="__blank" class="nav-link">
+                                        <span class="text">Aviso legal</span>
                                     </a>
                                 </li>
                             </ul>
@@ -151,7 +150,7 @@
                             <!-- Text -->
                             <div class="footer-text">
                                 <p>Suscríbete a nuestro boletín y mantente al día con lo que sucede en el mundo.</p>
-                                <p>Al enviar este formulario, usted acepta los <a href="#"
+                                <p>Al enviar este formulario, usted acepta los <a href="https://policies.google.com/terms?hl=es" target="__blank"
                                         class="link gray primary-hover"><u>terminos de uso</u>.</a></p>
                             </div>
                             <!-- Form -->
