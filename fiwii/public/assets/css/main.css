@@ -5,6 +5,10 @@
 
 /* #region Cursor */
 
+.boton-primary{
+	background-color: #5d9cec;
+}
+
 .cursor-effect {
 	display: none;
 }
