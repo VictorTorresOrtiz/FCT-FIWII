@@ -9,7 +9,7 @@
 
 	/* Primary */
 	--primary-color: #07beb8;
-	--primary-15-color: #07beb826;
+	--primary-15-color: #5d9bec3b;
 	--primary-25-color: #07beb840;
 	--primary-50-color: #07beb880;
 	--primary-75-color: #07beb8bf;
@@ -139,10 +139,6 @@ strong {
 
 small, .small {
   font-size: 0.85rem;
-}
-
-#id{
-	
 }
 
 /* #endregion Typography */
