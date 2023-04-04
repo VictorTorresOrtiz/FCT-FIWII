@@ -236,8 +236,8 @@
                                     <!-- Action -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
-                                            <a href="#comprar" class="button small-button rounded primary-15 primary-hover button-collision">
-                                                <span class="button-text primary white-hover">Comprar Fiwoo</span>
+                                            <a href="#comprar" class="button small-button rounded primary-15 accent-hover button-collision">
+                                                <span class="button-text accent white-hover">Comprar Fiwoo</span>
                                             </a>
                                         </div>
                                     </div>
