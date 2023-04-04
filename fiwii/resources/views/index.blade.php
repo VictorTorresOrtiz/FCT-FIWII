@@ -9,8 +9,7 @@
     <div id="popup-bar" class="popup-bar bg-gradient scheme-1 shadow d-none">
         <p class="description white-85">Aprovecha nuestras ofertas! en Fiwoo App.</p>
         <a href="{{ url('account') }}" target="_blank" class="button simple">
-            <span class="button-text white white-hover"><mark
-                    class="animated-underline tertiary active">Comprar</mark></span>
+            <span class="button-text white white-hover"><mark class="animated-underline tertiary active">Comprar</mark></span>
             <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
         </a>
         <button id="popup-bar-dismiss" class="button close-button">
@@ -398,10 +397,10 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-1.jpg" alt="Image name"
+                                        <img src="{{URL::asset('assets/images/clients/laura-garcia.png')}}" alt="Image name"
                                             class="image small-shadow" />
                                     </div>
-                                    <span class="text ms-05">Laura Garcia</span>
+                                    <span class="text ms-05">Laura García</span>
                                 </div>
                                 <p class="description">Estoy muy satisfecha con el servicio. Mis felicitaciones al equipo de desarrollo.</p>
                             </div>
@@ -413,11 +412,11 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-2.jpg" alt="Image name" class="image small-shadow"/>
+                                        <img src="{{URL::asset('assets/images/clients/alice-johnson.png')}}" alt="Image name" class="image small-shadow"/>
                                     </div>
                                     <span class="text ms-05">Alice Johnson</span>
                                 </div>
-                                <p class="description">Este es el producto más increíble que he visto. Estoy muy contento con su facilidad de uso.</p>
+                                <p class="description">Este es el producto más espectacular que he visto. Estoy muy contento con su facilidad de uso.</p>
                             </div>
                         </div>
                     </div>
@@ -427,7 +426,7 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-3.jpg" alt="Image name" class="image small-shadow" />
+                                        <img src="{{URL::asset('assets/images/clients/eric-dier.png')}}" alt="Image name" class="image small-shadow" />
                                     </div>
                                     <span class="text ms-05">Eric Dier</span>
                                 </div>
@@ -448,8 +447,7 @@
                 <div class="basic-intro mb-35 text-center">
                     <h2 class="title black">
                         <span class="text-1 text-style-5">Fiwoo </span>
-                        <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al
-                                Futuro</mark>.</span>
+                        <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al Futuro</mark>.</span>
                     </h2>
                     <div class="description">
                         <!-- Plan switcher -->
@@ -469,10 +467,10 @@
                     <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="200">
                         <div class="card has-price rounded shadow parent">
                             <!-- Header -->
-                            <div class="card-header rounded-top text-center bg-color primary">
+                            <div class="card-header rounded-top text-center bg-color accent">
                                 <h3 class="title m-0 text-style-11 text-italic white">
-                                    <span class="bg-color primary">Básico</span>
-                                    <span class="zzz mt-1 mb-1 scheme-3 primary"></span>
+                                    <span>Básico</span>
+                                    <span class="zzz mt-1 mb-1 scheme-3 accent"></span>
                                 </h3>
                                 <!-- Price -->
                                 <div class="price-wrapper">
@@ -486,27 +484,23 @@
                                 <!-- List -->
                                 <ul class="checklist">
                                     <li class="item">
-                                        <span class="text">2 Bases de Datos</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
+                                        <span class="text">2 bases de datos</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">125GB almacenamiento</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">10 Cuentas de Usuario</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
+                                        <span class="text">10 cuentas de usuario</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">1 Cuenta Admin</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
+                                        <span class="text">1 cuenta de administrador</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
@@ -518,7 +512,7 @@
                                 </ul>
                                 <!-- Button -->
                                 <div class="button-wrapper align-h-center hover-up-down">
-                                    <span class="button w-100 rounded primary primary-hover">
+                                    <span class="button w-100 rounded accent accent-hover">
                                         <span class="button-text white white-hover">Comprar Fiwoo Basic </span>
                                         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                     </span>
@@ -538,14 +532,13 @@
                                     <span class="label-text gray">Más Comprado</span>
                                 </span>
                                 <h3 class="title m-0 text-style-11 text-italic white">
-                                    <span class="bg-color secondary">Enterprise</span>
+                                    <span class="bg-color secondary">Empresa</span>
                                     <span class="zzz mt-1 mb-1 scheme-3 secondary"></span>
                                 </h3>
                                 <!-- Price -->
                                 <div class="price-wrapper">
                                     <span class="currency text-style-8 white-75">€</span>
-                                    <span class="price text-style-3 white hover-up-down" data-annual="28"
-                                        data-monthly="39">39</span>
+                                    <span class="price text-style-3 white hover-up-down" data-annual="28" data-monthly="39">39</span>
                                     <span class="billing text-style-8 white-75">/mes</span>
                                 </div>
                             </div>
@@ -554,31 +547,28 @@
                                 <!-- List -->
                                 <ul class="checklist">
                                     <li class="item">
-                                        <span class="text">10 Bases de Datos</span>
+                                        <span class="text">10 bases de datos</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">500GB almacenamiento</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">30 Cuentas de Usuario</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
+                                        <span class="text">30 cuentas de usuario</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">2 Cuentas Admin</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
+                                        <span class="text">2 cuentas de administrador</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Soporte Ilimitado</span>
+                                        <span class="text">Soporte ilimitado</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
@@ -616,31 +606,31 @@
                                 <!-- List -->
                                 <ul class="checklist">
                                     <li class="item">
-                                        <span class="text">Bases de Datos Ilimitadas</span>
+                                        <span class="text">Bases de datos ilimitadas</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Almacenamiento Ilimitado</span>
+                                        <span class="text">Almacenamiento ilimitado</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Cuentas de Usuario Ilimitadas</span>
+                                        <span class="text">Cuentas de usuario ilimitadas</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Cuentas Admin Ilimitadas</span>
+                                        <span class="text">Cuentas de administrador ilimitadas</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Soporte Ilimitado</span>
+                                        <span class="text">Soporte ilimitado</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
@@ -668,9 +658,9 @@
     <div class="side-widget to-left invert-color mix-blend-difference d-only-desktop">
         <div class="item">
             <span class="widget label-icons">
-                <a href="#your-link" class="link black black-hover"><i class="icon fab fa-facebook-f"></i></a>
-                <a href="#your-link" class="link black black-hover"><i class="icon fab fa-twitter"></i></a>
-                <a href="#your-link" class="link black black-hover"><i class="icon fab fa-linkedin-in"></i></a>
+                <a href="https://es-es.facebook.com/" target="__blank" class="link black black-hover"><i class="icon fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="__blank" class="link black black-hover"><i class="icon fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="__blank" class="link black black-hover"><i class="icon fab fa-linkedin-in"></i></a>
                 <span class="label-line black"></span>
             </span>
         </div>
