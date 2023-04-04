@@ -417,7 +417,7 @@
                                     </div>
                                     <span class="text ms-05">Alice Johnson</span>
                                 </div>
-                                <p class="description">Este es el producto más increíble que he visto. Estoy muy contento con su facilidad de uso.</p>
+                                <p class="description">Este es el producto más espectacular que he visto. Estoy muy contento con su facilidad de uso.</p>
                             </div>
                         </div>
                     </div>
@@ -448,8 +448,7 @@
                 <div class="basic-intro mb-35 text-center">
                     <h2 class="title black">
                         <span class="text-1 text-style-5">Fiwoo </span>
-                        <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al
-                                Futuro</mark>.</span>
+                        <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al Futuro</mark>.</span>
                     </h2>
                     <div class="description">
                         <!-- Plan switcher -->

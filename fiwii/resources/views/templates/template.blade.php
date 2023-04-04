@@ -75,16 +75,13 @@
                             <div class="list-wrapper">
                                 <ul class="icon-h-list">
                                     <li class="item ms-0">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i
-                                                class="icon fab fa-facebook-f"></i></a>
+                                        <a href="#" class="link gray primary-hover hover-rotate"><i class="icon fab fa-facebook-f"></i></a>
                                     </li>
                                     <li class="item">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i
-                                                class="icon fab fa-twitter"></i></a>
+                                        <a href="#" class="link gray primary-hover hover-rotate"><i class="icon fab fa-twitter"></i></a>
                                     </li>
                                     <li class="item">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i
-                                                class="icon fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="link gray primary-hover hover-rotate"><i class="icon fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -107,7 +104,7 @@
                                 <li class="nav-item">
                                     <a href="{{ url('fiwoo-app') }}" class="nav-link">
                                         <span class="text">Fiwoo App</span>
-                                        <span id="hover-blue" class="badge flex ms-1">
+                                        <span id="hover-blue" class="badge bg-primary flex ms-1">
                                             <span class="badge-text white white-hover">Hot</span>
                                         </span>
                                     </a>
@@ -158,12 +155,8 @@
                                 <form class="form-fields needs-validation" novalidate="novalidate">
                                     <div class="form-row row has-icon">
                                         <div class="form-col form-floating">
-                                            <button class="button overlay-button"><img class="overlay-image-icon"
-                                                    src="assets/svg/send-outline.svg" alt="Icon name"
-                                                    data-shock-icon="32" /></button>
-                                            <input id="InputFloatingFooter" class="form-control focus-trigger-field"
-                                                name="InputFloatingFooter" placeholder="Type your email..."
-                                                required="required">
+                                            <button class="button overlay-button"><img class="overlay-image-icon" src="assets/svg/send-outline.svg" alt="Icon name" data-shock-icon="32" /></button>
+                                            <input id="InputFloatingFooter" class="form-control focus-trigger-field" name="InputFloatingFooter" placeholder="Type your email..." required>
                                             <label for="InputFloatingFooter" class="form-label">Email...</label>
                                         </div>
                                     </div>
