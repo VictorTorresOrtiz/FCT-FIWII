@@ -75,13 +75,13 @@
                             <div class="list-wrapper">
                                 <ul class="icon-h-list">
                                     <li class="item ms-0">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i class="icon fab fa-facebook-f"></i></a>
+                                        <a href="https://es-es.facebook.com/" target="__blank" class="link gray accent-hover hover-rotate"><i class="icon fab fa-facebook-f"></i></a>
                                     </li>
                                     <li class="item">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i class="icon fab fa-twitter"></i></a>
+                                        <a href="https://twitter.com/" target="__blank" class="link gray accent-hover hover-rotate"><i class="icon fab fa-twitter"></i></a>
                                     </li>
                                     <li class="item">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i class="icon fab fa-linkedin-in"></i></a>
+                                        <a href="https://www.linkedin.com/" target="__blank" class="link gray accent-hover hover-rotate"><i class="icon fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,7 +89,7 @@
                         <div class="footer-item">
                             <!-- Button -->
                             <div class="hover-up-down">
-                                <a href="tel:+19912345678" class="button outline rounded gray primary-hover">
+                                <a href="tel:+19912345678" class="button outline rounded gray accent-hover">
                                     <i class="fa-solid fa-phone button-icon left-icon gray white-hover"></i>
                                     <span class="button-text gray white-hover">+34 691 333 444</span>
                                 </a>
@@ -104,8 +104,8 @@
                                 <li class="nav-item">
                                     <a href="{{ url('fiwoo-app') }}" class="nav-link">
                                         <span class="text">Fiwoo App</span>
-                                        <span id="hover-blue" class="badge bg-primary flex ms-1">
-                                            <span class="badge-text white white-hover">Hot</span>
+                                        <span  class="badge accent flex ms-1">
+                                            <span class="badge-text white accent-hover">Hot</span>
                                         </span>
                                     </a>
                                 </li>
