@@ -58,7 +58,7 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link has-icon">
+                                            <a href="https://goo.gl/maps/Lu3LjtCtgaxDCTrx9" class="nav-link has-icon" target="__blank">
                                                 <i class="fa-solid fa-location-dot icon"></i>
                                                 <span class="text">Ilerna Sevilla</span>
                                             </a>
@@ -70,17 +70,17 @@
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://es-es.facebook.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://twitter.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-twitter"></i>
                                             </a>
                                         </li>
                                         <li class="nav-item d-only-desktop">
-                                            <a href="#" class="nav-link hover-up-down">
+                                            <a href="https://www.linkedin.com/" target="__blank" class="nav-link hover-up-down">
                                                 <i class="icon fab fa-linkedin-in"></i>
                                             </a>
                                         </li>
@@ -97,9 +97,9 @@
                                 <!-- Brand -->
                                 <a class="navbar-brand" href="/">
                                     <!-- <div class="site-title">Site Title</div> -->
-                                    <img src="{{ URL::asset('assets/images/logo.svg') }}"
-                                        data-logo-alt="{{ URL::asset('assets/images/logo.svg') }}"
-                                        data-logo-mobile="{{ URL::asset('assets/images/logo.svg') }}" alt="Shock Theme"
+                                    <img src="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
+                                        data-logo-alt="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
+                                        data-logo-mobile="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}" alt="Shock Theme"
                                         class="logo" />
                                     <span class="logo-after-text">Fiwoo Systems</span>
                                 </a>
@@ -255,8 +255,8 @@
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
                                             <a href="#pricing"
-                                                class="button small-button rounded primary-15 primary-hover button-collision">
-                                                <span class="button-text primary white-hover">Buy Fiwoo</span>
+                                                class="button small-button rounded primary-15 accent-hover button-collision">
+                                                <span class="button-text accent white-hover">Buy Fiwoo</span>
                                             </a>
                                         </div>
                                     </div>
@@ -389,7 +389,7 @@
                                     <p>"The design is not just what it looks like. The design is how it works".</p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
-                                    <cite title="Source Title">Steve Jobs / Fundador Apple</cite>
+                                    <cite title="Source Title">Steve Jobs / Apple's creator</cite>
                                 </figcaption>
                             </figure>
                         </div>
@@ -415,10 +415,10 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-1.jpg" alt="Image name"
+                                        <img src="{{URL::asset('assets/images/clients/laura-garcia.png')}}" alt="Image name"
                                             class="image small-shadow" />
                                     </div>
-                                    <span class="text ms-05">Laura Garcia</span>
+                                    <span class="text ms-05">Laura García</span>
                                 </div>
                                 <p class="description">I am very satisfied with the service provided. Congratulations to
                                     the development team.</p>
@@ -431,7 +431,7 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-2.jpg" alt="Image name"
+                                        <img src="{{URL::asset('assets/images/clients/alice-johnson.png')}}" alt="Image name"
                                             class="image small-shadow" />
                                     </div>
                                     <span class="text ms-05">Alice Johnson</span>
@@ -447,10 +447,10 @@
                                 <i class="fas fa-quote-right overlay-icon gray-50"></i>
                                 <div class="title align-v-center text-style-11 black">
                                     <div class="image-wrapper circular-image me-05">
-                                        <img src="assets/images/jpg/p-3.jpg" alt="Image name"
+                                        <img src="{{URL::asset('assets/images/clients/eric-dier.png')}}" alt="Image name"
                                             class="image small-shadow" />
                                     </div>
-                                    <span class="text ms-05">Kaled Ahmad</span>
+                                    <span class="text ms-05">Eric Dier</span>
                                 </div>
                                 <p class="description">I had some problems, but the staff helped me to fix everything and
                                     now everything is fine.</p>
@@ -491,10 +491,10 @@
                     <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="200">
                         <div class="card has-price rounded shadow parent">
                             <!-- Header -->
-                            <div class="card-header rounded-top text-center bg-color primary">
+                            <div class="card-header rounded-top text-center bg-color accent">
                                 <h3 class="title m-0 text-style-11 text-italic white">
-                                    <span class="bg-color primary">Basic</span>
-                                    <span class="zzz mt-1 mb-1 scheme-3 primary"></span>
+                                    <span>Basic</span>
+                                    <span class="zzz mt-1 mb-1 scheme-3 accent"></span>
                                 </h3>
                                 <!-- Price -->
                                 <div class="price-wrapper">
@@ -508,39 +508,29 @@
                                 <!-- List -->
                                 <ul class="checklist">
                                     <li class="item">
-                                        <span class="text">2 Data Bases</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
-                                            data-shock-icon="32" />
+                                        <span class="text">2 data bases</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">125GB Storage</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
-                                            data-shock-icon="32" />
+                                        <span class="text">125GB storage</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">10 Users Accounts</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
-                                            data-shock-icon="32" />
+                                        <span class="text">10 users accounts</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">1 Admin Account</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
-                                            data-shock-icon="32" />
+                                        <span class="text">1 admin account</span>
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
                                     </li>
                                     <li class="item">
                                         <span class="text">Lifetime support</span>
-                                        <img class="image-icon primary"
-                                            src="{{ URL::asset('assets/svg/close-outline.svg') }}" alt="Icon name"
-                                            data-shock-icon="32" />
+                                        <img class="image-icon primary" src="{{ URL::asset('assets/svg/close-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
                                     </li>
                                 </ul>
                                 <!-- Button -->
                                 <div class="button-wrapper align-h-center hover-up-down">
-                                    <span class="button w-100 rounded primary primary-hover">
+                                    <span class="button w-100 rounded accent accent-hover">
                                         <span class="button-text white white-hover">Buy Fiwoo Basic </span>
                                         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                     </span>
@@ -576,25 +566,25 @@
                                 <!-- List -->
                                 <ul class="checklist">
                                     <li class="item">
-                                        <span class="text">10 Data Bases</span>
+                                        <span class="text">10 data bases</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">500GB Storage</span>
+                                        <span class="text">500GB storage</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">30 Users Account</span>
+                                        <span class="text">30 users accounts</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">2 Admin Accounts</span>
+                                        <span class="text">2 admin accounts</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
@@ -638,31 +628,31 @@
                                 <!-- List -->
                                 <ul class="checklist">
                                     <li class="item">
-                                        <span class="text">Unlimited Databases</span>
+                                        <span class="text">Unlimited databases</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Unlimited Storage</span>
+                                        <span class="text">Unlimited storage</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Unlimited User Account</span>
+                                        <span class="text">Unlimited user account</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Unlimited Admin Account</span>
+                                        <span class="text">Unlimited admin account</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
                                     </li>
                                     <li class="item">
-                                        <span class="text">Lifetime Support</span>
+                                        <span class="text">Lifetime support</span>
                                         <img class="image-icon primary"
                                             src="{{ URL::asset('assets/svg/checkmark-outline.svg') }}" alt="Icon name"
                                             data-shock-icon="32" />
@@ -690,9 +680,9 @@
     <div class="side-widget to-left invert-color mix-blend-difference d-only-desktop">
         <div class="item">
             <span class="widget label-icons">
-                <a href="#your-link" class="link black black-hover"><i class="icon fab fa-facebook-f"></i></a>
-                <a href="#your-link" class="link black black-hover"><i class="icon fab fa-twitter"></i></a>
-                <a href="#your-link" class="link black black-hover"><i class="icon fab fa-linkedin-in"></i></a>
+                <a href="https://es-es.facebook.com/" target="__blank" class="link black black-hover"><i class="icon fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="__blank" class="link black black-hover"><i class="icon fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="__blank" class="link black black-hover"><i class="icon fab fa-linkedin-in"></i></a>
                 <span class="label-line black"></span>
             </span>
         </div>

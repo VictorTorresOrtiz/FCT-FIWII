@@ -62,9 +62,8 @@
                         <div class="footer-item">
                             <!-- Brand -->
                             <a href="{{ url('/') }}" class="footer-brand">
-                                <img src="{{ URL::asset('assets/images/logo/logo_white_transparent.png') }}" alt="Shock Theme"
-                                    class="logo" />
-                                <span class="logo-after-text">Fiwii</span>
+                                <img src="{{ URL::asset('assets/images/logo/logo_white_transparent.png') }}" alt="Shock Theme" class="logo" />
+                                <span class="logo-after-text">Fiwoo</span>
                             </a>
                             <!-- Text -->
                             <div class="footer-text">
@@ -76,16 +75,13 @@
                             <div class="list-wrapper">
                                 <ul class="icon-h-list">
                                     <li class="item ms-0">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i
-                                                class="icon fab fa-facebook-f"></i></a>
+                                        <a href="https://es-es.facebook.com/" target="__blank" class="link gray accent-hover hover-rotate"><i class="icon fab fa-facebook-f"></i></a>
                                     </li>
                                     <li class="item">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i
-                                                class="icon fab fa-twitter"></i></a>
+                                        <a href="https://twitter.com/" target="__blank" class="link gray accent-hover hover-rotate"><i class="icon fab fa-twitter"></i></a>
                                     </li>
                                     <li class="item">
-                                        <a href="#" class="link gray primary-hover hover-rotate"><i
-                                                class="icon fab fa-linkedin-in"></i></a>
+                                        <a href="https://www.linkedin.com/" target="__blank" class="link gray accent-hover hover-rotate"><i class="icon fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -93,7 +89,7 @@
                         <div class="footer-item">
                             <!-- Button -->
                             <div class="hover-up-down">
-                                <a href="tel:+19912345678" class="button outline rounded gray primary-hover">
+                                <a href="tel:+19912345678" class="button outline rounded gray accent-hover">
                                     <i class="fa-solid fa-phone button-icon left-icon gray white-hover"></i>
                                     <span class="button-text gray white-hover">+34 691 333 444</span>
                                 </a>
@@ -107,9 +103,9 @@
                             <ul class="nav-list list-unstyled">
                                 <li class="nav-item">
                                     <a href="{{ url('fiwoo-app') }}" class="nav-link">
-                                        <span class="text">Fiwii App</span>
-                                        <span class="badge flex ms-1 primary primary-hover">
-                                            <span class="badge-text white white-hover">Hot</span>
+                                        <span class="text">Fiwoo App</span>
+                                        <span  class="badge accent flex ms-1">
+                                            <span class="badge-text white accent-hover">Hot</span>
                                         </span>
                                     </a>
                                 </li>
@@ -132,13 +128,13 @@
                             <!-- Links list -->
                             <ul class="nav-list list-unstyled">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <span class="text">Terms of Use</span>
+                                    <a href="https://policies.google.com/terms?hl=es" target="__blank" class="nav-link">
+                                        <span class="text">Términos de uso</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#about" class="nav-link">
-                                        <span class="text">Legal Notice</span>
+                                    <a href="https://policies.google.com/privacy?hl=es" target="__blank" class="nav-link">
+                                        <span class="text">Aviso legal</span>
                                     </a>
                                 </li>
                             </ul>
@@ -151,7 +147,7 @@
                             <!-- Text -->
                             <div class="footer-text">
                                 <p>Suscríbete a nuestro boletín y mantente al día con lo que sucede en el mundo.</p>
-                                <p>Al enviar este formulario, usted acepta los <a href="#"
+                                <p>Al enviar este formulario, usted acepta los <a href="https://policies.google.com/terms?hl=es" target="__blank"
                                         class="link gray primary-hover"><u>terminos de uso</u>.</a></p>
                             </div>
                             <!-- Form -->
@@ -159,12 +155,8 @@
                                 <form class="form-fields needs-validation" novalidate="novalidate">
                                     <div class="form-row row has-icon">
                                         <div class="form-col form-floating">
-                                            <button class="button overlay-button"><img class="overlay-image-icon"
-                                                    src="assets/svg/send-outline.svg" alt="Icon name"
-                                                    data-shock-icon="32" /></button>
-                                            <input id="InputFloatingFooter" class="form-control focus-trigger-field"
-                                                name="InputFloatingFooter" placeholder="Type your email..."
-                                                required="required">
+                                            <button class="button overlay-button"><img class="overlay-image-icon" src="assets/svg/send-outline.svg" alt="Icon name" data-shock-icon="32" /></button>
+                                            <input id="InputFloatingFooter" class="form-control focus-trigger-field" name="InputFloatingFooter" placeholder="Type your email..." required>
                                             <label for="InputFloatingFooter" class="form-label">Email...</label>
                                         </div>
                                     </div>
