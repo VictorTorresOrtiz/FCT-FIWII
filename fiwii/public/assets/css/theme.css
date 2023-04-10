@@ -9,7 +9,7 @@
 
 	/* Primary */
 	--primary-color: #07beb8;
-	--primary-15-color: #07beb826;
+	--primary-15-color: #5d9bec3b;
 	--primary-25-color: #07beb840;
 	--primary-50-color: #07beb880;
 	--primary-75-color: #07beb8bf;
@@ -29,7 +29,7 @@
 	--tertiary-75-color: #ff1791bf;
 
 	/* Auxiliary */
-	--accent-color: #fedc00;
+	--accent-color: #5D9CEC;
 	--success-color: #007a4d;
 	--info-color: #023e8a;
 	--warning-color: #ff9800;

@@ -1,8 +1,10 @@
+
 //Removing Preloader
 setTimeout(function(){
     var preloader = document.getElementById('preloader')
     if(preloader){preloader.classList.add('preloader-hide');}
 },150);
+
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict'
@@ -1384,9 +1386,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const offlineAlert = document.createElement('p');
             const onlineAlert = document.createElement('p');
             offlineAlert.className = 'offline-message bg-red-dark color-white';
-            offlineAlert.textContent = 'No internet connection detected';
+            offlineAlert.textContent = 'Conexión perdida con Fiwii Server';
             onlineAlert.className = 'online-message bg-green-dark color-white';
-            onlineAlert.textContent = 'You are back online';
+            onlineAlert.textContent = 'Conexión Recuperada';
             document.getElementsByTagName('body')[0].appendChild(offlineAlert);
             document.getElementsByTagName('body')[0].appendChild(onlineAlert);
         }
@@ -1720,4 +1722,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     init_template();
 });
+
+
 
