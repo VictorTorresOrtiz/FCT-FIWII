@@ -230,9 +230,21 @@
                                     <!-- Action -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
+                                            @if (!Auth::user())
                                             <a href="#comprar" class="button small-button rounded primary-15 accent-hover button-collision">
                                                 <span class="button-text accent white-hover">Comprar Fiwii</span>
                                             </a>
+                                            @else
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                {{ Auth::user()->name }}
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
+                                            </ul>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>

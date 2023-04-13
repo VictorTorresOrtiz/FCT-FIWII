@@ -48,7 +48,7 @@
     <div class="page-content">
 
         <div class="page-title page-title-large">
-            <h2 data-username="Nombre Usuario" class="greeting-text"></h2>
+            <h2 data-username='{{Auth::user()->name}}' class="greeting-text"></h2>
             <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img" data-src="{{URL::asset('assets/images/avatars/5s.png')}}"></a>
         </div>
         <div class="card header-card shape-rounded" data-card-height="210">

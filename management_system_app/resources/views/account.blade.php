@@ -45,13 +45,19 @@
             <div class="card-overlay dark-mode-tint"></div>
             <div class="card-bg preload-img" data-src="{{URL::asset('assets/images/pictures/20s.jpg')}}"></div>
         </div>
-
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
         <div class="card card-style">
             <div class="content mt-2 mb-0">
                 <div class="input-style no-borders has-icon validate-field mb-4">
                     <i class="fa fa-user"></i>
-                    <input type="name" class="form-control validate-name" id="form1a" placeholder="Usuario">
                     <label for="form1a" class="color-blue-dark font-10 mt-1">Usuario</label>
+                    <input id="name" type="name" class="form-control validate-name" @error('name') is-invalid @enderror"  placeholder="Usuario" @error('user') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                     <i class="fa fa-check disabled valid color-green-dark"></i>
                     <em>(required)</em>
@@ -59,15 +65,28 @@
 
                 <div class="input-style no-borders has-icon validate-field mb-4">
                     <i class="fa fa-lock"></i>
-                    <input type="password" class="form-control validate-password" id="form3a" placeholder="Contraseña">
                     <label for="form3a" class="color-blue-dark font-10 mt-1">Contraseña</label>
+                    <input id="password" type="password" class="form-control validate-password" @error('password') is-invalid @enderror" id="form3a" placeholder="Contraseña" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                     <i class="fa fa-check disabled valid color-green-dark"></i>
                     <em>(required)</em>
                 </div>
 
-                <a href="{{url('fiwii')}}" class="btn btn-m mt-4 mb-4 btn-full bg-green-dark rounded-sm text-uppercase font-900">Acceder</a>
-
+                {{-- <a href="{{url('fiwii')}}" class="btn btn-m mt-4 mb-4 btn-full bg-green-dark rounded-sm text-uppercase font-900">Acceder</a> --}}
+                <button type="submit" class="btn btn-m mt-4 mb-4 btn-full bg-green-dark rounded-sm text-uppercase font-900">
+                    {{ __('Acceder') }}
+                </button>
+                @if (Route::has('password.request'))
+                <a class="btn btn-link" href="{{ route('password.request') }}">
+                    {{ __('Forgot Your Password?') }}
+                </a>
+                @endif
+        </form>
                 <div class="divider"></div>
 
                 <a href="#" class="btn btn-icon btn-m rounded-sm btn-full shadow-l bg-facebook text-uppercase font-700 text-start"><i class="fab fa-facebook-f text-center"></i>Acceder con Facebook</a>
@@ -75,12 +94,12 @@
 
                 <div class="divider mt-4 mb-3"></div>
 
-                <div class="d-flex">
-                    <div class="w-50 font-11 pb-2 color-theme opacity-60 pb-3 text-start"><a href="#" class="color-theme">Crear uenta</a></div>
-                </div>
             </div>
 
         </div>
+
+
+
     </div>
 </div>
 </body>
