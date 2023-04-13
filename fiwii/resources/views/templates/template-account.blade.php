@@ -6,13 +6,13 @@
     <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/form.css') }}" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Fiwoo - Crear Cuenta</title>
 </head>
 <body>
     <div class="container">
-        <form>
+        <form method="POST">
+            @csrf
             @yield('account')
             @yield('account_en')
         </form>
