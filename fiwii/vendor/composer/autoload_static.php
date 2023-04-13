@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b
+class ComposerStaticInitb7f823e6f2bccf03ce71f362011db0c9
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -340,8 +340,8 @@ class ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -2315,7 +2315,6 @@ class ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b
         'Illuminate\\Process\\InvokedProcess' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/InvokedProcess.php',
         'Illuminate\\Process\\InvokedProcessPool' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/InvokedProcessPool.php',
         'Illuminate\\Process\\PendingProcess' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/PendingProcess.php',
-        'Illuminate\\Process\\Pipe' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/Pipe.php',
         'Illuminate\\Process\\Pool' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/Pool.php',
         'Illuminate\\Process\\ProcessPoolResults' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/ProcessPoolResults.php',
         'Illuminate\\Process\\ProcessResult' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Process/ProcessResult.php',
@@ -5178,11 +5177,6 @@ class ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b
         'Spatie\\Ignition\\ErrorPage\\ErrorPageViewModel' => __DIR__ . '/..' . '/spatie/ignition/src/ErrorPage/ErrorPageViewModel.php',
         'Spatie\\Ignition\\ErrorPage\\Renderer' => __DIR__ . '/..' . '/spatie/ignition/src/ErrorPage/Renderer.php',
         'Spatie\\Ignition\\Ignition' => __DIR__ . '/..' . '/spatie/ignition/src/Ignition.php',
-        'Spatie\\Ignition\\Solutions\\OpenAi\\DummyCache' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/OpenAi/DummyCache.php',
-        'Spatie\\Ignition\\Solutions\\OpenAi\\OpenAiPromptViewModel' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/OpenAi/OpenAiPromptViewModel.php',
-        'Spatie\\Ignition\\Solutions\\OpenAi\\OpenAiSolution' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/OpenAi/OpenAiSolution.php',
-        'Spatie\\Ignition\\Solutions\\OpenAi\\OpenAiSolutionProvider' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/OpenAi/OpenAiSolutionProvider.php',
-        'Spatie\\Ignition\\Solutions\\OpenAi\\OpenAiSolutionResponse' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/OpenAi/OpenAiSolutionResponse.php',
         'Spatie\\Ignition\\Solutions\\SolutionProviders\\BadMethodCallSolutionProvider' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/SolutionProviders/BadMethodCallSolutionProvider.php',
         'Spatie\\Ignition\\Solutions\\SolutionProviders\\MergeConflictSolutionProvider' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/SolutionProviders/MergeConflictSolutionProvider.php',
         'Spatie\\Ignition\\Solutions\\SolutionProviders\\SolutionProviderRepository' => __DIR__ . '/..' . '/spatie/ignition/src/Solutions/SolutionProviders/SolutionProviderRepository.php',
@@ -5243,7 +5237,6 @@ class ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b
         'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingLivewireComponentSolutionProvider' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Solutions/SolutionProviders/MissingLivewireComponentSolutionProvider.php',
         'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingMixManifestSolutionProvider' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Solutions/SolutionProviders/MissingMixManifestSolutionProvider.php',
         'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingViteManifestSolutionProvider' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Solutions/SolutionProviders/MissingViteManifestSolutionProvider.php',
-        'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\OpenAiSolutionProvider' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Solutions/SolutionProviders/OpenAiSolutionProvider.php',
         'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\RouteNotDefinedSolutionProvider' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Solutions/SolutionProviders/RouteNotDefinedSolutionProvider.php',
         'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\RunningLaravelDuskInProductionProvider' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Solutions/SolutionProviders/RunningLaravelDuskInProductionProvider.php',
         'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\SolutionProviderRepository' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Solutions/SolutionProviders/SolutionProviderRepository.php',
@@ -6267,10 +6260,10 @@ class ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit342bd1df4c07b16d911c6343b0b1313b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb7f823e6f2bccf03ce71f362011db0c9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb7f823e6f2bccf03ce71f362011db0c9::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb7f823e6f2bccf03ce71f362011db0c9::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitb7f823e6f2bccf03ce71f362011db0c9::$classMap;
 
         }, null, ClassLoader::class);
     }
