@@ -57,6 +57,81 @@
             <div class="card-bg preload-img" data-src="{{URL::asset('images/pictures/20s.jpg')}} "></div>
         </div>
 
+        @if ( Auth::user()->rol == "admin")
+        <div class="card card-style">
+            <div class="content mb-0">
+                <h3 class="font-600">Crea un nuevo usuario</h3>
+                <p>
+                    Aquí puedes crear cuentas de usuario para tus trabajadores
+                </p>
+                <form method="POST" action="{{ route('admin.users.store') }}">
+                    @csrf
+                <div class="input-style has-borders hnoas-icon input-style-always-active validate-field mb-4">
+                    <input id="name" type="text" placeholder="Usuario" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+                    <label for="form1" class="color-highlight font-400 font-13">Usuario</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+
+                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                    <input id="email" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+                    <label for="form2" class="color-highlight font-400 font-13">Email</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+
+                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                    <input id="password" type="password" placeholder="Contraseña" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+                    <label for="form3" class="color-highlight font-400 font-13">Contraseña</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+
+                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                    <input id="password-confirm" type="password" placeholder="Confirmar contraseña" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                    <label for="form3" class="color-highlight font-400 font-13">Confirma la contraseña</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+            </div>
+            {{-- @if ( Auth::user()->Plan == "Premium")
+            <input id="Plan" type="text" name="Plan" value="Premium" style="display: none">
+            @elseif(Auth::user()->Plan == "Enterprise")
+            <input id="Plan" type="text" name="Plan" value="Enterprise" style="display: none">
+            @elseif(Auth::user()->Plan == "Basic")
+            <input id="Plan" type="text" name="Plan" value="Basic" style="display: none">
+            @endif --}}
+            <input id="Plan" type="text" name="Plan" value="{{Auth::user()->Plan}}" style="display: none">
+            {{-- <input id="rol" type="text" name="rol" value="user" style="display: none"> --}}
+            <label for="form3" class="color-highlight font-400 font-13">Selecciona el rol del nuevo usuario</label>
+            <select name="rol" id="rol">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+            <input type="submit" value="Crear usuario"><br>
+            </form>
+        </div>
+        @endif
+
         <div class="card card-style">
             <div class="content mb-0">
                 <h3 class="font-600">Información</h3>
