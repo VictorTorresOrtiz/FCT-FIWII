@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/form.css') }}" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>Fiwoo - Crear Cuenta</title>
+    <title>Fiwii - Crear Cuenta</title>
 </head>
 <body>
     <div class="container">

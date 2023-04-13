@@ -1,6 +1,6 @@
 @extends('templates.template-account')
 @section('account')
-  <p>Cuenta Fiwoo</p>
+  <p>Cuenta Fiwii</p>
   <input type="text" placeholder="Usuario" name="user"><br>
   <input type="email" placeholder="Email" name="email"><br>
   <input type="password" placeholder="Contraseña" name="pass"><br>
