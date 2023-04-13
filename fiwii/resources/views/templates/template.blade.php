@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Identity -->
-    <title>Fiwoo Systems</title>
+    <title>Fiwii Systems</title>
     <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <!-- Vendor Style Sheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -63,7 +63,7 @@
                             <!-- Brand -->
                             <a href="{{ url('/') }}" class="footer-brand">
                                 <img src="{{ URL::asset('assets/images/logo/logo_white_transparent.png') }}" alt="Shock Theme" class="logo" />
-                                <span class="logo-after-text">Fiwoo</span>
+                                <span class="logo-after-text">Fiwii</span>
                             </a>
                             <!-- Text -->
                             <div class="footer-text">
@@ -102,8 +102,8 @@
                             <!-- Links list -->
                             <ul class="nav-list list-unstyled">
                                 <li class="nav-item">
-                                    <a href="{{ url('fiwoo-app') }}" class="nav-link">
-                                        <span class="text">Fiwoo App</span>
+                                    <a href="{{ url('Fiwii-app') }}" class="nav-link">
+                                        <span class="text">Fiwii App</span>
                                         <span  class="badge accent flex ms-1">
                                             <span class="badge-text white accent-hover">Hot</span>
                                         </span>
@@ -116,7 +116,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="#pricing" class="nav-link">
-                                        <span class="text">Pricing</span>
+                                        <span class="text">Precios</span>
                                     </a>
                                 </li>
                             </ul>
@@ -148,7 +148,7 @@
                             <div class="footer-text">
                                 <p>Suscríbete a nuestro boletín y mantente al día con lo que sucede en el mundo.</p>
                                 <p>Al enviar este formulario, usted acepta los <a href="https://policies.google.com/terms?hl=es" target="__blank"
-                                        class="link gray primary-hover"><u>terminos de uso</u>.</a></p>
+                                        class="link gray accent-hover"><u>terminos de uso</u>.</a></p>
                             </div>
                             <!-- Form -->
                             <div class="form-area scheme-2">
