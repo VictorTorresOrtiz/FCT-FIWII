@@ -3770,3 +3770,213 @@
 #65 C:\\xampp\\htdocs\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
 #66 {main}
 "} 
+[2023-04-13 17:35:13] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(491): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:13] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:18] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(491): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:18] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:20] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(491): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:20] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:29] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(491): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:29] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:30] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(491): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:30] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:30] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(491): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:30] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:33] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(491): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:33] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
+#8 {main}
+"} 
+[2023-04-13 17:35:47] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(503): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(202): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2023-04-13 17:35:47] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2023-04-13 17:58:28] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(667): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('Class \"Laravel\\\\...', Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(503): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Error))
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(202): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(Error))
+#6 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2023-04-13 17:58:28] laravel.ERROR: Class "Laravel\Fortify\Features" not found {"exception":"[object] (Error(code: 0): Class \"Laravel\\Fortify\\Features\" not found at C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\config\\fortify.php:135)
+[stacktrace]
+#0 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(70): require()
+#1 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#2 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#3 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(428): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#4 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#5 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
