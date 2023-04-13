@@ -193,8 +193,7 @@
                                                                         <li class="nav-item">
                                                                             <a href="inspiration-1.html" class="nav-link">
                                                                                 <span class="text">Dynamic Slider</span>
-                                                                                <em class="tag hover-up-down">stunning
-                                                                                    design</em>
+                                                                                <em class="tag hover-up-down">stunning design</em>
                                                                             </a>
                                                                         </li>
 
@@ -205,8 +204,7 @@
                                                                 <div class="megamenu-item side-image">
                                                                     <a href="{{ url('account-en') }}" target="_blank"
                                                                         class="megamenu-image black">
-                                                                        <img src="{{ URL::asset('assets/images/walpapers/comprar.gif') }}"
-                                                                            alt="Image name" class="image">
+                                                                        <img src="{{ URL::asset('assets/images/walpapers/comprar.gif') }}" alt="Image name" class="image">
                                                                         <span class="title">Buy Fiwii</span>
                                                                     </a>
                                                                 </div>
@@ -222,8 +220,7 @@
                                                 <span class="text">About Us</span>
                                                 <svg class="flutter-underline-graphic" width="300%" height="100%"
                                                     viewBox="0 0 1200 60" preserveAspectRatio="none">
-                                                    <path
-                                                        d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
                                                     </path>
                                                 </svg>
                                             </a>
@@ -234,8 +231,7 @@
                                                 <span class="text">Pricing</span>
                                                 <svg class="flutter-underline-graphic" width="300%" height="100%"
                                                     viewBox="0 0 1200 60" preserveAspectRatio="none">
-                                                    <path
-                                                        d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
                                                     </path>
                                                 </svg>
                                             </a>
@@ -244,8 +240,7 @@
                                     <!-- Action -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
-                                            <a href="#pricing"
-                                                class="button small-button rounded primary-15 accent-hover button-collision">
+                                            <a href="#pricing" class="button small-button rounded primary-15 accent-hover button-collision">
                                                 <span class="button-text accent white-hover">Buy Fiwii</span>
                                             </a>
                                         </div>
@@ -270,8 +265,7 @@
                         <div class="col-12 col-lg-3 align-v-center d-only-desktop">
                             <!-- Image -->
                             <div class="image-wrapper p-2">
-                                <img src="{{ URL::asset('assets/images/walpapers/c-1.png') }}" alt="Image name"
-                                    class="image floating-item" />
+                                <img src="{{ URL::asset('assets/images/walpapers/c-1.png') }}" alt="Image name" class="image floating-item" />
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 align-v-center">
@@ -279,16 +273,14 @@
                             <div class="basic-intro text-center">
                                 <h1 class="title black">
                                     <span class="text-1 d-block text-style-3">Fiwii Systems </span>
-                                    <span class="text-2 text-style-4 text-italic">The future is <mark
-                                            class="animated-underline accent">now</mark>.</span>
+                                    <span class="text-2 text-style-4 text-italic">The future is <mark class="animated-underline accent">now</mark>.</span>
                                 </h1>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 align-v-center">
                             <!-- Image -->
                             <div class="image-wrapper p-2">
-                                <img src="{{ URL::asset('assets/images/walpapers/c-2.png') }}" alt="Image name"
-                                    class="image floating-item" />
+                                <img src="{{ URL::asset('assets/images/walpapers/c-2.png') }}" alt="Image name" class="image floating-item" />
                             </div>
                         </div>
                     </div>
@@ -304,8 +296,6 @@
                                     <span class="text ms-05">PWA Ready</span>
                                 </div>
                                 <p class="description">Native application for IOS and Android.</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -317,8 +307,6 @@
                                     <span class="text ms-05">Real time data </span>
                                 </div>
                                 <p class="description">Edit, drop or create systems in real time.</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -330,8 +318,6 @@
                                     <span class="text ms-05">Fast</span>
                                 </div>
                                 <p class="description">Application optimized to offer the best experience.</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -343,8 +329,6 @@
                                     <span class="text ms-05">Secure</span>
                                 </div>
                                 <p class="description">Total protection in all of your databases.</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -363,8 +347,7 @@
                             <div class="basic-intro">
                                 <h2 class="title black">
                                     <span class="text-1 text-style-5">About </span>
-                                    <span class="text-2 text-style-6 text-italic"><mark
-                                            class="animated-underline accent">us</mark>.</span>
+                                    <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">us</mark>.</span>
                                 </h2>
                                 <div class="description gray">
                                     <p>We keep in mind that we always need to improve everything we do, aiming to help
@@ -387,8 +370,7 @@
                     <div class="col-12 col-md-5">
                         <!-- Image -->
                         <div class="image-wrapper" data-lax="inertia-top">
-                            <img src="{{ URL::asset('assets/images/walpapers/app.png') }}" class="image"
-                                alt="Image name" />
+                            <img src="{{ URL::asset('assets/images/walpapers/app.png') }}" class="image" alt="Image name" />
                         </div>
                     </div>
                 </div>
