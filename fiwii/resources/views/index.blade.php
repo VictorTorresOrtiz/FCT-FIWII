@@ -7,7 +7,7 @@
 
     <!-- Popup Bar -->
     <div id="popup-bar" class="popup-bar bg-gradient scheme-1 shadow d-none">
-        <p class="description white-85">Aprovecha nuestras ofertas! en Fiwoo App.</p>
+        <p class="description white-85">Aprovecha nuestras ofertas! en Fiwii App.</p>
         <a href="{{ url('account') }}" target="_blank" class="button simple">
             <span class="button-text white white-hover"><mark class="animated-underline tertiary active">Comprar</mark></span>
             <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
@@ -46,7 +46,7 @@
                                         <li class="nav-item">
                                             <a href="#" class="nav-link has-icon">
                                                 <i class="fa-solid fa-envelope icon"></i>
-                                                <span class="text">fiwooapp@fiwoo.com</span>
+                                                <span class="text">fiwiiapp@fiwii.com</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -98,7 +98,7 @@
                                         data-logo-alt="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
                                         data-logo-mobile="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}" alt="Shock Theme"
                                         class="logo" />
-                                    <span class="logo-after-text">Fiwoo Systems</span>
+                                    <span class="logo-after-text">Fiwii Systems</span>
                                 </a>
                                 <!-- Responsive menu toggle -->
                                 <button class="navbar-toggler" data-bs-target="#navbar-items" data-bs-toggle="collapse"
@@ -137,11 +137,10 @@
                                         <li class="nav-item dropdown has-megamenu hover">
                                             <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#"
                                                 data-bs-toggle="dropdown">
-                                                <span class="text">Fiwoo App</span><img class="image-icon dropdown-icon"
+                                                <span class="text">Fiwii App</span><img class="image-icon dropdown-icon"
                                                     src="{{ URL::asset('assets/svg/chevron-down-outline.svg') }} "
                                                     alt="Icon name" data-shock-icon="32" />
-                                                <svg class="flutter-underline-graphic" width="300%" height="100%"
-                                                    viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                                                     <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
                                                 </svg>
                                             </a>
@@ -158,14 +157,9 @@
                                                                         <div class="megamenu-item">
                                                                             <ul class="nav-list list-unstyled">
                                                                                 <li class="nav-item">
-                                                                                    <a href="home-6.html"
-                                                                                        class="nav-link parent">
-                                                                                        <span class="text">Digital
-                                                                                            Agency</span>
+                                                                                    <a href="home-6.html" class="nav-link parent">
+                                                                                        <span class="text">Digital Agency</span>
                                                                                         <em class="tag hover-up-down">pricing table</em>
-                                                                                        <span class="badge ms-05 primary-15 primary-15-hover">
-                                                                                            <span class="badge-text primary primary-hover">Hot</span>
-                                                                                        </span>
                                                                                     </a>
                                                                                 </li>
                                                                             </ul>
@@ -202,7 +196,7 @@
                                                                 <div class="megamenu-item side-image">
                                                                     <a href="{{ url('account') }}" target="_blank" class="megamenu-image black">
                                                                         <img src="{{ URL::asset('assets/images/walpapers/comprar.gif') }}" alt="Image name" class="image">
-                                                                        <span class="title">Comprar Fiwoo</span>
+                                                                        <span class="title">Comprar Fiwii</span>
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -236,9 +230,21 @@
                                     <!-- Action -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
+                                            @if (!Auth::user())
                                             <a href="#comprar" class="button small-button rounded primary-15 accent-hover button-collision">
-                                                <span class="button-text accent white-hover">Comprar Fiwoo</span>
+                                                <span class="button-text accent white-hover">Comprar Fiwii</span>
                                             </a>
+                                            @else
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                {{ Auth::user()->name }}
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
+                                            </ul>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +274,7 @@
                             <!-- Intro -->
                             <div class="basic-intro text-center">
                                 <h1 class="title black">
-                                    <span class="text-1 d-block text-style-3">Fiwoo Systems </span>
+                                    <span class="text-1 d-block text-style-3">Fiwii Systems </span>
                                     <span class="text-2 text-style-4 text-italic">The future is <mark
                                             class="animated-underline accent">now</mark>.</span>
                                 </h1>
@@ -294,8 +300,6 @@
                                     <span class="text ms-05">PWA Ready</span>
                                 </div>
                                 <p class="description">Aplicación Nativa tanto en IOS como en Android.</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -307,8 +311,6 @@
                                     <span class="text ms-05">Datos en tiempo real</span>
                                 </div>
                                 <p class="description">Edita, elimina o crea sistemas en tiempo real</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -320,8 +322,6 @@
                                     <span class="text ms-05">Rápida</span>
                                 </div>
                                 <p class="description">Aplicación optimizada para ofrecer la mejor experiencia.</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -333,8 +333,6 @@
                                     <span class="text ms-05">Segura</span>
                                 </div>
                                 <p class="description">Protección total en sus bases de datos</p>
-                                <!-- Link -->
-                                <a href="#your-link" class="full-link"></a>
                             </div>
                         </div>
                     </div>
@@ -353,15 +351,11 @@
                             <div class="basic-intro">
                                 <h2 class="title black">
                                     <span class="text-1 text-style-5">Sobre </span>
-                                    <span class="text-2 text-style-6 text-italic"><mark
-                                            class="animated-underline accent">nosotros</mark>.</span>
+                                    <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">nosotros</mark>.</span>
                                 </h2>
                                 <div class="description gray">
-                                    <p>Tenemos en cuenta que siempre necesitamos mejorar todo lo que hacemos, con el
-                                        objetivo de ayudar a las personas con nuestros productos y servicios,
-                                        priorizando la calidad.</p>
-                                    <p>Para conectar la marca con el público objetivo, es necesario observar cada
-                                        forma, color, tipografía y estilo que compondrán un mensaje subconsciente.
+                                    <p>Tenemos en cuenta que siempre necesitamos mejorar todo lo que hacemos, con el objetivo de ayudar a las personas con nuestros productos y servicios, priorizando la calidad.</p>
+                                    <p>Para conectar la marca con el público objetivo, es necesario observar cada forma, color, tipografía y estilo que compondrán un mensaje subconsciente.
                                     </p>
                                 </div>
                             </div>
@@ -379,8 +373,7 @@
                     <div class="col-12 col-md-5">
                         <!-- Image -->
                         <div class="image-wrapper" data-lax="inertia-top">
-                            <img src="{{ URL::asset('assets/images/walpapers/app.png') }}" class="image"
-                                alt="Image name" />
+                            <img src="{{ URL::asset('assets/images/walpapers/app.png') }}" class="image" alt="Image name"/>
                         </div>
                     </div>
                 </div>
@@ -446,7 +439,7 @@
                 <!-- Intro -->
                 <div class="basic-intro mb-35 text-center">
                     <h2 class="title black">
-                        <span class="text-1 text-style-5">Fiwoo </span>
+                        <span class="text-1 text-style-5">Fiwii </span>
                         <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al Futuro</mark>.</span>
                     </h2>
                     <div class="description">
@@ -513,7 +506,7 @@
                                 <!-- Button -->
                                 <div class="button-wrapper align-h-center hover-up-down">
                                     <span class="button w-100 rounded accent accent-hover">
-                                        <span class="button-text white white-hover">Comprar Fiwoo Basic </span>
+                                        <span class="button-text white white-hover">Comprar Fiwii Basic </span>
                                         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                     </span>
                                 </div>
@@ -577,7 +570,7 @@
                                 <!-- Button -->
                                 <div class="button-wrapper align-h-center hover-up-down">
                                     <span class="button w-100 rounded secondary secondary-hover">
-                                        <span class="button-text white white-hover">Comprar Fiwoo Enterprise</span>
+                                        <span class="button-text white white-hover">Comprar Fiwii Enterprise</span>
                                         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                     </span>
                                 </div>
@@ -639,7 +632,7 @@
                                 <!-- Button -->
                                 <div class="button-wrapper align-h-center hover-up-down">
                                     <span class="button w-100 rounded tertiary tertiary-hover">
-                                        <span class="button-text white white-hover">Comprar Fiwoo Premium</span>
+                                        <span class="button-text white white-hover">Comprar Fiwii Premium</span>
                                         <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                     </span>
                                 </div>

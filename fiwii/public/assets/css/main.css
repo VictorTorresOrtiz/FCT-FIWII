@@ -480,7 +480,7 @@
 }
 
 .banner-breadcrumb .item .text {
-	color: var(--color);
+	color: var(	);
 }
 
 .banner-breadcrumb .item .link {
@@ -3920,7 +3920,7 @@ table {
 	pointer-events: none;
 	fill: none;
 	stroke-width: 2px;
-	stroke: var(--color);
+	stroke: var(accent-color);
 	transition: transform 0.7s;
 	transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
 	opacity: 0;
@@ -4726,7 +4726,7 @@ table {
 }
 
 .shock-footer .footer-content .nav-link .text {
-	background: linear-gradient(to right, var(--color), var(--color) 50%, var(--gray-color) 50%);
+	background: linear-gradient(to right, var(--accent-color), var(--accent-color) 50%, var(--gray-color) 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
