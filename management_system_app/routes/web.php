@@ -50,6 +50,12 @@ Route::get('/misc.menu-footer', function () {
     return view('misc.menu-footer');
 })->name('misc.menu-footer');
 
+Route::get('/home', function () {
+    return view('index');
+})->middleware('auth');
+
+Route::post('/admin/users', [\App\Http\Controllers\Controller::class, 'store'])->name('admin.users.store');
+
 
 
 
