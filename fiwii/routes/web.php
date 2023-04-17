@@ -25,11 +25,11 @@ Route::get('/en', function () {
 })->name('en');
 
 Route::get('/account', function () {
-    return view('account');
+    return view('auth.account');
 })->name('account');
 
 Route::get('/account-en', function () {
-    return view('account-en');
+    return view('auth.account-en');
 })->name('account-en');
 
 
