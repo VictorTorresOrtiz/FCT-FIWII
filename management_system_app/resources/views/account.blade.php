@@ -52,7 +52,7 @@
                 <div class="input-style no-borders has-icon validate-field mb-4">
                     <i class="fa fa-user"></i>
                     <label for="form1a" class="color-blue-dark font-10 mt-1">Usuario</label>
-                    <input id="name" type="name" class="form-control validate-name" @error('name') is-invalid @enderror"  placeholder="Usuario" @error('user') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <input id="name" type="name" class="form-control validate-name" @error('name') is-invalid @enderror  placeholder="Usuario" @error('user') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                     @error('name')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -60,13 +60,13 @@
                     @enderror
                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                     <i class="fa fa-check disabled valid color-green-dark"></i>
-                    <em>(required)</em>
+                    <em class="text-danger">*</em>
                 </div>
 
                 <div class="input-style no-borders has-icon validate-field mb-4">
                     <i class="fa fa-lock"></i>
                     <label for="form3a" class="color-blue-dark font-10 mt-1">Contraseña</label>
-                    <input id="password" type="password" class="form-control validate-password" @error('password') is-invalid @enderror" id="form3a" placeholder="Contraseña" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    <input id="password" type="password" class="form-control validate-password" @error('password') is-invalid @enderror id="form3a" placeholder="Contraseña" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                     @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -74,7 +74,7 @@
                     @enderror
                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                     <i class="fa fa-check disabled valid color-green-dark"></i>
-                    <em>(required)</em>
+                    <em class="text-danger">*</em>
                 </div>
 
                 {{-- <a href="{{url('fiwii')}}" class="btn btn-m mt-4 mb-4 btn-full bg-green-dark rounded-sm text-uppercase font-900">Acceder</a> --}}
