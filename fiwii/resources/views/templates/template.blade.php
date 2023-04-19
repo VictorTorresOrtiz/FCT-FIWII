@@ -104,9 +104,6 @@
                                 <li class="nav-item">
                                     <a href="{{ url('Fiwii-app') }}" class="nav-link">
                                         <span class="text">Fiwii App</span>
-                                        <span  class="badge accent flex ms-1">
-                                            <span class="badge-text white accent-hover">Hot</span>
-                                        </span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
