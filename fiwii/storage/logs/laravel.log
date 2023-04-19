@@ -4031,4 +4031,4 @@
 #46 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #47 C:\\Users\\guilr\\OneDrive\\Escritorio\\FCT-FIWII\\fiwii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\guilr\\\\...')
 #48 {main}
-"} 
+"}

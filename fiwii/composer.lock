@@ -6348,6 +6348,7 @@
         },
         {
             "name": "phpunit/php-code-coverage",
+
             "version": "10.1.1",
             "source": {
                 "type": "git",
