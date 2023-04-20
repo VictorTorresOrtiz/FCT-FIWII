@@ -26,7 +26,7 @@ Route::get('/conf', function () {
 })->name('conf');
 
 Route::get('/account', function () {
-    return view('account');
+    return view('auth.account');
 })->name('account');
 
 Route::get('/profile', function () {
@@ -53,6 +53,12 @@ Route::get('/misc.menu-footer', function () {
 Route::get('/home', function () {
     return view('index');
 })->middleware('auth');
+
+//----------
+Route::get('/dashboard', function () {
+    // ...
+})->middleware(['Rol']);
+//----------
 
 Route::post('/admin/users', [\App\Http\Controllers\Controller::class, 'store'])->name('admin.users.store');
 
