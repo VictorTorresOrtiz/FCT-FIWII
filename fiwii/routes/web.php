@@ -57,6 +57,15 @@ Route::get('/plans.premium-en', function () {
     return view('plans.premium-en');
 })->name('plans.premium-en');
 
+//Dashboard
+Route::get('/admin.dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
+
+Route::get('/admin.app-dashboard', function () {
+    return view('admin.app-dashboard');
+})->name('admin.app-dashboard');
+
 
 
 
