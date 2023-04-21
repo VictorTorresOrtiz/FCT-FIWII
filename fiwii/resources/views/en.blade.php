@@ -350,10 +350,8 @@
                                     <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">us</mark>.</span>
                                 </h2>
                                 <div class="description gray">
-                                    <p>We keep in mind that we always need to improve everything we do, aiming to help
-                                        people with our products and services, prioritizing quality.</p>
-                                    <p>To connect the brand with the target audience, it is necessary to observe each shape,
-                                        color, font and style that will compose a subconscious message.</p>
+                                    <p>We keep in mind that we always need to improve everything we do, aiming to help people with our products and services, prioritizing quality and security.</p>
+                                    <p>To connect the brand with the target audience, we give our best. Your security is save in our hands.</p>
                                 </div>
                             </div>
                             <hr class="gray-25">

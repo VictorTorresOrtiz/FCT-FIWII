@@ -354,9 +354,8 @@
                                     <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">nosotros</mark>.</span>
                                 </h2>
                                 <div class="description gray">
-                                    <p>Tenemos en cuenta que siempre necesitamos mejorar todo lo que hacemos, con el objetivo de ayudar a las personas con nuestros productos y servicios, priorizando la calidad.</p>
-                                    <p>Para conectar la marca con el público objetivo, es necesario observar cada forma, color, tipografía y estilo que compondrán un mensaje subconsciente.
-                                    </p>
+                                    <p>Tenemos en cuenta que siempre necesitamos mejorar todo lo que hacemos, con el objetivo de ayudar a las personas con nuestros productos y servicios, priorizando la calidad y la seguridad.</p>
+                                    <p>Para conectar la marca con el nuestros clientes, damos lo mejor de nosotros mismos. Tu seguridad está asegurada estando en nuestras manos.</p>
                                 </div>
                             </div>
                             <hr class="gray-25">
