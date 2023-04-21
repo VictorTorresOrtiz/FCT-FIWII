@@ -38,7 +38,7 @@
                                             <ul class="dropdown-menu animate fade-down">
                                                 <li class="nav-item">
                                                     <a href="{{ url('en') }}" class="nav-link">
-                                                        <span class="text">English</span>
+                                                        <span>English</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -61,7 +61,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link has-icon">
+                                            <a href="tel:+34random" class="nav-link has-icon">
                                                 <i class="fa-solid fa-phone icon"></i>
                                                 <span class="text">+34 691 333 444</span>
                                             </a>
@@ -158,7 +158,7 @@
                                                                             <ul class="nav-list list-unstyled">
                                                                                 <li class="nav-item">
                                                                                     <a href="home-6.html" class="nav-link parent">
-                                                                                        <span class="text" id="relleno">Digital Agency</span>
+                                                                                        <span class="text">Digital Agency</span>
                                                                                         <em class="tag hover-up-down">pricing table</em>
                                                                                     </a>
                                                                                 </li>
@@ -177,19 +177,6 @@
                                                                             </ul>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 col-lg-3">
-                                                                <div class="megamenu-item">
-                                                                    <h6 class="title">Actualizaciones</h6>
-                                                                    <ul class="nav-list list-unstyled">
-                                                                        <li class="nav-item">
-                                                                            <a href="inspiration-1.html" class="nav-link">
-                                                                                <span class="text">Dynamic Slider</span>
-                                                                                <em class="tag hover-up-down">stunning design</em>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-lg-3">
@@ -361,7 +348,7 @@
                             <hr class="gray-25">
                             <figure class="blockquote">
                                 <blockquote class="blockquote-body text-style-11 black">
-                                    <p>"El diseño no es todo lo que parece. El diseño es cómo funciona".</p>
+                                    <p>"No dejes dejes para mañana lo que puedas hacer hoy".</p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
                                     <cite title="Source Title">Steve Jobs / Fundador Apple</cite>
@@ -442,17 +429,6 @@
                         <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al Futuro</mark>.</span>
                     </h2>
                     <div class="description">
-                        <!-- Plan switcher -->
-                        <div class="form-area scheme-1 black">
-                            <div class="plan-switcher">
-                                <label class="form-label">Anualmente</label>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input form-switch js-switch-price-button" type="checkbox"
-                                        id="InputSwitchChecked" checked="checked">
-                                </div>
-                                <label class="form-label">Mensualmente</label>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="row g-4">
@@ -467,7 +443,7 @@
                                 <!-- Price -->
                                 <div class="price-wrapper">
                                     <span class="currency text-style-8 white-75">€</span>
-                                    <span class="price text-style-3 white hover-up-down" data-annual="16"
+                                    <span class="price text-style-3 white hover-up-down"
                                         data-monthly="24">24</span>
                                     <span class="billing text-style-8 white-75">/mes</span>
                                 </div>
@@ -530,7 +506,7 @@
                                 <!-- Price -->
                                 <div class="price-wrapper">
                                     <span class="currency text-style-8 white-75">€</span>
-                                    <span class="price text-style-3 white hover-up-down" data-annual="28" data-monthly="39">39</span>
+                                    <span class="price text-style-3 white hover-up-down" data-monthly="39">39</span>
                                     <span class="billing text-style-8 white-75">/mes</span>
                                 </div>
                             </div>
@@ -589,8 +565,7 @@
                                 <!-- Price -->
                                 <div class="price-wrapper">
                                     <span class="currency text-style-8 white-75">€</span>
-                                    <span class="price text-style-3 white hover-up-down" data-annual="46"
-                                        data-monthly="60">60</span>
+                                    <span class="price text-style-3 white hover-up-down" data-monthly="60">60</span>
                                     <span class="billing text-style-8 white-75">/mes</span>
                                 </div>
                             </div>
@@ -663,8 +638,7 @@
         <div class="item">
             <a href="#" class="link black black-hover hover-up">
                 <span class="widget label-vertical">
-                    <span class="label-text black"><i class="fa-solid fa-arrow-right-long icon"></i>Scroll to
-                        top</span>
+                    <span class="label-text black"><i class="fa-solid fa-arrow-right-long icon"></i>Subir</span>
                 </span>
             </a>
         </div>
