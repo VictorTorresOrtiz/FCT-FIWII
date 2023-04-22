@@ -686,3 +686,4 @@
         <circle class="cursor-effect-inner" cx="110" cy="110" r="20"></circle>
     </svg>
 @endsection
+

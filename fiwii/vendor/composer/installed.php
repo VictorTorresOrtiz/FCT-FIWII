@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9ca3045b53d028a42b9939f34e4136dcd7193e60',
+        'reference' => '2e9d21cf54661063908d0d93da1464b7672b6cf0',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -403,7 +403,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9ca3045b53d028a42b9939f34e4136dcd7193e60',
+            'reference' => '2e9d21cf54661063908d0d93da1464b7672b6cf0',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -656,12 +656,12 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '10.1.1',
-            'version' => '10.1.1.0',
+            'pretty_version' => '10.1.2',
+            'version' => '10.1.2.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
-            'reference' => '0d9401b7e8245d71079e249e3cb868e9d2337887',
+            'reference' => '6f0cd95be71add539f8fd2be25b2a4a29789000b',
             'dev_requirement' => true,
         ),
         'pragmarx/google2fa' => array(
@@ -760,8 +760,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '3.0.0',
+                0 => '3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
