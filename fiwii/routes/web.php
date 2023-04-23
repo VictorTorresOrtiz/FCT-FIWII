@@ -66,6 +66,10 @@ Route::get('/admin.app-dashboard', function () {
     return view('admin.app-dashboard');
 })->name('admin.app-dashboard');
 
+Route::get('/admin.web-dashboard', function () {
+    return view('admin.web-dashboard');
+})->name('admin.web-dashboard');
+
 
 
 

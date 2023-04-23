@@ -351,7 +351,7 @@
                       </span>
                       <!-- Link -->
                       <h3 class="title text-style-11 black">
-                        <a href="tel:+19912345678" target="_blank" class="link align-v-center black black-hover hover-up-down">
+                        <a href="{{url('/admin.app-dashboard')}}" target="_blank" class="link align-v-center black black-hover hover-up-down">
                           <i class="fa-solid fa-mobile icon"></i>
                           <span class="text ms-05">Fiwii App Admin Panel</span>
                           <span class="badge ms-05 warning warning-hover">
@@ -378,7 +378,7 @@
                       </span>
                       <!-- Link -->
                       <h3 class="title text-style-11 white">
-                        <a href="#" class="link align-v-center black black-hover hover-up-down">
+                        <a href="{{url('/admin.web-dashboard')}}" class="link align-v-center black black-hover hover-up-down">
                           <i class="fa-solid fa-globe icon"></i>
                           <span class="text ms-05">Fiwii Web Admin Panel</span>
                           <span class="badge ms-05 primary primary-hover">

@@ -3,7 +3,7 @@
 
   <!-- Preloader -->
   <div id="preloader" class="preloader" data-delay="0" data-limit="3000">
-    <img src="assets/images/logo.svg" class="emblem" alt="Emblem" hidden="hidden" />
+    <img src="{{ URL::asset('ssets/images/logo.svg') }}" class="emblem" alt="Emblem" hidden="hidden" />
   </div>
 
   <head>
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Identity -->
-    <title>Fiwii App - Dashboard Home</title>
+    <title>Fiwii Web - Dashboard Home</title>
     <meta name="description" content="Shock is a creative multipurpose theme for building websites. It is based on Bootstrap 5 and other of the best and most up-to-date code libraries used by professional developers in the world.">
     <meta name="author" content="Codings">
     <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
@@ -304,23 +304,11 @@
             <ul id="v-tab" class="nav nav-pills" role="tablist" aria-orientation="vertical" data-sticky="30">
               <li class="nav-item" role="presentation">
                 <button id="v-1-tab" class="nav-link active" aria-selected="true" aria-controls="v-1" data-bs-target="#v-1" data-bs-toggle="tab" role="tab">
-                  Gestor de Cuentas
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="{{url('/')}}">
-                    <button class="nav-link" aria-selected="false" data-bs-toggle="tab" role="tab">
-                    Gestor de Sistemas
-                    </button>
-                </a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" aria-selected="false" aria-controls="v-3" data-bs-target="#v-3" data-bs-toggle="tab" role="tab">
-                  Bases de Datos
+                  Configuración
                 </button>
               </li>
             </ul>
-            <!-- Gestor de Cuentas -->
+            <!-- Configuración -->
             <div class="tab-content pt-0">
               <div id="v-1" class="tab-pane fade show active" role="tabpanel">
                 <!-- Services -->
@@ -400,46 +388,6 @@
                 </div>
               </div>
               <div id="v-3" class="tab-pane fade" role="tabpanel">
-                <!-- Bases de datos -->
-                <div class="row g-2">
-                  <div class="col-12 col-md-6">
-                    <div class="card has-icon hover-up parent">
-                      <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/videocam-outline.svg" alt="Icon name" data-shock-icon="32" />
-                        <h3 class="title text-style-11 black">Base de Datos Sistemas</h3>
-                        <p class="description">Descargar base de datos completa de todos los Sistemas</p>
-                        <!-- Button -->
-                        <div class="button-wrapper align-h-right">
-                          <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
-                            <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
-                          </span>
-                        </div>
-                        <!-- Link -->
-                        <a href="#your-link" class="full-link"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="card has-icon hover-up parent">
-                      <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/layers-outline.svg" alt="Icon name" data-shock-icon="32" />
-                        <h3 class="title text-style-11 black">Base de datos Usuarios</h3>
-                        <p class="description">Descargar base de datos completa de sus empleados.</p>
-                        <!-- Button -->
-                        <div class="button-wrapper align-h-right">
-                          <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
-                            <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
-                          </span>
-                        </div>
-                        <!-- Link -->
-                        <a href="#your-link" class="full-link"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
