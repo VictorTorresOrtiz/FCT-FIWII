@@ -33,7 +33,7 @@
                                         <li class="nav-item dropdown hover">
                                             <a href="#" class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <i class="fa-solid fa-earth-americas icon"></i>
-                                                <span class="text">Español</span><img class="image-icon dropdown-icon" src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
+                                                <span class="text">Español</span><img class="image-icon dropdown-icon" src="{{ URL::asset('assets/svg/chevron-down-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
                                             </a>
                                             <ul class="dropdown-menu animate fade-down">
                                                 <li class="nav-item">
