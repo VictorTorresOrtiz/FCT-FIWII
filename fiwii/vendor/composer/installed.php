@@ -2,6 +2,7 @@
     'root' => array(
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+        'reference' => 'e4fb7212d9d5de0fa832269b43291b90e7c23610',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -382,6 +383,9 @@
         'laravel/fortify' => array(
             'pretty_version' => 'v1.17.0',
             'version' => '1.17.0.0',
+
+            'reference' => 'c38885644cd2c45b732258a9753de9f6f5cfadba',
+
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/fortify',
             'aliases' => array(),
@@ -391,6 +395,9 @@
         'laravel/framework' => array(
             'pretty_version' => 'v10.8.0',
             'version' => '10.8.0.0',
+
+            'reference' => '317d7ccaeb1bbf4ac3035efe225ef2746c45f3a8',
+
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/framework',
             'aliases' => array(),
@@ -400,6 +407,9 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+
+            'reference' => 'e4fb7212d9d5de0fa832269b43291b90e7c23610',
+
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -409,6 +419,7 @@
         'laravel/pint' => array(
             'pretty_version' => 'v1.9.0',
             'version' => '1.9.0.0',
+            'reference' => 'eac5ec3d6b5c96543c682e309a10fdddc9f61d80',
             'type' => 'project',
             'install_path' => __DIR__ . '/../laravel/pint',
             'aliases' => array(),

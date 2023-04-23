@@ -41,7 +41,7 @@
                                             <ul class="dropdown-menu animate fade-down">
                                                 <li class="nav-item">
                                                     <a href="{{ url('/') }}" class="nav-link">
-                                                        <span class="text">Spanish</span>
+                                                        <span>Spanish</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -64,7 +64,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link has-icon">
+                                            <a href="tel:+34random" class="nav-link has-icon">
                                                 <i class="fa-solid fa-phone icon"></i>
                                                 <span class="text">+34 691 333 444</span>
                                             </a>
@@ -184,20 +184,6 @@
                                                                             </ul>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 col-lg-3">
-                                                                <div class="megamenu-item">
-                                                                    <h6 class="title">Updates</h6>
-                                                                    <ul class="nav-list list-unstyled">
-                                                                        <li class="nav-item">
-                                                                            <a href="inspiration-1.html" class="nav-link">
-                                                                                <span class="text">Dynamic Slider</span>
-                                                                                <em class="tag hover-up-down">stunning design</em>
-                                                                            </a>
-                                                                        </li>
-
-                                                                    </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-lg-3">
@@ -350,16 +336,14 @@
                                     <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">us</mark>.</span>
                                 </h2>
                                 <div class="description gray">
-                                    <p>We keep in mind that we always need to improve everything we do, aiming to help
-                                        people with our products and services, prioritizing quality.</p>
-                                    <p>To connect the brand with the target audience, it is necessary to observe each shape,
-                                        color, font and style that will compose a subconscious message.</p>
+                                    <p>We keep in mind that we always need to improve everything we do, aiming to help people with our products and services, prioritizing quality and security.</p>
+                                    <p>To connect the brand with the target audience, we give our best. Your security is save in our hands.</p>
                                 </div>
                             </div>
                             <hr class="gray-25">
                             <figure class="blockquote">
                                 <blockquote class="blockquote-body text-style-11 black">
-                                    <p>"The design is not just what it looks like. The design is how it works".</p>
+                                    <p>"Don’t let yesterday take up too much of today".</p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
                                     <cite title="Source Title">Steve Jobs / Apple's creator</cite>

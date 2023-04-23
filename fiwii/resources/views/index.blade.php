@@ -17,71 +17,72 @@
     </button>
 </div>
 
-<!-- Header -->
-<header id="header" class="shock-header">
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-extended navbar-expand-lg absolute scheme-2 primary">
-        <div class="container-fluid">
-            <div class="navbar-wrapper">
-                <!-- Navbar-top -->
-                <div class="navbar-top-wrapper">
-                    <div class="container">
-                        <div class="navbar-top">
-                            <div class="navbar-left">
-                                <!-- Link -->
-                                <ul class="navbar-nav">
-                                    <li class="nav-item dropdown hover">
-                                        <a href="#" class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="fa-solid fa-earth-americas icon"></i>
-                                            <span class="text">Español</span><img class="image-icon dropdown-icon" src="{{ URL::asset('assets/svg/chevron-down-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
-                                        </a>
-                                        <ul class="dropdown-menu animate fade-down">
-                                            <li class="nav-item">
-                                                <a href="{{ url('en') }}" class="nav-link">
-                                                    <span class="text">English</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link has-icon">
-                                            <i class="fa-solid fa-envelope icon"></i>
-                                            <span class="text">fiwiiapp@fiwii.com</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="navbar-right">
-                                <!-- Link -->
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a href="https://goo.gl/maps/Lu3LjtCtgaxDCTrx9" class="nav-link has-icon" target="__blank">
-                                            <i class="fa-solid fa-location-dot icon"></i>
-                                            <span class="text">Ilerna Sevilla</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link has-icon">
-                                            <i class="fa-solid fa-phone icon"></i>
-                                            <span class="text">+34 691 333 444</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item d-only-desktop">
-                                        <a href="https://es-es.facebook.com/" target="__blank" class="nav-link hover-up-down">
-                                            <i class="icon fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item d-only-desktop">
-                                        <a href="https://twitter.com/" target="__blank" class="nav-link hover-up-down">
-                                            <i class="icon fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item d-only-desktop">
-                                        <a href="https://www.linkedin.com/" target="__blank" class="nav-link hover-up-down">
-                                            <i class="icon fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+    <!-- Header -->
+    <header id="header" class="shock-header">
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-extended navbar-expand-lg absolute scheme-2 primary">
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <!-- Navbar-top -->
+                    <div class="navbar-top-wrapper">
+                        <div class="container">
+                            <div class="navbar-top">
+                                <div class="navbar-left">
+                                    <!-- Link -->
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown hover">
+                                            <a href="#" class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-earth-americas icon"></i>
+                                                <span class="text">Español</span><img class="image-icon dropdown-icon" src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
+                                            </a>
+                                            <ul class="dropdown-menu animate fade-down">
+                                                <li class="nav-item">
+                                                    <a href="{{ url('en') }}" class="nav-link">
+                                                        <span>English</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link has-icon">
+                                                <i class="fa-solid fa-envelope icon"></i>
+                                                <span class="text">fiwiiapp@fiwii.com</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="navbar-right">
+                                    <!-- Link -->
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="https://goo.gl/maps/Lu3LjtCtgaxDCTrx9" class="nav-link has-icon" target="__blank">
+                                                <i class="fa-solid fa-location-dot icon"></i>
+                                                <span class="text">Ilerna Sevilla</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="tel:+34random" class="nav-link has-icon">
+                                                <i class="fa-solid fa-phone icon"></i>
+                                                <span class="text">+34 691 333 444</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item d-only-desktop">
+                                            <a href="https://es-es.facebook.com/" target="__blank" class="nav-link hover-up-down">
+                                                <i class="icon fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item d-only-desktop">
+                                            <a href="https://twitter.com/" target="__blank" class="nav-link hover-up-down">
+                                                <i class="icon fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item d-only-desktop">
+                                            <a href="https://www.linkedin.com/" target="__blank" class="nav-link hover-up-down">
+                                                <i class="icon fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -214,7 +215,7 @@
                                                                             <ul class="nav-list list-unstyled">
                                                                                 <li class="nav-item">
                                                                                     <a href="home-6.html" class="nav-link parent">
-                                                                                        <span class="text" id="relleno">Digital Agency</span>
+                                                                                        <span class="text">Digital Agency</span>
                                                                                         <em class="tag hover-up-down">pricing table</em>
                                                                                     </a>
                                                                                 </li>
@@ -233,19 +234,6 @@
                                                                             </ul>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 col-lg-3">
-                                                                <div class="megamenu-item">
-                                                                    <h6 class="title">Actualizaciones</h6>
-                                                                    <ul class="nav-list list-unstyled">
-                                                                        <li class="nav-item">
-                                                                            <a href="inspiration-1.html" class="nav-link">
-                                                                                <span class="text">Dynamic Slider</span>
-                                                                                <em class="tag hover-up-down">stunning design</em>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 col-md-6 col-lg-3">
@@ -391,24 +379,33 @@
         </div>
     </section>
 
-    <!-- About Us -->
-    <section class="shock-section pt-3 pb-3 bg-color gray-10">
-        <a name="about"></a>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-12 col-md-7 align-v-center">
-                    <div class="holder">
-                        <!-- Intro -->
-                        <div class="basic-intro">
-                            <h2 class="title black">
-                                <span class="text-1 text-style-5">Sobre </span>
-                                <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">nosotros</mark>.</span>
-                            </h2>
-                            <div class="description gray">
-                                <p>Tenemos en cuenta que siempre necesitamos mejorar todo lo que hacemos, con el objetivo de ayudar a las personas con nuestros productos y servicios, priorizando la calidad.</p>
-                                <p>Para conectar la marca con el público objetivo, es necesario observar cada forma, color, tipografía y estilo que compondrán un mensaje subconsciente.
-                                </p>
+        <!-- About Us -->
+        <section class="shock-section pt-3 pb-3 bg-color gray-10">
+            <a name="about"></a>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-7 align-v-center">
+                        <div class="holder">
+                            <!-- Intro -->
+                            <div class="basic-intro">
+                                <h2 class="title black">
+                                    <span class="text-1 text-style-5">Sobre </span>
+                                    <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">nosotros</mark>.</span>
+                                </h2>
+                                <div class="description gray">
+                                    <p>Tenemos en cuenta que siempre necesitamos mejorar todo lo que hacemos, con el objetivo de ayudar a las personas con nuestros productos y servicios, priorizando la calidad y la seguridad.</p>
+                                    <p>Para conectar la marca con el nuestros clientes, damos lo mejor de nosotros mismos. Tu seguridad está asegurada estando en nuestras manos.</p>
+                                </div>
                             </div>
+                            <hr class="gray-25">
+                            <figure class="blockquote">
+                                <blockquote class="blockquote-body text-style-11 black">
+                                    <p>"No dejes dejes para mañana lo que puedas hacer hoy".</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">Steve Jobs / Fundador Apple</cite>
+                                </figcaption>
+                            </figure>
                         </div>
                         <hr class="gray-25">
                         <figure class="blockquote">
@@ -481,44 +478,36 @@
         </div>
     </section>
 
-    <!-- Pricing table -->
-    <a name="comprar"></a>
-    <section class="shock-section pt-3 pb-3 bg-color gray-10 js-switch-price">
-        <a name="pricing"></a>
-        <div class="container">
-            <!-- Intro -->
-            <div class="basic-intro mb-35 text-center">
-                <h2 class="title black">
-                    <span class="text-1 text-style-5">Fiwii </span>
-                    <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al Futuro</mark>.</span>
-                </h2>
-                <div class="description">
-                    <!-- Plan switcher -->
-                    <div class="form-area scheme-1 black">
-                        <div class="plan-switcher">
-                            <label class="form-label">Anualmente</label>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input form-switch js-switch-price-button" type="checkbox" id="InputSwitchChecked" checked="checked">
-                            </div>
-                            <label class="form-label">Mensualmente</label>
-                        </div>
+        <!-- Pricing table -->
+        <a name="comprar"></a>
+        <section class="shock-section pt-3 pb-3 bg-color gray-10 js-switch-price">
+            <a name="pricing"></a>
+            <div class="container">
+                <!-- Intro -->
+                <div class="basic-intro mb-35 text-center">
+                    <h2 class="title black">
+                        <span class="text-1 text-style-5">Fiwii </span>
+                        <span class="text-2 text-style-6 text-italic"><mark class="animated-underline accent">unete al Futuro</mark>.</span>
+                    </h2>
+                    <div class="description">
                     </div>
                 </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="200">
-                    <div class="card has-price rounded shadow parent">
-                        <!-- Header -->
-                        <div class="card-header rounded-top text-center bg-color accent">
-                            <h3 class="title m-0 text-style-11 text-italic white">
-                                <span>Básico</span>
-                                <span class="zzz mt-1 mb-1 scheme-3 accent"></span>
-                            </h3>
-                            <!-- Price -->
-                            <div class="price-wrapper">
-                                <span class="currency text-style-8 white-75">€</span>
-                                <span class="price text-style-3 white hover-up-down" data-annual="16" data-monthly="24">24</span>
-                                <span class="billing text-style-8 white-75">/mes</span>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="200">
+                        <div class="card has-price rounded shadow parent">
+                            <!-- Header -->
+                            <div class="card-header rounded-top text-center bg-color accent">
+                                <h3 class="title m-0 text-style-11 text-italic white">
+                                    <span>Básico</span>
+                                    <span class="zzz mt-1 mb-1 scheme-3 accent"></span>
+                                </h3>
+                                <!-- Price -->
+                                <div class="price-wrapper">
+                                    <span class="currency text-style-8 white-75">€</span>
+                                    <span class="price text-style-3 white hover-up-down"
+                                        data-monthly="24">24</span>
+                                    <span class="billing text-style-8 white-75">/mes</span>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body rounded-bottom bg-color white">
@@ -556,25 +545,25 @@
                         <!-- Link -->
                         <a href="{{ url('plans.basic') }}" class="full-link"></a>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="400">
-                    <div class="card has-price rounded shadow parent">
-                        <!-- Header -->
-                        <div class="card-header rounded-top text-center bg-color secondary">
-                            <!-- Label -->
-                            <span class="label-vertical to-bottom-right-out">
-                                <span class="label-line gray"></span>
-                                <span class="label-text gray">Más Comprado</span>
-                            </span>
-                            <h3 class="title m-0 text-style-11 text-italic white">
-                                <span class="bg-color secondary">Empresa</span>
-                                <span class="zzz mt-1 mb-1 scheme-3 secondary"></span>
-                            </h3>
-                            <!-- Price -->
-                            <div class="price-wrapper">
-                                <span class="currency text-style-8 white-75">€</span>
-                                <span class="price text-style-3 white hover-up-down" data-annual="28" data-monthly="39">39</span>
-                                <span class="billing text-style-8 white-75">/mes</span>
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="400">
+                        <div class="card has-price rounded shadow parent">
+                            <!-- Header -->
+                            <div class="card-header rounded-top text-center bg-color secondary">
+                                <!-- Label -->
+                                <span class="label-vertical to-bottom-right-out">
+                                    <span class="label-line gray"></span>
+                                    <span class="label-text gray">Más Comprado</span>
+                                </span>
+                                <h3 class="title m-0 text-style-11 text-italic white">
+                                    <span class="bg-color secondary">Empresa</span>
+                                    <span class="zzz mt-1 mb-1 scheme-3 secondary"></span>
+                                </h3>
+                                <!-- Price -->
+                                <div class="price-wrapper">
+                                    <span class="currency text-style-8 white-75">€</span>
+                                    <span class="price text-style-3 white hover-up-down" data-monthly="39">39</span>
+                                    <span class="billing text-style-8 white-75">/mes</span>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body rounded-bottom bg-color white">
@@ -613,20 +602,20 @@
                         <!-- Link -->
                         <a href="{{ url('plans.enterprise') }}" class="full-link"></a>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="600">
-                    <div class="card has-price rounded shadow parent">
-                        <!-- Header -->
-                        <div class="card-header rounded-top text-center bg-color tertiary">
-                            <h3 class="title m-0 text-style-11 text-italic white">
-                                <span class="bg-color tertiary">Premium</span>
-                                <span class="zzz mt-1 mb-1 scheme-3 tertiary"></span>
-                            </h3>
-                            <!-- Price -->
-                            <div class="price-wrapper">
-                                <span class="currency text-style-8 white-75">€</span>
-                                <span class="price text-style-3 white hover-up-down" data-annual="46" data-monthly="60">60</span>
-                                <span class="billing text-style-8 white-75">/mes</span>
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="600">
+                        <div class="card has-price rounded shadow parent">
+                            <!-- Header -->
+                            <div class="card-header rounded-top text-center bg-color tertiary">
+                                <h3 class="title m-0 text-style-11 text-italic white">
+                                    <span class="bg-color tertiary">Premium</span>
+                                    <span class="zzz mt-1 mb-1 scheme-3 tertiary"></span>
+                                </h3>
+                                <!-- Price -->
+                                <div class="price-wrapper">
+                                    <span class="currency text-style-8 white-75">€</span>
+                                    <span class="price text-style-3 white hover-up-down" data-monthly="60">60</span>
+                                    <span class="billing text-style-8 white-75">/mes</span>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body rounded-bottom bg-color white">
@@ -683,15 +672,16 @@
     </div>
 </div>
 
-<!-- Side Widget -->
-<div class="side-widget to-right invert-color mix-blend-difference d-only-desktop">
-    <div class="item">
-        <a href="#" class="link black black-hover hover-up">
-            <span class="widget label-vertical">
-                <span class="label-text black"><i class="fa-solid fa-arrow-right-long icon"></i>Scroll to
-                    top</span>
-            </span>
-        </a>
+
+    <!-- Side Widget -->
+    <div class="side-widget to-right invert-color mix-blend-difference d-only-desktop">
+        <div class="item">
+            <a href="#" class="link black black-hover hover-up">
+                <span class="widget label-vertical">
+                    <span class="label-text black"><i class="fa-solid fa-arrow-right-long icon"></i>Subir</span>
+                </span>
+            </a>
+        </div>
     </div>
 </div>
 
