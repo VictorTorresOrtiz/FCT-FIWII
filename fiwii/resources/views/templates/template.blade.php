@@ -52,7 +52,6 @@
 </head>
 <body class="shock-body">
     @yield('index')
-    @yield('index_en')
     <!-- Footer -->
     <footer id="footer" class="shock-footer scheme-1 primary">
         <div class="footer-content focus-trigger">
