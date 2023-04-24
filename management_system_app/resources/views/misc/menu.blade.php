@@ -7,31 +7,25 @@
 
 <div class="menu-logo text-center">
     <a href="#"><img class="rounded-circle bg-highlight" width="80" src="{{URL::asset('assets/images/avatars/5s.png')}}"></a>
-    <h1 class="pt-3 font-800 font-28 text-uppercase">{{Auth::user()->name}}</h1>
+    <h1 class="pt-3 font-800 font-28 text-uppercase">Fiwiii</h1>
     <p class="font-11 mt-n2">Bienvenido al <span class="color-highlight">Futuro.</span></p>
 </div>
 
 <div class="menu-items mb-4">
     <h5 class="text-uppercase opacity-20 font-12 pl-3">Menu</h5>
-    <a id="nav-welcome" href="{{url('fiwii')}}">
-        <i class="bi bi-house"></i>
-        <span>Inicio</span>
+    <a id="nav-welcome" href="{{url('profile')}}">
+        <i class="bi bi-person"></i>
+        <span>Perfil</span>
         <i class="fa fa-circle"></i>
         <!-----
         <em class="badge bg-highlight color-white">EJEMPLO</em>
         !------>
     </a>
-    <a id="nav-starters" href="{{url('profile')}}">
+    <a id="nav-starters" href="#">
         <i class="bi bi-list-nested"></i>
-        <span>Perfil</span>
+        <span>Gestión</span>
         <i class="fa fa-circle"></i>
     </a>
-    <a id="nav-starters" href="{{url('to-do')}}">
-        <i class="bi bi-list-nested"></i>
-        <span>Trabajo</span>
-        <i class="fa fa-circle"></i>
-    </a>
-
     <a id="nav-features" href="#">
         <i class="bi bi-upc-scan"></i>
          <span>QR</span>
