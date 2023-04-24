@@ -36,6 +36,14 @@
         <span>Close</span>
         <i class="fa fa-circle"></i>
     </a>
+    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="close-menu">
+        <i class="bi bi-x"></i>
+        <span>Cerrar Sesión</span>
+        <i class="fa fa-circle"></i>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
+    </a>
 </div>
 
 <div class="text-center">
