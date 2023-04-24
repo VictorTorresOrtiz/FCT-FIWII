@@ -12,7 +12,7 @@
 <div class="container" id="container">
 	<div class="form-container sign-in-container">
 		<form method="POST" action="{{ route('register') }}">
-			<h1>Create Account</h1>
+			<h1>Create Fiwii account</h1>
 			@csrf
             <label for="name" class="col-md-4 col-form-label text-md-right"></label>
             <input id="name" type="text" placeholder="Name" class="@error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -53,8 +53,8 @@
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-right">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
+				<h1>¿Tienes ya una cuenta Fiwii?</h1>
+				<p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
 				<a class="nav-link" href="{{url ('login')}}"><button class="ghost" id="signUp">Login</button></a>
 			</div>
 		</div>

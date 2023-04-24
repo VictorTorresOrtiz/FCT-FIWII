@@ -90,7 +90,7 @@
       <nav id="navbar" class="navbar navbar-expand-lg nfixed-scroll smart-scroll hover-line scheme-2 primary">
         <div class="container">
           <!-- Brand -->
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="{{url('/')}}">
             <img src="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
             data-logo-alt="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
             data-logo-mobile="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
@@ -293,19 +293,10 @@
                   </div>
                 </div>
               </li>
-
-            <ul class="navbar-nav navbar-icons">
-              <!-- Search icon -->
-              <li class="search-bar nav-item d-only-desktop">
-                <a href="#shock-search-bar" class="nav-link" rel="nofollow" data-bs-toggle="offcanvas" data-bs-target="#shock-search-bar" aria-controls="shock-search-bar">
-                  <i class="fa-solid fa-user icon"></i>
-                </a>
-              </li>
-            </ul>
             <!-- Action -->
             <div class="navbar-action">
               <div class="nav-item">
-                <a href="#"  class="button small-button rounded primary black-hover button-collision">
+                <a href="{{url('/')}}"  class="button small-button rounded primary black-hover button-collision">
                   <span class="button-text white white-hover">Volver al inicio </span>
                 </a>
               </div>
@@ -639,100 +630,6 @@
             <i class="fa-solid fa-arrow-up-long icon"></i>
           </span>
         </a>
-      </div>
-    </div>
-
-    <!-- User Bar Offcanvas -->
-    <div id="shock-search-bar" class="search-bar offcanvas offcanvas-top scheme-1 primary" tabindex="-1" aria-hidden="true" aria-modal="true" role="dialog">
-      <div class="offcanvas-dialog">
-        <div class="offcanvas-content">
-          <div class="megamenu w-100">
-            <div class="container">
-              <div class="section-inner-expanded fit-over-scrollbar">
-                <i class="fa-solid fa-xmark close-button black primary-hover" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-                <div class="row g-3">
-                  <!-- Search Tags -->
-                  <div class="col-12 col-md-6">
-                    <div class="megamenu-item">
-                      <h6 class="title">Popular searches</h6>
-                      <!-- Tag Cloud -->
-                      <div class="tag-cloud">
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Environment</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline active gray-50 primary-hover floating-item-smooth">
-                            <span class="badge-text gray white-hover">Events</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Technology</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Web</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Mobile</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Design</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Branding</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Development</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Artificial</span>
-                          </span>
-                        </a>
-                        <a href="#your-link" class="link">
-                          <span class="badge outline gray-50 primary-hover">
-                            <span class="badge-text gray white-hover">Intelligence</span>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Search Form -->
-                  <div class="col-12 col-md-6">
-                    <div class="megamenu-item">
-                      <h6 class="title"><mark class="animated-underline accent">What are you looking for?</mark></h6>
-                      <!-- Form -->
-                      <div class="form-area scheme-1">
-                        <form class="form-fields needs-validation" novalidate="novalidate">
-                          <div class="form-row row has-icon">
-                            <div class="form-col form-floating">
-                              <button class="button overlay-button"><img class="overlay-image-icon" src="assets/svg/send-outline.svg" alt="Icon name" data-shock-icon="32" /></button>
-                              <input id="InputSearchNavbar" class="form-control focus-trigger-field" name="InputSearchNavbar" placeholder="Type keywords..." required="required">
-                              <label for="InputSearchNavbar" class="form-label">Type keywords...</label>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 

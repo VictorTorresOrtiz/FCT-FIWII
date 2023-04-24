@@ -37,30 +37,6 @@ Route::get('/auth.account-en', function () {
 })->name('account-en');
 
 
-Route::get('/plans.basic', function () {
-    return view('plans.basic');
-})->name('plans.basic');
-
-Route::get('/plans.basic-en', function () {
-    return view('plans.basic-en');
-})->name('plans.basic-en');
-
-Route::get('/plans.enterprise', function () {
-    return view('plans.enterprise');
-})->name('plans.enterprise');
-
-Route::get('/plans.enterprise-en', function () {
-    return view('plans.enterprise-en');
-})->name('plans.enterprise-en');
-
-Route::get('/plans.premium', function () {
-    return view('plans.premium');
-})->name('plans.premium');
-
-Route::get('/plans.premium-en', function () {
-    return view('plans.premium-en');
-})->name('plans.premium-en');
-
 //Dashboard
 Route::get('/admin.dashboard', function () {
     return view('admin.dashboard');

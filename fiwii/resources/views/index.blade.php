@@ -5,10 +5,11 @@
         <img src="{{ URL::asset('assets/images/logo-gradient.svg') }}" class="emblem" alt="Emblem" />
     </div>
 
-    <!-- Popup Bar -->
+    <!-- Popup Bar Non auth -->
+    @if (!Auth::user())
     <div id="popup-bar" class="popup-bar bg-gradient scheme-1 shadow d-none">
         <p class="description white-85">Aprovecha nuestras ofertas! en Fiwii App.</p>
-        <a href="{{ url('account') }}" target="_blank" class="button simple">
+        <a href="#" target="_blank" class="button simple">
             <span class="button-text white white-hover"><mark class="animated-underline tertiary active">Comprar</mark></span>
             <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
         </a>
@@ -16,6 +17,21 @@
             <i class="fa-solid fa-xmark button-icon white tertiary-hover"></i>
         </button>
     </div>
+    @endif
+
+    @if (Auth::user())
+     <!-- Popup Bar Non auth -->
+     <div id="popup-bar" class="popup-bar bg-gradient scheme-1 shadow d-none">
+        <p class="description white-85">¿Quiere mejorar su plan Fiwii.</p>
+        <a href="#comprar" class="button simple">
+            <span class="button-text white white-hover"><mark class="animated-underline tertiary active">Saber más</mark></span>
+            <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+        </a>
+        <button id="popup-bar-dismiss" class="button close-button">
+            <i class="fa-solid fa-xmark button-icon white tertiary-hover"></i>
+        </button>
+    </div>
+    @endif
 
     <!-- Header -->
     <header id="header" class="shock-header">
