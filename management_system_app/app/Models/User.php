@@ -23,7 +23,6 @@ class User extends Authenticatable
         'username',
         'email',
         'password',
-        'plan',
     ];
 
     /**
@@ -49,4 +48,5 @@ class User extends Authenticatable
     public function user(){
         return $this->belongsTo('App\Models\User', 'id_user','id');
     }
+
 }

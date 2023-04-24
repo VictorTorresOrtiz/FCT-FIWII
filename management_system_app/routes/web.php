@@ -25,9 +25,9 @@ Route::get('/conf', function () {
     return view('conf');
 })->middleware('auth')->name('conf');
 
-Route::get('/auth.account', function () {
-    return view('auth.account');
-})->middleware('auth')->name('auth.account');
+Route::get('/auth.login', function () {
+    return view('auth.login');
+})->middleware('auth')->name('auth.login');
 
 Route::get('/profile', function () {
     return view('profile');
