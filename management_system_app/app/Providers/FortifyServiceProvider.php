@@ -46,7 +46,7 @@ class FortifyServiceProvider extends ServiceProvider
 
 
         Fortify::loginView(function () {
-            return view('auth.account');
+            return view('auth.login');
         });
         Fortify::authenticateUsing(function (Request $request) {
             $user = User::where('email', $request->email)->first();
@@ -56,7 +56,7 @@ class FortifyServiceProvider extends ServiceProvider
             }
         });
         Fortify::registerView(function () {
-            return view('register');
+            return view('auth.register');
         });
     }
 }
