@@ -213,6 +213,21 @@
                                                 </svg>
                                             </a>
                                         </li>
+                                        @if (Auth::user())
+                                        <li class="nav-item dropdown has-megamenu hover">
+                                            <a class="nav-link dropdown-toggle has-icon flutter-underline"
+                                                href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                                <span class="text">Cerrar Sesión</span>
+                                                <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                        @endif
                                     </ul>
                                     <!-- Action -->
                                     <div class="navbar-nav navbar-action">
@@ -222,15 +237,9 @@
                                                 <span class="button-text accent white-hover">Comprar Fiwii</span>
                                             </a>
                                             @else
-                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                {{ Auth::user()->name }}
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                              <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
-                                            </ul>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                @csrf
-                                            </form>
+                                            <a href="{{url('/admin.dashboard')}}" class="button small-button rounded primary-15 accent-hover button-collision">
+                                                <span class="button-text accent white-hover">Dashboard</span>
+                                            </a>
                                             @endif
                                         </div>
                                     </div>
@@ -261,7 +270,11 @@
                             <!-- Intro -->
                             <div class="basic-intro text-center">
                                 <h1 class="title black">
+                                    @if (!Auth::user())
                                     <span class="text-1 d-block text-style-3">Fiwii Systems </span>
+                                    @else
+                                    <span class="text-1 d-block text-style-3">Bienvenido {{ Auth::user()->name }}</span>
+                                    @endif
                                     <span class="text-2 text-style-4 text-italic">The future is <mark
                                             class="animated-underline accent">now</mark>.</span>
                                 </h1>
@@ -487,7 +500,7 @@
                                 </div>
                             </div>
                             <!-- Link -->
-                            <a href="{{ url('plans.basic') }}" class="full-link"></a>
+                            <a href="{{ url('auth.login') }}" class="full-link"></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="400">
@@ -551,7 +564,7 @@
                                 </div>
                             </div>
                             <!-- Link -->
-                            <a href="{{ url('plans.enterprise') }}" class="full-link"></a>
+                            <a href="{{ url('auth.login') }}" class="full-link"></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="600">
@@ -612,7 +625,7 @@
                                 </div>
                             </div>
                             <!-- Link -->
-                            <a href="{{ url('plans.premium') }}" class="full-link"></a>
+                            <a href="{{ url('auth.login') }}" class="full-link"></a>
                         </div>
                     </div>
                 </div>

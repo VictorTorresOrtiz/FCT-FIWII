@@ -24,11 +24,15 @@ Route::get('/en', function () {
     return view('en');
 })->name('en');
 
-Route::get('/account', function () {
-    return view('auth.account');
-})->name('account');
+Route::get('/auth.register', function () {
+    return view('auth.register');
+})->name('auth.register');
 
-Route::get('/account-en', function () {
+Route::get('/auth.login', function () {
+    return view('auth.login');
+})->name('auth.login');
+
+Route::get('/auth.account-en', function () {
     return view('auth.account-en');
 })->name('account-en');
 
@@ -60,7 +64,7 @@ Route::get('/plans.premium-en', function () {
 //Dashboard
 Route::get('/admin.dashboard', function () {
     return view('admin.dashboard');
-})->name('admin.dashboard');
+})->name('admin.dashboard')->middleware('auth');
 
 Route::get('/admin.app-dashboard', function () {
     return view('admin.app-dashboard');

@@ -69,17 +69,16 @@
                 <a href="{{url('fiwii')}}" class="btn btn-m mt-4 mb-4 btn-full bg-green-dark rounded-sm text-uppercase font-900">Acceder</a>
 
                 <div class="divider"></div>
-
-                <a href="#" class="btn btn-icon btn-m rounded-sm btn-full shadow-l bg-facebook text-uppercase font-700 text-start"><i class="fab fa-facebook-f text-center"></i>Acceder con Facebook</a>
-                <a href="#" class="btn btn-icon btn-m rounded-sm mt-2 btn-full shadow-l bg-twitter text-uppercase font-700 text-start"><i class="fab fa-twitter text-center"></i>Acceder con Twitter</a>
-
-                <div class="divider mt-4 mb-3"></div>
-
-                <div class="d-flex">
-                    <div class="w-50 font-11 pb-2 color-theme opacity-60 pb-3 text-start"><a href="#" class="color-theme">Crear uenta</a></div>
+                <div class="card card-style preload-img" data-src="images/pictures/20s.jpg" data-card-height="350">
+                    <div class="card-center text-center">
+                        <p class="line-height-xl font-19 font-300 color-white ps-3 pe-3 mb-2">
+                            Iniciar Sesión.
+                        </p>
+                        <p class="opacity-50 color-white">Para acceder Fiwii Systems introduzca las credenciales proporcionadas por su Administrador</p>
+                    </div>
+                    <div class="card-overlay bg-highlight opacity-90"></div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

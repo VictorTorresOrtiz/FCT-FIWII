@@ -19,36 +19,36 @@ Route::get('/', function () {
 
 Route::get('/fiwii', function () {
     return view('fiwii');
-})->name('fiwii');
+})->middleware('auth')->name('fiwii');
 
 Route::get('/conf', function () {
     return view('conf');
-})->name('conf');
+})->middleware('auth')->name('conf');
 
-Route::get('/account', function () {
-    return view('account');
-})->name('account');
+Route::get('/auth.account', function () {
+    return view('auth.account');
+})->middleware('auth')->name('auth.account');
 
 Route::get('/profile', function () {
     return view('profile');
-})->name('profile');
+})->middleware('auth')->name('profile');
 
 Route::get('/to-do', function () {
     return view('to-do');
-})->name('to-do');
+})->middleware('auth')->name('to-do');
 
 
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');
-})->name('misc.menu-share');
+})->middleware('auth')->name('misc.menu-share');
 
 Route::get('/misc.menu', function () {
     return view('misc.menu');
-})->name('misc.menu');
+})->middleware('auth')->name('misc.menu');
 
 Route::get('/misc.menu-footer', function () {
     return view('misc.menu-footer');
-})->name('misc.menu-footer');
+})->middleware('auth')->name('misc.menu-footer');
 
 
 
