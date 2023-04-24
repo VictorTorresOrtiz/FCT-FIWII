@@ -32,7 +32,6 @@
         </button>
     </div>
     @endif
-
     <!-- Header -->
     <header id="header" class="shock-header">
         <!-- Navbar -->
@@ -47,17 +46,10 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav">
                                         <li class="nav-item dropdown hover">
-                                            <a href="#" class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <p class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <i class="fa-solid fa-earth-americas icon"></i>
-                                                <span class="text">Español</span><img class="image-icon dropdown-icon" src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
-                                            </a>
-                                            <ul class="dropdown-menu animate fade-down">
-                                                <li class="nav-item">
-                                                    <a href="{{ url('en') }}" class="nav-link">
-                                                        <span>English</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                                <span class="text">Español</span>
+                                            </p>                  
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link has-icon">
@@ -151,11 +143,8 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav ms-auto">
                                         <li class="nav-item dropdown has-megamenu hover">
-                                            <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#"
-                                                data-bs-toggle="dropdown">
-                                                <span class="text">Fiwii App</span><img class="image-icon dropdown-icon"
-                                                    src="{{ URL::asset('assets/svg/chevron-down-outline.svg') }} "
-                                                    alt="Icon name" data-shock-icon="32" />
+                                            <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#" data-bs-toggle="dropdown">
+                                                <span class="text">Fiwii App</span><img class="image-icon dropdown-icon" src="{{ URL::asset('assets/svg/chevron-down-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
                                                 <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                                                     <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
                                                 </svg>
@@ -219,20 +208,9 @@
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="nav-item dropdown has-megamenu hover">
-                                            <a class="nav-link dropdown-toggle has-icon flutter-underline"
-                                                href="#pricing">
-                                                <span class="text">Unirse a Fiwii</span>
-                                                <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
-                                                    </path>
-                                                </svg>
-                                            </a>
-                                        </li>
                                         @if (Auth::user())
                                         <li class="nav-item dropdown has-megamenu hover">
-                                            <a class="nav-link dropdown-toggle has-icon flutter-underline"
-                                                href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <a class="nav-link dropdown-toggle has-icon flutter-underline" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                                 <span class="text">Cerrar Sesión</span>
                                                 <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                                                     <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
@@ -291,8 +269,7 @@
                                     @else
                                     <span class="text-1 d-block text-style-3">Bienvenido {{ Auth::user()->name }}</span>
                                     @endif
-                                    <span class="text-2 text-style-4 text-italic">The future is <mark
-                                            class="animated-underline accent">now</mark>.</span>
+                                    <span class="text-2 text-style-4 text-italic">The future is <mark class="animated-underline accent">now</mark>.</span>
                                 </h1>
                             </div>
                         </div>
@@ -326,7 +303,7 @@
                                     <i class="fa-regular fa-pen-to-square icon"></i>
                                     <span class="text ms-05">Datos en tiempo real</span>
                                 </div>
-                                <p class="description">Edita, elimina o crea sistemas en tiempo real</p>
+                                <p class="description">Edita, elimina o crea sistemas y usuarios en tiempo real</p>
                             </div>
                         </div>
                     </div>

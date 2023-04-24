@@ -37,7 +37,3 @@ Route::get('/admin.app-dashboard', function () {
 Route::get('/admin.web-dashboard', function () {
     return view('admin.web-dashboard');
 })->name('admin.web-dashboard')->middleware('auth');
-
-
-
-
