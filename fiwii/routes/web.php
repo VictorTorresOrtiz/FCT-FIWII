@@ -16,10 +16,6 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/en', function () {
-    return view('en');
-})->name('en');
-
 Route::get('/auth.register', function () {
     return view('auth.register');
 })->name('auth.register');
