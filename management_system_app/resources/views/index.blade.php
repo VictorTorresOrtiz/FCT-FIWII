@@ -28,7 +28,6 @@
 
     <div class="page-content pb-0">
 
-
         <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
             <div class="splide__track">
                 <div class="splide__list">
@@ -60,7 +59,7 @@
                                         <a href="#" class="btn-full btn btn-m btn-border border-highlight color-highlight rounded-sm font-900 text-uppercase">Crear Cuenta</a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="{{url('account')}}" class=" btn-full btn btn-m bg-highlight color-white rounded-sm font-900 text-uppercase scale-box">Acceder</a>
+                                        <a href="{{url('/auth.account')}}" class=" btn-full btn btn-m bg-highlight color-white rounded-sm font-900 text-uppercase scale-box">Acceder</a>
                                     </div>
                                 </div>
                             </div>
