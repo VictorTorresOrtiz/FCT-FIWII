@@ -2,9 +2,9 @@
 @section('login')
 <form method="POST" action="{{ route('login') }}">
     @csrf
-    <h1>Inicio de sesión</h1>
+    <h1 class="mt-3">Inicio de sesión</h1>
     <label for="email" class="col-md-4 col-form-label text-md-right"></label>
-    <input id="email" type="email" placeholder="Dirección email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+    <input id="email" type="email" placeholder="Email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
     <span id="email-message"></span>
     {{-- @error('email')
         <span class="invalid-feedback" role="alert">
@@ -22,7 +22,7 @@
     <button id="accent" type="submit">
         {{ __('Iniciar sesión') }}
     </button>
-    <a id="fuera" href="{{ url('register') }}">Pincha aquí si  no tienes cuenta</a>
+    <a id="fuera" href="{{ url('register') }}">Crear Cuenta</a>
 </form>
 
 </div>
