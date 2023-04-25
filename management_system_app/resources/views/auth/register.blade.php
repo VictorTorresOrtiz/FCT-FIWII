@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
+    <title>NAN</title>
     <link rel="stylesheet" href="{{ URL::asset('assets/css/auth.css') }}" />
 
 </head>
@@ -12,7 +12,7 @@
 <div class="container" id="container">
 	<div class="form-container sign-in-container">
 		<form method="POST" action="{{ route('register') }}">
-			<h1>Create Fiwii account</h1>
+			<h1>Sin funcionalidad en fiwii app</h1>
 			@csrf
             <label for="name" class="col-md-4 col-form-label text-md-right"></label>
             <input id="name" type="text" placeholder="Name" class="@error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>

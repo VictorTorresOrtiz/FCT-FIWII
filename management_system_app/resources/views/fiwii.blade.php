@@ -89,7 +89,7 @@
         <div class="content mt-0">
             <div class="row">
                 <div class="col-6">
-                    <a href="#" class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight" data-menu="menu-install-pwa-android">Instalar Fiwii</a>
+                    <a href="{{url('to-do')}}" class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight" data-menu="">Tareas</a>
                 </div>
                 <div class="col-6">
                     <a href="#" class="btn btn-full btn-border btn-m rounded-s text-uppercase font-900 shadow-l border-highlight color-highlight" data-menu="menu-call">Soporte</a>

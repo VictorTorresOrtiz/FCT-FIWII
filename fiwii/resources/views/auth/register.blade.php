@@ -1,7 +1,7 @@
 @extends('templates.template-cuenta')
 @section('register')
             <form method="POST" action="{{ route('register') }}">
-                <h1>Crea tu cuenta de Fiwii</h1>
+                <h1 class="mt-3">Crear Cuenta Fiwii</h1>
                 @csrf
                 <label for="name" class="col-md-4 col-form-label text-md-right"></label>
                 <input id="name" type="text" placeholder="Nombre" class="@error('name') is-invalid @enderror"
@@ -20,7 +20,7 @@
                     </span>
                 @enderror
                 <label for="email" class="col-md-4 col-form-label text-md-right"></label>
-                <input id="email" type="email" placeholder="Dirección email"
+                <input id="email" type="email" placeholder="Ezmail"
                     class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required
                     autocomplete="email">
                 @error('email')
@@ -40,7 +40,7 @@
                 <button type="submit" id="accent" class="justify-content-center1 align-items-center d-flex ">
                     {{ __('Registrarse') }}
                 </button>
-                <a id="fuera" href="{{ url('login') }}">Pincha aquí para iniciar sesión</a>
+                <a id="fuera" href="{{ url('login') }}">¿Ya dispones de una cuenta?</a>
             </form>
         </div>
         <div class="overlay-container">
