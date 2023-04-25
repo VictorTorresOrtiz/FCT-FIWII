@@ -86,20 +86,6 @@
         </button>
         <!-- Navbar links -->
         <div id="navbar-items" class="collapse navbar-collapse focus-trigger">
-          <!-- Responsive search form -->
-          <div class="search-bar navbar-collapse-form">
-            <div class="form-area d-only-mobile d-none scheme-1">
-              <form class="form-fields needs-validation" novalidate="novalidate">
-                <div class="form-row row has-icon">
-                  <div class="form-col mb-0 form-floating">
-                    <button class="button overlay-button"><img class="overlay-image-icon" src="assets/svg/send-outline.svg" alt="Icon name" data-shock-icon="32" /></button>
-                    <input id="InputSearchMobile" class="form-control focus-trigger-field" name="InputSearchMobile" placeholder="Type keywords..." required="required">
-                    <label for="InputSearchMobile" class="form-label">Type keywords...</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
           <!-- Link -->
           <ul class="navbar-nav ms-auto">
 
@@ -328,7 +314,7 @@
                   <div class="col-12 col-md-6">
                     <div class="card has-icon hover-up parent">
                       <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/bar-chart-outline.svg" alt="Icon name" data-shock-icon="32" />
+                        <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/addAdmin.svg') }}" alt="Icon name" data-shock-icon="32" />
                         <h3 class="title text-style-11 black">Añadir Administrador</h3>
                         <p class="description">Dar de alta una cuenta de Administrador Fiwii.</p>
                         <!-- Button -->
@@ -346,9 +332,9 @@
                   <div class="col-12 col-md-6">
                     <div class="card has-icon hover-up parent">
                       <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/boat-outline.svg" alt="Icon name" data-shock-icon="32" />
+                        <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/addUser.svg') }}" alt="Icon name" data-shock-icon="32" />
                         <h3 class="title text-style-11 black">Añadir Usuario</h3>
-                        <p class="description">Dar de alta un usuario por defecto para sus empleados.</p>
+                        <p class="description">Dar de alta una cuenta para sus empleados.</p>
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
@@ -364,7 +350,7 @@
                   <div class="col-12 col-md-6">
                     <div class="card has-icon hover-up parent">
                       <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/earth-outline.svg" alt="Icon name" data-shock-icon="32" />
+                        <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/todoList.svg') }}" alt="Icon name" data-shock-icon="32" />
                         <h3 class="title text-style-11 black">Lista de Tareas</h3>
                         <p class="description">Asignar lista de tareas a sus empleados.</p>
                         <!-- Button -->
@@ -382,7 +368,7 @@
                   <div class="col-12 col-md-6">
                     <div class="card has-icon hover-up parent">
                       <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/cube-outline.svg" alt="Icon name" data-shock-icon="32" />
+                        <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/deleteUser.svg') }}" alt="Icon name" data-shock-icon="32" />
                         <h3 class="title text-style-11 black">Eliminar Cuentas</h3>
                         <p class="description">Dar de baja cualquier cuenta asociada a su empresa</p>
                         <!-- Button -->
@@ -405,31 +391,31 @@
                   <div class="col-12 col-md-6">
                     <div class="card has-icon hover-up parent">
                       <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/videocam-outline.svg" alt="Icon name" data-shock-icon="32" />
+                        <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}" alt="Icon name" data-shock-icon="32" />
                         <h3 class="title text-style-11 black">Base de Datos Sistemas</h3>
                         <p class="description">Descargar base de datos completa de todos los Sistemas</p>
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Descargar</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
                         <!-- Link -->
-                        <a href="#your-link" class="full-link"></a>
+                        <a href="{{ route('descargar.base-de-datos') }}" class="full-link"></a>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="card has-icon hover-up parent">
                       <div class="card-body rounded-3 small-shadow bg-color white">
-                        <img class="card-image-icon primary" src="assets/svg/layers-outline.svg" alt="Icon name" data-shock-icon="32" />
+                        <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}" alt="Icon name" data-shock-icon="32" />
                         <h3 class="title text-style-11 black">Base de datos Usuarios</h3>
                         <p class="description">Descargar base de datos completa de sus empleados.</p>
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Descargar</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
