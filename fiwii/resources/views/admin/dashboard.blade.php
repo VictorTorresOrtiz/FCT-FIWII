@@ -3,7 +3,7 @@
 
   <!-- Preloader -->
   <div id="preloader" class="preloader" data-delay="0" data-limit="3000">
-    <img src="assets/images/logo.svg" class="emblem" alt="Emblem" hidden="hidden" />
+    <img src="{{ URL::asset('assets/images/logo.svg') }}" class="emblem" alt="Emblem" hidden="hidden" />
   </div>
 
   <head>
@@ -342,7 +342,7 @@
                       </span>
                       <!-- Link -->
                       <h3 class="title text-style-11 black">
-                        <a href="{{url('/admin.app-dashboard')}}" target="_blank" class="link align-v-center black black-hover hover-up-down">
+                        <a href="{{url('/admin.app-dashboard')}}" class="link align-v-center black black-hover hover-up-down">
                           <i class="fa-solid fa-mobile icon"></i>
                           <span class="text ms-05">Fiwii App Admin Panel</span>
                           <span class="badge ms-05 warning warning-hover">

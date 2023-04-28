@@ -294,12 +294,11 @@
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="{{url('/')}}">
-                    <button class="nav-link" aria-selected="false" data-bs-toggle="tab" role="tab">
+                    <button class="nav-link" aria-selected="false" data-bs-toggle="modal" data-bs-target="#modal-1">
                     Gestor de Sistemas
                     </button>
-                </a>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" aria-selected="false" aria-controls="v-3" data-bs-target="#v-3" data-bs-toggle="tab" role="tab">
                   Bases de Datos
@@ -325,7 +324,7 @@
                           </span>
                         </div>
                         <!-- Link -->
-                        <a href="#your-link" class="full-link"></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-admin" class="full-link"></a>
                       </div>
                     </div>
                   </div>
@@ -431,7 +430,6 @@
         </div>
       </section>
 
-
       <!-- Progress bar circle -->
       <section class="shock-section pt-5 pb-6" data-aos="fade-up" data-aos-delay="400">
         <div class="container">
@@ -472,74 +470,134 @@
         </div>
       </section>
 
-      <!-- Image --
-      <section class="shock-section pt-5 pb-5">
-        <div class="container max-w-85">
-          <div class="row g-4">
-            <div class="col-12 col-md-5">
-              <!-- Image --
-              <div class="gallery" data-lax="inertia-top">
-                <a href="https://vimeo.com/222990241" class="item active lightbox-link">
-                  <i class="fa-solid fa-circle-play gallery-icon white"></i>
-                  <div class="image-wrapper shadow rounded">
-                    <img src="assets/images/jpg/b-34.jpg" class="image" alt="Image name" />
-                  </div>
-                </a>
+    <!-- Modal añadir admin -->
+    <!-- Modal -->
+      <div id="modal-admin" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog max-w-50">
+          <div class="modal-content shadow">
+            <div class="modal-header">
+              <i class="fa-solid fa-xmark close-button black secondary-hover" data-bs-dismiss="modal" aria-label="Close"></i>
+              <!-- Intro -->
+              <div class="basic-intro">
+                <h2 class="title black">
+                  <span class="text-1 text-style-7">Añadir cuenta Fiwii </span>
+                  <span class="text-2 text-style-8 text-italic"><mark class="animated-underline accent">Admin</mark></span>
+                </h2>
+                <div class="description gray">
+                  <p>Introduce los datos del nuevo Administrador</p>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-7 align-v-center">
-              <div class="holder">
-                <!-- Intro --
-                <div class="basic-intro mb-35">
-                  <h2 class="title black">
-                    <span class="text-1 text-style-5">We seek </span>
-                    <span class="text-2 text-style-6 text-italic">the <mark class="animated-underline primary">extraordinary</mark>.</span>
-                  </h2>
-                  <div class="description gray">
-                    <p>We keep in mind that we always need to improve everything we do, aiming to help people with our products and services, prioritizing quality.</p>
+            <div class="modal-body">
+              <!-- Form -->
+              <div class="form-area scheme-1 secondary">
+                <form action="php/sender.php" class="form-fields needs-validation ajax-form" novalidate="novalidate">
+                  <div class="form-row row">
+                    <div class="form-col form-floating col-12 col-md-6">
+                      <input type="text" name="name" id="InputFloatingName" class="form-control" placeholder="Nombre" required="required">
+                      <label for="InputFloatingName" class="form-label">Nombre</label>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                      <div class="valid-feedback">Looks good.</div>
+                    </div>
+                    <div class="form-col form-floating col-12 col-md-6">
+                      <input type="email" name="email" id="InputFloatingEmail" class="form-control" placeholder="name@example.com" required="required">
+                      <label for="InputFloatingEmail" class="form-label">Email</label>
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                      <div class="valid-feedback">Looks good.</div>
+                    </div>
                   </div>
-                </div>
-                <!-- Table --
-                <div class="table-responsive">
-                  <table class="table scheme-1">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="black">#</th>
-                        <th scope="col" class="black">Phases</th>
-                        <th scope="col" class="black">Follow-up</th>
-                        <th scope="col" class="black">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="black">1</th>
-                        <td>Prototyping</td>
-                        <td>With the client</td>
-                        <td>From 1 to 2 days</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="black">2</th>
-                        <td>Development</td>
-                        <td>Technology team</td>
-                        <td>From 1 to 5 days</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="black">3</th>
-                        <td>Validation</td>
-                        <td>Management team</td>
-                        <td>Project ready</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <small class="opacity-75">* This is an example note about a table item.</small>
+                  <div class="form-row row">
+                    <div class="form-col form-floating col-12">
+                      <textarea type="password" name="password"  id="InputFloatingName" class="form-control form-textarea" rows="3" placeholder="Contraseña" required="required"></textarea>
+                      <label for= "InputFloatingMessage" class="form-label">Contraseña</label>
+                      <div class="invalid-feedback">Please enter a valid password.</div>
+                      <div class="valid-feedback">Looks good.</div>
+                    </div>
+                  </div>
+                  <div class="form-row row">
+                    <div class="form-col col-12 col-md-8">
+                      <div class="form-check">
+                        <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio" checked="checked" required="required">
+                        <label class="form-label form-check-label" for="InputRadioChecked">
+                          Default Admin Account.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                      
+                      </div>
+                    </div>
+                    <div class="form-col col-12 col-md-4 align-h-right">
+                      <!-- Button -->
+                      <button class="button arrow-button next scheme-1 secondary">
+                        <span class="arrow">
+                          <span class="item"></span>
+                          <span class="item"></span>
+                        </span>
+                        <span class="line"></span>
+                        <span class="text">Crear Cuenta</span>
+                      </button>
+                    </div>
+                  </div>
+                  <input type="hidden" name="subject" value="Message sent through the contact form.">
+                  <span class="form-alert success">Your account was create successful. Thanks.</span>
+                  <span class="form-alert error">Sorry. We were unable to send create your account.</span>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      !---->
+      </div>
 
+      <!-- Modal Gestor de sistemas -->
+    <div id="modal-1" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog max-w-50">
+          <div class="modal-content shadow rounded-3">
+            <div class="modal-header pb-0">
+              <i class="fa-solid fa-xmark close-button black primary-hover" data-bs-dismiss="modal" aria-label="Close"></i>
+              <!-- Intro -->
+              <div class="basic-intro">
+                <h2 class="title text-style-7 black">Lista de Sistemas</h2>
+                <hr class="gray-25">
+              </div>
+            </div>
+            <div class="modal-body pt-0 pb-0">
+                <!-- Table -->
+                <div class="table-responsive">
+                  <table class="table scheme-1">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="black">ID</th>
+                        <th scope="col" class="black">Nombre</th>
+                        <th scope="col" class="black">Descripción</th>
+                        <th scope="col" class="black">Ubicación</th>
+                        <th scope="col" class="black">Visualizar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($systems as $system)
+                        <tr>
+                            <th scope="row" class="black">{{ $system->id }}</th>
+                            <td>{{ $system->name }}</td>
+                            <td>{{ $system->description }}</td>
+                            <td>{{ $system->ubicacion }}</td>
+                            <td><a href="#" class="btn btn-success btn-sm"> <i class="bi bi-eye"></i> </a></td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                  </table>
+            </div>
+            <div class="modal-footer">
+              <div class="button-wrapper">
+                <!-- Button -->
+                <button class="button shadow rounded-3 black primary-hover"  data-bs-dismiss="modal">
+                  <span class="button-text white white-hover">Cerrar</span>
+                  <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
