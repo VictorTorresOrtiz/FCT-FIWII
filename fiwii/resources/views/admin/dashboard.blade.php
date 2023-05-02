@@ -82,10 +82,7 @@
                                             <!-- Tab navigation -->
                                             <ul id="elements-tab" class="nav nav-tabs js-tabs-event" role="tablist">
                                                 <li class="nav-item" role="presentation">
-                                                    <button id="elements-1-tab" class="title nav-link active"
-                                                        aria-selected="true" aria-controls="elements-1"
-                                                        data-bs-target="#elements-1" data-bs-toggle="tab"
-                                                        role="tab">
+                                                    <button id="elements-1-tab" class="title nav-link active" aria-selected="true" aria-controls="elements-1" data-bs-target="#elements-1" data-bs-toggle="tab" role="tab">
                                                         Cuenta
                                                     </button>
                                                 </li>
@@ -313,8 +310,7 @@
                                             </span>
                                         </a>
                                     </h3>
-                                    <p class="description gray">Panel de administrador para Fiwii management systems
-                                        app</p>
+                                    <p class="description gray">Panel de administrador para Fiwii management systems app</p>
                                 </div>
                             </div>
                         </div>
@@ -322,8 +318,7 @@
                             <div class="card boxed parent">
                                 <!-- Image -->
                                 <div class="image-wrapper shadow rounded">
-                                    <img src="{{ URL::asset('assets/images/walpapers/fiwiiWeb.gif') }}"
-                                        alt="Image name" class="image min-vh-50 fit-cover" />
+                                    <img src="{{ URL::asset('assets/images/walpapers/fiwiiWeb.gif') }}" alt="Image name" class="image min-vh-50 fit-cover" />
                                 </div>
                                 <!-- Box -->
                                 <div class="card-body box shadow rounded bg-color white">

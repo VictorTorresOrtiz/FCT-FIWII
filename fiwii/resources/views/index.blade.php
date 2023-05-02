@@ -45,12 +45,6 @@
                                 <div class="navbar-left">
                                     <!-- Link -->
                                     <ul class="navbar-nav">
-                                        <li class="nav-item dropdown hover">
-                                            <p class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="fa-solid fa-earth-americas icon"></i>
-                                                <span class="text">Español</span>
-                                            </p>
-                                        </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link has-icon">
                                                 <i class="fa-solid fa-envelope icon"></i>
