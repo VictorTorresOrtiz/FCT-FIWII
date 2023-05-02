@@ -14,7 +14,6 @@
         <form method="POST">
             @csrf
             @yield('account')
-            @yield('account_en')
         </form>
         <div class="drops">
             <div class="drop drop-1"></div>

@@ -458,7 +458,7 @@
 
 .banner-metadata .item .text {
 	margin: 0;
-	color: var(--color);
+	color: var(--accent-color);
 }
 
 .banner-metadata .item .icon {
@@ -483,7 +483,7 @@
 }
 
 .banner-breadcrumb .item .text {
-	color: var();
+	color: var(--accent-color);
 }
 
 .banner-breadcrumb .item .link {
@@ -1261,7 +1261,7 @@ button {
 	left: 0;
 	bottom: 25px;
 	transform: rotate(180deg);
-	background: linear-gradient(to right, var(--color), var(--color) 50%, var(--color-1) 50%);
+	background: linear-gradient(to right, var(--accent-color), var(--accent-color) 50%, var(--accent-color) 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -1353,7 +1353,7 @@ button {
 
 .arrow-button.prev .text {
 	transform: rotate(0);
-	background: linear-gradient(to right, var(--color-1), var(--color-1) 50%, var(--color) 50%);
+	background: linear-gradient(to right, var(--accent-color), var(--accent-color) 50%, var(--accent-color) 50%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -3492,7 +3492,7 @@ table {
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
 	border: none;
-	color: var(--color-1);
+	color: var(--accent-color);
 }
 
 .nav-tabs .nav-link.active,
@@ -3512,7 +3512,7 @@ table {
 	right: 50%;
 	width: 0;
 	height: 5px;
-	background-color: var(--color);
+	background-color: var(--accent-color);
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -3549,7 +3549,7 @@ table {
 	right: calc(100% + -1.5px);
 	height: 0;
 	width: 5px;
-	background-color: var(--color);
+	background-color: var(--accent-color);
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -3564,7 +3564,7 @@ table {
 	right: calc(100% + -1.5px);
 	height: 0;
 	width: 5px;
-	background-color: var(--color);
+	background-color: var(--accent-color);
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -4113,7 +4113,7 @@ table {
 
 .text-icon-overlay .text {
 	margin: 0;
-	color: var(--color);
+	color: var(--accent-color);
 }
 
 .text-icon-overlay .image-icon {
@@ -4269,8 +4269,8 @@ table {
 	text-align: center;
 	font-size: 1.2rem;
 	font-weight: 400;
-	background-color: var(--black-color);
-	color: var(--white-color);
+	background-color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .radial-progress-bar .outline .progressbar-text {
@@ -4278,15 +4278,11 @@ table {
 	height: 40px;
 	top: initial;
 	bottom: 45px;
-	font-family: var(--secondary-font);
+	font-family: var(--accent-color);
 	font-size: 3rem;
 	font-weight: 800;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 1px;
-}
-
-.radial-progress-bar svg path:first-child {
-	stroke-dasharray: 3.5 1.75;
 }
 
 @media (max-width: 991px) {
@@ -4337,7 +4333,7 @@ table {
 .scrolling-text .text-wrapper .text {
 	margin: 0;
 	line-height: 1;
-	color: var(--color);
+	color: var(--accent-color);
 }
 
 .scrolling-text .text-wrapper .text:first-child {
@@ -4750,7 +4746,7 @@ table {
 	margin: 0;
 	padding: 0.5rem 0;
 	font-size: 1rem;
-	color: var(--color-2);
+	color: var(--accent-color);
 }
 
 .shock-footer .footer-content .nav-list {
@@ -4774,7 +4770,7 @@ table {
 	background-position: 100%;
 	transition: background-position 0.4s ease;
 	font-weight: 700;
-	color: var(--gray-color);
+	color: var(--accent-color);
 }
 
 .shock-footer .footer-content .nav-link:hover .text {

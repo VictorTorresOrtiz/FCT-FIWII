@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -48,7 +48,7 @@
     <div class="page-content">
 
         <div class="page-title page-title-large">
-            <h2 data-username='{{Auth::user()->name}}' class="greeting-text"></h2>
+            <h2 data-username="{{ Auth::user()->name }}" class="greeting-text"></h2>
             <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img" data-src="{{URL::asset('assets/images/avatars/5s.png')}}"></a>
         </div>
         <div class="card header-card shape-rounded" data-card-height="210">
@@ -89,7 +89,7 @@
         <div class="content mt-0">
             <div class="row">
                 <div class="col-6">
-                    <a href="#" class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight" data-menu="menu-install-pwa-android">Instalar Fiwii</a>
+                    <a href="{{url('to-do')}}" class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight" data-menu="">Tareas</a>
                 </div>
                 <div class="col-6">
                     <a href="#" class="btn btn-full btn-border btn-m rounded-s text-uppercase font-900 shadow-l border-highlight color-highlight" data-menu="menu-call">Soporte</a>

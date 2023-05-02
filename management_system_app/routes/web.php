@@ -19,49 +19,32 @@ Route::get('/', function () {
 
 Route::get('/fiwii', function () {
     return view('fiwii');
-})->name('fiwii');
+})->middleware('auth')->name('fiwii');
 
 Route::get('/conf', function () {
     return view('conf');
-})->name('conf');
+})->middleware('auth')->name('conf');
 
-Route::get('/account', function () {
-    return view('account');
-})->name('account');
+Route::get('/auth.login', function () {
+    return view('auth.login');
+})->middleware('auth')->name('auth.login');
 
 Route::get('/profile', function () {
     return view('profile');
-})->name('profile');
+})->middleware('auth')->name('profile');
 
 Route::get('/to-do', function () {
     return view('to-do');
-})->name('to-do');
-
+})->middleware('auth')->name('to-do');
 
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');
-})->name('misc.menu-share');
+})->middleware('auth')->name('misc.menu-share');
 
 Route::get('/misc.menu', function () {
     return view('misc.menu');
-})->name('misc.menu');
+})->middleware('auth')->name('misc.menu');
 
 Route::get('/misc.menu-footer', function () {
     return view('misc.menu-footer');
-})->name('misc.menu-footer');
-
-Route::get('/home', function () {
-    return view('index');
-})->middleware('auth');
-
-Route::post('/admin/users', [\App\Http\Controllers\Controller::class, 'store'])->name('admin.users.store');
-
-
-
-
-
-
-
-
-
-
+})->middleware('auth')->name('misc.menu-footer');

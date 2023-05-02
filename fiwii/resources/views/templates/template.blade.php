@@ -4,6 +4,7 @@
     <!-- Display -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <!-- Identity -->
     <title>Fiwii Systems</title>
     <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
@@ -52,7 +53,6 @@
 </head>
 <body class="shock-body">
     @yield('index')
-    @yield('index_en')
     <!-- Footer -->
     <footer id="footer" class="shock-footer scheme-1 primary">
         <div class="footer-content focus-trigger">
@@ -89,7 +89,7 @@
                         <div class="footer-item">
                             <!-- Button -->
                             <div class="hover-up-down">
-                                <a href="tel:+19912345678" class="button outline rounded gray accent-hover">
+                                <a href="tel:+34random" class="button outline rounded gray accent-hover">
                                     <i class="fa-solid fa-phone button-icon left-icon gray white-hover"></i>
                                     <span class="button-text gray white-hover">+34 691 333 444</span>
                                 </a>
@@ -121,8 +121,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="footer-item">
-                            <h6 class="title">Quick Links</h6>
-                            <!-- Links list -->
+                            <h6 class="title">Info</h6>
                             <ul class="nav-list list-unstyled">
                                 <li class="nav-item">
                                     <a href="https://policies.google.com/terms?hl=es" target="__blank" class="nav-link">

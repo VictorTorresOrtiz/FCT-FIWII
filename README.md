@@ -43,8 +43,7 @@ Fiwii is an application oriented to the management and maintenance of fire fight
 | Cursos Effects       | 1.0.0                        |
 | Dynamic Slider     | 1.0.0                     |
 | magnetic-effect      | 1.0.0                  |
-| JS        | ECMAScript 2020          |
-| JQUERY    | 3.6.0                    |
+
 
 ## Prerequisites
 - composer update
