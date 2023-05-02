@@ -7,7 +7,7 @@
   </div>
 
   <head>
-
+    <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <!-- Display -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -322,7 +322,7 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Ir</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
@@ -340,7 +340,7 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Ir</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
@@ -358,7 +358,7 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Ir</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
@@ -376,7 +376,7 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Ir</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
@@ -392,8 +392,6 @@
           </div>
         </div>
       </section>
-
-
       <!-- Progress bar circle -->
       <section class="shock-section pt-5 pb-6" data-aos="fade-up" data-aos-delay="400">
         <div class="container">
@@ -402,7 +400,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Fiwii-App Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--primary-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -410,7 +408,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Fiwii-Web Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--primary-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -418,7 +416,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Laravel Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--primary-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -426,7 +424,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">DBB Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--primary-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
