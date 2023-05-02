@@ -20,7 +20,7 @@
                     </span>
                 @enderror
                 <label for="email" class="col-md-4 col-form-label text-md-right"></label>
-                <input id="email" type="email" placeholder="Ezmail"
+                <input id="email" type="email" placeholder="Email"
                     class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required
                     autocomplete="email">
                 @error('email')
