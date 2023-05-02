@@ -4269,8 +4269,8 @@ table {
 	text-align: center;
 	font-size: 1.2rem;
 	font-weight: 400;
-	background-color: var(--black-color);
-	color: var(--white-color);
+	background-color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .radial-progress-bar .outline .progressbar-text {
@@ -4278,15 +4278,11 @@ table {
 	height: 40px;
 	top: initial;
 	bottom: 45px;
-	font-family: var(--secondary-font);
+	font-family: var(--accent-color);
 	font-size: 3rem;
 	font-weight: 800;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 1px;
-}
-
-.radial-progress-bar svg path:first-child {
-	stroke-dasharray: 3.5 1.75;
 }
 
 @media (max-width: 991px) {

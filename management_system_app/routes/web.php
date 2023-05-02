@@ -37,7 +37,6 @@ Route::get('/to-do', function () {
     return view('to-do');
 })->middleware('auth')->name('to-do');
 
-
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');
 })->middleware('auth')->name('misc.menu-share');
@@ -49,13 +48,3 @@ Route::get('/misc.menu', function () {
 Route::get('/misc.menu-footer', function () {
     return view('misc.menu-footer');
 })->middleware('auth')->name('misc.menu-footer');
-
-
-
-
-
-
-
-
-
-
