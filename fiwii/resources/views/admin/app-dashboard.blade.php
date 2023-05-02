@@ -319,12 +319,12 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Añadir Cuenta</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
                         <!-- Link -->
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal-admin" class="full-link"></a>
+                        <a href="{{route('auth.register')}}"  class="full-link"></a>
                       </div>
                     </div>
                   </div>
@@ -337,7 +337,7 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Añadir Cuenta</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
@@ -355,7 +355,7 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Crear Lista</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
@@ -373,7 +373,7 @@
                         <!-- Button -->
                         <div class="button-wrapper align-h-right">
                           <span class="button simple">
-                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Read More</mark></span>
+                            <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Eliminar Cuenta</mark></span>
                             <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                           </span>
                         </div>
@@ -523,7 +523,7 @@
                         </label>
                       </div>
                       <div class="form-check">
-                      
+
                       </div>
                     </div>
                     <div class="form-col col-12 col-md-4 align-h-right">
