@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UpdateUser;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,3 +49,7 @@ Route::get('/misc.menu', function () {
 Route::get('/misc.menu-footer', function () {
     return view('misc.menu-footer');
 })->middleware('auth')->name('misc.menu-footer');
+
+// PROFILE
+
+Route::put('/profile/edit-profile', [ UpdateUser::class, 'updateUser' ]) -> name('edit-profile');
