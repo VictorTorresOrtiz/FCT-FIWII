@@ -63,40 +63,81 @@
                 <p>
                     Datos básicos sobre ti. Colócalos aquí.
                 </p>
-
                 <div class="input-style has-borders hnoas-icon input-style-always-active validate-field mb-4">
-                    <input type="name" class="form-control validate-name" id="form1" placeholder="Nombre Actual">
-                    <label for="form1" class="color-highlight font-400 font-13">Nombre</label>
-                    <i class="fa fa-times disabled invalid color-red-dark"></i>
-                    <i class="fa fa-check disabled valid color-green-dark"></i>
-                    <em>(required)</em>
+                    <input type="name" class="form-control validate-name" id="form1" placeholder="{{ Auth::user()->name }}" readonly>
+                    <label for="form1" class="color-highlight font-400 font-13">Nombre Actual</label>
+                </div>
+                
+                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                    <input type="email" class="form-control validate-email" id="form2" placeholder="{{ Auth::user()->email }}" readonly>
+                    <label for="form2" class="color-highlight font-400 font-13">Email Actual</label>
                 </div>
 
                 <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                    <input type="email" class="form-control validate-email" id="form2" placeholder="Email Actual">
-                    <label for="form2" class="color-highlight font-400 font-13">Email</label>
-                    <i class="fa fa-times disabled invalid color-red-dark"></i>
-                    <i class="fa fa-check disabled valid color-green-dark"></i>
-                    <em>(required)</em>
+                    <input type="tel" class="form-control validate-tel" id="form3" placeholder="Numero actual" readonly>
+                    <label for="form3" class="color-highlight font-400 font-13">Teléfono Actual</label>
                 </div>
 
                 <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                    <input type="tel" class="form-control validate-tel" id="form3" placeholder="Numero actual">
-                    <label for="form3" class="color-highlight font-400 font-13">Numero de Teléfono</label>
-                    <i class="fa fa-times disabled invalid color-red-dark"></i>
-                    <i class="fa fa-check disabled valid color-green-dark"></i>
-                    <em>(required)</em>
-                </div>
-
-                <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                    <input type="password" class="form-control validate-passord" id="form4" placeholder="******">
-                    <label for="form4" class="color-highlight font-400 font-13">Contraseña</label>
-                    <i class="fa fa-times disabled invalid color-red-dark"></i>
-                    <i class="fa fa-check disabled valid color-green-dark"></i>
-                    <em>(required)</em>
+                    <input type="password" class="form-control validate-passord" id="form4" placeholder="******" readonly>
+                    <label for="form4" class="color-highlight font-400 font-13">Contraseña Actual</label>
                 </div>
             </div>
-            <a href="#" class="btn btn-full btn-margins bg-highlight rounded-sm shadow-xl btn-m text-uppercase font-900">Guardar Cambios</a>
+            <a href="#profile-modal" data-bs-toggle="modal" type="submit" class="btn btn-full btn-margins bg-highlight rounded-sm shadow-xl btn-m text-uppercase font-900">Editar Perfil</a>
+        </div>
+
+
+      <!--  Edit profile modal -->
+        <div class="modal fade" id="profile-modal" tabindex="-1">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content overflow-hidden border-0">
+                    <button class="btn-close p-4 position-absolute top-0 end-0 z-index-20 shadow-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="row align-items-stretch">
+                            <div class="p-4 my-md-4">
+                                <form action="{{ route('edit-profile') }}" method="POST" enctype="multipart/form-data"> 
+                                    @method('PUT')
+                                    @csrf 
+                                    <div class="input-style has-borders hnoas-icon input-style-always-active validate-field mb-4">
+                                        <input type="name" class="form-control validate-name" id="form1" name="name" placeholder="{{ Auth::user()->name }}">
+                                        <label for="form1" class="color-highlight font-400 font-13">Nombre</label>
+                                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                                        <em>(required)</em>
+                                    </div>
+                                    
+                                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                                        <input type="email" class="form-control validate-email" id="form2" name="email" placeholder="{{ Auth::user()->email }}">
+                                        <label for="form2" class="color-highlight font-400 font-13">Email</label>
+                                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                                        <em>(required)</em>
+                                    </div>
+                    
+                                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                                        <input type="tel" class="form-control validate-tel" id="form3" placeholder="Numero actual">
+                                        <label for="form3" class="color-highlight font-400 font-13">Numero de Teléfono</label>
+                                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                                        <em>(required)</em>
+                                    </div>
+                    
+                                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                                        <input type="password" class="form-control validate-passord" id="form4" placeholder="******">
+                                        <label for="form4" class="color-highlight font-400 font-13">Contraseña</label>
+                                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                                        <em>(required)</em>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input class="btn btn-full btn-margins bg-highlight rounded-sm shadow-xl btn-m text-uppercase font-900" type="submit" name="Guardar cambios">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="card card-style">
