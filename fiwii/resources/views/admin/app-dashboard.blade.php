@@ -26,7 +26,6 @@
                 <div id="navbar-items" class="collapse navbar-collapse focus-trigger">
                     <!-- Link -->
                     <ul class="navbar-nav ms-auto">
-
                         {{-- <li class="nav-item dropdown has-megamenu hover">
                             <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
                                 <span class="text">Configuración</span><img class="image-icon dropdown-icon"

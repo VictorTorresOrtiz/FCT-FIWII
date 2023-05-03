@@ -39,7 +39,9 @@ Route::get('/admin.web-dashboard', function () {
     return view('admin.web-dashboard');
 })->name('admin.web-dashboard')->middleware('auth');
 
-// Route::get('/', [ DashbooardController::class,'systems' ]);
+
+Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
+
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
 
 Route::get('descargar-base-de-datos', 'DescargarBaseDeDatosController@descargar')->name('descargar.base-de-datos');
