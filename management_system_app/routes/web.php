@@ -26,6 +26,10 @@ Route::get('/conf', function () {
     return view('conf');
 })->middleware('auth')->name('conf');
 
+// Route::get('/auth.register', function () {
+//     return view('auth.register');
+// })->middleware('auth')->name('auth.register');
+
 Route::get('/auth.login', function () {
     return view('auth.login');
 })->middleware('auth')->name('auth.login');
