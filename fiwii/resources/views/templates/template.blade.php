@@ -48,6 +48,7 @@
     <script defer src="{{ URL::asset('assets/js/vendor/aos.min.js') }}"></script>
     <script defer src="{{ URL::asset('assets/js/vendor/lax.min.js') }}"></script>
     <script defer src="{{ URL::asset('assets/js/vendor/cursor-effect.min.js') }}"></script>
+    <script defer src="{{ URL::asset('assets/js/custom.js') }}"></script>
     <!-- Main JavaScript -->
     <script defer src="{{ URL::asset('assets/js/main.js') }}"></script>
 </head>
