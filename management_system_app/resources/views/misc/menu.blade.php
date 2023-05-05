@@ -21,9 +21,9 @@
         <em class="badge bg-highlight color-white">EJEMPLO</em>
         !------>
     </a>
-    <a id="nav-starters" href="#">
+    <a id="nav-starters" href="{{url('sistemas')}}">
         <i class="bi bi-list-nested"></i>
-        <span>Gestión</span>
+        <span>Sistemas</span>
         <i class="fa fa-circle"></i>
     </a>
     <a id="nav-features" href="#">
@@ -33,13 +33,12 @@
     </a>
     <a href="#" class="close-menu">
         <i class="bi bi-x"></i>
-        <span>Close</span>
+        <span>Cerrar menu</span>
         <i class="fa fa-circle"></i>
     </a>
     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="close-menu">
-        <i class="bi bi-x"></i>
+        <i class="bi bi-box-arrow-left"></i>
         <span>Cerrar Sesión</span>
-        <i class="fa fa-circle"></i>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
             @csrf
         </form>

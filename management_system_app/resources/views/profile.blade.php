@@ -1,5 +1,6 @@
 @extends('templates.template-app')
 @section('profile')
+
     <div class="page-title page-title-small">
         <h2><a href="#" data-back-button><i class="fa fa-arrow-left"></i></a>Perfil</h2>
         <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img"

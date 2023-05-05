@@ -1,11 +1,68 @@
 @extends('templates.template-app')
 @section('fiwii')
+
     <div class="page-content">
 
         <div class="page-title page-title-large">
             <h2 data-username="{{ Auth::user()->name }}" class="greeting-text"></h2>
             <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img"
                 data-src="{{ URL::asset('assets/images/avatars/5s.png') }}"></a>
+        </div>
+        <!---Menu Busqueaa-->
+        <div class="content mb-2" style="z-index:10; position: relative;">
+            <div class="search-box search-dark shadow-m border-0 mt-4 bg-theme rounded-m bottom-0">
+                <i class="fa fa-search ms-n3"></i>
+                <input type="text" class="border-0" placeholder="Searching for something? Try 'all'" data-search>
+            </div>
+            <div class="search-results disabled-search-list shadow-xl rounded-m mt-3">
+                <div class="card card-style mx-0 px-3 mt-0 mb-0 shadow-0">
+                    <div class="list-group list-custom-large">
+                        <a href="#" data-filter-item data-filter-name="all demo smartphone apple iphone ios">
+                            <i class="fab fa-apple color-gray-dark"></i>
+                            <span>Apple</span>
+                            <strong>Works on iOS 10 and Higher</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" data-filter-item data-filter-name="all demo smartphone samsung android htc oneplus">
+                            <i class="fab fa-android color-green-dark"></i>
+                            <span>Android</span>
+                            <strong>Works on Android 5.1.1 and Higher</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" data-filter-item data-filter-name="all demo code css3 css">
+                            <i class="fab fa-css3 color-blue-dark font-17"></i>
+                            <span>CSS3 </span>
+                            <strong>Beautiful Design. Simple Code.</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+
+                        <a href="#" data-filter-item data-filter-name="fox all demo code html5 html">
+                            <i class="fab fa-html5 color-orange-dark"></i>
+                            <span>HTML5 </span>
+                            <strong>Powerful and Universally Compatible</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" data-filter-item data-filter-name="all demo support help">
+                            <i class="fa fa-life-ring color-red-dark font-17"></i>
+                            <span>Support </span>
+                            <strong>Elite Quality, 24/7 Support for Buyers</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" data-filter-item data-filter-name="all demo code js jquery java javascript">
+                            <i class="fab fa-js color-yellow-dark font-17"></i>
+                            <span>JavaScript </span>
+                            <strong>Clean Code, Easy to Use and Modify</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" data-filter-item data-filter-name="all demo support elite help documentation">
+                            <i class="fa fa-file color-gray-dark font-17"></i>
+                            <span>Documentation </span>
+                            <strong>Every Feature and Aspect Covered.</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="card header-card shape-rounded" data-card-height="210">
             <div class="card-overlay bg-highlight opacity-95"></div>
@@ -45,14 +102,10 @@
         <div class="content mt-0">
             <div class="row">
                 <div class="col-6">
-                    <a href="{{ url('to-do') }}"
-                        class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight"
-                        data-menu="">Tareas</a>
+                    <a href="{{ url('to-do') }}" class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight">Tareas</a>
                 </div>
                 <div class="col-6">
-                    <a href="#"
-                        class="btn btn-full btn-border btn-m rounded-s text-uppercase font-900 shadow-l border-highlight color-highlight"
-                        data-menu="menu-call">Soporte</a>
+                    <a href="{{ url('walkthrow') }}" class="btn btn-full btn-border btn-m rounded-s text-uppercase font-900 shadow-l border-highlight color-highlight">Diseño compacto</a>
                 </div>
             </div>
         </div>
@@ -62,6 +115,7 @@
             <h5 class="float-start font-16 font-500">Herramientas</h5>
             <div class="clearfix"></div>
         </div>
+
 
         <div class="splide double-slider visible-slider slider-no-arrows slider-no-dots" id="double-slider-1">
             <div class="splide__track">
@@ -129,15 +183,6 @@
     <div id="menu-main" class="menu menu-box-right menu-box-detached rounded-m" data-menu-width="260"
         data-menu-load="{{ url('misc.menu') }}" data-menu-active="nav-welcome" data-menu-effect="menu-over">
     </div>
-    <div id="menu-call" class="menu menu-box-modal rounded-m" data-menu-height="230" data-menu-width="310">
-        <h1 class="text-center font-700 mt-3 pt-2">Soporte Técnico</h1>
-        <p class="boxed-text-xl">
-            Siempre estamos aquí para ayudar. Llámenos hoy. Simplemente toque el botón y póngase en contacto con nosotros.
-        </p>
-        <a href="tel:Numero Aqui"
-            class="external-link btn btn-center-m btn-sm shadow-l rounded-s text-uppercase font-900 bg-green-dark">Llamar
-            Ahora</a>
-    </div>
 
     <!-- Install Prompt for Android -->
     <div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached rounded-l" data-menu-height="350"
@@ -175,5 +220,9 @@
             <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
         </div>
     </div>
-    </div>
+
+    <!-- Tutorial diseño compacto -->
+
+
+</div>
 @endsection
