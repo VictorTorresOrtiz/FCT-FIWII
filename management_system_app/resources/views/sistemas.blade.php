@@ -20,7 +20,7 @@
         @if ($system->status == 'Mantenimiento')
         <a href="#" class="float-end btn btn-warning rounded-xl shadow-xl text-uppercase font-900 mt-2 font-11">Mantenimiento</a>
         @elseif ($system->status == 'Revisado')
-        <a href="#" class="float-end btn btn-xs bg-highlight rounded-xl shadow-xl text-uppercase font-900 mt-2 font-11">Revisado</a>
+        <a href="#" class="float-end btn btn-success rounded-xl shadow-xl text-uppercase font-900 mt-2 font-11">Revisado</a>
         @elseif ($system->status == 'Averiado')
         <a href="#" class="float-end btn btn-danger rounded-xl shadow-xl text-uppercase font-900 mt-2 font-11">Averiado</a>
         @endif
