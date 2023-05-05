@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SistemaController;
 use App\Http\Controllers\UpdateUser;
 use Illuminate\Support\Facades\Route;
 
@@ -54,6 +55,21 @@ Route::get('/misc.menu-footer', function () {
     return view('misc.menu-footer');
 })->middleware('auth')->name('misc.menu-footer');
 
+Route::get('/sistemas', function () {
+    return view('/sistemas');
+})->name('sistemas')->middleware('auth');
+
+Route::get('/fiwii-compact', function () {
+    return view('/fiwii-compact');
+})->name('fiwii-compact')->middleware('auth');
+
+Route::get('/walkthrow', function () {
+    return view('/walkthrow');
+})->name('walkthrow')->middleware('auth');
+
 // PROFILE
 
 Route::put('/profile/edit-profile', [ UpdateUser::class, 'updateUser' ]) -> name('edit-profile');
+
+//Sistemas
+Route::get('/sistemas', [ SistemaController::class,'systems' ]);
