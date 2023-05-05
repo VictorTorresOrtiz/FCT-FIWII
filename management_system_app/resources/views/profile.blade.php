@@ -14,16 +14,19 @@
 <link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/bootstrap.css')}}">
 <link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/style.css')}}">
 <link rel="stylesheet" type="text/css" href="{{URL::asset('assets/fonts/css/fontawesome-all.min.css')}} ">
+@notifyCss
+
 
 <script defer type="text/javascript" src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>
 <script defer type="text/javascript" src="{{URL::asset('assets/js/custom.js')}}"></script>
-
+@notifyJs
 <!--PWA READY---->
 <link rel="manifest" href="{{URL::asset('manifest.json')}}" data-pwa-version="set_in_manifest_and_pwa_js">
 <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 
 <body class="detect-theme">
+<x-notify::notify />
 
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
 
@@ -61,20 +64,20 @@
             <div class="content mb-0">
                 <h3 class="font-600">Información</h3>
                 <p>
-                    Datos básicos sobre ti. Colócalos aquí.
+                    Previsualización datos de Perfil, para cambiarlos pulse "Editar Perfil"
                 </p>
                 <div class="input-style has-borders hnoas-icon input-style-always-active validate-field mb-4">
                     <input type="name" class="form-control validate-name" id="form1" placeholder="{{ Auth::user()->name }}" readonly>
                     <label for="form1" class="color-highlight font-400 font-13">Nombre Actual</label>
                 </div>
-                
+
                 <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
                     <input type="email" class="form-control validate-email" id="form2" placeholder="{{ Auth::user()->email }}" readonly>
                     <label for="form2" class="color-highlight font-400 font-13">Email Actual</label>
                 </div>
 
                 <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                    <input type="tel" class="form-control validate-tel" id="form3" placeholder="Numero actual" readonly>
+                    <input type="tel" class="form-control validate-tel" id="form3" placeholder="Teléfono actual" readonly>
                     <label for="form3" class="color-highlight font-400 font-13">Teléfono Actual</label>
                 </div>
 
@@ -95,35 +98,35 @@
                     <div class="modal-body p-0">
                         <div class="row align-items-stretch">
                             <div class="p-4 my-md-4">
-                                <form action="{{ route('edit-profile') }}" method="POST" enctype="multipart/form-data"> 
+                                <form action="{{ route('edit-profile') }}" method="POST" enctype="multipart/form-data">
                                     @method('PUT')
-                                    @csrf 
+                                    @csrf
                                     <div class="input-style has-borders hnoas-icon input-style-always-active validate-field mb-4">
-                                        <input type="name" class="form-control validate-name" id="form1" name="name" placeholder="{{ Auth::user()->name }}">
+                                        <input type="name" class="form-control validate-name" id="form1" name="name" placeholder="Nombre nuevo">
                                         <label for="form1" class="color-highlight font-400 font-13">Nombre</label>
                                         <i class="fa fa-times disabled invalid color-red-dark"></i>
                                         <i class="fa fa-check disabled valid color-green-dark"></i>
                                         <em>(required)</em>
                                     </div>
-                                    
+
                                     <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                                        <input type="email" class="form-control validate-email" id="form2" name="email" placeholder="{{ Auth::user()->email }}">
+                                        <input type="email" class="form-control validate-email" id="form2" name="email" placeholder="Email nuevo">
                                         <label for="form2" class="color-highlight font-400 font-13">Email</label>
                                         <i class="fa fa-times disabled invalid color-red-dark"></i>
                                         <i class="fa fa-check disabled valid color-green-dark"></i>
                                         <em>(required)</em>
                                     </div>
-                    
+
                                     <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                                        <input type="tel" class="form-control validate-tel" id="form3" placeholder="Numero actual">
-                                        <label for="form3" class="color-highlight font-400 font-13">Numero de Teléfono</label>
+                                        <input type="tel" class="form-control validate-tel" id="form3" placeholder="Teléfono nuevo">
+                                        <label for="form3" class="color-highlight font-400 font-13">Número de Teléfono</label>
                                         <i class="fa fa-times disabled invalid color-red-dark"></i>
                                         <i class="fa fa-check disabled valid color-green-dark"></i>
                                         <em>(required)</em>
                                     </div>
-                    
+
                                     <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                                        <input type="password" class="form-control validate-passord" id="form4" placeholder="******">
+                                        <input type="password" class="form-control validate-passord" id="form4" placeholder="Contraseña Nueva">
                                         <label for="form4" class="color-highlight font-400 font-13">Contraseña</label>
                                         <i class="fa fa-times disabled invalid color-red-dark"></i>
                                         <i class="fa fa-check disabled valid color-green-dark"></i>
