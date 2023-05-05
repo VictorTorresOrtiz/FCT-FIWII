@@ -26,6 +26,11 @@
         <span>Sistemas</span>
         <i class="fa fa-circle"></i>
     </a>
+    <a id="nav-starters" href="{{url('walkthrow')}}">
+        <i class="bi bi-box"></i>
+        <span>Vista Compacta</span>
+        <i class="fa fa-circle"></i>
+    </a>
     <a id="nav-features" href="#">
         <i class="bi bi-upc-scan"></i>
          <span>QR</span>

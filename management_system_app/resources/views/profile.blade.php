@@ -116,7 +116,7 @@
             </p>
 
             <div class="list-group list-custom-small">
-                <a href="#" data-trigger-switch="switch-1">
+                <a href="{{url('#')}}" data-trigger-switch="switch-1">
                     <span>Notificaciones</span>
                     <div class="custom-control scale-switch ios-switch">
                         <input type="checkbox" class="ios-input" id="switch-1" checked>
