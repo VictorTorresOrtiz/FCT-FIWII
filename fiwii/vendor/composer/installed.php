@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'a9daa9d732dfcac762abc79a712169debdb063c1',
+        'reference' => '5b2bf346ad2eb47e769798b8926b7f20e985567d',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -400,7 +400,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '8a2e0f4950ef01d7032a6d00754dbb8746ae722e',
+            'reference' => '5b2bf346ad2eb47e769798b8926b7f20e985567d',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -629,9 +629,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/php-file-iterator' => array(
-            'pretty_version' => '4.0.1',
-            'version' => '4.0.1.0',
-            'reference' => 'fd9329ab3368f59fe1fe808a189c51086bd4b6bd',
+            'pretty_version' => '4.0.2',
+            'version' => '4.0.2.0',
+            'reference' => '5647d65443818959172645e7ed999217360654b6',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/php-file-iterator',
             'aliases' => array(),
@@ -769,8 +769,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '3.0.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -789,9 +789,9 @@
             ),
         ),
         'psy/psysh' => array(
-            'pretty_version' => 'v0.11.16',
-            'version' => '0.11.16.0',
-            'reference' => '151b145906804eea8e5d71fea23bfb470c904bfb',
+            'pretty_version' => 'v0.11.17',
+            'version' => '0.11.17.0',
+            'reference' => '3dc5d4018dabd80bceb8fe1e3191ba8460569f0a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psy/psysh',
             'aliases' => array(),
@@ -993,9 +993,9 @@
             'dev_requirement' => true,
         ),
         'spatie/laravel-ignition' => array(
-            'pretty_version' => '2.1.1',
-            'version' => '2.1.1.0',
-            'reference' => '802c7e27754456e45134f1a9d29ab7df4b6cb9e4',
+            'pretty_version' => '2.1.2',
+            'version' => '2.1.2.0',
+            'reference' => '2f99fa6b732a6049e78ed34e4608ce589605ae54',
             'type' => 'library',
             'install_path' => __DIR__ . '/../spatie/laravel-ignition',
             'aliases' => array(),

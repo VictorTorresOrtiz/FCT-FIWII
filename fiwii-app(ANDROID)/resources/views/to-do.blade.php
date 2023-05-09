@@ -46,14 +46,4 @@
             </div>
         </div>
     </div>
-    </div>
-    <!-- end of page content-->
-    <!-- Menus-->
-    <div id="menu-share" class="menu menu-box-bottom menu-box-detached rounded-m"
-        data-menu-load="{{ url('misc.menu-share') }}" data-menu-height="420" data-menu-effect="menu-over">
-    </div>
-    <div id="menu-main" class="menu menu-box-right menu-box-detached rounded-m" data-menu-width="260"
-        data-menu-load="{{ url('misc.menu') }}" data-menu-active="nav-pages" data-menu-effect="menu-over">
-    </div>
-    </div>
 @endsection
