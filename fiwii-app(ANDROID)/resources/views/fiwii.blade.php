@@ -12,21 +12,21 @@
         <div class="content mb-2" style="z-index:10; position: relative;">
             <div class="search-box search-dark shadow-m border-0 mt-4 bg-theme rounded-m bottom-0">
                 <i class="fa fa-search ms-n3"></i>
-                <input type="text" class="border-0" placeholder="Searching for something? Try 'all'" data-search>
+                <input type="text" class="border-0" placeholder="Buscador" data-search>
             </div>
             <div class="search-results disabled-search-list shadow-xl rounded-m mt-3">
                 <div class="card card-style mx-0 px-3 mt-0 mb-0 shadow-0">
                     <div class="list-group list-custom-large">
                         <a href="#" data-filter-item data-filter-name="all demo smartphone apple iphone ios">
-                            <i class="fab fa-apple color-gray-dark"></i>
-                            <span>Apple</span>
-                            <strong>Works on iOS 10 and Higher</strong>
+                            <i class="fa-solid fa-list fa-beat"></i>
+                            <span>Sistemas</span>
+                            <strong>Gestión en tiempo real</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
                         <a href="#" data-filter-item data-filter-name="all demo smartphone samsung android htc oneplus">
-                            <i class="fab fa-android color-green-dark"></i>
-                            <span>Android</span>
-                            <strong>Works on Android 5.1.1 and Higher</strong>
+                            <i class="fa-solid fa-qrcode"></i>
+                            <span>Generador QR</span>
+                            <strong>Genere QR de forma rápida</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
                         <a href="#" data-filter-item data-filter-name="all demo code css3 css">

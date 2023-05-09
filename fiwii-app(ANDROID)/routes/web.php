@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\SistemaController;
 use App\Http\Controllers\UpdateUser;
+use App\Models\Task;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -73,3 +75,5 @@ Route::put('/profile/edit-profile', [ UpdateUser::class, 'updateUser' ]) -> name
 
 //Sistemas
 Route::get('/sistemas', [ SistemaController::class,'systems' ]);
+
+
