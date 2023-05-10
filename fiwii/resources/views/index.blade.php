@@ -115,8 +115,6 @@
                                 <div id="navbar-items" class="collapse navbar-collapse">
                                     <!-- Menu fiwii -->
                                     <ul class="navbar-nav ms-auto">
-<<<<<<< HEAD
-=======
                                         <li class="nav-item dropdown has-megamenu hover">
                                             <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#" data-bs-toggle="dropdown">
                                                 <span class="text">Fiwii App</span><img class="image-icon dropdown-icon" src="{{ URL::asset('assets/svg/chevron-down-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
@@ -160,7 +158,6 @@
                                                 </div>
                                             </div>
                                         </li>
->>>>>>> 06507afee26223ef5e354e87250126c868465798
                                         <!--MENU TWO--->
                                         <li class="nav-item dropdown has-megamenu hover">
                                             <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#about">
@@ -202,7 +199,7 @@
                                     <!-- Admiins -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
-                                            @if (Auth::user())
+                                            @if (!Auth::user())
                                             <a href="#comprar" class="button small-button rounded primary-15 accent-hover button-collision">
                                                 <span class="button-text accent white-hover">Comprar Fiwii</span>
                                             </a>
