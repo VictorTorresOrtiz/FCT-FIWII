@@ -199,7 +199,7 @@
                                     <!-- Admiins -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
-                                            @if (Auth::user())
+                                            @if (!Auth::user())
                                             <a href="#comprar" class="button small-button rounded primary-15 accent-hover button-collision">
                                                 <span class="button-text accent white-hover">Comprar Fiwii</span>
                                             </a>
