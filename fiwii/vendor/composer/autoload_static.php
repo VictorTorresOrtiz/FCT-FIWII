@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
+class ComposerStaticInitf99df78050eaa560845561bf869f0433
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -116,6 +116,7 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'L' => 
         array (
             'League\\MimeTypeDetection\\' => 25,
+            'League\\Flysystem\\Local\\' => 23,
             'League\\Flysystem\\' => 17,
             'League\\Config\\' => 14,
             'League\\CommonMark\\' => 18,
@@ -345,8 +346,8 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -387,6 +388,10 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'League\\MimeTypeDetection\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
+        ),
+        'League\\Flysystem\\Local\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem-local',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -3258,8 +3263,8 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'League\\Flysystem\\FilesystemWriter' => __DIR__ . '/..' . '/league/flysystem/src/FilesystemWriter.php',
         'League\\Flysystem\\InvalidStreamProvided' => __DIR__ . '/..' . '/league/flysystem/src/InvalidStreamProvided.php',
         'League\\Flysystem\\InvalidVisibilityProvided' => __DIR__ . '/..' . '/league/flysystem/src/InvalidVisibilityProvided.php',
-        'League\\Flysystem\\Local\\FallbackMimeTypeDetector' => __DIR__ . '/..' . '/league/flysystem/src/Local/FallbackMimeTypeDetector.php',
-        'League\\Flysystem\\Local\\LocalFilesystemAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Local/LocalFilesystemAdapter.php',
+        'League\\Flysystem\\Local\\FallbackMimeTypeDetector' => __DIR__ . '/..' . '/league/flysystem-local/FallbackMimeTypeDetector.php',
+        'League\\Flysystem\\Local\\LocalFilesystemAdapter' => __DIR__ . '/..' . '/league/flysystem-local/LocalFilesystemAdapter.php',
         'League\\Flysystem\\MountManager' => __DIR__ . '/..' . '/league/flysystem/src/MountManager.php',
         'League\\Flysystem\\PathNormalizer' => __DIR__ . '/..' . '/league/flysystem/src/PathNormalizer.php',
         'League\\Flysystem\\PathPrefixer' => __DIR__ . '/..' . '/league/flysystem/src/PathPrefixer.php',
@@ -6512,10 +6517,10 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf99df78050eaa560845561bf869f0433::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf99df78050eaa560845561bf869f0433::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf99df78050eaa560845561bf869f0433::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf99df78050eaa560845561bf869f0433::$classMap;
 
         }, null, ClassLoader::class);
     }
