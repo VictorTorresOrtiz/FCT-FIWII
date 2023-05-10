@@ -115,61 +115,6 @@
                                 <div id="navbar-items" class="collapse navbar-collapse">
                                     <!-- Menu fiwii -->
                                     <ul class="navbar-nav ms-auto">
-                                        <li class="nav-item dropdown has-megamenu hover">
-                                            <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#" data-bs-toggle="dropdown">
-                                                <span class="text">Fiwii App</span><img class="image-icon dropdown-icon" src="{{ URL::asset('assets/svg/chevron-down-outline.svg') }}" alt="Icon name" data-shock-icon="32" />
-                                                <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-                                                </svg>
-                                            </a>
-                                            <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                                                <div class="container">
-                                                    <div class="section-inner-expanded">
-                                                        <div class="row g-3">
-                                                            <div class="col-12 col-md-6">
-                                                                <div class="megamenu-item h-auto">
-                                                                    <h6 class="title">Información</h6>
-                                                                </div>
-                                                                <div class="row g-3">
-                                                                    <div class="col-12 col-md-6">
-                                                                        <div class="megamenu-item">
-                                                                            <ul class="nav-list list-unstyled">
-                                                                                <li class="nav-item">
-                                                                                    <a href="home-6.html" class="nav-link parent">
-                                                                                        <span class="text">Prueba gratuita</span>
-                                                                                        <em class="tag hover-up-down">En tiempo real </em>
-                                                                                    </a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <div class="megamenu-item">
-                                                                            <ul class="nav-list list-unstyled">
-                                                                                <li class="nav-item">
-                                                                                    <a href="home-9.html" class="nav-link parent">
-                                                                                        <span class="text">Personal portfolio</span>
-                                                                                        <em class="tag hover-up-down">stylish dark</em>
-                                                                                    </a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-md-6 col-lg-3">
-                                                                <div class="megamenu-item side-image">
-                                                                    <a href="{{ url('account') }}" target="_blank" class="megamenu-image black">
-                                                                        <img src="{{ URL::asset('assets/images/walpapers/comprar.gif') }}" alt="Image name" class="image">
-                                                                        <span class="title">Comprar Fiwii</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
                                         <!--MENU TWO--->
                                         <li class="nav-item dropdown has-megamenu hover">
                                             <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#about">
@@ -488,7 +433,7 @@
                                 <!-- Label -->
                                 <span class="label-vertical to-bottom-right-out">
                                     <span class="label-line gray"></span>
-                                    <span class="label-text gray">Más Comprado</span>
+                                    <span class="label-text gray"></span>
                                 </span>
                                 <h3 class="title m-0 text-style-11 text-italic white">
                                     <span class="bg-color secondary">Empresa</span>
