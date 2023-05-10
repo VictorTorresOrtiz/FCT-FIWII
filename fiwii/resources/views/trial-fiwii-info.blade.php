@@ -114,9 +114,9 @@
                 </div>
                 <!-- Main menu -->
                 <div class="menu-grid-main">
-                  <a href="#your-link" class="menu-grid-main-item menu-item">Inicio</a>
-                  <a href="#your-link" class="menu-grid-main-item menu-item">Fiwii Free</a>
-                  <a href="#your-link" class="menu-grid-main-item menu-item">Portfolio</a>
+                  <a href="" class="menu-grid-main-item menu-item">Inicio</a>
+                  <a href="" class="menu-grid-main-item menu-item">Fiwii Free</a>
+                  <a href="" class="menu-grid-main-item menu-item">Portfolio</a>
                 </div>
                 <!-- Form -->
                 <div class="menu-grid-search focus-trigger">
@@ -153,11 +153,11 @@
                 </div>
                 <!-- Links -->
                 <div class="menu-grid-minor">
-                  <a href="#your-link" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Seguridad</span></a>
-                  <a href="#your-link" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Rapidez</span></a>
-                  <a href="#your-link" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Soporte 24/7</span></a>
-                  <a href="#your-link" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Confianza asegurada</span></a>
-                  <a href="#your-link" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Escalar tu empresa al futuro</span></a>
+                  <a href="" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Seguridad</span></a>
+                  <a href="" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Rapidez</span></a>
+                  <a href="" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Soporte 24/7</span></a>
+                  <a href="" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Confianza asegurada</span></a>
+                  <a href="" class="menu-grid-minor-item menu-item"><span class="menu-grid-minor-item-inner">Escalar tu empresa al futuro</span></a>
                 </div>
               </div>
             </div>
@@ -176,9 +176,9 @@
                   <a href="tel:+34691 386 582" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fas fa-mobile-alt icon"></i>+34 691 386 582</span></a>
                   <a href="mailto:contact@mail.com" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fas fa-envelope icon"></i>trial@fiwii.com</span></a>
                   <div class="menu-grid-icons">
-                    <a href="#your-link" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fab fa-facebook-f icon"></i></span></a>
-                    <a href="#your-link" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fab fa-twitter icon"></i></span></a>
-                    <a href="#your-link" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fab fa-instagram icon"></i></span></a>
+                    <a href="" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fab fa-facebook-f icon"></i></span></a>
+                    <a href="" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fab fa-twitter icon"></i></span></a>
+                    <a href="" class="menu-grid-minor-item"><span class="menu-grid-minor-item-inner"><i class="fab fa-instagram icon"></i></span></a>
                   </div>
                 </div>
               </div>
@@ -257,7 +257,7 @@
            <div class="slide-action">
             <div class="slide-action-inner">
               <span class="slide-action-title">¿Necesitas ayuda?</span>
-              <a href="#your-link" class="slide-action-link animated-text scheme-1 primary" data-bs-toggle="modal" data-bs-target="#modal">Contacto</a>
+              <a href="" class="slide-action-link animated-text scheme-1 primary" data-bs-toggle="modal" data-bs-target="#modal">Contacto</a>
             </div>
           </div>
           <!-- Info menu -->
@@ -266,15 +266,15 @@
               <h3 class="slide-info-title">Probar Fiwii <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Probar fiwii de forma gratuita<span class="ellipse">...</span><br> al pulsar este botón.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Escalar tu empresa <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Utiliza Fiwii app<span class="ellipse">...</span> y podrás escalar tu empresa al futuro.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Seguridad <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Al utilizar nuestra aplicación siempre le garantizamos su seguridad y la de sus empleados.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Protección <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Con nuestro sistema 'Fiwii Vanguard' sus bases de datos están 100% seguras.</span>
             </a>
@@ -304,7 +304,7 @@
           <div class="slide-action">
             <div class="slide-action-inner">
               <span class="slide-action-title">¿Necesitas ayuda?</span>
-              <a href="#your-link" class="slide-action-link animated-text scheme-1 primary" data-bs-toggle="modal" data-bs-target="#modal">Contacto</a>
+              <a href="" class="slide-action-link animated-text scheme-1 primary" data-bs-toggle="modal" data-bs-target="#modal">Contacto</a>
             </div>
           </div>
           <!-- Info menu -->
@@ -313,15 +313,15 @@
               <h3 class="slide-info-title">Probar Fiwii <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Probar fiwii de forma gratuita<span class="ellipse">...</span><br> al pulsar este botón.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Escalar tu empresa <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Utiliza Fiwii app<span class="ellipse">...</span> y podrás escalar tu empresa al futuro.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Seguridad <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Al utilizar nuestra aplicación siempre le garantizamos su seguridad y la de sus empleados.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Protección <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Con nuestro sistema 'Fiwii Vanguard' sus bases de datos están 100% seguras.</span>
             </a>
@@ -349,7 +349,7 @@
           <div class="slide-action">
             <div class="slide-action-inner">
               <span class="slide-action-title">¿Necesitas ayuda?</span>
-              <a href="#your-link" class="slide-action-link animated-text scheme-1 primary" data-bs-toggle="modal" data-bs-target="#modal">Contacto</a>
+              <a href="" class="slide-action-link animated-text scheme-1 primary" data-bs-toggle="modal" data-bs-target="#modal">Contacto</a>
             </div>
           </div>
           <!-- Info menu -->
@@ -358,15 +358,15 @@
               <h3 class="slide-info-title">Probar Fiwii <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Probar fiwii de forma gratuita<span class="ellipse">...</span><br> al pulsar este botón.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Escalar tu empresa <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Utiliza Fiwii app<span class="ellipse">...</span> y podrás escalar tu empresa al futuro.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Seguridad <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Al utilizar nuestra aplicación siempre le garantizamos su seguridad y la de sus empleados.</span>
             </a>
-            <a href="#your-link" class="slide-info-item">
+            <a href="" class="slide-info-item">
               <h3 class="slide-info-title">Protección <i class="fas fa-chevron-right icon"></i></h3>
               <span class="slide-info-detail">Con nuestro sistema 'Fiwii Vanguard' sus bases de datos están 100% seguras.</span>
             </a>

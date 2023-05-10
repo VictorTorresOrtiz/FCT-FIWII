@@ -476,7 +476,7 @@
                                 <!-- Label -->
                                 <span class="label-vertical to-bottom-right-out">
                                     <span class="label-line gray"></span>
-                                    <span class="label-text gray">Más Comprado</span>
+                                    <span class="label-text gray"></span>
                                 </span>
                                 <h3 class="title m-0 text-style-11 text-italic white">
                                     <span class="bg-color secondary">Empresa</span>
