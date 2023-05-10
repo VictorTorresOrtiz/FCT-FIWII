@@ -222,7 +222,5 @@
     </div>
 
     <!-- Tutorial diseño compacto -->
-
-
 </div>
 @endsection
