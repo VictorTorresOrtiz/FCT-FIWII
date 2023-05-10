@@ -25,6 +25,9 @@ Route::get('/auth.login', function () {
     return view('auth.login');
 })->name('auth.login');
 
+Route::get('/trial-fiwii-info', function () {
+    return view('trial-fiwii-info');
+})->name('trial-fiwii-info');
 
 //Dashboard
 Route::get('/admin.dashboard', function () {

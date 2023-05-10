@@ -135,21 +135,9 @@
                                                                         <div class="megamenu-item">
                                                                             <ul class="nav-list list-unstyled">
                                                                                 <li class="nav-item">
-                                                                                    <a href="home-6.html" class="nav-link parent">
+                                                                                    <a href="{{url('trial-fiwii-info')}}" class="nav-link parent">
                                                                                         <span class="text">Prueba gratuita</span>
                                                                                         <em class="tag hover-up-down">En tiempo real </em>
-                                                                                    </a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <div class="megamenu-item">
-                                                                            <ul class="nav-list list-unstyled">
-                                                                                <li class="nav-item">
-                                                                                    <a href="home-9.html" class="nav-link parent">
-                                                                                        <span class="text">Personal portfolio</span>
-                                                                                        <em class="tag hover-up-down">stylish dark</em>
                                                                                     </a>
                                                                                 </li>
                                                                             </ul>
