@@ -72,182 +72,19 @@
 
                         <li class="nav-item dropdown has-megamenu hover">
                             <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
-                                <span class="text">Configuración</span><img class="image-icon dropdown-icon"
-                                    src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
+                                <span class="text">Actualizar plan</span>
                             </a>
-                            <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                                <div class="container">
-                                    <div class="section-inner-expanded">
-                                        <div class="horizontal-tab scheme-1 primary">
-                                            <!-- Tab navigation -->
-                                            <ul id="elements-tab" class="nav nav-tabs js-tabs-event" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button id="elements-1-tab" class="title nav-link active" aria-selected="true" aria-controls="elements-1" data-bs-target="#elements-1" data-bs-toggle="tab" role="tab">
-                                                        Cuenta
-                                                    </button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button id="elements-2-tab" class="title nav-link" aria-selected="false" aria-controls="elements-2" data-bs-target="#elements-2" data-bs-toggle="tab" role="tab">
-                                                        Fiwii App
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <!-- Cuenta Content -->
-                                            <div class="tab-content">
-                                                <div id="elements-1" class="tab-pane fade show active"
-                                                    role="tabpanel">
-                                                    <div class="row g-3">
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Actualizar Plan</span>
-                                                                            <span
-                                                                                class="badge ms-05 primary-15 primary-15-hover">
-                                                                                <span
-                                                                                    class="badge-text primary primary-hover">Ofertas</span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Configuración</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="elements-2" class="tab-pane fade" role="tabpanel">
-                                                    <div class="row g-3">
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <ul class="nav-list list-unstyled">
-                                                                <li class="nav-item">
-                                                                    <a href="#" class="nav-link parent">
-                                                                        <span class="text">Gestor de Cuentas</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Añadir
-                                                                                Administrador</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Añadir Técnico</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <ul class="nav-list list-unstyled">
-                                                                <li class="nav-item">
-                                                                    <a href="#" class="nav-link parent">
-                                                                        <span class="text">Añadir To-do list</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+                        <li class="nav-item dropdown has-megamenu hover">
+                            <a class="nav-link dropdown-toggle has-icon" href="{{url('app-dashboard')}}" data-bs-toggle="dropdown">
+                                <span class="text">App Dashboard</span>
+                            </a>
                         </li>
 
                         <li class="nav-item dropdown has-megamenu hover">
-                            <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
-                                <span class="text">Sistemas</span><img class="image-icon dropdown-icon"
-                                    src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
+                            <a class="nav-link dropdown-toggle has-icon" href="{{url('web-dashboard')}}" data-bs-toggle="dropdown">
+                                <span class="text">Web Dashboard</span>
                             </a>
-                            <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                                <div class="container">
-                                    <div class="section-inner-expanded">
-                                        <div class="row g-3">
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Información</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link parent">
-                                                                <span class="text">Listado Sistemas</span>
-                                                                <em class="tag hover-up-down">sistemas dados de
-                                                                    alta</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Descargar Bases de Datos</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Sistemas</span>
-                                                                <em class="tag hover-up-down">Base de Datos de
-                                                                    Sistemas</em>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Usuarios</span>
-                                                                <em class="tag hover-up-down">Base de Datos de
-                                                                    Usuarios</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Añadir Sistemas</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Añadir un Sistema</span>
-                                                                <em class="tag hover-up-down">Dar de alta un
-                                                                    sistema</em>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Eliminar un Sistema</span>
-                                                                <em class="tag hover-up-down">Elimina un sistema</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </li>
                         <!-- Action -->
                         <div class="navbar-action">
