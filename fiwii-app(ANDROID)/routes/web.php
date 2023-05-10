@@ -29,9 +29,9 @@ Route::get('/conf', function () {
     return view('conf');
 })->middleware('auth')->name('conf');
 
-// Route::get('/auth.register', function () {
-//     return view('auth.register');
-// })->middleware('auth')->name('auth.register');
+Route::get('/qrLector', function () {
+    return view('qrLector');
+})->middleware('auth')->name('qrLector');
 
 Route::get('/auth.login', function () {
     return view('auth.login');
