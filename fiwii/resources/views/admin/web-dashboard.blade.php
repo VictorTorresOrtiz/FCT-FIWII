@@ -136,8 +136,8 @@
                                   <li class="nav-item">
                                     <a href="#" class="nav-link parent">
                                       <span class="text">Actualizar Plan</span>
-                                      <span class="badge ms-05 primary-15 primary-15-hover">
-                                          <span class="badge-text primary primary-hover">Ofertas</span>
+                                      <span class="badge ms-05 white">
+                                          <span class="badge-text accent accent-hover">Ofertas</span>
                                         </span>
                                     </a>
                                   </li>
@@ -284,8 +284,8 @@
           <!-- Action -->
           <div class="navbar-action">
             <div class="nav-item">
-              <a href="{{url('/admin.dashboard')}}"  class="button small-button rounded primary black-hover button-collision">
-                <span class="button-text white white-hover">Volver al inicio </span>
+              <a href="{{url('/admin.dashboard')}}"  class="button small-button rounded primary-15 accent-hover button-collision">
+                <span class="button-text accent white-hover">Volver al inicio </span>
               </a>
             </div>
           </div>
@@ -400,7 +400,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Fiwii-App Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="98" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -408,7 +408,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Fiwii-Web Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="89" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -416,7 +416,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Laravel Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="88" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -424,7 +424,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">DBB Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="94" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
