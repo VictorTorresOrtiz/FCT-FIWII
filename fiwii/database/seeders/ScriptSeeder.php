@@ -10,12 +10,10 @@ class ScriptSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run(){
-
-        $sql = database_path(path: 'systemsapp.sql');
+    public function run(): void
+    {
+        $sql = database_path('systemsapp.sql');
         DB::unprepared(file_get_contents($sql));
     }
 }

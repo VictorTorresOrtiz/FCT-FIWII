@@ -588,8 +588,8 @@
                         <div class="modal-footer">
                             <div class="button-wrapper">
                                 <!-- Button -->
-                                <button class="button shadow rounded-3 black primary-hover" data-bs-dismiss="modal">
-                                    <span class="button-text white white-hover">Cerrar</span>
+                                <button class="button shadow rounded-3 black accent-hover" data-bs-dismiss="modal">
+                                    <span class="button-text accent white-hover">Cerrar</span>
                                     <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                 </button>
                             </div>

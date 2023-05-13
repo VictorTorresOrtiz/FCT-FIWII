@@ -90,8 +90,8 @@
                         <div class="navbar-action">
                             <div class="nav-item">
                                 <a href="{{ url('/') }}"
-                                    class="button small-button rounded primary black-hover button-collision">
-                                    <span class="button-text white white-hover">Volver al inicio </span>
+                                    class="button small-button rounded primary-15 accent-hover button-collision">
+                                    <span class="button-text accent white-hover">Volver al inicio </span>
                                 </a>
                             </div>
                         </div>
@@ -170,9 +170,6 @@
                                             class="link align-v-center black black-hover hover-up-down">
                                             <i class="fa-solid fa-globe icon"></i>
                                             <span class="text ms-05">Fiwii Web Admin Panel</span>
-                                            <span class="badge ms-05 primary primary-hover">
-                                                <span class="badge-text white white-hover">v1.0</span>
-                                            </span>
                                         </a>
                                     </h3>
                                     <p class="description gray">Panel de administrador para la Web principal de Fiwii.
