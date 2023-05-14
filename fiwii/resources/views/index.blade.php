@@ -46,10 +46,10 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link has-icon">
+                                            <p class="nav-link has-icon">
                                                 <i class="fa-solid fa-envelope icon"></i>
                                                 <span class="text">fiwiiapp@fiwii.com</span>
-                                            </a>
+                                            </p>
                                         </li>
                                     </ul>
                                 </div>
