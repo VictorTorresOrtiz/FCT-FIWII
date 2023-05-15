@@ -122,7 +122,7 @@
                 <div class="splide__list">
                     <div class="splide__slide ps-3">
                         <div class="bg-theme rounded-m shadow-m text-center">
-                            <a href="{{ url('#') }}">
+                            <a href="{{ url('qrLector') }}">
                                 <i class="fa-solid fa-qrcode fa-3x pt-2"></i>
                                 <h5 class="font-16">Lector QR</h5>
                                 <p class="line-height-s font-11 pb-4">Leer Código QR
@@ -144,7 +144,7 @@
                     </div>
                     <div class="splide__slide ps-3">
                         <div class="bg-theme rounded-m shadow-m text-center">
-                            <a href="{{ url('#') }}">
+                            <a href="{{ url('sistemas') }}">
                                 <i class="fa-solid fa-fire-extinguisher fa-3x pt-2"></i>
                                 <h5 class="font-16">Sistemas</h5>
                                 <p class="line-height-s font-11 pb-4">
