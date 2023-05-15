@@ -53,5 +53,6 @@
             @yield('sistemas')
             @yield('compact')
             @yield('qr')
+            @yield('generator')
 </body>
 </html>
