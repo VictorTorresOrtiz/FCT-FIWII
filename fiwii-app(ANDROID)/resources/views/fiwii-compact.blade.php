@@ -19,19 +19,15 @@
                 <i data-feather="home" data-feather-line="1" data-feather-size="55" data-feather-color="green-dark" data-feather-bg="green-fade-light"></i>
                 <p>Inicio</p>
             </a>
-            <a href="#" data-toggle-theme class="col-4 show-on-theme-light">
-                <i data-feather="moon" data-feather-line="1" data-feather-size="55" data-feather-color="dark-dark" data-feather-bg="gray-fade-light"></i>
-                <p>Modo Noche</p>
-            </a>
-            <a href="#" data-toggle-theme class="col-4 show-on-theme-dark">
-                <i data-feather="sun" data-feather-line="1" data-feather-size="55" data-feather-color="yellow-dark" data-feather-bg="yellow-fade-light"></i>
-                <p>Modo Día</p>
+            <a href="{{url('qr-generator')}}" data-toggle-theme class="col-4">
+                <i data-feather="smartphone" data-feather-line="1" data-feather-size="55" data-feather-color="dark-dark" data-feather-bg="gray-fade-light"></i>
+                <p>Generador QR</p>
             </a>
             <a href="{{url('conf')}}" class="col-4">
                 <i data-feather="settings" data-feather-line="1" data-feather-size="55" data-feather-color="blue-dark" data-feather-bg="blue-fade-light"></i>
                 <p>Configuración</p>
             </a>
-            <a href="{{url('')}}" class="col-4">
+            <a href="{{url('qrLector')}}" class="col-4">
                 <i data-feather="smartphone" data-feather-line="1" data-feather-size="55" data-feather-color="teal-dark" data-feather-bg="teal-fade-light"></i>
                 <p>Lector QR</p>
             </a>

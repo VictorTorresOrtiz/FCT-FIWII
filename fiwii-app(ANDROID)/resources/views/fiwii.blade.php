@@ -29,37 +29,6 @@
                             <strong>Genere QR de forma rápida</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
-                        <a href="#" data-filter-item data-filter-name="all demo code css3 css">
-                            <i class="fab fa-css3 color-blue-dark font-17"></i>
-                            <span>CSS3 </span>
-                            <strong>Beautiful Design. Simple Code.</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-
-                        <a href="#" data-filter-item data-filter-name="fox all demo code html5 html">
-                            <i class="fab fa-html5 color-orange-dark"></i>
-                            <span>HTML5 </span>
-                            <strong>Powerful and Universally Compatible</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                        <a href="#" data-filter-item data-filter-name="all demo support help">
-                            <i class="fa fa-life-ring color-red-dark font-17"></i>
-                            <span>Support </span>
-                            <strong>Elite Quality, 24/7 Support for Buyers</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                        <a href="#" data-filter-item data-filter-name="all demo code js jquery java javascript">
-                            <i class="fab fa-js color-yellow-dark font-17"></i>
-                            <span>JavaScript </span>
-                            <strong>Clean Code, Easy to Use and Modify</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                        <a href="#" data-filter-item data-filter-name="all demo support elite help documentation">
-                            <i class="fa fa-file color-gray-dark font-17"></i>
-                            <span>Documentation </span>
-                            <strong>Every Feature and Aspect Covered.</strong>
-                            <i class="fa fa-angle-right"></i>
-                        </a>
                     </div>
                 </div>
             </div>
