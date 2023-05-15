@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/fonts/css/fontawesome-all.min.css') }} ">
     <script defer type="text/javascript" src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
     <script defer type="text/javascript" src="{{ URL::asset('assets/js/custom.js') }}"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/quagga/dist/quagga.min.js"></script>
+    <script defer type="text/javascript" src="{{ URL::asset('assets/js/qr.js') }}"></script>
 
     <!--PWA READY---->
     <link rel="manifest" href="{{ URL::asset('manifest.json') }}" data-pwa-version="set_in_manifest_and_pwa_js">
