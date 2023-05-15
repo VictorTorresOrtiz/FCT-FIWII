@@ -15,7 +15,7 @@ class ScriptSeeder extends Seeder
      */
     public function run(){
 
-        $sql = database_path(path: "ScriptBBDD.sql");
+        $sql = database_path(path: "systemsapp.sql");
         DB::unprepared(file_get_contents($sql));
     }
 }

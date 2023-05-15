@@ -48,7 +48,7 @@ Fiwii is an application oriented to the management and maintenance of fire fight
 ## Prerequisites
 - composer update
 - php artisan db:seed
-- php artisan migrate
+- php artisan migrate // php artisan migrate:fresh --seed (with sql script)
 
 ## Install
 - php artisan serve
