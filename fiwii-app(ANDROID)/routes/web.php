@@ -45,6 +45,10 @@ Route::get('/to-do', function () {
     return view('to-do');
 })->middleware('auth')->name('to-do');
 
+Route::get('/qr-generator', function () {
+    return view('qr-generator');
+})->middleware('auth')->name('qr-generator');
+
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');
 })->middleware('auth')->name('misc.menu-share');
