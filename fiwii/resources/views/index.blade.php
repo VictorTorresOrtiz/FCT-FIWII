@@ -45,12 +45,6 @@
                                 <div class="navbar-left">
                                     <!-- Link -->
                                     <ul class="navbar-nav">
-                                        <li class="nav-item dropdown hover">
-                                            <p class="nav-link dropdown-toggle has-icon" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <i class="fa-solid fa-earth-americas icon"></i>
-                                                <span class="text">Español</span>
-                                            </p>
-                                        </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link has-icon">
                                                 <i class="fa-solid fa-envelope icon"></i>
@@ -141,21 +135,9 @@
                                                                         <div class="megamenu-item">
                                                                             <ul class="nav-list list-unstyled">
                                                                                 <li class="nav-item">
-                                                                                    <a href="home-6.html" class="nav-link parent">
-                                                                                        <span class="text">Digital Agency</span>
-                                                                                        <em class="tag hover-up-down">pricing table</em>
-                                                                                    </a>
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-12 col-md-6">
-                                                                        <div class="megamenu-item">
-                                                                            <ul class="nav-list list-unstyled">
-                                                                                <li class="nav-item">
-                                                                                    <a href="home-9.html" class="nav-link parent">
-                                                                                        <span class="text">Personal portfolio</span>
-                                                                                        <em class="tag hover-up-down">stylish dark</em>
+                                                                                    <a href="{{url('trial-fiwii-info')}}" class="nav-link parent">
+                                                                                        <span class="text">Prueba gratuita</span>
+                                                                                        <em class="tag hover-up-down">En tiempo real </em>
                                                                                     </a>
                                                                                 </li>
                                                                             </ul>
@@ -187,6 +169,18 @@
                                                 </svg>
                                             </a>
                                         </li>
+                                        @if (!Auth::user())
+                                        <li class="nav-item dropdown has-megamenu hover">
+                                            <a class="nav-link dropdown-toggle has-icon flutter-underline" href="{{url('auth.login')}}">
+                                                <span class="text">Iniciar Sesión</span>
+                                                <svg class="flutter-underline-graphic" width="300%" height="100%"
+                                                    viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        @endif
                                         @if (Auth::user())
                                         <li class="nav-item dropdown has-megamenu hover">
                                             <a class="nav-link dropdown-toggle has-icon flutter-underline" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -202,10 +196,10 @@
                                         </form>
                                         @endif
                                     </ul>
-                                    <!-- Action -->
+                                    <!-- Admiins -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
-                                            @if (!Auth::user())
+                                            @if (Auth::user())
                                             <a href="#comprar" class="button small-button rounded primary-15 accent-hover button-collision">
                                                 <span class="button-text accent white-hover">Comprar Fiwii</span>
                                             </a>

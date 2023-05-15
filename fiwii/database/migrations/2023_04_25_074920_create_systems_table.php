@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('ubicacion');
             $table->enum('status', ['Mantenimiento', 'Revisado', 'Averiado']);
+            $table->enum('prioridad', ['Alta', 'Media', 'Baja']);
             $table->timestamps();
         });
 

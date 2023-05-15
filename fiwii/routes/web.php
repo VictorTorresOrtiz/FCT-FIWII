@@ -25,6 +25,9 @@ Route::get('/auth.login', function () {
     return view('auth.login');
 })->name('auth.login');
 
+Route::get('/trial-fiwii-info', function () {
+    return view('trial-fiwii-info');
+})->name('trial-fiwii-info');
 
 //Dashboard
 Route::get('/admin.dashboard', function () {
@@ -39,7 +42,9 @@ Route::get('/admin.web-dashboard', function () {
     return view('admin.web-dashboard');
 })->name('admin.web-dashboard')->middleware('auth');
 
-// Route::get('/', [ DashbooardController::class,'systems' ]);
+
+Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
+
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
 
 Route::get('descargar-base-de-datos', 'DescargarBaseDeDatosController@descargar')->name('descargar.base-de-datos');

@@ -26,193 +26,6 @@
                 <div id="navbar-items" class="collapse navbar-collapse focus-trigger">
                     <!-- Link -->
                     <ul class="navbar-nav ms-auto">
-
-                        {{-- <li class="nav-item dropdown has-megamenu hover">
-                            <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
-                                <span class="text">Configuración</span><img class="image-icon dropdown-icon"
-                                    src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
-                            </a>
-                            <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                                <div class="container">
-                                    <div class="section-inner-expanded">
-                                        <div class="horizontal-tab scheme-1 primary">
-                                            <!-- Tab navigation -->
-                                            <ul id="elements-tab" class="nav nav-tabs js-tabs-event" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button id="elements-1-tab" class="title nav-link active"
-                                                        aria-selected="true" aria-controls="elements-1"
-                                                        data-bs-target="#elements-1" data-bs-toggle="tab"
-                                                        role="tab">
-                                                        Cuenta
-                                                    </button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button id="elements-2-tab" class="title nav-link"
-                                                        aria-selected="false" aria-controls="elements-2"
-                                                        data-bs-target="#elements-2" data-bs-toggle="tab"
-                                                        role="tab">
-                                                        Fiwii App
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <!-- Cuenta Content -->
-                                            <div class="tab-content">
-                                                <div id="elements-1" class="tab-pane fade show active"
-                                                    role="tabpanel">
-                                                    <div class="row g-3">
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Actualizar Plan</span>
-                                                                            <span
-                                                                                class="badge ms-05 primary-15 primary-15-hover">
-                                                                                <span
-                                                                                    class="badge-text primary primary-hover">Ofertas</span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Configuración</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="elements-2" class="tab-pane fade" role="tabpanel">
-                                                    <div class="row g-3">
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <ul class="nav-list list-unstyled">
-                                                                <li class="nav-item">
-                                                                    <a href="#" class="nav-link parent">
-                                                                        <span class="text">Gestor de Cuentas</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Añadir
-                                                                                Administrador</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Añadir Técnico</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <ul class="nav-list list-unstyled">
-                                                                <li class="nav-item">
-                                                                    <a href="#" class="nav-link parent">
-                                                                        <span class="text">Añadir To-do list</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                        </li> --}}
-
-                        <li class="nav-item dropdown has-megamenu hover">
-                            <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
-                                <span class="text">Sistemas</span><img class="image-icon dropdown-icon"
-                                    src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
-                            </a>
-                            <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                                <div class="container">
-                                    <div class="section-inner-expanded">
-                                        <div class="row g-3">
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Información</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link parent">
-                                                                <span class="text">Listado Sistemas</span>
-                                                                <em class="tag hover-up-down">sistemas dados de
-                                                                    alta</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Descargar Bases de Datos</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Sistemas</span>
-                                                                <em class="tag hover-up-down">Base de Datos de
-                                                                    Sistemas</em>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Usuarios</span>
-                                                                <em class="tag hover-up-down">Base de Datos de
-                                                                    Usuarios</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Añadir Sistemas</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Añadir un Sistema</span>
-                                                                <em class="tag hover-up-down">Dar de alta un
-                                                                    sistema</em>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Eliminar un Sistema</span>
-                                                                <em class="tag hover-up-down">Elimina un sistema</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
                         <ul class="navbar-nav navbar-icons">
                             <!-- Search icon -->
                             <li class="search-bar nav-item d-only-desktop">
@@ -249,7 +62,7 @@
                         <li class="nav-item" role="presentation">
                             <button id="v-1-tab" class="nav-link active" aria-selected="true" aria-controls="v-1"
                                 data-bs-target="#v-1" data-bs-toggle="tab" role="tab">
-                                Gestor de Cuentas
+                                Dashboard
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -274,56 +87,43 @@
                                 <div class="col-12 col-md-6">
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/addAdmin.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Añadir Administrador</h3>
+                                            <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/addUser.svg') }}"  alt="Icon name" data-shock-icon="32" />
+                                            <h3 class="title text-style-11 black">Añadir Usuarios</h3>
                                             <p class="description">Dar de alta una cuenta de Administrador Fiwii.</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
-                                                    <span class="button-text black black-hover"><mark
-                                                            class="animated-underline accent when-hover">Read
-                                                            More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                    <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Crear</mark></span>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-admin"
-                                                class="full-link"></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-admin" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/addUser.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Añadir Usuario</h3>
-                                            <p class="description">Dar de alta una cuenta para sus empleados.</p>
+                                            <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/deleteUser.svg') }}" alt="Icon name" data-shock-icon="32" />
+                                            <h3 class="title text-style-11 black">Eliminar usuario</h3>
+                                            <p class="description">Dar de baja cuentas Fiwii.</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
-                                                    <span class="button-text black black-hover"><mark
-                                                            class="animated-underline accent when-hover">Read
-                                                            More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                    <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Eliminar</mark></span>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#your-link" class="full-link"></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-eliminar" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/todoList.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
+                                            <img class="card-image-icon primary"  src="{{ URL::asset('assets/custom-svg/todoList.svg') }}"  alt="Icon name" data-shock-icon="32" />
                                             <h3 class="title text-style-11 black">Lista de Tareas</h3>
                                             <p class="description">Asignar lista de tareas a sus empleados.</p>
                                             <!-- Button -->
@@ -332,8 +132,7 @@
                                                     <span class="button-text black black-hover"><mark
                                                             class="animated-underline accent when-hover">Read
                                                             More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                                                 </span>
                                             </div>
                                             <!-- Link -->
@@ -347,17 +146,13 @@
                                             <img class="card-image-icon primary"
                                                 src="{{ URL::asset('assets/custom-svg/deleteUser.svg') }}"
                                                 alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Eliminar Cuentas</h3>
-                                            <p class="description">Dar de baja cualquier cuenta asociada a su empresa
-                                            </p>
+                                            <h3 class="title text-style-11 black">Crear Sistema</h3>
+                                            <p class="description">Dar de alta un sistema </p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
-                                                    <span class="button-text black black-hover"><mark
-                                                            class="animated-underline accent when-hover">Read
-                                                            More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                    <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Crear</mark></span>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                                                 </span>
                                             </div>
                                             <!-- Link -->
@@ -473,7 +268,7 @@
             </div>
         </section>
 
-        <!-- Modal añadir admin -->
+        <!-- Modal añadir usuario -->
         <!-- Modal -->
         <div id="modal-admin" class="modal fade" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog max-w-50">
@@ -484,12 +279,12 @@
                         <!-- Intro -->
                         <div class="basic-intro">
                             <h2 class="title black">
-                                <span class="text-1 text-style-7">Añadir cuenta Fiwii </span>
+                                <span class="text-1 text-style-7">Gestor de cuentas </span>
                                 <span class="text-2 text-style-8 text-italic"><mark
-                                        class="animated-underline accent">Admin</mark></span>
+                                        class="animated-underline accent">Fiwii</mark></span>
                             </h2>
                             <div class="description gray">
-                                <p>Introduce los datos del nuevo Administrador</p>
+                                <p>Introduce los datos del nuevo Usuario</p>
                             </div>
                         </div>
                     </div>
@@ -500,15 +295,13 @@
                                 novalidate="novalidate">
                                 <div class="form-row row">
                                     <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="text" name="name" id="InputFloatingName"
-                                            class="form-control" placeholder="Nombre" required="required">
+                                        <input type="text" name="nombre-crear" id="InputFloatingName" class="form-control" placeholder="Nombre" required="required">
                                         <label for="InputFloatingName" class="form-label">Nombre</label>
                                         <div class="invalid-feedback">Please enter your name.</div>
                                         <div class="valid-feedback">Looks good.</div>
                                     </div>
                                     <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="email" name="email" id="InputFloatingEmail"
-                                            class="form-control" placeholder="name@example.com" required="required">
+                                        <input type="email" name="email-crear" id="InputFloatingEmail" class="form-control" placeholder="name@example.com" required="required">
                                         <label for="InputFloatingEmail" class="form-label">Email</label>
                                         <div class="invalid-feedback">Please enter a valid email address.</div>
                                         <div class="valid-feedback">Looks good.</div>
@@ -516,8 +309,7 @@
                                 </div>
                                 <div class="form-row row">
                                     <div class="form-col form-floating col-12">
-                                        <textarea type="password" name="password" id="InputFloatingName" class="form-control form-textarea" rows="3"
-                                            placeholder="Contraseña" required="required"></textarea>
+                                        <textarea type="password" name="password-crear" id="InputFloatingName" class="form-control form-textarea" rows="3" placeholder="Contraseña" required="required"></textarea>
                                         <label for="InputFloatingMessage" class="form-label">Contraseña</label>
                                         <div class="invalid-feedback">Please enter a valid password.</div>
                                         <div class="valid-feedback">Looks good.</div>
@@ -526,12 +318,120 @@
                                 <div class="form-row row">
                                     <div class="form-col col-12 col-md-8">
                                         <div class="form-check">
-                                            <input type="radio" name="info" id="InputRadioChecked"
-                                                class="form-check-input form-radio" checked="checked"
-                                                required="required">
+                                            <input type="radio" name="check-empleado" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
                                             <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Default Admin Account.
+                                                 Cuenta Empleados.
                                             </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="check-admin" id="InputRadioChecked" class="form-check-input form-radio">
+                                            <label class="form-label form-check-label" for="InputRadioChecked">
+                                                Cuenta Administrador.
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="check-trial" id="InputRadioChecked" class="form-check-input form-radio">
+                                            <label class="form-label form-check-label" for="InputRadioChecked">
+                                                Cuenta Trial.
+                                            </label>
+
+                                        </div>
+                                        <div class="form-check">
+
+                                        </div>
+                                    </div>
+                                    <div class="form-col col-12 col-md-4 align-h-right">
+                                        <!-- Button -->
+                                        <button class="button arrow-button next scheme-1 secondary">
+                                            <span class="arrow">
+                                                <span class="item"></span>
+                                                <span class="item"></span>
+                                            </span>
+                                            <span class="line"></span>
+                                            <span class="text">Crear Cuenta</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="subject" value="Message sent through the contact form.">
+                                <span class="form-alert success">Your account was create successful. Thanks.</span>
+                                <span class="form-alert error">Sorry. We were unable to send create your account.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal eliminar usuario -->
+        <!-- Modal -->
+        <div id="modal-eliminar" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog max-w-50">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <i class="fa-solid fa-xmark close-button black secondary-hover" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
+                        <!-- Intro -->
+                        <div class="basic-intro">
+                            <h2 class="title black">
+                                <span class="text-1 text-style-7">Gestor de cuentas </span>
+                                <span class="text-2 text-style-8 text-italic"><mark
+                                        class="animated-underline accent">Fiwii</mark></span>
+                            </h2>
+                            <div class="description gray">
+                                <p>Introduce los datos del Usuario para eliminarlo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form -->
+                        <div class="form-area scheme-1 secondary">
+                            <form action="php/sender.php" class="form-fields needs-validation ajax-form" novalidate="novalidate">
+                                <div class="form-row row">
+                                    <div class="form-col form-floating col-12 col-md-6">
+                                        <input type="text" name="name-eliminar" id="InputFloatingName" class="form-control" placeholder="ID Usuario" required="required">
+                                        <label for="InputFloatingName" class="form-label">ID</label>
+                                        <div class="invalid-feedback">Please enter users ID.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                    <div class="form-col form-floating col-12 col-md-6">
+                                        <input type="text" name="email-eliminar" id="InputFloatingEmail" class="form-control" placeholder="Nombre completo" required="required">
+                                        <label for="InputFloatingEmail" class="form-label">Nombre</label>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="form-col form-floating col-12">
+                                        <textarea type="email" name="email-eliminar" id="InputFloatingName" class="form-control form-textarea" placeholder="Email" required="required"></textarea>
+                                        <label for="InputFloatingMessage" class="form-label">Email</label>
+                                        <div class="invalid-feedback">Please enter a valid email.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="form-col col-12 col-md-8">
+                                        <div class="form-check">
+                                            <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
+                                            <label class="form-label form-check-label" for="InputRadioChecked">
+                                                 Cuenta Empleados.
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
+                                            <label class="form-label form-check-label" for="InputRadioChecked">
+                                                Cuenta Administrador.
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
+                                            <label class="form-label form-check-label" for="InputRadioChecked">
+                                                Cuenta Trial.
+                                            </label>
+
                                         </div>
                                         <div class="form-check">
 
