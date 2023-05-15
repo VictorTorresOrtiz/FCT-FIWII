@@ -2,15 +2,15 @@
 <html lang="en">
 <!-- Preloader -->
 <div id="preloader" class="preloader" data-delay="0" data-limit="3000">
-    <img src="{{ URL::asset('assets/images/logo.svg') }}" class="emblem" alt="Emblem" hidden="hidden" />
+    <img src="{{ URL::asset('assets/images/logo/logo_loader.png') }}" class="emblem" alt="Emblem" hidden="hidden" />
 </div>
 <head>
     <!-- Display -->
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Identity -->
     <title>Fiwii Systems</title>
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <!-- Vendor Style Sheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/preloader.min.css') }}" />
@@ -57,5 +57,6 @@
 <body class="shock-body">
     @yield('dashboard')
     @yield('app-dashboard')
+    @yield('web-dashboard')
 </body>
 </html>

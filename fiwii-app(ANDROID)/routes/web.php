@@ -29,9 +29,9 @@ Route::get('/conf', function () {
     return view('conf');
 })->middleware('auth')->name('conf');
 
-// Route::get('/auth.register', function () {
-//     return view('auth.register');
-// })->middleware('auth')->name('auth.register');
+Route::get('/qrLector', function () {
+    return view('qrLector');
+})->middleware('auth')->name('qrLector');
 
 Route::get('/auth.login', function () {
     return view('auth.login');
@@ -44,6 +44,10 @@ Route::get('/profile', function () {
 Route::get('/to-do', function () {
     return view('to-do');
 })->middleware('auth')->name('to-do');
+
+Route::get('/qr-generator', function () {
+    return view('qr-generator');
+})->middleware('auth')->name('qr-generator');
 
 Route::get('/misc.menu-share', function () {
     return view('misc.menu-share');

@@ -47,12 +47,51 @@
         </div>
 
         <div class="page-content">
-            @yield('fiwii')
-            @yield('to-do')
-            @yield('profile')
-            @yield('sistemas')
-            @yield('compact')
-            @yield('qr')
-            @yield('generator')
+            <div class="page-title page-title-small">
+                <h2><a href="#" data-back-button><i class="fa fa-arrow-left"></i></a>Lector QR</h2>
+                <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img" data-src="images/avatars/5s.png"></a>
+            </div>
+            <div class="card header-card shape-rounded" data-card-height="150">
+                <div class="card-overlay bg-highlight opacity-95"></div>
+                <div class="card-overlay dark-mode-tint"></div>
+                <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+            </div>
+
+            <div class="card card-style">
+                <div class="content">
+                    <p>
+                        Escanear códigos QR en tiempo real.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card card-style">
+                <div class="content">
+                    <video id="preview"></video>
+                </div>
+            </div>
+
+            <div class="modal" id="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Escaner Exitoso</h5>
+                      <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="qr-data" class=""></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+       </div>
+
+<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
 </body>
 </html>

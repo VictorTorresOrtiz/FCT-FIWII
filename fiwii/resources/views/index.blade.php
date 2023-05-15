@@ -46,10 +46,10 @@
                                     <!-- Link -->
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link has-icon">
+                                            <p class="nav-link has-icon">
                                                 <i class="fa-solid fa-envelope icon"></i>
                                                 <span class="text">fiwiiapp@fiwii.com</span>
-                                            </a>
+                                            </p>
                                         </li>
                                     </ul>
                                 </div>
@@ -199,7 +199,7 @@
                                     <!-- Admiins -->
                                     <div class="navbar-nav navbar-action">
                                         <div class="nav-item">
-                                            @if (Auth::user())
+                                            @if (!Auth::user())
                                             <a href="#comprar" class="button small-button rounded primary-15 accent-hover button-collision">
                                                 <span class="button-text accent white-hover">Comprar Fiwii</span>
                                             </a>
@@ -476,7 +476,7 @@
                                 <!-- Label -->
                                 <span class="label-vertical to-bottom-right-out">
                                     <span class="label-line gray"></span>
-                                    <span class="label-text gray">Más Comprado</span>
+                                    <span class="label-text gray"></span>
                                 </span>
                                 <h3 class="title m-0 text-style-11 text-italic white">
                                     <span class="bg-color secondary">Empresa</span>

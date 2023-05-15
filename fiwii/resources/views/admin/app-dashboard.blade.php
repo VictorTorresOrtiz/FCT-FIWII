@@ -143,9 +143,7 @@
                                 <div class="col-12 col-md-6">
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/deleteUser.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
+                                            <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/sistema.svg') }}" alt="Icon name" data-shock-icon="32" />
                                             <h3 class="title text-style-11 black">Crear Sistema</h3>
                                             <p class="description">Dar de alta un sistema </p>
                                             <!-- Button -->
@@ -156,7 +154,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#your-link" class="full-link"></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-añadir-sistemas" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -460,6 +458,93 @@
             </div>
         </div>
 
+         <!-- Modal añadir sistema -->
+        <!-- Modal -->
+        <div id="modal-añadir-sistemas" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog max-w-50">
+                <div class="modal-content shadow">
+                    <div class="modal-header">
+                        <i class="fa-solid fa-xmark close-button black secondary-hover" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
+                        <!-- Intro -->
+                        <div class="basic-intro">
+                            <h2 class="title black">
+                                <span class="text-1 text-style-7">Gestor de sistemas </span>
+                                <span class="text-2 text-style-8 text-italic"><mark
+                                        class="animated-underline accent">Fiwii</mark></span>
+                            </h2>
+                            <div class="description gray">
+                                <p>Introduce los datos del nuevo sistema</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form -->
+                        <div class="form-area scheme-1 secondary">
+                            <form action="php/sender.php" class="form-fields needs-validation ajax-form"
+                                novalidate="novalidate">
+                                <div class="form-row row">
+                                    <div class="form-col form-floating col-12 col-md-6">
+                                        <input type="text" name="sistema-ubicacion " id="InputFloatingName" class="form-control" placeholder="Nombre" required="required">
+                                        <label for="InputFloatingName" class="form-label">Nombre</label>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                    <div class="form-col form-floating col-12 col-md-6">
+                                        <input type="text" name="sistema-ubicacion" id="InputFloatingEmail" class="form-control" placeholder="Ubicación" required="required">
+                                        <label for="InputFloatingEmail" class="form-label">Ubicación</label>
+                                        <div class="invalid-feedback">Please enter a valid ubication.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="form-col form-floating col-12">
+                                        <textarea type="text" name="sistema-desc" id="InputFloatingName" class="form-control form-textarea" rows="3" placeholder="Descripción" required="required"></textarea>
+                                        <label for="InputFloatingMessage" class="form-label">Descripción</label>
+                                        <div class="invalid-feedback">Please enter a valid description.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="form-col col-12 col-md-8">
+                                        <div class="form-check">
+                                            <input type="radio" name="check-averiado" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
+                                            <label class="form-label form-check-label" for="InputRadioChecked">
+                                                 Averiado.
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="check-mantenimiento" id="InputRadioChecked" class="form-check-input form-radio">
+                                            <label class="form-label form-check-label" for="InputRadioChecked">
+                                                Mantenimiento.
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check"></div>
+                                    </div>
+                                    <div class="form-col col-12 col-md-4 align-h-right">
+                                        <!-- Button -->
+                                        <button class="button arrow-button next scheme-1 secondary">
+                                            <span class="arrow">
+                                                <span class="item"></span>
+                                                <span class="item"></span>
+                                            </span>
+                                            <span class="line"></span>
+                                            <span class="text">Crear Cuenta</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="subject" value="Message sent through the contact form.">
+                                <span class="form-alert success">Your account was create successful. Thanks.</span>
+                                <span class="form-alert error">Sorry. We were unable to send create your account.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Modal Gestor de sistemas -->
         <div id="modal-1" class="modal fade" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog max-w-50">
@@ -503,8 +588,8 @@
                         <div class="modal-footer">
                             <div class="button-wrapper">
                                 <!-- Button -->
-                                <button class="button shadow rounded-3 black primary-hover" data-bs-dismiss="modal">
-                                    <span class="button-text white white-hover">Cerrar</span>
+                                <button class="button shadow rounded-3 black accent-hover" data-bs-dismiss="modal">
+                                    <span class="button-text accent white-hover">Cerrar</span>
                                     <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                 </button>
                             </div>

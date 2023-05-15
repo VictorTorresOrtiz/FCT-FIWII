@@ -1,68 +1,5 @@
-<!DOCTYPE HTML>
-<html lang="es">
-
-  <!-- Preloader -->
-  <div id="preloader" class="preloader" data-delay="0" data-limit="3000">
-    <img src="{{ URL::asset('ssets/images/logo.svg') }}" class="emblem" alt="Emblem" hidden="hidden" />
-  </div>
-
-  <head>
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
-    <!-- Display -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Identity -->
-    <title>Fiwii Web - Dashboard Home</title>
-    <meta name="description" content="Shock is a creative multipurpose theme for building websites. It is based on Bootstrap 5 and other of the best and most up-to-date code libraries used by professional developers in the world.">
-    <meta name="author" content="Codings">
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
-    <!-- Vendor Style Sheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/preloader.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/font-family.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/font-awesome.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/menu-engine.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/menu-grid.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/swiper.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/dynamic-slider.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/bricklayer.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/lightbox.min.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/aos.min.css') }}" />
-    <!-- Main Style Sheet -->
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/theme.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/core.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/main.css') }}" />
-    <!-- Vendor JavaScript -->
-    <script defer src="{{ URL::asset('assets/js/vendor/jquery.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/imagesloaded.pkgd.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/preloader.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/inview.min.js ') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/menu-engine.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/menu-grid.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/bootstrap.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/swiper.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/anime.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/dynamic-slider.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/shuffle.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/stickybits.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/bricklayer.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/lightbox.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/typed.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/progressbar.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/map-styles.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/magnetic-effect.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/gsap.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/aos.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/lax.min.js') }}"></script>
-    <script defer src="{{ URL::asset('assets/js/vendor/cursor-effect.min.js') }}"></script>
-    <!-- Main JavaScript -->
-    <script defer src="{{ URL::asset('assets/js/main.js') }}"></script>
-
-  </head>
-
-  <body class="shock-body">
+@extends('templates.template-admin')
+@section('web-dashboard')
 <!-- Header -->
 <header id="header" class="shock-header">
     <!-- Navbar -->
@@ -136,8 +73,8 @@
                                   <li class="nav-item">
                                     <a href="#" class="nav-link parent">
                                       <span class="text">Actualizar Plan</span>
-                                      <span class="badge ms-05 primary-15 primary-15-hover">
-                                          <span class="badge-text primary primary-hover">Ofertas</span>
+                                      <span class="badge ms-05 white">
+                                          <span class="badge-text accent accent-hover">Ofertas</span>
                                         </span>
                                     </a>
                                   </li>
@@ -284,8 +221,8 @@
           <!-- Action -->
           <div class="navbar-action">
             <div class="nav-item">
-              <a href="{{url('/admin.dashboard')}}"  class="button small-button rounded primary black-hover button-collision">
-                <span class="button-text white white-hover">Volver al inicio </span>
+              <a href="{{url('/admin.dashboard')}}"  class="button small-button rounded primary-15 accent-hover button-collision">
+                <span class="button-text accent white-hover">Volver al inicio </span>
               </a>
             </div>
           </div>
@@ -400,7 +337,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Fiwii-App Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="98" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -408,7 +345,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Fiwii-Web Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="89" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -416,7 +353,7 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">Laravel Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="88" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
@@ -424,82 +361,12 @@
               <div class="radial-progress-bar">
                 <div class="item">
                   <h3 class="title text-style-11 black">DBB Server Status</h3>
-                  <div class="counter" data-value="100" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
+                  <div class="counter" data-value="94" data-symbol="%" data-duration="2500" data-bar-stroke="4" data-bar-stroke-empty="1" data-bar-color="var(--accent-color)" data-empty-bar-color="var(--black-25-color)" data-text-bg-color="var(--black-color)" data-text-color="var(--white-color)"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Image --
-      <section class="shock-section pt-5 pb-5">
-        <div class="container max-w-85">
-          <div class="row g-4">
-            <div class="col-12 col-md-5">
-              <!-- Image --
-              <div class="gallery" data-lax="inertia-top">
-                <a href="https://vimeo.com/222990241" class="item active lightbox-link">
-                  <i class="fa-solid fa-circle-play gallery-icon white"></i>
-                  <div class="image-wrapper shadow rounded">
-                    <img src="assets/images/jpg/b-34.jpg" class="image" alt="Image name" />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-md-7 align-v-center">
-              <div class="holder">
-                <!-- Intro --
-                <div class="basic-intro mb-35">
-                  <h2 class="title black">
-                    <span class="text-1 text-style-5">We seek </span>
-                    <span class="text-2 text-style-6 text-italic">the <mark class="animated-underline primary">extraordinary</mark>.</span>
-                  </h2>
-                  <div class="description gray">
-                    <p>We keep in mind that we always need to improve everything we do, aiming to help people with our products and services, prioritizing quality.</p>
-                  </div>
-                </div>
-                <!-- Table --
-                <div class="table-responsive">
-                  <table class="table scheme-1">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="black">#</th>
-                        <th scope="col" class="black">Phases</th>
-                        <th scope="col" class="black">Follow-up</th>
-                        <th scope="col" class="black">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row" class="black">1</th>
-                        <td>Prototyping</td>
-                        <td>With the client</td>
-                        <td>From 1 to 2 days</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="black">2</th>
-                        <td>Development</td>
-                        <td>Technology team</td>
-                        <td>From 1 to 5 days</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" class="black">3</th>
-                        <td>Validation</td>
-                        <td>Management team</td>
-                        <td>Project ready</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <small class="opacity-75">* This is an example note about a table item.</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      !---->
-
     </main>
-  </body>
-</html>
+@endsection

@@ -7,7 +7,7 @@
 
 <div class="menu-logo text-center">
     <a href="#"><img class="rounded-circle bg-highlight" width="80" src="{{URL::asset('assets/images/avatars/5s.png')}}"></a>
-    <h1 class="pt-3 font-800 font-28 text-uppercase">Fiwiii</h1>
+    <h1 class="pt-3 font-800 font-28 text-uppercase">{{ Auth::user()->name }}</h1>
     <p class="font-11 mt-n2">Bienvenido al <span class="color-highlight">Futuro.</span></p>
 </div>
 

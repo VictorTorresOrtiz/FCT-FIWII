@@ -23,7 +23,7 @@
                             <strong>Gestión en tiempo real</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
-                        <a href="#" data-filter-item data-filter-name="all demo smartphone samsung android htc oneplus">
+                        <a href="{{url('qr-generator')}}" data-filter-item data-filter-name="all demo smartphone samsung android htc oneplus">
                             <i class="fa-solid fa-qrcode"></i>
                             <span>Generador QR</span>
                             <strong>Genere QR de forma rápida</strong>
@@ -122,7 +122,7 @@
                 <div class="splide__list">
                     <div class="splide__slide ps-3">
                         <div class="bg-theme rounded-m shadow-m text-center">
-                            <a href="{{ url('#') }}">
+                            <a href="{{ url('qrLector') }}">
                                 <i class="fa-solid fa-qrcode fa-3x pt-2"></i>
                                 <h5 class="font-16">Lector QR</h5>
                                 <p class="line-height-s font-11 pb-4">Leer Código QR
@@ -133,7 +133,7 @@
                     </div>
                     <div class="splide__slide ps-3">
                         <div class="bg-theme rounded-m shadow-m text-center">
-                            <a href="{{ url('#') }}">
+                            <a href="{{ url('qr-generator') }}">
                                 <i class="fa-solid fa-plus fa-3x pt-2"></i>
                                 <h5 class="font-16">Generador QR</h5>
                                 <p class="line-height-s font-11 pb-4">
@@ -144,7 +144,7 @@
                     </div>
                     <div class="splide__slide ps-3">
                         <div class="bg-theme rounded-m shadow-m text-center">
-                            <a href="{{ url('#') }}">
+                            <a href="{{ url('sistemas') }}">
                                 <i class="fa-solid fa-fire-extinguisher fa-3x pt-2"></i>
                                 <h5 class="font-16">Sistemas</h5>
                                 <p class="line-height-s font-11 pb-4">
@@ -222,7 +222,5 @@
     </div>
 
     <!-- Tutorial diseño compacto -->
-
-
 </div>
 @endsection
