@@ -1,90 +1,97 @@
-@extends('templates.template-app')
-@section('fiwii')
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Fiwii</title>
+    <!--Assets---->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/fonts/css/fontawesome-all.min.css') }} ">
+    <script defer type="text/javascript" src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
+    <script defer type="text/javascript" src="{{ URL::asset('assets/js/custom.js') }}"></script>
+    <script defer type="text/javascript" src="{{ URL::asset('assets/js/qr.js') }}"></script>
 
-<div class="row">
-    <div class="columns">
-     <h1> Scanner APP Test (Quagga JS)
-       <div id="interactive" class="viewport"></div>
-        <div id="result_strip">
-          <ul class="thumbnails"></ul>
-          <ul class="collector"></ul>
-        </div>
-          <div class="controls">
-                  <button class="stop">Stop</button>
-              <fieldset class="reader-config-group">
-                 <label style="display: none">
-                      <span>Torch</span>
-                      <input type="checkbox" name="settings_torch" />
-                  </label>
-                  <label>
-                      <span>Barcode-Type</span>
-                      <select name="decoder_readers">
-                          <option value="code_128" >Code 128</option>
-                          <option value="code_39">Code 39</option>
-                          <option value="code_39_vin">Code 39 VIN</option>
-                          <option selected="selected" value="ean">EAN</option>
-                          <option value="ean_extended">EAN-extended</option>
-                          <option value="ean_8">EAN-8</option>
-                          <option value="upc">UPC</option>
-                          <option value="upc_e">UPC-E</option>
-                          <option value="codabar">Codabar</option>
-                          <option value="i2of5">Interleaved 2 of 5</option>
-                          <option value="2of5">Standard 2 of 5</option>
-                          <option value="code_93">Code 93</option>
-                      </select>
-                  </label>
-                  <label>
-                      <span>Resolution (width)</span>
-                      <select name="input-stream_constraints">
-                          <option value="320x240">320px</option>
-                          <option selected="selected" value="640x480">640px</option>
-                          <option value="800x600">800px</option>
-                          <option value="1280x720">1280px</option>
-                          <option value="1600x960">1600px</option>
-                          <option value="1920x1080">1920px</option>
-                      </select>
-                  </label>
-                  <label>
-                      <span>Patch-Size</span>
-                      <select name="locator_patch-size">
-                          <option value="x-small">x-small</option>
-                          <option value="small">small</option>
-                          <option selected="selected" value="medium">medium</option>
-                          <option value="large">large</option>
-                          <option value="x-large">x-large</option>
-                      </select>
-                  </label>
-                  <label>
-                      <span>Half-Sample</span>
-                      <input type="checkbox" checked="checked" name="locator_half-sample" />
-                  </label>
-                  <label>
-                      <span>Workers</span>
-                      <select name="numOfWorkers">
-                          <option value="0">0</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option selected="selected" value="4">4</option>
-                          <option value="8">8</option>
-                      </select>
-                  </label>
-                  <label>
-                      <span>Camera</span>
-                      <select name="input-stream_constraints" id="deviceSelection">
-                      </select>
-                  </label>
-                  <label style="display: none">
-                      <span>Zoom</span>
-                      <select name="settings_zoom"></select>
-                  </label>
-
-              </fieldset>
-          </div>
-
-
-      </section>
+    <!--PWA READY---->
+    <link rel="manifest" href="{{ URL::asset('manifest.json') }}" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+<body class="detect-theme">
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
     </div>
+    <div id="page">
+        <!-- Header y Footer-->
+        <div class="header header-fixed header-auto-show header-logo-app">
+            <a href="index.html" class="header-title">Menu</a>
+            <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+            <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+            <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
+            <a href="{{ url('conf') }}" class="header-icon header-icon-3"><i class="fa-solid fa-gear fa-spin"></i></a>
+        </div>
+        <div id="footer-bar" class="footer-bar-5">
+            <a href="{{ url('profile') }}"><i class="bi bi-person"></i><span>Perfil</span></a>
+            <a href="{{ url('sistemas') }}"><i class="bi bi-list-nested"></i></i><span>Sistemas</span></a>
+            <a href="{{ url('fiwii') }}" class="active-nav"><i class="bi bi-house"></i><span>Home</span></a>
+            <a href="{{url('qrLector')}}"><i class="bi bi-upc-scan"></i><span>QR</span></a>
+            <a href="{{ url('conf') }}"><i class="bi bi-gear"></i><span>Configuración</span></a>
+        </div>
 
-  </div>
+        <div id="menu-main" class="menu menu-box-right menu-box-detached rounded-m" data-menu-width="260"
+        data-menu-load="{{ url('misc.menu') }}" data-menu-active="nav-welcome" data-menu-effect="menu-over">
+        </div>
 
-@endsection
+        <div class="page-content">
+            <div class="page-title page-title-small">
+                <h2><a href="#" data-back-button><i class="fa fa-arrow-left"></i></a>Lector QR</h2>
+                <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img" data-src="images/avatars/5s.png"></a>
+            </div>
+            <div class="card header-card shape-rounded" data-card-height="150">
+                <div class="card-overlay bg-highlight opacity-95"></div>
+                <div class="card-overlay dark-mode-tint"></div>
+                <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+            </div>
+
+            <div class="card card-style">
+                <div class="content">
+                    <p>
+                        Escanear códigos QR en tiempo real.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card card-style">
+                <div class="content">
+                    <video id="preview"></video>
+                </div>
+            </div>
+
+            <div class="modal" id="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Escaner Exitoso</h5>
+                      <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="qr-data" class=""></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+       </div>
+
+<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+</body>
+</html>
