@@ -9,8 +9,8 @@ var scanner = new Instascan.Scanner({ video: video });
 
 // Al detectar un código QR
 scanner.addListener('scan', function(content) {
-  qrDataElement.textContent = content;  // Mostrar los datos del QR en el modal
-  modal.style.display = 'block';  // Mostrar el modal
+    qrDataElement.innerHTML = "<a href='" + content + "'>" + content + "</a>";  // Convertir el resultado en un enlace
+    modal.style.display = 'block';  // Mostrar el modal
 });
 
 // Cerrar el modal al hacer clic en el botón de cierre
