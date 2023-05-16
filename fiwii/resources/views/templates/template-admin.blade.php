@@ -58,5 +58,6 @@
     @yield('dashboard')
     @yield('app-dashboard')
     @yield('web-dashboard')
+    @yield('create')
 </body>
 </html>
