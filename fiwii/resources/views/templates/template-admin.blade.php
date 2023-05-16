@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="{{ URL::asset('assets/images/logo/favicon.ico') }}" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Identity -->
-    <title>Fiwii Systems</title>
+    <title>Fiwii Dashboard</title>
     <!-- Vendor Style Sheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/preloader.min.css') }}" />
