@@ -154,7 +154,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-añadir-sistemas" class="full-link"></a>
+                                            <a href="{{url('admin.crearSistema')}}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -457,7 +457,6 @@
                 </div>
             </div>
         </div>
-
          <!-- Modal añadir sistema -->
         <!-- Modal -->
         <div id="modal-añadir-sistemas" class="modal fade" tabindex="-1" aria-hidden="true">
@@ -481,17 +480,17 @@
                     <div class="modal-body">
                         <!-- Form -->
                         <div class="form-area scheme-1 secondary">
-                            <form action="php/sender.php" class="form-fields needs-validation ajax-form"
-                                novalidate="novalidate">
+                            <form action="{{ route('addSystem') }}" method="POST" enctype="multipart/form-data" class="form-fields needs-validation ajax-form" novalidate="novalidate">
+                                @csrf
                                 <div class="form-row row">
                                     <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="text" name="sistema-ubicacion " id="InputFloatingName" class="form-control" placeholder="Nombre" required="required">
+                                        <input type="text" name="sistemaNombre" id="InputFloatingName" class="form-control" placeholder="Nombre" required="required">
                                         <label for="InputFloatingName" class="form-label">Nombre</label>
                                         <div class="invalid-feedback">Please enter your name.</div>
                                         <div class="valid-feedback">Looks good.</div>
                                     </div>
                                     <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="text" name="sistema-ubicacion" id="InputFloatingEmail" class="form-control" placeholder="Ubicación" required="required">
+                                        <input type="text" name="sistemaUbicacion" id="InputFloatingEmail" class="form-control" placeholder="Ubicación" required="required">
                                         <label for="InputFloatingEmail" class="form-label">Ubicación</label>
                                         <div class="invalid-feedback">Please enter a valid ubication.</div>
                                         <div class="valid-feedback">Looks good.</div>
@@ -499,7 +498,7 @@
                                 </div>
                                 <div class="form-row row">
                                     <div class="form-col form-floating col-12">
-                                        <textarea type="text" name="sistema-desc" id="InputFloatingName" class="form-control form-textarea" rows="3" placeholder="Descripción" required="required"></textarea>
+                                        <textarea type="text" name="sistemaDesc" id="InputFloatingName" class="form-control form-textarea" rows="3" placeholder="Descripción" required="required"></textarea>
                                         <label for="InputFloatingMessage" class="form-label">Descripción</label>
                                         <div class="invalid-feedback">Please enter a valid description.</div>
                                         <div class="valid-feedback">Looks good.</div>
@@ -525,7 +524,7 @@
                                     </div>
                                     <div class="form-col col-12 col-md-4 align-h-right">
                                         <!-- Button -->
-                                        <button class="button arrow-button next scheme-1 secondary">
+                                        <button class="button arrow-button next scheme-1 secondary" type="submit">
                                             <span class="arrow">
                                                 <span class="item"></span>
                                                 <span class="item"></span>

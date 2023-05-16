@@ -12,4 +12,16 @@ class DashbooardController extends Controller
         $systems = Systems::all(); // Nos saca todos los productos de la BBDD
         return view('admin/app-dashboard', @compact('systems'));
     }
+
+    public function addSystem(Request $request)
+    {
+        $systemInsert = new Systems;
+        $systemInsert->name = $request->sistemaNombre;
+        $systemInsert->ubicacion = $request->sistemaUbicacion;
+        $systemInsert->description = $request->sistemaDesc;
+        $systemInsert->updated_at;
+        $systemInsert->save();
+        return back();
+
+    }
 }

@@ -24,6 +24,9 @@ return new class extends Migration
         });
 
     }
+    
+    public $timestamps = false;
+    protected $dates = ['created_at','updated_at'];
 
     /**
      * Reverse the migrations.

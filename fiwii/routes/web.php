@@ -42,10 +42,14 @@ Route::get('/admin.web-dashboard', function () {
     return view('admin.web-dashboard');
 })->name('admin.web-dashboard')->middleware('auth');
 
+Route::get('/admin.crearSistema', function () {
+    return view('admin.crearSistema');
+})->name('admin.crearSistema')->middleware('auth');
+
 
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
 
-Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
+Route::post('/admin.crearSistema', [ DashbooardController::class,'addSystem' ]) -> name('addSystem');
 
 Route::get('descargar-base-de-datos', 'DescargarBaseDeDatosController@descargar')->name('descargar.base-de-datos');
 
