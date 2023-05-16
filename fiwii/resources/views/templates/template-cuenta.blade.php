@@ -14,6 +14,7 @@
         <div class="form-container sign-in-container">
             @yield('login')
             @yield('register')
+            
         </div>
     </div>
     </div>
