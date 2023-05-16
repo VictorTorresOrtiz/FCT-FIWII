@@ -12,7 +12,7 @@
                     </span>
                 @enderror
                 <label for="name" class="col-md-4 col-form-label text-md-right"></label>
-                <input id="username" type="text" placeholder="Apellidos" class="@error('username') is-invalid @enderror" name="username" value="{{ old('username') }}"
+                <input id="username" type="text" placeholder="Nombre de usuario" class="@error('username') is-invalid @enderror" name="username" value="{{ old('username') }}"
                     required autocomplete="username" autofocus>
                 @error('username')
                     <span class="invalid-feedback" role="alert">

@@ -278,8 +278,7 @@
                         <div class="basic-intro">
                             <h2 class="title black">
                                 <span class="text-1 text-style-7">Gestor de cuentas </span>
-                                <span class="text-2 text-style-8 text-italic"><mark
-                                        class="animated-underline accent">Fiwii</mark></span>
+                                <span class="text-2 text-style-8 text-italic"><mark class="animated-underline accent">Fiwii</mark></span>
                             </h2>
                             <div class="description gray">
                                 <p>Introduce los datos del nuevo Usuario</p>
@@ -307,7 +306,7 @@
                                 </div>
                                 <div class="form-row row">
                                     <div class="form-col form-floating col-12">
-                                        <textarea type="password" name="password-crear" id="InputFloatingName" class="form-control form-textarea" rows="3" placeholder="Contraseña" required="required"></textarea>
+                                        <input type="password" name="password-crear" id="InputFloatingName" class="form-control" rows="3" placeholder="Contraseña" required="required">
                                         <label for="InputFloatingMessage" class="form-label">Contraseña</label>
                                         <div class="invalid-feedback">Please enter a valid password.</div>
                                         <div class="valid-feedback">Looks good.</div>
@@ -402,7 +401,7 @@
                                 </div>
                                 <div class="form-row row">
                                     <div class="form-col form-floating col-12">
-                                        <textarea type="email" name="email-eliminar" id="InputFloatingName" class="form-control form-textarea" placeholder="Email" required="required"></textarea>
+                                        <input type="email" name="email-eliminar" id="InputFloatingName" class="form-control" placeholder="Email" required="required">
                                         <label for="InputFloatingMessage" class="form-label">Email</label>
                                         <div class="invalid-feedback">Please enter a valid email.</div>
                                         <div class="valid-feedback">Looks good.</div>
