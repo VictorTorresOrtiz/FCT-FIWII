@@ -30,6 +30,7 @@ class DashbooardController extends Controller
         {
             $sistema = Systems::findOrFail($id);
             $sistema->delete();
+            notify()->success('Sistema eliminado correctamente!');
             return back();
         }
 
