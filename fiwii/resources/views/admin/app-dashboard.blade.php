@@ -116,7 +116,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-eliminar" class="full-link"></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#deleteUserModal" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -365,10 +365,35 @@
                 </div>
             </div>
         </div>
+        <!-- Botón para abrir el modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteUserModal">Eliminar Usuario</button>
+
+<!-- Modal de eliminación de usuario -->
+<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Introduce los datos del usuario que desea eliminar</p>
+                <strong>ID:</strong><input class="form-control" placeholder="ID Usuario" required="required" id="IdUser">
+                <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
+
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Modal eliminar usuario -->
         <!-- Modal -->
-        <div id="modal-eliminar" class="modal fade" tabindex="-1" aria-hidden="true">
+        {{-- <div id="modal-eliminar" class="modal fade" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog max-w-50">
                 <div class="modal-content shadow">
                     <div class="modal-header">
@@ -460,7 +485,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
          <!-- Modal añadir sistema -->
         <!-- Modal -->
         <div id="modal-añadir-sistemas" class="modal fade" tabindex="-1" aria-hidden="true">
