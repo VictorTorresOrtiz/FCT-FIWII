@@ -12,6 +12,7 @@
     <!-- Identity -->
     <title>Fiwii Dashboard</title>
     <!-- Vendor Style Sheet -->
+    @notifyCss
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/preloader.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/font-family.min.css') }}" />
@@ -28,7 +29,7 @@
     <link rel="stylesheet" href="{{ URL::asset('assets/css/theme.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/core.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/main.css') }}" />
-    @notifyCss
+
     <!-- Vendor JavaScript -->
     <script defer src="{{ URL::asset('assets/js/vendor/jquery.min.js') }}"></script>
     <script defer src="{{ URL::asset('assets/js/vendor/imagesloaded.pkgd.min.js') }}"></script>
@@ -54,7 +55,8 @@
     <script defer src="{{ URL::asset('assets/js/vendor/cursor-effect.min.js') }}"></script>
     <!-- Main JavaScript -->
     <script defer src="{{ URL::asset('assets/js/main.js') }}"></script>
-    @notifyJs
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 <body class="shock-body">
 
