@@ -21,6 +21,7 @@ class DashbooardController extends Controller
         $systemInsert->description = $request->sistemaDesc;
         $systemInsert->updated_at;
         $systemInsert->save();
+        notify()->success('Sistema añadido correctamente!');
         return back();
 
     }

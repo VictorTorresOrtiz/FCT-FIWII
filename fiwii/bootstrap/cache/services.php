@@ -37,6 +37,7 @@
     33 => 'App\\Providers\\EventServiceProvider',
     34 => 'App\\Providers\\RouteServiceProvider',
     35 => 'App\\Providers\\FortifyServiceProvider',
+    36 => 'Mckenziearts\\Notify\\LaravelNotifyServiceProvider',
   ),
   'eager' => 
   array (
@@ -62,6 +63,7 @@
     19 => 'App\\Providers\\EventServiceProvider',
     20 => 'App\\Providers\\RouteServiceProvider',
     21 => 'App\\Providers\\FortifyServiceProvider',
+    22 => 'Mckenziearts\\Notify\\LaravelNotifyServiceProvider',
   ),
   'deferred' => 
   array (
