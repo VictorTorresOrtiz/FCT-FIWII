@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="{{ URL::asset('assets/css/theme.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/core.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/main.css') }}" />
+    @notifyCss
     <!-- Vendor JavaScript -->
     <script defer src="{{ URL::asset('assets/js/vendor/jquery.min.js') }}"></script>
     <script defer src="{{ URL::asset('assets/js/vendor/imagesloaded.pkgd.min.js') }}"></script>
@@ -53,11 +54,16 @@
     <script defer src="{{ URL::asset('assets/js/vendor/cursor-effect.min.js') }}"></script>
     <!-- Main JavaScript -->
     <script defer src="{{ URL::asset('assets/js/main.js') }}"></script>
+    @notifyJs
 </head>
 <body class="shock-body">
+
     @yield('dashboard')
     @yield('app-dashboard')
     @yield('web-dashboard')
     @yield('create')
+    <x-notify::notify />
+    @notifyJs
 </body>
 </html>
+

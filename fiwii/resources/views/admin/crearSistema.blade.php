@@ -1,5 +1,6 @@
 @extends('templates.template-admin')
 @section('create')
+
     <header id="header" class="shock-header">
         <!-- Navbar -->
         <nav id="navbar" class="navbar navbar-expand-lg nfixed-scroll smart-scroll hover-line scheme-2 primary">
