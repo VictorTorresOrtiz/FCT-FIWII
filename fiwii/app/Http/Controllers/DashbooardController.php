@@ -21,7 +21,17 @@ class DashbooardController extends Controller
         $systemInsert->description = $request->sistemaDesc;
         $systemInsert->updated_at;
         $systemInsert->save();
+        notify()->success('Sistema añadido correctamente!');
         return back();
 
     }
+
+        public function eliminar($id)
+        {
+            $sistema = Systems::findOrFail($id);
+            $sistema->delete();
+            notify()->success('Sistema eliminado correctamente!');
+            return back();
+        }
+
 }

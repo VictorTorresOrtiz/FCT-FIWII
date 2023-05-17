@@ -116,7 +116,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-eliminar" class="full-link"></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#deleteUserModal" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -298,7 +298,13 @@
                                         <div class="valid-feedback">Looks good.</div>
                                     </div>
                                     <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="email" name="email-crear" id="InputFloatingEmail" class="form-control" placeholder="name@example.com" required="required">
+                                        <input type="text" name="nombre-crear" id="InputFloatingUserName" class="form-control" placeholder="Nombre" required="required">
+                                        <label for="InputFloatingUserName" class="form-label">Nombre de usuario</label>
+                                        <div class="invalid-feedback">Please enter your username.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                    <div class="form-col form-floating col-12 col-md-6">
+                                        <input type="email" name="email-crear" id="InputFloatingEmail" class="form-control" rows="3" placeholder="name@example.com" required="required">
                                         <label for="InputFloatingEmail" class="form-label">Email</label>
                                         <div class="invalid-feedback">Please enter a valid email address.</div>
                                         <div class="valid-feedback">Looks good.</div>
@@ -313,32 +319,31 @@
                                     </div>
                                 </div>
                                 <div class="form-row row">
-                                    <div class="form-col col-12 col-md-8">
-                                        <div class="form-check">
-                                            <input type="radio" name="check-empleado" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                 Cuenta Empleados.
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input type="radio" name="check-admin" id="InputRadioChecked" class="form-check-input form-radio">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Cuenta Administrador.
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input type="radio" name="check-trial" id="InputRadioChecked" class="form-check-input form-radio">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Cuenta Trial.
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check">
-
-                                        </div>
+                                    <div class="form-check">
+                                        <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
+                                        <label class="form-label form-check-label" for="InputRadioChecked">
+                                             Cuenta Empleados.
+                                        </label>
                                     </div>
+
+                                    <div class="form-check">
+                                        <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
+                                        <label class="form-label form-check-label" for="InputRadioChecked">
+                                            Cuenta Administrador.
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
+                                        <label class="form-label form-check-label" for="InputRadioChecked">
+                                            Cuenta Trial.
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+
+                                    </div>
+                                </div>
                                     <div class="form-col col-12 col-md-4 align-h-right">
                                         <!-- Button -->
                                         <button class="button arrow-button next scheme-1 secondary">
@@ -361,103 +366,30 @@
             </div>
         </div>
 
-        <!-- Modal eliminar usuario -->
-        <!-- Modal -->
-        <div id="modal-eliminar" class="modal fade" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog max-w-50">
-                <div class="modal-content shadow">
-                    <div class="modal-header">
-                        <i class="fa-solid fa-xmark close-button black secondary-hover" data-bs-dismiss="modal"
-                            aria-label="Close"></i>
-                        <!-- Intro -->
-                        <div class="basic-intro">
-                            <h2 class="title black">
-                                <span class="text-1 text-style-7">Gestor de cuentas </span>
-                                <span class="text-2 text-style-8 text-italic"><mark
-                                        class="animated-underline accent">Fiwii</mark></span>
-                            </h2>
-                            <div class="description gray">
-                                <p>Introduce los datos del Usuario para eliminarlo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Form -->
-                        <div class="form-area scheme-1 secondary">
-                            <form action="php/sender.php" class="form-fields needs-validation ajax-form" novalidate="novalidate">
-                                <div class="form-row row">
-                                    <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="text" name="name-eliminar" id="InputFloatingName" class="form-control" placeholder="ID Usuario" required="required">
-                                        <label for="InputFloatingName" class="form-label">ID</label>
-                                        <div class="invalid-feedback">Please enter users ID.</div>
-                                        <div class="valid-feedback">Looks good.</div>
-                                    </div>
-                                    <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="text" name="email-eliminar" id="InputFloatingEmail" class="form-control" placeholder="Nombre completo" required="required">
-                                        <label for="InputFloatingEmail" class="form-label">Nombre</label>
-                                        <div class="invalid-feedback">Please enter a valid email address.</div>
-                                        <div class="valid-feedback">Looks good.</div>
-                                    </div>
-                                </div>
-                                <div class="form-row row">
-                                    <div class="form-col form-floating col-12">
-                                        <input type="email" name="email-eliminar" id="InputFloatingName" class="form-control" placeholder="Email" required="required">
-                                        <label for="InputFloatingMessage" class="form-label">Email</label>
-                                        <div class="invalid-feedback">Please enter a valid email.</div>
-                                        <div class="valid-feedback">Looks good.</div>
-                                    </div>
-                                </div>
-                                <div class="form-row row">
-                                    <div class="form-col col-12 col-md-8">
-                                        <div class="form-check">
-                                            <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                 Cuenta Empleados.
-                                            </label>
-                                        </div>
+<!-- Modal de eliminación de usuario -->
+<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Introduce los datos del usuario que desea eliminar</p>
+                <strong>ID:</strong><input class="form-control" placeholder="ID Usuario" required="required" id="IdUser">
+                <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
 
-                                        <div class="form-check">
-                                            <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Cuenta Administrador.
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Cuenta Trial.
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check">
-
-                                        </div>
-                                    </div>
-                                    <div class="form-col col-12 col-md-4 align-h-right">
-                                        <!-- Button -->
-                                        <button class="button arrow-button next scheme-1 secondary">
-                                            <span class="arrow">
-                                                <span class="item"></span>
-                                                <span class="item"></span>
-                                            </span>
-                                            <span class="line"></span>
-                                            <span class="text">Crear Cuenta</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <input type="hidden" name="subject" value="Message sent through the contact form.">
-                                <span class="form-alert success">Your account was create successful. Thanks.</span>
-                                <span class="form-alert error">Sorry. We were unable to send create your
-                                    account.</span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-         <!-- Modal añadir sistema -->
-        <!-- Modal -->
+    </div>
+</div>
+
+         <!-- Modal Visualizacion sistemas -->
         <div id="modal-añadir-sistemas" class="modal fade" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog max-w-50">
                 <div class="modal-content shadow">
@@ -566,7 +498,8 @@
                                         <th scope="col" class="black">Nombre</th>
                                         <th scope="col" class="black">Descripción</th>
                                         <th scope="col" class="black">Ubicación</th>
-                                        <th scope="col" class="black">Visualizar</th>
+                                        <th scope="col" class="black">Status</th>
+                                        <th scope="col" class="black">Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -576,8 +509,22 @@
                                             <td>{{ $system->name }}</td>
                                             <td>{{ $system->description }}</td>
                                             <td>{{ $system->ubicacion }}</td>
-                                            <td><a href="#" class="btn btn-success btn-sm"> <i
-                                                        class="bi bi-eye"></i> </a></td>
+                                            <td>
+                                                @if ($system->status == 'Mantenimiento')
+                                                <a href="#" class="btn btn-warning btn-sm">Mantenimiento</a>
+                                                @elseif ($system->status == 'Revisado')
+                                                <a href="#" class="btn btn-success btn-sm ">Revisado</a>
+                                                @elseif ($system->status == 'Averiado')
+                                                <a href="#" class="btn btn-danger btn-sm">Averiado</a>
+                                                @endif
+                                            </td>
+                                            <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <input type="hidden" name="id" value="{{ $system->id }}">
+                                                <td ><button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></button></td>
+                                            </form>
+
                                         </tr>
                                     @endforeach
                                 </tbody>
