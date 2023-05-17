@@ -116,7 +116,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-eliminar" class="full-link"></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#deleteUserModal" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -298,7 +298,13 @@
                                         <div class="valid-feedback">Looks good.</div>
                                     </div>
                                     <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="email" name="email-crear" id="InputFloatingEmail" class="form-control" placeholder="name@example.com" required="required">
+                                        <input type="text" name="nombre-crear" id="InputFloatingUserName" class="form-control" placeholder="Nombre" required="required">
+                                        <label for="InputFloatingUserName" class="form-label">Nombre de usuario</label>
+                                        <div class="invalid-feedback">Please enter your username.</div>
+                                        <div class="valid-feedback">Looks good.</div>
+                                    </div>
+                                    <div class="form-col form-floating col-12 col-md-6">
+                                        <input type="email" name="email-crear" id="InputFloatingEmail" class="form-control" rows="3" placeholder="name@example.com" required="required">
                                         <label for="InputFloatingEmail" class="form-label">Email</label>
                                         <div class="invalid-feedback">Please enter a valid email address.</div>
                                         <div class="valid-feedback">Looks good.</div>
@@ -313,32 +319,31 @@
                                     </div>
                                 </div>
                                 <div class="form-row row">
-                                    <div class="form-col col-12 col-md-8">
-                                        <div class="form-check">
-                                            <input type="radio" name="check-empleado" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                 Cuenta Empleados.
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input type="radio" name="check-admin" id="InputRadioChecked" class="form-check-input form-radio">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Cuenta Administrador.
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input type="radio" name="check-trial" id="InputRadioChecked" class="form-check-input form-radio">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Cuenta Trial.
-                                            </label>
-
-                                        </div>
-                                        <div class="form-check">
-
-                                        </div>
+                                    <div class="form-check">
+                                        <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio" checked="checked">
+                                        <label class="form-label form-check-label" for="InputRadioChecked">
+                                             Cuenta Empleados.
+                                        </label>
                                     </div>
+
+                                    <div class="form-check">
+                                        <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
+                                        <label class="form-label form-check-label" for="InputRadioChecked">
+                                            Cuenta Administrador.
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="radio" name="info" id="InputRadioChecked" class="form-check-input form-radio">
+                                        <label class="form-label form-check-label" for="InputRadioChecked">
+                                            Cuenta Trial.
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+
+                                    </div>
+                                </div>
                                     <div class="form-col col-12 col-md-4 align-h-right">
                                         <!-- Button -->
                                         <button class="button arrow-button next scheme-1 secondary">
@@ -360,10 +365,35 @@
                 </div>
             </div>
         </div>
+        <!-- Botón para abrir el modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteUserModal">Eliminar Usuario</button>
+
+<!-- Modal de eliminación de usuario -->
+<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Introduce los datos del usuario que desea eliminar</p>
+                <strong>ID:</strong><input class="form-control" placeholder="ID Usuario" required="required" id="IdUser">
+                <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
+
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Modal eliminar usuario -->
         <!-- Modal -->
-        <div id="modal-eliminar" class="modal fade" tabindex="-1" aria-hidden="true">
+        {{-- <div id="modal-eliminar" class="modal fade" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog max-w-50">
                 <div class="modal-content shadow">
                     <div class="modal-header">
@@ -455,7 +485,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
          <!-- Modal añadir sistema -->
         <!-- Modal -->
         <div id="modal-añadir-sistemas" class="modal fade" tabindex="-1" aria-hidden="true">
@@ -567,6 +597,7 @@
                                         <th scope="col" class="black">Descripción</th>
                                         <th scope="col" class="black">Ubicación</th>
                                         <th scope="col" class="black">Visualizar</th>
+                                        <th scope="col" class="black">Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -576,8 +607,15 @@
                                             <td>{{ $system->name }}</td>
                                             <td>{{ $system->description }}</td>
                                             <td>{{ $system->ubicacion }}</td>
-                                            <td><a href="#" class="btn btn-success btn-sm"> <i
-                                                        class="bi bi-eye"></i> </a></td>
+                                            {{-- <td><a href="#" class="btn btn-success btn-sm"> <i class="bi bi-eye"></i> </a></td> --}}
+                                            <td><button class="btn btn-success btn-sm"><i class="bi bi-eye"></i></button></td>
+                                            <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <input type="hidden" name="id" value="{{ $system->id }}">
+                                                <td ><button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></button></td>
+                                            </form>
+
                                         </tr>
                                     @endforeach
                                 </tbody>
