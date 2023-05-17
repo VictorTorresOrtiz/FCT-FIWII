@@ -24,4 +24,12 @@ class DashbooardController extends Controller
         return back();
 
     }
+
+        public function eliminar($id)
+        {
+            $sistema = Systems::findOrFail($id);
+            $sistema->delete();
+            return back();
+        }
+
 }

@@ -53,4 +53,7 @@ Route::post('/admin.crearSistema', [ DashbooardController::class,'addSystem' ]) 
 
 Route::get('descargar-base-de-datos', 'DescargarBaseDeDatosController@descargar')->name('descargar.base-de-datos');
 
+Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name('sistema_eliminar');
+
+
 
