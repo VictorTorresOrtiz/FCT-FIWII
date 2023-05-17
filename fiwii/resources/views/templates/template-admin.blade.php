@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/menu-grid.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/swiper.min.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/customadmin.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/dynamic-slider.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/bricklayer.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/vendor/lightbox.min.css') }}" />

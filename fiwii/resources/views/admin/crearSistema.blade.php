@@ -37,56 +37,46 @@
             </div>
         </nav>
     </header>
-    <main id="main" class="shock-main bg-color gray-10 p-4">
+    <main id="main" class="shock-main bg-color gray-10 p-2">
         <h2 class="title black">
             <span class="text-1 text-dark text-style-5">Añade sistemas a tu </span>
-            <span class="text-2 text-dark text-style-6 text-italic"><mark class="animated-underline accent">base de datos</mark>.</span>
+            <span class="text-2 text-dark text-style-6 text-italic"><mark class="animated-underline accent">base de
+                    datos</mark>.</span>
         </h2>
-        <div class="form-area scheme-1 secondary">
-            <form action="{{ route('addSystem') }}" method="POST" enctype="multipart/form-data" class="form-fields needs-validation ajax-form">
+        <div id="medio" class="form-area scheme-1 secondary">
+            <form action="{{ route('addSystem') }}" method="POST" enctype="multipart/form-data"{{-- class="form-fields needs-validation ajax-form" --}}>
                 @csrf
-                <div class="form-row row">
-                    <div class="form-col form-floating col-12 col-md-6">
-                        <input type="text" name="" id="InputFloatingName" class="form-control" placeholder="Nombre" required="required">
-                        <label for="InputFloatingName" class="form-label">Nombre</label>
+                <fieldset>
+                    <h3 class="title text-style-11 black">Nombre:</h3>
+                    <input type="text" id="name" name="name" required>
+                    <h3 class="title text-style-11 black">Ubicación:</h3>
+                    <input type="text" id="ubicacion" name="ubicacion" required>
+                    <h3 class="title text-style-11 black">Descripción:</h3>
+                    <textarea id="description" name="description"></textarea>
+                    <div class="form-row row mt-0">
+                        <div class="form-col form-floating col-12 col-md-6">
+                            <h3 class="title text-style-11 black">Status:</h3>
+                            <select id="status" name="status">
+                                <option value="Mantenimiento">Mantenimiento</option>
+                                <option value="Revisado">Revisado</option>
+                                <option value="Averiado">Averiado</option>
+                            </select>
+                        </div>
+
+                        <div class="form-col form-floating col-12 col-md-6">
+                            <h3 class="title text-style-11 black">Prioridad:</h3>
+                            <select id="prioridad" name="prioridad">
+                                <option value="Alta">Alta</option>
+                                <option value="Media">Media</option>
+                                <option value="Baja">Baja</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row row">
-                    <div class="form-col form-floating col-12 col-md-6">
-                        <textarea type="text" class="form-control" id="inputPassword4" placeholder="Descripción" required></textarea>
-                        <label for="InputFloatingName" class="form-label">Descripción</label>
-                    </div>
-                </div>
-                <div class="form-row row">
-                    <div class="form-col form-floating col-12 col-md-6">
-                        <input type="text" name="" id="InputFloatingName" class="form-control" placeholder="Ubicación" required>
-                        <label for="InputFloatingName" class="form-label">Ubicación</label>
-                    </div>
-                </div>
-                <div class="form-row row">
-                    <div class="col-md-2">
-                        <label for="inputState" class="form-label">Estado</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Mantenimiento</option>
-                            <option>Revisado</option>
-                            <option>Averiado</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputState" class="form-label">Prioridad</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Alta</option>
-                            <option>Media</option>
-                            <option>Baja</option>
-                        </select>
-                    </div>
-                </div>
-                    <div class="col-12">
-                        <a href="{{ url('/admin.crearSistema') }}"><button type="submit" class="button mt-3 outline rounded accent accent-hover">
+                </fieldset>
+                    <a href="{{ url('/admin.crearSistema') }}"><button type="submit"
+                            class="button outline rounded accent accent-hover">
                             <span class="button-text accent white-hover">Añadir</span>
-                        </button></a>
-                    </div>
-                </div>
+                    </button></a>
             </form>
         </div>
     </main>
