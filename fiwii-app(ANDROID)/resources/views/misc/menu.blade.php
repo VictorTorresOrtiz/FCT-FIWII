@@ -36,6 +36,11 @@
          <span>QR</span>
         <i class="fa fa-circle"></i>
     </a>
+    <a id="nav-features" href="{{url('weather')}}">
+        <i class="bi bi-brightness-high"></i>
+         <span>Tiempo</span>
+        <i class="fa fa-circle"></i>
+    </a>
     <a href="#" class="close-menu">
         <i class="bi bi-x"></i>
         <span>Cerrar menu</span>

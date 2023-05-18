@@ -29,6 +29,12 @@
                             <strong>Genere QR de forma rápida</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
+                        <a href="{{url('qr-generator')}}" data-filter-item data-filter-name="all demo smartphone samsung android htc oneplus">
+                            <i class="bi bi-brightness-high"></i>
+                            <span>Tiempo</span>
+                            <strong>Aplicación del tiempo</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
