@@ -21,6 +21,12 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+Route::get('/offline', function () {     return view('vendor/laravelpwa/offline'); });
+
+Route::get('/weather', function () {
+    return view('weather');
+})->middleware('auth')->name('weather');
+
 Route::get('/fiwii', function () {
     return view('fiwii');
 })->middleware('auth')->name('fiwii');
