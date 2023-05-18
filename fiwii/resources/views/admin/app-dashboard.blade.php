@@ -269,20 +269,20 @@
         </section>
 
 
-    <!-- Modal Gestor de Vigilancia -->
+    <!-- Modal Gestor de Vigilancia --
     <div id="modal-2" class="modal fade" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog max-w-50">
             <div class="modal-content shadow rounded-3">
                 <div class="modal-header pb-0">
                     <i class="fa-solid fa-xmark close-button black primary-hover" data-bs-dismiss="modal" aria-label="Close"></i>
-                    <!-- Intro -->
+                    <!-- Intro --
                     <div class="basic-intro">
                         <h2 class="title text-style-7 black">Lista Sistemas de Vigilancia</h2>
                         <hr class="gray-25">
                     </div>
                 </div>
                 <div class="modal-body pt-0 pb-0">
-                    <!-- Table -->
+                    <!-- Table --
                     <div class="table-responsive">
                         <table class="table scheme-1">
                             <thead>
@@ -325,7 +325,7 @@
                     </div>
                     <div class="modal-footer">
                         <div class="button-wrapper">
-                            <!-- Button -->
+                            <!-- Button --
                             <button class="button shadow rounded-3 black accent-hover" data-bs-dismiss="modal">
                                 <span class="button-text accent white-hover">Cerrar</span>
                                 <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
@@ -359,6 +359,8 @@
                                         <th scope="col" class="black">Descripción</th>
                                         <th scope="col" class="black">Ubicación</th>
                                         <th scope="col" class="black">Status</th>
+                                        <th scope="col" class="black">Tipo</th>
+                                        <th scope="col" class="black">Editar</th>
                                         <th scope="col" class="black">Eliminar</th>
                                     </tr>
                                 </thead>
@@ -378,6 +380,10 @@
                                                 <a href="#" class="btn btn-danger btn-sm">Averiado</a>
                                                 @endif
                                             </td>
+                                            <td>{{ $system->tipo }}</td>
+                                            <td ><a href="{{route('edit-system', $system->id)}}" class="btn btn-success btn-sm"><i class="bi bi-eye"></td>
+
+
                                             <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">
                                                 @csrf
                                                 @method('DELETE')

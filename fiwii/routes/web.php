@@ -46,8 +46,17 @@ Route::get('/admin.crearSistema', function () {
     return view('admin.crearSistema');
 })->name('admin.crearSistema')->middleware('auth');
 
+Route::get('/admin.editarSistema', function () {
+    return view('admin.editarSistema');
+})->name('admin.editarSistema')->middleware('auth');
+
 
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
+
+Route::get('/editarSistema/{id}', [ DashbooardController::class, 'edit' ]) -> name('edit-system');
+
+
+Route::put('/editarSistema/{id}', [ DashbooardController::class, 'editar' ]) -> name('update-system');
 
 Route::post('/admin.crearSistema', [ DashbooardController::class,'addSystem' ]) -> name('addSystem');
 
