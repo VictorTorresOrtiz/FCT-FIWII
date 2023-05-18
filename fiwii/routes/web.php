@@ -47,6 +47,10 @@ Route::get('/admin.crearSistema', function () {
     return view('admin.crearSistema');
 })->name('admin.crearSistema')->middleware('auth');
 
+Route::get('/admin.crearUsuario', function () {
+    return view('admin.crearUsuario');
+})->name('admin.crearUsuario')->middleware('auth');
+
 Route::get('/admin.editarSistema', function () {
     return view('admin.editarSistema');
 })->name('admin.editarSistema')->middleware('auth');
@@ -56,6 +60,8 @@ Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
 
 
 Route::post('/admin.crearSistema', [ DashbooardController::class,'addSystem' ]) -> name('addSystem');
+
+Route::post('/admin.crearUsuario', [ DashbooardController::class,'addUser' ]) -> name('addUser');
 
 Route::get('/download-database', [DatabaseController::class, 'downloadDatabase'])->name('download.database');
 
