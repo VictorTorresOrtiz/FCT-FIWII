@@ -8,7 +8,8 @@
 <div class="menu-logo text-center">
     <a href="#"><img class="rounded-circle bg-highlight" width="80" src="{{URL::asset('assets/images/avatars/5s.png')}}"></a>
     <h1 class="pt-3 font-800 font-28 text-uppercase">{{ Auth::user()->name }}</h1>
-    <p class="font-11 mt-n2">Bienvenido al <span class="color-highlight">Futuro.</span></p>
+    <p class="font-15 mt-n2 ">Bienvenido al <span class="color-highlight">Futuro.</span></p>
+    <h1> <span class="text-small badge text-bg-primary font-15">{{ Auth::user()->status }}</span></h1>
 </div>
 
 <div class="menu-items mb-4">
