@@ -1,6 +1,12 @@
 @extends('templates.template-app')
 @section('profile')
-
+    <div id="footer-bar" class="footer-bar-5">
+        <a href="{{ url('profile') }}" class="active-nav"><i class="bi bi-person"></i><span>Perfil</span></a>
+        <a href="{{ url('sistemas') }}"><i class="bi bi-list-nested"></i></i><span>Sistemas</span></a>
+        <a href="{{ url('fiwii') }}" class="active-nav"><i class="bi bi-house"></i><span>Home</span></a>
+        <a href="{{ url('qrLector') }}"><i class="bi bi-upc-scan"></i><span>QR</span></a>
+        <a href="{{ url('conf') }}"><i class="bi bi-gear"></i><span>Configuración</span></a>
+    </div>
     <div class="page-title page-title-small">
         <h2><a href="#" data-back-button><i class="fa fa-arrow-left"></i></a>Perfil</h2>
         <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img"
@@ -116,7 +122,7 @@
             </p>
 
             <div class="list-group list-custom-small">
-                <a href="{{url('#')}}" data-trigger-switch="switch-1">
+                <a href="{{ url('#') }}" data-trigger-switch="switch-1">
                     <span>Notificaciones</span>
                     <div class="custom-control scale-switch ios-switch">
                         <input type="checkbox" class="ios-input" id="switch-1" checked>
