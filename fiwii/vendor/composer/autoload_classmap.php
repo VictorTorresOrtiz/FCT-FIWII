@@ -15,6 +15,7 @@ return array(
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\DashbooardController' => $baseDir . '/app/Http/Controllers/DashbooardController.php',
+    'App\\Http\\Controllers\\DatabaseController' => $baseDir . '/app/Http/Controllers/DatabaseController.php',
     'App\\Http\\Controllers\\DescargarBaseDeDatosController' => $baseDir . '/app/Http/Controllers/DescargarBaseDeDatosController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',

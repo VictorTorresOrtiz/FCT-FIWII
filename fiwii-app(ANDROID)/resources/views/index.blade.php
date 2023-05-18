@@ -1,27 +1,5 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Fiwii</title>
-
-<!--Assets---->
-<link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/bootstrap.css')}}">
-<link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/style.css')}}">
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
-
-<!--PWA READY---->
-<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
-
-<script defer type="text/javascript" src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>
-<script defer type="text/javascript" src="{{URL::asset('assets/js/custom.js')}}"></script>
-
-</head>
-
-<body class="detect-theme">
-
+@extends('templates.template-index')
+@section('index')
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
 <div id="page">
     @if (!Auth::user())
@@ -93,5 +71,5 @@
             </div>
         </div>
 @endif
+@endsection
 
-</body>

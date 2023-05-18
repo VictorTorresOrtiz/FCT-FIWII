@@ -1,6 +1,12 @@
 @extends('templates.template-app')
 @section('fiwii')
-
+    <div id="footer-bar" class="footer-bar-5">
+        <a href="{{ url('profile') }}"><i class="bi bi-person"></i><span>Perfil</span></a>
+        <a href="{{ url('sistemas') }}"><i class="bi bi-list-nested"></i></i><span>Sistemas</span></a>
+        <a href="{{ url('fiwii') }}" class="active-nav"><i class="bi bi-house"></i><span>Home</span></a>
+        <a href="{{ url('qrLector') }}"><i class="bi bi-upc-scan"></i><span>QR</span></a>
+        <a href="{{ url('conf') }}"><i class="bi bi-gear"></i><span>Configuración</span></a>
+    </div>
     <div class="page-content">
 
         <div class="page-title page-title-large">
@@ -23,7 +29,8 @@
                             <strong>Gestión en tiempo real</strong>
                             <i class="fa fa-angle-right"></i>
                         </a>
-                        <a href="{{url('qr-generator')}}" data-filter-item data-filter-name="all demo smartphone samsung android htc oneplus">
+                        <a href="{{ url('qr-generator') }}" data-filter-item
+                            data-filter-name="all demo smartphone samsung android htc oneplus">
                             <i class="fa-solid fa-qrcode"></i>
                             <span>Generador QR</span>
                             <strong>Genere QR de forma rápida</strong>
@@ -77,10 +84,13 @@
         <div class="content mt-0">
             <div class="row">
                 <div class="col-6">
-                    <a href="{{ url('to-do') }}" class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight">Tareas</a>
+                    <a href="{{ url('to-do') }}"
+                        class="btn btn-full btn-m rounded-s text-uppercase font-900 shadow-xl bg-highlight">Tareas</a>
                 </div>
                 <div class="col-6">
-                    <a href="{{ url('walkthrow') }}" class="btn btn-full btn-border btn-m rounded-s text-uppercase font-900 shadow-l border-highlight color-highlight">Diseño compacto</a>
+                    <a href="{{ url('walkthrow') }}"
+                        class="btn btn-full btn-border btn-m rounded-s text-uppercase font-900 shadow-l border-highlight color-highlight">Diseño
+                        compacto</a>
                 </div>
             </div>
         </div>
@@ -131,14 +141,10 @@
                 </div>
             </div>
         </div>
-
-
         <div class="card card-style preload-img" data-src="images/pictures/20s.jpg" data-card-height="350">
             <div class="card-center text-center">
-                <p class="line-height-xl font-19 font-300 color-white ps-3 pe-3 mb-2">
-                    ¿Quieres descargar Fiwii?.
-                </p>
-                <p class="opacity-50 color-white">Para mejorar su experencia le recomendamos que descargue Fiwii en su
+                <h2 class="line-height-xl font-19 font-300 color-white ps-3 pe-3 mb-2">¿Quieres descargar Fiwii?</h2>
+                <p class="opacity-50 color-white p-1">Para mejorar su experencia le recomendamos que descargue Fiwii en su
                     dispositivo</p>
                 <a href="#" class="btn btn-m rounded-s btn-border color-white border-white text-uppercase font-900"
                     data-menu="menu-install-pwa-android">Descargar</a>
@@ -150,7 +156,6 @@
         <div class="footer" data-menu-load="{{ url('misc.menu-footer') }}"></div>
     </div>
     <!-- end of page content-->
-
     <!--Menus--->
     <div id="menu-share" class="menu menu-box-bottom menu-box-detached rounded-m"
         data-menu-load="{{ url('misc.menu-share') }}" data-menu-height="420" data-menu-effect="menu-over">
@@ -158,16 +163,13 @@
     <div id="menu-main" class="menu menu-box-right menu-box-detached rounded-m" data-menu-width="260"
         data-menu-load="{{ url('misc.menu') }}" data-menu-active="nav-welcome" data-menu-effect="menu-over">
     </div>
-
     <!-- Install Prompt for Android -->
     <div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached rounded-l" data-menu-height="350"
         data-menu-effect="menu-parallax">
         <div class="boxed-text-l mt-4">
             <img class="rounded-l mb-3" src="{{ URL::asset('assets/images/logo.png') }}" alt="img" width="90">
             <h4 class="mt-3">Fiwii en su pantalla de Inicio</h4>
-            <p>
-                Instale Fiwii en su pantalla de inicio y acceda a él como una aplicación normal. ¡Es realmente así de
-                simple!
+            <p>Instale Fiwii en su pantalla de inicio y acceda a él como una aplicación normal. ¡Es realmente así de simple!
             </p>
             <a href="#"
                 class="pwa-install btn btn-s rounded-s shadow-l text-uppercase font-900 bg-highlight mb-2">Añadir a
@@ -177,7 +179,6 @@
             <div class="clear"></div>
         </div>
     </div>
-
     <!-- Install instructions for iOS -->
     <div id="menu-install-pwa-ios" class="menu menu-box-bottom menu-box-detached rounded-l" data-menu-height="320"
         data-menu-effect="menu-parallax">
@@ -195,7 +196,6 @@
             <i class="fa-ios-arrow fa fa-caret-down font-40"></i>
         </div>
     </div>
-
     <!-- Tutorial diseño compacto -->
-</div>
+    </div>
 @endsection

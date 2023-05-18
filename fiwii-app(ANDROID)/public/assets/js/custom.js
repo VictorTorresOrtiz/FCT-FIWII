@@ -364,19 +364,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function activateMenus(){
             const menuActive = document.querySelectorAll('[data-menu-active]')[0];
-            if(menuActive){
-                var selectedMenu = menuActive.getAttribute('data-menu-active');
-                document.querySelectorAll('#'+selectedMenu)[0].classList.add('nav-item-active');
-                if(document.querySelectorAll('#'+selectedMenu)[0].parentNode.getAttribute('class') === "submenu"){
-                   var subId = '#' + document.querySelectorAll('#'+selectedMenu)[0].parentNode.getAttribute('id')
-                   var subData = document.querySelectorAll('#'+selectedMenu)[0].parentNode.getAttribute('id')
-                    var subSize = document.querySelectorAll(subId)[0].children.length;
-                    var subHeight = document.querySelectorAll(subId)[0].offsetHeight;
-                    document.querySelectorAll(subId)[0].style.transition = "all 250ms";
-                    document.querySelectorAll(subId)[0].style.height = (subSize*50)+26+'px';
-                    document.querySelectorAll('[data-submenu="'+subData+'"]')[0].classList.add('nav-item-active')
-                }
-            }
+            // if(menuActive){
+            //     var selectedMenu = menuActive.getAttribute('data-menu-active');
+            //     document.querySelectorAll('#'+selectedMenu)[0].classList.add('nav-item-active');
+            //     if(document.querySelectorAll('#'+selectedMenu)[0].parentNode.getAttribute('class') === "submenu"){
+            //        var subId = '#' + document.querySelectorAll('#'+selectedMenu)[0].parentNode.getAttribute('id')
+            //        var subData = document.querySelectorAll('#'+selectedMenu)[0].parentNode.getAttribute('id')
+            //         var subSize = document.querySelectorAll(subId)[0].children.length;
+            //         var subHeight = document.querySelectorAll(subId)[0].offsetHeight;
+            //         document.querySelectorAll(subId)[0].style.transition = "all 250ms";
+            //         document.querySelectorAll(subId)[0].style.height = (subSize*50)+26+'px';
+            //         document.querySelectorAll('[data-submenu="'+subData+'"]')[0].classList.add('nav-item-active')
+            //     }
+            // }
 
             document.querySelectorAll('[data-submenu]').forEach(function(e){
                 var subID = e.getAttribute('data-submenu');

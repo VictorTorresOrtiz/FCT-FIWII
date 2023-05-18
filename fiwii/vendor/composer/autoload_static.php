@@ -550,6 +550,7 @@ class ComposerStaticInit19bfef2c7f03ca5d99bb74cd5182d47b
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\DashbooardController' => __DIR__ . '/../..' . '/app/Http/Controllers/DashbooardController.php',
+        'App\\Http\\Controllers\\DatabaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/DatabaseController.php',
         'App\\Http\\Controllers\\DescargarBaseDeDatosController' => __DIR__ . '/../..' . '/app/Http/Controllers/DescargarBaseDeDatosController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
