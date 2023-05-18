@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
+class ComposerStaticInit19bfef2c7f03ca5d99bb74cd5182d47b
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -31,6 +31,7 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '38ea50801e981fa2297115e1c44a148b' => __DIR__ . '/..' . '/mckenziearts/laravel-notify/src/helpers.php',
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
@@ -112,6 +113,7 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Mckenziearts\\Notify\\' => 20,
         ),
         'L' => 
         array (
@@ -384,6 +386,10 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Mckenziearts\\Notify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mckenziearts/laravel-notify/src',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -745,6 +751,7 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'DASPRiD\\Enum\\NullValue' => __DIR__ . '/..' . '/dasprid/enum/src/NullValue.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\ScriptSeeder' => __DIR__ . '/../..' . '/database/seeders/ScriptSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
@@ -2471,6 +2478,7 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'Illuminate\\Queue\\Failed\\DatabaseUuidFailedJobProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Failed/DatabaseUuidFailedJobProvider.php',
         'Illuminate\\Queue\\Failed\\DynamoDbFailedJobProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Failed/DynamoDbFailedJobProvider.php',
         'Illuminate\\Queue\\Failed\\FailedJobProviderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Failed/FailedJobProviderInterface.php',
+        'Illuminate\\Queue\\Failed\\FileFailedJobProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Failed/FileFailedJobProvider.php',
         'Illuminate\\Queue\\Failed\\NullFailedJobProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Failed/NullFailedJobProvider.php',
         'Illuminate\\Queue\\Failed\\PrunableFailedJobProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Failed/PrunableFailedJobProvider.php',
         'Illuminate\\Queue\\InteractsWithQueue' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/InteractsWithQueue.php',
@@ -2503,6 +2511,7 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'Illuminate\\Queue\\SerializesModels' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/SerializesModels.php',
         'Illuminate\\Queue\\SqsQueue' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/SqsQueue.php',
         'Illuminate\\Queue\\SyncQueue' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/SyncQueue.php',
+        'Illuminate\\Queue\\TimeoutExceededException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/TimeoutExceededException.php',
         'Illuminate\\Queue\\Worker' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Worker.php',
         'Illuminate\\Queue\\WorkerOptions' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/WorkerOptions.php',
         'Illuminate\\Redis\\Connections\\Connection' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Redis/Connections/Connection.php',
@@ -2665,6 +2674,7 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'Illuminate\\Support\\ProcessUtils' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/ProcessUtils.php',
         'Illuminate\\Support\\Reflector' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Reflector.php',
         'Illuminate\\Support\\ServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/ServiceProvider.php',
+        'Illuminate\\Support\\Sleep' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Sleep.php',
         'Illuminate\\Support\\Str' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Str.php',
         'Illuminate\\Support\\Stringable' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Stringable.php',
         'Illuminate\\Support\\Testing\\Fakes\\BatchFake' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Testing/Fakes/BatchFake.php',
@@ -3308,6 +3318,11 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
         'League\\MimeTypeDetection\\OverridingExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php',
+        'Mckenziearts\\Notify\\Exceptions\\MissingPresetNotificationException' => __DIR__ . '/..' . '/mckenziearts/laravel-notify/src/Exceptions/MissingPresetNotificationException.php',
+        'Mckenziearts\\Notify\\Facades\\LaravelNotify' => __DIR__ . '/..' . '/mckenziearts/laravel-notify/src/Facades/LaravelNotify.php',
+        'Mckenziearts\\Notify\\LaravelNotify' => __DIR__ . '/..' . '/mckenziearts/laravel-notify/src/LaravelNotify.php',
+        'Mckenziearts\\Notify\\LaravelNotifyServiceProvider' => __DIR__ . '/..' . '/mckenziearts/laravel-notify/src/LaravelNotifyServiceProvider.php',
+        'Mckenziearts\\Notify\\Storage\\Session' => __DIR__ . '/..' . '/mckenziearts/laravel-notify/src/Storage/Session.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegrationAssertPostConditions' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationAssertPostConditions.php',
@@ -6517,10 +6532,10 @@ class ComposerStaticInit44c8749573eeca401c4be807cffa0e53
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit44c8749573eeca401c4be807cffa0e53::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit19bfef2c7f03ca5d99bb74cd5182d47b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit19bfef2c7f03ca5d99bb74cd5182d47b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit19bfef2c7f03ca5d99bb74cd5182d47b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit19bfef2c7f03ca5d99bb74cd5182d47b::$classMap;
 
         }, null, ClassLoader::class);
     }

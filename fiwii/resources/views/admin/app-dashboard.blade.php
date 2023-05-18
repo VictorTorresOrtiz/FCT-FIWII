@@ -26,192 +26,6 @@
                 <div id="navbar-items" class="collapse navbar-collapse focus-trigger">
                     <!-- Link -->
                     <ul class="navbar-nav ms-auto">
-                        {{-- <li class="nav-item dropdown has-megamenu hover">
-                            <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
-                                <span class="text">Configuración</span><img class="image-icon dropdown-icon"
-                                    src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
-                            </a>
-                            <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                                <div class="container">
-                                    <div class="section-inner-expanded">
-                                        <div class="horizontal-tab scheme-1 primary">
-                                            <!-- Tab navigation -->
-                                            <ul id="elements-tab" class="nav nav-tabs js-tabs-event" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button id="elements-1-tab" class="title nav-link active"
-                                                        aria-selected="true" aria-controls="elements-1"
-                                                        data-bs-target="#elements-1" data-bs-toggle="tab"
-                                                        role="tab">
-                                                        Cuenta
-                                                    </button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button id="elements-2-tab" class="title nav-link"
-                                                        aria-selected="false" aria-controls="elements-2"
-                                                        data-bs-target="#elements-2" data-bs-toggle="tab"
-                                                        role="tab">
-                                                        Fiwii App
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <!-- Cuenta Content -->
-                                            <div class="tab-content">
-                                                <div id="elements-1" class="tab-pane fade show active"
-                                                    role="tabpanel">
-                                                    <div class="row g-3">
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Actualizar Plan</span>
-                                                                            <span
-                                                                                class="badge ms-05 primary-15 primary-15-hover">
-                                                                                <span
-                                                                                    class="badge-text primary primary-hover">Ofertas</span>
-                                                                            </span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Configuración</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="elements-2" class="tab-pane fade" role="tabpanel">
-                                                    <div class="row g-3">
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <ul class="nav-list list-unstyled">
-                                                                <li class="nav-item">
-                                                                    <a href="#" class="nav-link parent">
-                                                                        <span class="text">Gestor de Cuentas</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Añadir
-                                                                                Administrador</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <div class="megamenu-item">
-                                                                <ul class="nav-list list-unstyled">
-                                                                    <li class="nav-item">
-                                                                        <a href="#" class="nav-link parent">
-                                                                            <span class="text">Añadir Técnico</span>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2">
-                                                            <ul class="nav-list list-unstyled">
-                                                                <li class="nav-item">
-                                                                    <a href="#" class="nav-link parent">
-                                                                        <span class="text">Añadir To-do list</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-12 col-md-6 col-lg-2"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                        </li> --}}
-
-                        <li class="nav-item dropdown has-megamenu hover">
-                            <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
-                                <span class="text">Sistemas</span><img class="image-icon dropdown-icon"
-                                    src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
-                            </a>
-                            <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                                <div class="container">
-                                    <div class="section-inner-expanded">
-                                        <div class="row g-3">
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Información</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link parent">
-                                                                <span class="text">Listado Sistemas</span>
-                                                                <em class="tag hover-up-down">sistemas dados de
-                                                                    alta</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Descargar Bases de Datos</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Sistemas</span>
-                                                                <em class="tag hover-up-down">Base de Datos de
-                                                                    Sistemas</em>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Usuarios</span>
-                                                                <em class="tag hover-up-down">Base de Datos de
-                                                                    Usuarios</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <div class="megamenu-item">
-                                                    <h6 class="title">Añadir Sistemas</h6>
-                                                    <ul class="nav-list list-unstyled">
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Añadir un Sistema</span>
-                                                                <em class="tag hover-up-down">Dar de alta un
-                                                                    sistema</em>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="#" class="nav-link">
-                                                                <span class="text">Eliminar un Sistema</span>
-                                                                <em class="tag hover-up-down">Elimina un sistema</em>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
                         <ul class="navbar-nav navbar-icons">
                             <!-- Search icon -->
                             <li class="search-bar nav-item d-only-desktop">
@@ -248,19 +62,16 @@
                         <li class="nav-item" role="presentation">
                             <button id="v-1-tab" class="nav-link active" aria-selected="true" aria-controls="v-1"
                                 data-bs-target="#v-1" data-bs-toggle="tab" role="tab">
-                                Gestor de Cuentas
+                                Dashboard
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" aria-selected="false" data-bs-toggle="modal"
-                                data-bs-target="#modal-1">
+                            <button class="nav-link" aria-selected="false" data-bs-toggle="modal" data-bs-target="#modal-1">
                                 Gestor de Sistemas
                             </button>
                         </li>
-
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" aria-selected="false" aria-controls="v-3" data-bs-target="#v-3"
-                                data-bs-toggle="tab" role="tab">
+                            <button class="nav-link" aria-selected="false" aria-controls="v-3" data-bs-target="#v-3" data-bs-toggle="tab" role="tab">
                                 Bases de Datos
                             </button>
                         </li>
@@ -273,43 +84,52 @@
                                 <div class="col-12 col-md-6">
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/addAdmin.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Añadir Administrador</h3>
+                                            <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/addUser.svg') }}"  alt="Icon name" data-shock-icon="32" />
+                                            <h3 class="title text-style-11 black">Añadir Usuarios</h3>
                                             <p class="description">Dar de alta una cuenta de Administrador Fiwii.</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
-                                                    <span class="button-text black black-hover"><mark
-                                                            class="animated-underline accent when-hover">Read
-                                                            More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                    <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Crear</mark></span>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-admin"
-                                                class="full-link"></a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-admin" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/addUser.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Añadir Usuario</h3>
-                                            <p class="description">Dar de alta una cuenta para sus empleados.</p>
+                                            <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/deleteUser.svg') }}" alt="Icon name" data-shock-icon="32" />
+                                            <h3 class="title text-style-11 black">Eliminar usuario</h3>
+                                            <p class="description">Dar de baja cuentas Fiwii.</p>
+                                            <!-- Button -->
+                                            <div class="button-wrapper align-h-right">
+                                                <span class="button simple">
+                                                    <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Eliminar</mark></span>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                </span>
+                                            </div>
+                                            <!-- Link -->
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#deleteUserModal" class="full-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="card has-icon hover-up parent">
+                                        <div class="card-body rounded-3 small-shadow bg-color white">
+                                            <img class="card-image-icon primary"  src="{{ URL::asset('assets/custom-svg/camera.svg') }}"  alt="Icon name" data-shock-icon="32" />
+                                            <h3 class="title text-style-11 black">Sistemas de Vigilancía</h3>
+                                            <p class="description">Añade un sistema de vigilancia.</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
                                                     <span class="button-text black black-hover"><mark
                                                             class="animated-underline accent when-hover">Read
                                                             More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                                                 </span>
                                             </div>
                                             <!-- Link -->
@@ -320,47 +140,18 @@
                                 <div class="col-12 col-md-6">
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/todoList.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Lista de Tareas</h3>
-                                            <p class="description">Asignar lista de tareas a sus empleados.</p>
+                                            <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/sistema.svg') }}" alt="Icon name" data-shock-icon="32" />
+                                            <h3 class="title text-style-11 black">Crear Sistema</h3>
+                                            <p class="description">Dar de alta un sistema </p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
-                                                    <span class="button-text black black-hover"><mark
-                                                            class="animated-underline accent when-hover">Read
-                                                            More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+                                                    <span class="button-text black black-hover"><mark class="animated-underline accent when-hover">Crear</mark></span>
+                                                    <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#your-link" class="full-link"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="card has-icon hover-up parent">
-                                        <div class="card-body rounded-3 small-shadow bg-color white">
-                                            <img class="card-image-icon primary"
-                                                src="{{ URL::asset('assets/custom-svg/deleteUser.svg') }}"
-                                                alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Eliminar Cuentas</h3>
-                                            <p class="description">Dar de baja cualquier cuenta asociada a su empresa
-                                            </p>
-                                            <!-- Button -->
-                                            <div class="button-wrapper align-h-right">
-                                                <span class="button simple">
-                                                    <span class="button-text black black-hover"><mark
-                                                            class="animated-underline accent when-hover">Read
-                                                            More</mark></span>
-                                                    <i
-                                                        class="fa-solid fa-arrow-right button-icon black black-hover"></i>
-                                                </span>
-                                            </div>
-                                            <!-- Link -->
-                                            <a href="#your-link" class="full-link"></a>
+                                            <a href="{{url('admin.crearSistema')}}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -373,9 +164,8 @@
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
                                             <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}" alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Base de Datos Sistemas</h3>
-                                            <p class="description">Descargar base de datos completa de todos los
-                                                Sistemas</p>
+                                            <h3 class="title text-style-11 black">Base de Datos Usuarios</h3>
+                                            <p class="description">Descargar base de datos completa de todos los Sistemas</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
@@ -384,7 +174,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="{{ route('descargar.base-de-datos') }}" class="full-link"></a>
+                                            <a href="{{ route('download.database') }}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -394,8 +184,8 @@
                                             <img class="card-image-icon primary"
                                                 src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}"
                                                 alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Base de datos Usuarios</h3>
-                                            <p class="description">Descargar base de datos completa de sus empleados.
+                                            <h3 class="title text-style-11 black">Base de datos Completa</h3>
+                                            <p class="description">Descargar base de datos completa de su empresa.
                                             </p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
@@ -405,7 +195,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#your-link" class="full-link"></a>
+                                            <a href="{{ route('download.database2') }}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -472,87 +262,68 @@
             </div>
         </section>
 
-        <!-- Modal añadir admin -->
-        <!-- Modal -->
-        <div id="modal-admin" class="modal fade" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog max-w-50">
-                <div class="modal-content shadow">
-                    <div class="modal-header">
-                        <i class="fa-solid fa-xmark close-button black secondary-hover" data-bs-dismiss="modal"
-                            aria-label="Close"></i>
-                        <!-- Intro -->
-                        <div class="basic-intro">
-                            <h2 class="title black">
-                                <span class="text-1 text-style-7">Añadir cuenta Fiwii </span>
-                                <span class="text-2 text-style-8 text-italic"><mark
-                                        class="animated-underline accent">Admin</mark></span>
-                            </h2>
-                            <div class="description gray">
-                                <p>Introduce los datos del nuevo Administrador</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Form -->
-                        <div class="form-area scheme-1 secondary">
-                            <form action="php/sender.php" class="form-fields needs-validation ajax-form"
-                                novalidate="novalidate">
-                                <div class="form-row row">
-                                    <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="text" name="name" id="InputFloatingName"
-                                            class="form-control" placeholder="Nombre" required="required">
-                                        <label for="InputFloatingName" class="form-label">Nombre</label>
-                                        <div class="invalid-feedback">Please enter your name.</div>
-                                        <div class="valid-feedback">Looks good.</div>
-                                    </div>
-                                    <div class="form-col form-floating col-12 col-md-6">
-                                        <input type="email" name="email" id="InputFloatingEmail"
-                                            class="form-control" placeholder="name@example.com" required="required">
-                                        <label for="InputFloatingEmail" class="form-label">Email</label>
-                                        <div class="invalid-feedback">Please enter a valid email address.</div>
-                                        <div class="valid-feedback">Looks good.</div>
-                                    </div>
-                                </div>
-                                <div class="form-row row">
-                                    <div class="form-col form-floating col-12">
-                                        <textarea type="password" name="password" id="InputFloatingName" class="form-control form-textarea" rows="3"
-                                            placeholder="Contraseña" required="required"></textarea>
-                                        <label for="InputFloatingMessage" class="form-label">Contraseña</label>
-                                        <div class="invalid-feedback">Please enter a valid password.</div>
-                                        <div class="valid-feedback">Looks good.</div>
-                                    </div>
-                                </div>
-                                <div class="form-row row">
-                                    <div class="form-col col-12 col-md-8">
-                                        <div class="form-check">
-                                            <input type="radio" name="info" id="InputRadioChecked"
-                                                class="form-check-input form-radio" checked="checked"
-                                                required="required">
-                                            <label class="form-label form-check-label" for="InputRadioChecked">
-                                                Default Admin Account.
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
 
-                                        </div>
-                                    </div>
-                                    <div class="form-col col-12 col-md-4 align-h-right">
-                                        <!-- Button -->
-                                        <button class="button arrow-button next scheme-1 secondary">
-                                            <span class="arrow">
-                                                <span class="item"></span>
-                                                <span class="item"></span>
-                                            </span>
-                                            <span class="line"></span>
-                                            <span class="text">Crear Cuenta</span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <input type="hidden" name="subject" value="Message sent through the contact form.">
-                                <span class="form-alert success">Your account was create successful. Thanks.</span>
-                                <span class="form-alert error">Sorry. We were unable to send create your
-                                    account.</span>
-                            </form>
+    <!-- Modal Gestor de Vigilancia --
+    <div id="modal-2" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog max-w-50">
+            <div class="modal-content shadow rounded-3">
+                <div class="modal-header pb-0">
+                    <i class="fa-solid fa-xmark close-button black primary-hover" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <!-- Intro --
+                    <div class="basic-intro">
+                        <h2 class="title text-style-7 black">Lista Sistemas de Vigilancia</h2>
+                        <hr class="gray-25">
+                    </div>
+                </div>
+                <div class="modal-body pt-0 pb-0">
+                    <!-- Table --
+                    <div class="table-responsive">
+                        <table class="table scheme-1">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="black">ID</th>
+                                    <th scope="col" class="black">Nombre</th>
+                                    <th scope="col" class="black">Descripción</th>
+                                    <th scope="col" class="black">Ubicación</th>
+                                    <th scope="col" class="black">Status</th>
+                                    <th scope="col" class="black">Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($systems as $system)
+                                    <tr>
+                                        <th scope="row" class="black">{{ $system->id }}</th>
+                                        <td>{{ $system->name }}</td>
+                                        <td>{{ $system->description }}</td>
+                                        <td>{{ $system->ubicacion }}</td>
+                                        <td>
+                                            @if ($system->status == 'Mantenimiento')
+                                            <a href="#" class="btn btn-warning btn-sm">Mantenimiento</a>
+                                            @elseif ($system->status == 'Revisado')
+                                            <a href="#" class="btn btn-success btn-sm ">Revisado</a>
+                                            @elseif ($system->status == 'Averiado')
+                                            <a href="#" class="btn btn-danger btn-sm">Averiado</a>
+                                            @endif
+                                        </td>
+                                        <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <input type="hidden" name="id" value="{{ $system->id }}">
+                                            <td ><button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></button></td>
+                                        </form>
+
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="button-wrapper">
+                            <!-- Button --
+                            <button class="button shadow rounded-3 black accent-hover" data-bs-dismiss="modal">
+                                <span class="button-text accent white-hover">Cerrar</span>
+                                <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -564,8 +335,7 @@
             <div class="modal-dialog max-w-50">
                 <div class="modal-content shadow rounded-3">
                     <div class="modal-header pb-0">
-                        <i class="fa-solid fa-xmark close-button black primary-hover" data-bs-dismiss="modal"
-                            aria-label="Close"></i>
+                        <i class="fa-solid fa-xmark close-button black primary-hover" data-bs-dismiss="modal" aria-label="Close"></i>
                         <!-- Intro -->
                         <div class="basic-intro">
                             <h2 class="title text-style-7 black">Lista de Sistemas</h2>
@@ -582,7 +352,10 @@
                                         <th scope="col" class="black">Nombre</th>
                                         <th scope="col" class="black">Descripción</th>
                                         <th scope="col" class="black">Ubicación</th>
-                                        <th scope="col" class="black">Visualizar</th>
+                                        <th scope="col" class="black">Tipo</th>
+                                        <th scope="col" class="black">Status</th>
+                                        <th scope="col" class="black">Editar</th>
+                                        <th scope="col" class="black">Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -592,8 +365,26 @@
                                             <td>{{ $system->name }}</td>
                                             <td>{{ $system->description }}</td>
                                             <td>{{ $system->ubicacion }}</td>
-                                            <td><a href="#" class="btn btn-success btn-sm"> <i
-                                                        class="bi bi-eye"></i> </a></td>
+                                            <td>{{ $system->tipo }}</td>
+                                            <td>
+                                                @if ($system->status == 'Mantenimiento')
+                                                <a href="#" class="btn btn-warning btn-sm">Mantenimiento</a>
+                                                @elseif ($system->status == 'Revisado')
+                                                <a href="#" class="btn btn-success btn-sm ">Revisado</a>
+                                                @elseif ($system->status == 'Averiado')
+                                                <a href="#" class="btn btn-danger btn-sm">Averiado</a>
+                                                @endif
+                                            </td>
+                                            <td ><a href="#" class="btn btn-success btn-sm"><i class="bi bi-eye"></td>
+
+
+                                            <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <input type="hidden" name="id" value="{{ $system->id }}">
+                                                <td ><button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></button></td>
+                                            </form>
+
                                         </tr>
                                     @endforeach
                                 </tbody>
@@ -602,8 +393,8 @@
                         <div class="modal-footer">
                             <div class="button-wrapper">
                                 <!-- Button -->
-                                <button class="button shadow rounded-3 black primary-hover" data-bs-dismiss="modal">
-                                    <span class="button-text white white-hover">Cerrar</span>
+                                <button class="button shadow rounded-3 black accent-hover" data-bs-dismiss="modal">
+                                    <span class="button-text accent white-hover">Cerrar</span>
                                     <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
                                 </button>
                             </div>

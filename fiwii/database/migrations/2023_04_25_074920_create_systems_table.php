@@ -20,10 +20,14 @@ return new class extends Migration
             $table->string('ubicacion');
             $table->enum('status', ['Mantenimiento', 'Revisado', 'Averiado']);
             $table->enum('prioridad', ['Alta', 'Media', 'Baja']);
+            $table->string('tipo');
             $table->timestamps();
         });
 
     }
+
+    public $timestamps = false;
+    protected $dates = ['created_at','updated_at'];
 
     /**
      * Reverse the migrations.
