@@ -23,6 +23,10 @@
                 <i data-feather="smartphone" data-feather-line="1" data-feather-size="55" data-feather-color="dark-dark" data-feather-bg="gray-fade-light"></i>
                 <p>Generador QR</p>
             </a>
+            <a href="{{url('weather')}}" data-toggle-theme class="col-4">
+                <i data-feather="sun" data-feather-line="1" data-feather-size="55" data-feather-color="dark-dark" data-feather-bg="gray-fade-light"></i>
+                <p>Tiempo</p>
+            </a>
             <a href="{{url('conf')}}" class="col-4">
                 <i data-feather="settings" data-feather-line="1" data-feather-size="55" data-feather-color="blue-dark" data-feather-bg="blue-fade-light"></i>
                 <p>Configuración</p>
