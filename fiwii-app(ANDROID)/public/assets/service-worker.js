@@ -8,9 +8,6 @@ var CACHE_NAME = APP_NAME + '-' + APP_VER;
 // Add all files you want to view offline below.
 // Leave REQUIRED_FILES = [] to disable offline.
 var REQUIRED_FILES = [
-	// HTML Files
-	'../../resources/views/fiwii.blade.php',
-
 	// Styles
 	'css/style.css',
 	'css/bootstrap.css',
@@ -74,6 +71,7 @@ self.addEventListener('fetch', function(event) {
 	if(APP_DIAG){console.log('Service Worker: Fetching '+APP_NAME+'-'+APP_VER+' files from Cache');}
 });
 
+
 self.addEventListener('activate', function(event) {
 	event.waitUntil(self.clients.claim());
 	event.waitUntil(
@@ -88,4 +86,6 @@ self.addEventListener('activate', function(event) {
 		})
 	);
 	if(APP_DIAG){console.log('Service Worker: Activated')}
+
+
 });

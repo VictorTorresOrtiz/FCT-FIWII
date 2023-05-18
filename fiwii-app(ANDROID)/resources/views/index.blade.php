@@ -12,12 +12,12 @@
 <link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/style.css')}}">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
 
+<!--PWA READY---->
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+
 <script defer type="text/javascript" src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>
 <script defer type="text/javascript" src="{{URL::asset('assets/js/custom.js')}}"></script>
 
-<!--PWA READY---->
-<link rel="manifest" href="{{URL::asset('assets/manifest.json')}}" data-pwa-version="set_in_manifest_and_pwa_js">
-<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 
 <body class="detect-theme">
@@ -95,4 +95,3 @@
 @endif
 
 </body>
-

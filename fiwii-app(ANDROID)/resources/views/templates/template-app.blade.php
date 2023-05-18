@@ -13,13 +13,16 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('assets/fonts/css/fontawesome-all.min.css') }} ">
+
+    <!--PWA READY---->
+    <link rel="manifest" href="{{ URL::asset('assets/manifest.json') }}" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+
+    <script defer type="text/javascript" src="{{ URL::asset('assets/load.js') }}"></script>
     <script defer type="text/javascript" src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
     <script defer type="text/javascript" src="{{ URL::asset('assets/js/custom.js') }}"></script>
     <script defer type="text/javascript" src="{{ URL::asset('assets/js/qr.js') }}"></script>
 
-    <!--PWA READY---->
-    <link rel="manifest" href="{{ URL::asset('manifest.json') }}" data-pwa-version="set_in_manifest_and_pwa_js">
-    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 <body class="detect-theme">
     <div id="preloader">
@@ -56,3 +59,5 @@
             @yield('generator')
 </body>
 </html>
+
+
