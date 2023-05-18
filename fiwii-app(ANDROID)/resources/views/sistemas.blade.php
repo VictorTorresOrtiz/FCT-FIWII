@@ -16,6 +16,18 @@
 
 </div>
 
+<div class="card card-style">
+    <div class="content mb-0">
+        <div class="float-start">
+            <p class=" text-uppercase font-900 mt-2 font-15">Añadir Sistemas</p>
+        </div>
+        <p href="#" class="float-end btn btn-primary rounded-xl shadow-xl text-uppercase font-900 mt-2 font-11">Añadir</p>
+        <div class="clearfix"></div>
+        <div class="divider mt-2 mb-3"></div>
+
+    </div>
+</div>
+
 @foreach ($systems as $system)
 <div class="card card-style">
     <div class="content mb-0">
