@@ -71,11 +71,6 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" aria-selected="false" data-bs-toggle="modal" data-bs-target="#modal-2">
-                                Sistemas de Vigilancia
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
                             <button class="nav-link" aria-selected="false" aria-controls="v-3" data-bs-target="#v-3" data-bs-toggle="tab" role="tab">
                                 Bases de Datos
                             </button>
@@ -169,9 +164,8 @@
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
                                             <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}" alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Base de Datos Sistemas</h3>
-                                            <p class="description">Descargar base de datos completa de todos los
-                                                Sistemas</p>
+                                            <h3 class="title text-style-11 black">Base de Datos Usuarios</h3>
+                                            <p class="description">Descargar base de datos completa de todos los Sistemas</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
@@ -180,7 +174,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="{{ route('descargar.base-de-datos') }}" class="full-link"></a>
+                                            <a href="{{ route('download.database') }}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -190,8 +184,8 @@
                                             <img class="card-image-icon primary"
                                                 src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}"
                                                 alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Base de datos Usuarios</h3>
-                                            <p class="description">Descargar base de datos completa de sus empleados.
+                                            <h3 class="title text-style-11 black">Base de datos Completa</h3>
+                                            <p class="description">Descargar base de datos completa de su empresa.
                                             </p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
@@ -201,7 +195,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#your-link" class="full-link"></a>
+                                            <a href="{{ route('download.database2') }}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -358,8 +352,8 @@
                                         <th scope="col" class="black">Nombre</th>
                                         <th scope="col" class="black">Descripción</th>
                                         <th scope="col" class="black">Ubicación</th>
-                                        <th scope="col" class="black">Status</th>
                                         <th scope="col" class="black">Tipo</th>
+                                        <th scope="col" class="black">Status</th>
                                         <th scope="col" class="black">Editar</th>
                                         <th scope="col" class="black">Eliminar</th>
                                     </tr>
@@ -371,6 +365,7 @@
                                             <td>{{ $system->name }}</td>
                                             <td>{{ $system->description }}</td>
                                             <td>{{ $system->ubicacion }}</td>
+                                            <td>{{ $system->tipo }}</td>
                                             <td>
                                                 @if ($system->status == 'Mantenimiento')
                                                 <a href="#" class="btn btn-warning btn-sm">Mantenimiento</a>
@@ -380,8 +375,7 @@
                                                 <a href="#" class="btn btn-danger btn-sm">Averiado</a>
                                                 @endif
                                             </td>
-                                            <td>{{ $system->tipo }}</td>
-                                            <td ><a href="{{route('edit-system', $system->id)}}" class="btn btn-success btn-sm"><i class="bi bi-eye"></td>
+                                            <td ><a href="#" class="btn btn-success btn-sm"><i class="bi bi-eye"></td>
 
 
                                             <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">

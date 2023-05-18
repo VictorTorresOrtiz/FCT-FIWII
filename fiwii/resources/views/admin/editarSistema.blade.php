@@ -40,9 +40,7 @@
     </header>
     <main id="main" class="shock-main bg-color gray-10 p-2">
         <div id="medio" class="form-area scheme-1 secondary">
-            <form action="{{ route('edit-system', $system->id) }}" method="POST" enctype="multipart/form-data">
-                @method('PUT')
-                @csrf
+            <form action="" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <h3 class="title text-style-11 black">Nombre:</h3>
                     <input type="text" id="name" name="sistemaNombre1" value="{{ $system->name }}" required>

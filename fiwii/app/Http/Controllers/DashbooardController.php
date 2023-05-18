@@ -46,24 +46,5 @@ class DashbooardController extends Controller
             return back();
         }
 
-        public function edit($id)
-        {
-            $sistemas = Systems::findOrFail($id);
-            return view('admin/crearSistema', @compact('systems'));
-        }
-        public function editar(Request $request, $id)
-        {
-            $editarSistema = Systems::findOrFail($id);
-            $editarSistema->name = $request->sistemaNombre1;
-            $editarSistema->ubicacion = $request->sistemaUbicacion1;
-            $editarSistema->description = $request->sistemaDesc1;
-            $editarSistema->status = $request->sistemaStatus1;
-            $editarSistema->prioridad = $request->sistemaPrioridad1;
-            $editarSistema->tipo = $request->sistemaTipo1;
-            $editarSistema->updated_at;
-            $editarSistema->update();
-            notify()->success('Sistema editado correctamente!');
-            return back();
-        }
 
 }

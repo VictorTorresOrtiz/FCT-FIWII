@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashbooardController;
+use App\Http\Controllers\DatabaseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,14 +54,12 @@ Route::get('/admin.editarSistema', function () {
 
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
 
-Route::get('/editarSistema/{id}', [ DashbooardController::class, 'edit' ]) -> name('edit-system');
-
-
-Route::put('/editarSistema/{id}', [ DashbooardController::class, 'editar' ]) -> name('update-system');
 
 Route::post('/admin.crearSistema', [ DashbooardController::class,'addSystem' ]) -> name('addSystem');
 
-Route::get('descargar-base-de-datos', 'DescargarBaseDeDatosController@descargar')->name('descargar.base-de-datos');
+Route::get('/download-database', [DatabaseController::class, 'downloadDatabase'])->name('download.database');
+
+Route::get('/download-database2', [DatabaseController::class, 'downloadDatabase2'])->name('download.database2');
 
 Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name('sistema_eliminar');
 
