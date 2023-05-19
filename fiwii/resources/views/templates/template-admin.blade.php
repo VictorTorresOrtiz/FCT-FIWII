@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="{{ URL::asset('assets/css/theme.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/core.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('assets/css/main.css') }}" />
+    <link rel="manifest" href="{{ URL::asset('assets/manifest.json') }}" />
+
 
     <!-- Vendor JavaScript -->
     <script defer src="{{ URL::asset('assets/js/vendor/jquery.min.js') }}"></script>
@@ -56,7 +58,8 @@
     <script defer src="{{ URL::asset('assets/js/vendor/cursor-effect.min.js') }}"></script>
     <!-- Main JavaScript -->
     <script defer src="{{ URL::asset('assets/js/main.js') }}"></script>
-    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="{{ URL::asset('load.js') }}"></script>
+
 
 </head>
 <body class="shock-body">
