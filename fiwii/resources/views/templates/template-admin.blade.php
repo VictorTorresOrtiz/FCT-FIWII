@@ -66,6 +66,7 @@
     @yield('web-dashboard')
     @yield('create')
     @yield('editar')
+    @yield('crearUsuario')
     <x-notify::notify />
     @notifyJs
 </body>

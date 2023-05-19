@@ -95,7 +95,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-admin" class="full-link"></a>
+                                            <a href="{{url('/admin.crearUsuario')}}"  class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
