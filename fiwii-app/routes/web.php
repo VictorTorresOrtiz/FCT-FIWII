@@ -21,7 +21,9 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/offline', function () {     return view('vendor/laravelpwa/offline'); });
+Route::get('/offline', function () {
+    return view('vendor/laravelpwa/offline');
+});
 
 Route::get('/weather', function () {
     return view('weather');
