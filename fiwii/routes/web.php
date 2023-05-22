@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashbooardController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\DatabaseController;
 use Illuminate\Support\Facades\Route;
 
@@ -68,6 +69,9 @@ Route::get('/download-database', [DatabaseController::class, 'downloadDatabase']
 Route::get('/download-database2', [DatabaseController::class, 'downloadDatabase2'])->name('download.database2');
 
 Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name('sistema_eliminar');
+
+Route::delete('/eliminar-usuario', [DashbooardController::class, 'eliminar_usuario'])->middleware(['auth'])->name('eliminar_usuario');
+
 
 
 
