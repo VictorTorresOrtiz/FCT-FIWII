@@ -261,8 +261,6 @@
                 </div>
             </div>
         </section>
-        <!-- Botón para abrir el modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteUserModal">Eliminar Usuario</button>
 
 <!-- Modal de eliminación de usuario -->
 <div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
