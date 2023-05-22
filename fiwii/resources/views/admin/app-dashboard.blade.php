@@ -380,12 +380,15 @@
             </div>
             <div class="modal-body">
                 <p>Introduce los datos del usuario que desea eliminar</p>
-                <strong>ID:</strong><input class="form-control" placeholder="ID Usuario" required="required" id="IdUser">
-                <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser">
+                <strong>ID:</strong><input class="form-control" placeholder="ID Usuario" required="required" id="IdUser" name="id">
+                <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser" name="email">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Eliminar</button>
-
+                <form id="deleteUserForm" method="POST" action="{{ route('eliminar_usuario') }}">
+                    @csrf
+                    @method ('DELETE')
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
             </div>
         </div>
     </div>

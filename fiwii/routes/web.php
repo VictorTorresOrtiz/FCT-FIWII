@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashbooardController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,6 +55,9 @@ Route::post('/admin.crearSistema', [ DashbooardController::class,'addSystem' ]) 
 Route::get('descargar-base-de-datos', 'DescargarBaseDeDatosController@descargar')->name('descargar.base-de-datos');
 
 Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name('sistema_eliminar');
+
+Route::delete('/eliminar-usuario', [DashbooardController::class, 'eliminar_usuario'])->middleware(['auth'])->name('eliminar_usuario');
+
 
 
 
