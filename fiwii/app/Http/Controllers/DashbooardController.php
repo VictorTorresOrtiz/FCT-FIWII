@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Systems;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Validator;
 
 class DashbooardController extends Controller
@@ -52,7 +53,7 @@ class DashbooardController extends Controller
             $addUser->username = $request->userNick;
             $addUser->email = $request->userEmail;
             $addUser->status = $request->userPermisos;
-            $addUser->password = $request->userPassword;
+            $addUser->password = Hash::make($request->userPassword);
             $addUser->created_at;
             $addUser->save();
             notify()->success('Usuario añadido correctamente!');
