@@ -59,7 +59,7 @@
                         <div class="form-col form-floating col-12 col-md-6">
                             <h3 class="title text-style-11 black">Permisos:</h3>
                             <select id="status" name="userPermisos" value="{{old('userPermisos')}}" required>
-                                <option value="User">Técnivo</option>
+                                <option value="User">Técnico</option>
                                 <option value="Admin">Administrador</option>
                                 <option value="Moderator">Encargado</option>
                             </select>

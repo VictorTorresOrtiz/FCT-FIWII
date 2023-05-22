@@ -261,8 +261,6 @@
                 </div>
             </div>
         </section>
-        <!-- Botón para abrir el modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteUserModal">Eliminar Usuario</button>
 
 <!-- Modal de eliminación de usuario -->
 <div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
@@ -273,7 +271,7 @@
             </div>
             <div class="modal-body">
                 <p>Introduce los datos del usuario que desea eliminar</p>
-                <strong>ID:</strong><input class="form-control" placeholder="ID Usuario" required="required" id="IdUser" name="id">
+                <strong>ID:</strong><input class="form-control mb-2" placeholder="ID Usuario" required="required" id="IdUser" name="id">
                 <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser" name="email">
             </div>
             <div class="modal-footer">
