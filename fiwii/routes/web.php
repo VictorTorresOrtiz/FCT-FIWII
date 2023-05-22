@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashbooardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DatabaseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,12 +48,25 @@ Route::get('/admin.crearSistema', function () {
     return view('admin.crearSistema');
 })->name('admin.crearSistema')->middleware('auth');
 
+Route::get('/admin.crearUsuario', function () {
+    return view('admin.crearUsuario');
+})->name('admin.crearUsuario')->middleware('auth');
+
+Route::get('/admin.editarSistema', function () {
+    return view('admin.editarSistema');
+})->name('admin.editarSistema')->middleware('auth');
+
 
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
 
+
 Route::post('/admin.crearSistema', [ DashbooardController::class,'addSystem' ]) -> name('addSystem');
 
-Route::get('descargar-base-de-datos', 'DescargarBaseDeDatosController@descargar')->name('descargar.base-de-datos');
+Route::post('/admin.crearUsuario', [ DashbooardController::class,'addUser' ]) -> name('addUser');
+
+Route::get('/download-database', [DatabaseController::class, 'downloadDatabase'])->name('download.database');
+
+Route::get('/download-database2', [DatabaseController::class, 'downloadDatabase2'])->name('download.database2');
 
 Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name('sistema_eliminar');
 
