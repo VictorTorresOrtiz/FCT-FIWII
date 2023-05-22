@@ -132,9 +132,7 @@
                             <a href="{{ url('weather') }}">
                                 <i class="fa-solid fa-sun fa-3x pt-2"></i>
                                 <h5 class="font-16">Tiempo</h5>
-                                <p class="line-height-s font-11 pb-4">
-                                    Consulte el <br> tiempo de su zona
-                                </p>
+                                <p class="line-height-s font-11 pb-4">Consulte el <br> tiempo de cualquier zona</p>
                             </a>
                         </div>
                     </div>

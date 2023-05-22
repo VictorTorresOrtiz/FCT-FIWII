@@ -271,7 +271,7 @@
             </div>
             <div class="modal-body">
                 <p>Introduce los datos del usuario que desea eliminar</p>
-                <strong>ID:</strong><input class="form-control" placeholder="ID Usuario" required="required" id="IdUser" name="id">
+                <strong>ID:</strong><input class="form-control mb-2" placeholder="ID Usuario" required="required" id="IdUser" name="id">
                 <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser" name="email">
             </div>
             <div class="modal-footer">
