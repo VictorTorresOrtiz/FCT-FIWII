@@ -5,19 +5,17 @@
         <div class="card parent">
             <div class="card-body rounded-3 small-shadow text-center bg-color white">
                 <h3 class="title max-w-85 mx-auto text-style-11 black">
-                    <span class="bg-color white">Do you like cookies? 🍪</span>
+                    <span class="bg-color white">Fiwii Dashboard Cookies 🍪</span>
                     <span class="zzz over-text scheme-1 gray"></span>
                 </h3>
-                <p class="description">We use cookie technology to provide you with a better browsing experience. You
-                    accept our terms if you continue to use this site.</p>
+                <p class="description">Utilizamos tecnología de cookies para brindarle una mejor experiencia de navegación.</p>
                 <!-- Button -->
                 <div class="button-wrapper align-h-center">
-                    <a href="#your-link" target="_blank" class="button simple">
-                        <span class="button-text black black-hover">Read more</span>
+                    <a href="{{url('/')}}" target="_blank" class="button simple">
+                        <span class="button-text black black-hover">Cancelar</span>
                     </a>
                     <button id="popup-box-dismiss" class="button simple">
-                        <span class="button-text black black-hover"><mark class="animated-underline accent">Accept
-                                terms</mark></span>
+                        <span class="button-text black black-hover"><mark class="animated-underline accent">Aceptar</mark></span>
                         <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
                     </button>
                 </div>
@@ -71,19 +69,14 @@
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item dropdown has-megamenu hover">
-                            <a class="nav-link dropdown-toggle has-icon" href="#" data-bs-toggle="dropdown">
-                                <span class="text">Actualizar plan</span>
-                            </a>
-
-                        <li class="nav-item dropdown has-megamenu hover">
                             <a class="nav-link dropdown-toggle has-icon" href="{{url('app-dashboard')}}" data-bs-toggle="dropdown">
                                 <span class="text">App Dashboard</span>
                             </a>
                         </li>
 
                         <li class="nav-item dropdown has-megamenu hover">
-                            <a class="nav-link dropdown-toggle has-icon" href="{{url('web-dashboard')}}" data-bs-toggle="dropdown">
-                                <span class="text">Web Dashboard</span>
+                            <a class="nav-link dropdown-toggle has-icon" href="{{url('/404')}}" data-bs-toggle="dropdown">
+                                <span class="text">Web Dashboard (Proximamente)</span>
                             </a>
                         </li>
                         <!-- Action -->
@@ -163,13 +156,17 @@
                                     <span class="label-vertical outline">
                                         <span class="label-line gray"></span>
                                         <span class="label-text gray">Fiwii Web</span>
+
                                     </span>
                                     <!-- Link -->
                                     <h3 class="title text-style-11 white">
-                                        <a href="{{ url('/admin.web-dashboard') }}"
+                                        <a href="{{ url('/404') }}"
                                             class="link align-v-center black black-hover hover-up-down">
                                             <i class="fa-solid fa-globe icon"></i>
                                             <span class="text ms-05">Fiwii Web Admin Panel</span>
+                                            <span class="badge ms-05 warning warning-hover">
+                                                <span class="badge-text white white-hover">Proximamente</span>
+                                            </span>
                                         </a>
                                     </h3>
                                     <p class="description gray">Panel de administrador para la Web principal de Fiwii.
