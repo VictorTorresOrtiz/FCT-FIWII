@@ -7,7 +7,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Validator;
-
+use App\Mail\WelcomeEmail;
+use Illuminate\Support\Facades\Mail;
 class DashbooardController extends Controller
 {
     public function systems()
@@ -62,8 +63,11 @@ class DashbooardController extends Controller
             $newUser->status = $request->status;
             $newUser->save();
             notify()->success('Usuario añadido correctamente!');
+
+            Mail::to($newUser->email)->send(new WelcomeEmail($newUser));
         }
         //Meter aqui SMTP
+
             return redirect("admin.app-dashboard");
     // }
     // public function addUser(Request $request)
