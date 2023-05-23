@@ -37,6 +37,7 @@
                 @enderror
                 <label for="password-confirm" class="col-md-4 col-form-label text-md-right"></label>
                 <input id="password-confirm" type="password" placeholder="Confirmar contraseña" class="@error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
+                <input id="status" type="text" name="status" required autocomplete="status" name="status" value="Admin" hidden>
                 <button type="submit" id="accent" class="justify-content-center1 align-items-center d-flex ">
                     {{ __('Registrarse') }}
                 </button>
