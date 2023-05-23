@@ -270,15 +270,14 @@
                 <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
             </div>
             <div class="modal-body">
-                <p>Introduce los datos del usuario que desea eliminar</p>
-                <strong>ID:</strong><input class="form-control mb-2" placeholder="ID Usuario" required="required" id="IdUser" name="id">
-                <strong>Email:</strong><input class="form-control" placeholder="Email Usuario" required="required" id="EmailUser" name="email">
-            </div>
-            <div class="modal-footer">
-                <form id="deleteUserForm" method="POST" action="{{ route('eliminar_usuario') }}">
+                <form action="{{ route('eliminar_user') }}" method="POST">
+                    @method('DELETE')
                     @csrf
-                    @method ('DELETE')
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                    <h3>Introduce los datos del usuario que desea eliminar</h3>
+                    <strong>ID:</strong><input class="form-control mb-2" placeholder="ID Usuario" required="required" id="userId" name="userId">
+                    <div class="modal-footer"></div>
+                    <button type="submit" onclick="return confirm('¿Estás seguro de eliminar al usuario?')"
+                     class="btn btn-danger">Eliminar</button>
                 </form>
             </div>
         </div>

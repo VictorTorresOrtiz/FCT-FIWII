@@ -82,21 +82,11 @@ class DashbooardController extends Controller
             return back();
         }
 
-        public function eliminar_usuario(Request $request)
+        public function eliminar_user(Request $request)
         {
-            $id = $request->input('id');
-            $email = $request->input('email');
-
-            $usuario = User::where('id', $id)
-                              ->where('email', $email)
-                              ->first();
-
-            if ($usuario) {
-                $usuario->delete();
-                return redirect()->back()->with('success', 'Usuario eliminado correctamente.');
-            } else {
-                return redirect()->back()->with('error', 'No se encontró ningún usuario con los datos proporcionados.');
-            }
+            $user = User::findOrFail($request->input('userId'));
+            $user->delete();
+            return redirect("admin.app-dashboard")->with('success', 'Usuario eliminado exitosamente');
         }
 
 }

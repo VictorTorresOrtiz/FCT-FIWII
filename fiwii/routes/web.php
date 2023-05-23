@@ -70,7 +70,9 @@ Route::get('/download-database2', [DatabaseController::class, 'downloadDatabase2
 
 Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name('sistema_eliminar');
 
-Route::delete('/eliminar-usuario', [DashbooardController::class, 'eliminar_usuario'])->middleware(['auth'])->name('eliminar_usuario');
+
+Route::delete('/eliminar_user', [DashbooardController::class, 'eliminar_user'])->name('eliminar_user');
+
 
 
 
