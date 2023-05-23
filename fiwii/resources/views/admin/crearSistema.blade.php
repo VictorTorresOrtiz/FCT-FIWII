@@ -1,6 +1,5 @@
 @extends('templates.template-admin')
 @section('create')
-
     <header id="header" class="shock-header">
         <!-- Navbar -->
         <nav id="navbar" class="navbar navbar-expand-lg nfixed-scroll smart-scroll hover-line scheme-2 primary">
@@ -51,9 +50,6 @@
 
                     <h3 class="title text-style-11 black">Descripción:</h3>
                     <input type="text" id="description" name="sistemaDesc" value="{{old('sistemaDesc')}}" required>
-
-                    <h3 class="title text-style-11 black">Tipo de Sistema:</h3>
-                    <input type="text" id="description" name="sistemaTipo" value="{{old('sistemaTipo')}}" required>
 
                     <div class="form-row row mt-0">
                         <div class="form-col form-floating col-12 col-md-6">
