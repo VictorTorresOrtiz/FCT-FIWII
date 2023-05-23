@@ -27,6 +27,10 @@ Route::get('/auth.login', function () {
     return view('auth.login');
 })->name('auth.login');
 
+Route::get('/404', function () {
+    return view('404');
+})->name('404');
+
 Route::get('/trial-fiwii-info', function () {
     return view('trial-fiwii-info');
 })->name('trial-fiwii-info');
