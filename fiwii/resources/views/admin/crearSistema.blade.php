@@ -63,7 +63,7 @@
 
                         <div class="form-col form-floating col-12 col-md-6">
                             <h3 class="title text-style-11 black">Prioridad:</h3>
-                            <select id="prioridad" name="sistemaPrioridad">
+                            <select id="prioridad" name="sistemaPrioridad" value="{{old('sistemaPrioridad')}}>
                                 <option value="Alta">Alta</option>
                                 <option value="Media">Media</option>
                                 <option value="Baja">Baja</option>

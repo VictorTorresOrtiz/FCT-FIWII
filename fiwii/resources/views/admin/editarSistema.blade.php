@@ -1,5 +1,5 @@
 @extends('templates.template-admin')
-@section('create')
+@section('editar')
 
     <header id="header" class="shock-header">
         <!-- Navbar -->
@@ -10,7 +10,7 @@
                     <img src="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
                         data-logo-alt="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}"
                         data-logo-mobile="{{ URL::asset('assets/images/logo/logo_small_icon_blue.png') }}" class="logo" />
-                    <span class="logo-after-text">Añadir Sistema Contraincendios</span>
+                    <span class="logo-after-text">Editar Sistema Contraincendios</span>
                 </a>
                 <!-- Responsive menu toggle -->
                 <button class="navbar-toggler" data-bs-target="#navbar-items" data-bs-toggle="collapse"

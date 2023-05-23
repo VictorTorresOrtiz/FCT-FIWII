@@ -56,6 +56,10 @@ Route::get('/admin.editarSistema', function () {
     return view('admin.editarSistema');
 })->name('admin.editarSistema')->middleware('auth');
 
+Route::get('/admin.borrarUsuario', function () {
+    return view('admin.borrarUsuario');
+})->name('admin.borrarUsuario')->middleware('auth');
+
 
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);
 

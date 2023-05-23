@@ -40,7 +40,7 @@
     </header>
     <main id="main" class="shock-main bg-color gray-10 p-2">
         <div id="medio" class="form-area scheme-1 secondary">
-            <form method="POST" action="{{ route('addUser') }}"  >
+            <form method="POST" action="{{ route('addUser') }}">
                 @csrf
                     <h3 class="title text-style-11 black">Nombre Completo:</h3>
                     <input id="name" type="text" placeholder="Nombre" class="@error('name') is-invalid @enderror"
