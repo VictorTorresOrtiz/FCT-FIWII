@@ -40,36 +40,40 @@
     </header>
     <main id="main" class="shock-main bg-color gray-10 p-2">
         <div id="medio" class="form-area scheme-1 secondary">
-            <form action="{{ route('addUser') }}" method="POST" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('addUser') }}"  >
                 @csrf
-                <fieldset>
                     <h3 class="title text-style-11 black">Nombre Completo:</h3>
-                    <input type="text" id="name" name="userNombre" value="{{old('userNombre')}}" required>
+                    <input id="name" type="text" placeholder="Nombre" class="@error('name') is-invalid @enderror"
+                    name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                     <h3 class="title text-style-11 black">Nombre Usuario:</h3>
-                    <input type="text" id="ubicacion" name="userNick" value="{{old('userNick')}}" required>
+                    <input id="username" type="text" placeholder="Nombre de usuario" class="@error('username') is-invalid @enderror" name="username" value="{{ old('username') }}"
+                    required autocomplete="username" autofocus>
 
                     <h3 class="title text-style-11 black">Email:</h3>
-                    <input type="text" id="description" name="userEmail" value="{{old('userEmail')}}" required>
+                    <input id="email" type="email" placeholder="Email"
+                    class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required
+                    autocomplete="email">
 
                     <h3 class="title text-style-11 black">Contraseña:</h3>
-                    <input type="text" id="description" name="userPassword" value="{{old('userPassword')}}" required>
+                    <input id="password" type="password" placeholder="Contraseña" class="@error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
+                    <h3 class="title text-style-11 black">Confirmar contraseña:</h3>
+                    <input id="password-confirm" type="password" placeholder="Confirmar contraseña" class="@error('password') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
                     <div class="form-row row mt-0">
                         <div class="form-col form-floating col-12 col-md-6">
                             <h3 class="title text-style-11 black">Permisos:</h3>
-                            <select id="status" name="userPermisos" value="{{old('userPermisos')}}" required>
-                                <option value="User">Técnivo</option>
+                            <select id="status" name="status" value="{{old('status')}}" required>
+                                <option value="User">Técnico</option>
                                 <option value="Admin">Administrador</option>
                                 <option value="Moderator">Encargado</option>
                             </select>
                         </div>
                     </div>
-                </fieldset>
-                    <a href="{{ url('/admin.crearSistema') }}"><button type="submit"
+                <button type="submit"
                             class="button outline rounded accent accent-hover">
                             <span class="button-text accent white-hover">Añadir</span>
-                    </button></a>
+                    </button>
             </form>
         </main>
 

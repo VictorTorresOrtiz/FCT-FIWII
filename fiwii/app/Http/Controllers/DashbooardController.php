@@ -42,26 +42,38 @@ class DashbooardController extends Controller
 
     public function addUser(Request $request)
     {
+        // Validar los datos ingresados en el formulario de registro
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
         if (Systems::where('id', $request)->exists())
         {
             smilify('error','Usuario ya creado');
             return back();
 
         } else {
-            $addUser = new User;
-            $addUser->name = $request->userNombre;
-            $addUser->username = $request->userNick;
-            $addUser->email = $request->userEmail;
-            $addUser->status = $request->userPermisos;
-            $addUser->password = Hash::make($request->userPassword);
-            $addUser->created_at;
-            $addUser->save();
+            $newUser= new User;
+
+            $newUser->name = $request->name;
+            $newUser->username = $request->username;
+            $newUser->email = $request->email;
+            $newUser->password = Hash::make($request->userPassword);
+            $newUser->status = $request->status;
+            $newUser->save();
             notify()->success('Usuario añadido correctamente!');
-            return back();
         }
+        //Meter aqui SMTP
+            return redirect("admin.app-dashboard");
+    // }
+    // public function addUser(Request $request)
+    // {
+    //     if (Systems::where('id', $request)->exists())
+    //     {
 
 
-    }
+        }
 
         public function eliminar($id)
         {
