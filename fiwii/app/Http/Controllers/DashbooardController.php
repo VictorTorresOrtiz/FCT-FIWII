@@ -36,8 +36,6 @@ class DashbooardController extends Controller
             notify()->success('Sistema añadido correctamente!');
             return back();
         }
-
-
     }
 
     public function addUser(Request $request)
@@ -63,9 +61,13 @@ class DashbooardController extends Controller
             $newUser->status = $request->status;
             $newUser->save();
             notify()->success('Usuario añadido correctamente!');
-
-            Mail::to($newUser->email)->send(new WelcomeEmail($newUser));
+            //return redirect("admin.app-dashboard");
         }
+        //Meter aqui SMTP
+
+
+           // Mail::to($newUser->email)->send(new WelcomeEmail($newUser));
+        //}
         //Meter aqui SMTP
 
             return redirect("admin.app-dashboard");

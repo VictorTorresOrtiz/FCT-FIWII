@@ -27,6 +27,10 @@ Route::get('/auth.login', function () {
     return view('auth.login');
 })->name('auth.login');
 
+Route::get('/404', function () {
+    return view('404');
+})->name('404');
+
 Route::get('/trial-fiwii-info', function () {
     return view('trial-fiwii-info');
 })->name('trial-fiwii-info');
@@ -55,6 +59,10 @@ Route::get('/admin.crearUsuario', function () {
 Route::get('/admin.editarSistema', function () {
     return view('admin.editarSistema');
 })->name('admin.editarSistema')->middleware('auth');
+
+Route::get('/admin.borrarUsuario', function () {
+    return view('admin.borrarUsuario');
+})->name('admin.borrarUsuario')->middleware('auth');
 
 
 Route::get('/admin.app-dashboard', [ DashbooardController::class,'systems' ]);

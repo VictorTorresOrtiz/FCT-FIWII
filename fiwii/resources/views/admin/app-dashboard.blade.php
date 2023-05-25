@@ -66,12 +66,15 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" aria-selected="false" data-bs-toggle="modal" data-bs-target="#modal-1">
+                            <button class="nav-link" aria-selected="false" data-bs-toggle="modal"
+                                data-bs-target="#modal-1">
                                 Gestor de Sistemas
                             </button>
                         </li>
+
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" aria-selected="false" aria-controls="v-3" data-bs-target="#v-3" data-bs-toggle="tab" role="tab">
+                            <button class="nav-link" aria-selected="false" aria-controls="v-3" data-bs-target="#v-3"
+                                data-bs-toggle="tab" role="tab">
                                 Bases de Datos
                             </button>
                         </li>
@@ -95,7 +98,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="{{url('/admin.crearUsuario')}}"  class="full-link"></a>
+                                            <a href="{{url('/admin.crearUsuario')}}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +116,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#deleteUserModal" class="full-link"></a>
+                                            <a href=" {{url('admin.borrarUsuario')}}" class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +154,7 @@
                                                 </span>
                                             </div>
                                             <!-- Link -->
-                                            <a href="{{url('admin.crearSistema')}}" class="full-link"></a>
+                                            <a href="{{url('admin.crearSistema')}}"  class="full-link"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -164,8 +167,9 @@
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
                                             <img class="card-image-icon primary" src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}" alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Base de Datos Usuarios</h3>
-                                            <p class="description">Descargar base de datos completa de todos los Sistemas</p>
+                                            <h3 class="title text-style-11 black">Base de Datos Sistemas</h3>
+                                            <p class="description">Descargar base de datos completa de todos los
+                                                Sistemas</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
                                                 <span class="button simple">
@@ -184,8 +188,8 @@
                                             <img class="card-image-icon primary"
                                                 src="{{ URL::asset('assets/custom-svg/downloadDB.svg') }}"
                                                 alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Base de datos Completa</h3>
-                                            <p class="description">Descargar base de datos completa de su empresa.
+                                            <h3 class="title text-style-11 black">Base de datos Usuarios</h3>
+                                            <p class="description">Descargar base de datos completa de sus empleados.
                                             </p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
@@ -262,24 +266,75 @@
             </div>
         </section>
 
-<!-- Modal de eliminación de usuario -->
-<div class="modal fade" id="deleteUserModal" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+         <!-- Modal Gestor de sistemas -->
+         <div id="modal-1" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog max-w-50">
+                <div class="modal-content shadow rounded-3">
+                    <div class="modal-header pb-0">
+                        <i class="fa-solid fa-xmark close-button black primary-hover" data-bs-dismiss="modal" aria-label="Close"></i>
+                        <!-- Intro -->
+                        <div class="basic-intro">
+                            <h2 class="title text-style-7 black">Lista de Sistemas</h2>
+                            <hr class="gray-25">
+                        </div>
+                    </div>
+                    <div class="modal-body pt-0 pb-0">
+                        <!-- Table -->
+                        <div class="table-responsive">
+                            <table class="table scheme-1">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="black">ID</th>
+                                        <th scope="col" class="black">Nombre</th>
+                                        <th scope="col" class="black">Descripción</th>
+                                        <th scope="col" class="black">Ubicación</th>
+                                        <th scope="col" class="black">Tipo</th>
+                                        <th scope="col" class="black">Status</th>
+                                        <th scope="col" class="black">Editar</th>
+                                        <th scope="col" class="black">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($systems as $system)
+                                        <tr>
+                                            <th scope="row" class="black">{{ $system->id }}</th>
+                                            <td>{{ $system->name }}</td>
+                                            <td>{{ $system->description }}</td>
+                                            <td>{{ $system->ubicacion }}</td>
+                                            <td>{{ $system->tipo }}</td>
+                                            <td>
+                                                @if ($system->status == 'Mantenimiento')
+                                                <a href="#" class="btn btn-warning btn-sm">Mantenimiento</a>
+                                                @elseif ($system->status == 'Revisado')
+                                                <a href="#" class="btn btn-success btn-sm ">Revisado</a>
+                                                @elseif ($system->status == 'Averiado')
+                                                <a href="#" class="btn btn-danger btn-sm">Averiado</a>
+                                                @endif
+                                            </td>
+                                            <td><button type="submit" class="btn btn-success btn-sm"><i class="bi bi-eye"></td>
+
+                                            <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <input type="hidden" name="id" value="{{ $system->id }}">
+                                                <td ><button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></button></td>
+                                            </form>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="button-wrapper">
+                                <!-- Button -->
+                                <button class="button shadow rounded-3 black accent-hover" data-bs-dismiss="modal">
+                                    <span class="button-text accent white-hover">Cerrar</span>
+                                    <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <form action="{{ route('eliminar_user') }}" method="POST">
-                    @method('DELETE')
-                    @csrf
-                    <h3>Introduce los datos del usuario que desea eliminar</h3>
-                    <strong>ID:</strong><input class="form-control mb-2" placeholder="ID Usuario" required="required" id="userId" name="userId">
-                    <div class="modal-footer"></div>
-                    <button type="submit" onclick="return confirm('¿Estás seguro de eliminar al usuario?')"
-                     class="btn btn-danger">Eliminar</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+    </main>
+@endsection
