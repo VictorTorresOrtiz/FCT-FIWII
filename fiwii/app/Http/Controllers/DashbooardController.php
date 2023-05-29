@@ -66,9 +66,7 @@ class DashbooardController extends Controller
         //Meter aqui SMTP
 
 
-           // Mail::to($newUser->email)->send(new WelcomeEmail($newUser));
-        //}
-        //Meter aqui SMTP
+        //    Mail::send($newUser->email)->send(new WelcomeEmail($newUser));
 
             return redirect("admin.app-dashboard");
     // }

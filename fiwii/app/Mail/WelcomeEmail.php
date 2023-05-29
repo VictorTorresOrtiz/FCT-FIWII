@@ -25,11 +25,12 @@ class WelcomeEmail extends Mailable
      public function build()
         {
             return $this->subject('¡Bienvenido a nuestro proyecto!')
-                        ->view('emailWelcome')
-                        ->with([
-                            'username' => $this->user->name,
+                        ->view('emailWelcome');
+                        // ->with([
+                        //     'username' => $this->user->name,
                             // Otras variables que desees pasar a la vista
-                        ]);
+                        //])
+                        ;
         }
 
     public function __construct(User $user)

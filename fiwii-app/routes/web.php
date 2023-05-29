@@ -5,6 +5,8 @@ use App\Http\Controllers\UpdateUser;
 use App\Models\Task;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Request;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -88,4 +90,7 @@ Route::put('/profile/edit-profile', [ UpdateUser::class, 'updateUser' ]) -> name
 //Sistemas
 Route::get('/sistemas', [ SistemaController::class,'systems' ]);
 
+
+Route::get('/user/edit', [UserController::class, 'edit'])->name('user.edit');
+Route::put('/user', [UserController::class, 'update'])->name('user.update');
 
