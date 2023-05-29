@@ -1,0 +1,28 @@
+/*Page Structure Settings*/
+
+*{font-smooth: subpixel-antialiased;}
+
+#page {
+    min-height:60vh;
+    z-index:1;
+	position: relative;
+}
+.page-content {
+    position:relative;
+	overflow-x: hidden;
+	transition: $globalTransitions;
+	z-index: 2;
+	padding-bottom: 60px;
+	padding-bottom: calc(60px + (constant(safe-area-inset-bottom))*1.1);
+	padding-bottom: calc(60px + (env(safe-area-inset-bottom))*1.1);
+}
+/*Content Boxes*/
+.content {
+    position: relative;
+	margin: ($globalMargin/2)+5 ($globalMargin/2)+5 ($globalMargin - 10) ($globalMargin/2)+5;
+	p {
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}
