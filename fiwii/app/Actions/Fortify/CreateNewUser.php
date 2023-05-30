@@ -2,12 +2,12 @@
 
 namespace App\Actions\Fortify;
 
+use App\Mail\ContactanosMailable;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
-use App\Mail\WelcomeEmail;
 use Illuminate\Support\Facades\Mail;
 
 class CreateNewUser implements CreatesNewUsers
@@ -35,6 +35,8 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             // 'country' => ['required', 'string', 'max:255'],
         ])->validate();
+        // $correo=new ContactanosMailable('name','username','status');
+        // Mail::to('email')->send($correo);
         return User::create([
             'name' => $input['name'],
             'username' => $input['username'],

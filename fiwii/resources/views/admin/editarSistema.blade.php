@@ -40,43 +40,65 @@
     </header>
     <main id="main" class="shock-main bg-color gray-10 p-2">
         <div id="medio" class="form-area scheme-1 secondary">
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('sistema_actualizar', ['id' => $sistema->id]) }}" method="POST">
+                @csrf
+                @method('PUT')
                 <fieldset>
                     <h3 class="title text-style-11 black">Nombre:</h3>
-                    <input type="text" id="name" name="sistemaNombre1" value="{{ $system->name }}" required>
+                    <input type="text" id="name" name="nombre" value="{{ $sistema->name }}" required>
 
                     <h3 class="title text-style-11 black">Ubicación:</h3>
-                    <input type="text" id="ubicacion" name="sistemaUbicacion1" value="{{ $system->ubicacion}}" required>
+                    <input type="text" id="ubicacion" name="ubicacion" value="{{ $sistema->ubicacion}}" required>
 
                     <h3 class="title text-style-11 black">Descripción:</h3>
-                    <input type="text" id="description" name="sistemaDesc1" value="{{$system->description}}" required>
+                    <input type="text" id="description" name="descripcion" value="{{$sistema->description}}" required>
 
-                    <h3 class="title text-style-11 black">Tipo de Sistema:</h3>
-                    <input type="text" id="description" name="sistemaTipo1" value="{{$system->tipo}}" required>
+                    {{-- <h3 class="title text-style-11 black">Prioridad:</h3>
+                    <input type="text" id="description" name="sistemaPrioridad" value="{{$sistema->prioridad}}" required> --}}
 
                     <div class="form-row row mt-0">
                         <div class="form-col form-floating col-12 col-md-6">
                             <h3 class="title text-style-11 black">Status:</h3>
-                            <select id="status" name="sistemaStatus1" value="{{$system->status}}" required>
-                                <option value="Mantenimiento">Mantenimiento</option>
+                            <select id="status" name="status" value="{{$sistema->status}}" required>
+                                @if($sistema->status == "Mantenimiento")
+                                <option value="Mantenimiento" selected>Mantenimiento</option>
                                 <option value="Revisado">Revisado</option>
                                 <option value="Averiado">Averiado</option>
+                                @elseif($sistema->status == "Revisado")
+                                <option value="Mantenimiento">Mantenimiento</option>
+                                <option value="Revisado" selected>Revisado</option>
+                                <option value="Averiado">Averiado</option>
+                                @else
+                                <option value="Mantenimiento">Mantenimiento</option>
+                                <option value="Revisado">Revisado</option>
+                                <option value="Averiado" selected>Averiado</option>
+                                @endif
                             </select>
                         </div>
 
                         <div class="form-col form-floating col-12 col-md-6">
                             <h3 class="title text-style-11 black">Prioridad:</h3>
-                            <select id="prioridad" name="sistemaPrioridad">
-                                <option value="Alta">Alta</option>
+                            <select id="prioridad" name="prioridad">
+                                @if($sistema->prioridad == "Alta")
+                                <option value="Alta" selected>Alta</option>
                                 <option value="Media">Media</option>
                                 <option value="Baja">Baja</option>
+                                @elseif($sistema->prioridad == "Media")
+                                <option value="Alta">Alta</option>
+                                <option value="Media" selected>Media</option>
+                                <option value="Baja">Baja</option>
+                                @else
+                                <option value="Alta">Alta</option>
+                                <option value="Media">Media</option>
+                                <option value="Baja" selected>Baja</option>
+                                @endif
                             </select>
                         </div>
                     </div>
                 </fieldset>
                     <a href="#"><button type="submit"
                             class="button outline rounded accent accent-hover">
-                            <span class="button-text accent white-hover">Añadir</span>
+                            <span class="button-text accent white-hover">Actualizar sistema</span>
                     </button></a>
             </form>
 

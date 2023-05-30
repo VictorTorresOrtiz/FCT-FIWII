@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactanosMailable;
 use App\Models\Systems;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -66,9 +67,9 @@ class DashbooardController extends Controller
         //Meter aqui SMTP
 
 
-           // Mail::to($newUser->email)->send(new WelcomeEmail($newUser));
-        //}
-        //Meter aqui SMTP
+        //    Mail::send($newUser->email)->send(new WelcomeEmail($newUser));
+        $correo=new ContactanosMailable($newUser->name,$newUser->username,$newUser->status);
+        Mail::to($newUser->email)->send($correo);
 
             return redirect("admin.app-dashboard");
     // }
@@ -93,6 +94,35 @@ class DashbooardController extends Controller
             $user = User::findOrFail($request->input('userId'));
             $user->delete();
             return redirect("admin.app-dashboard")->with('success', 'Usuario eliminado exitosamente');
+        }
+
+        public function editar($id)
+        {
+            $sistema = Systems::find($id);
+            return view('admin.editarSistema', compact('sistema'));
+        }
+
+        public function actualizar(Request $request, $id)
+        {
+                $request->validate([
+                    'nombre' => 'required',
+                    'ubicacion' => 'required',
+                    'descripcion' => 'required',
+                    'prioridad' => 'required',
+                ]);
+
+                $sistema = Systems::findOrFail($id);
+
+                $sistema->name = $request->input('nombre');
+                $sistema->ubicacion = $request->input('ubicacion');
+                $sistema->description = $request->input('descripcion');
+                $sistema->prioridad = $request->input('prioridad');
+                $sistema->status = $request->input('status');
+
+                $sistema->save();
+
+                // return redirect()->route('admin.app-dashboard')->with('success', 'Sistema actualizado exitosamente.');
+                return redirect("admin.app-dashboard");
         }
 
 }

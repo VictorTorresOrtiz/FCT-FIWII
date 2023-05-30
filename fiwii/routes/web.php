@@ -4,6 +4,9 @@ use App\Http\Controllers\DashbooardController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DatabaseController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ForgotPasswordController;
+use App\Mail\ContactanosMailable;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +29,19 @@ Route::get('/auth.register', function () {
 Route::get('/auth.login', function () {
     return view('auth.login');
 })->name('auth.login');
+
+Route::get('/auth.forgot-password', function () {
+    return view('auth.forgot-password');
+})->name('auth.forgot-password');
+
+// Route::get('/solicitar-restablecimiento-contraseña', [ForgotPasswordController::class, 'showForgotPasswordView'])->name('solicitar_restablecimiento');
+
+// Route::get('contactanos', function(){
+//     $correo=new ContactanosMailable;
+//     Mail::to('fiwiiapp@gmail.com')->send($correo);
+
+//     return "Mensaje enviado";
+// });
 
 Route::get('/404', function () {
     return view('404');
@@ -80,6 +96,11 @@ Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name(
 
 
 Route::delete('/eliminar_user', [DashbooardController::class, 'eliminar_user'])->name('eliminar_user');
+
+
+Route::get('/sistema/{id}',[ DashbooardController::class,'editar' ])->name('sistema_editar');
+
+Route::put('/sistema/{id}', [DashbooardController::class, 'actualizar'])->name('sistema_actualizar');
 
 
 
