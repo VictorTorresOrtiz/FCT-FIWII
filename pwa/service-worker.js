@@ -5,7 +5,7 @@ const RUNTIME = 'runtime';
 const PRECACHE_URLS = [
   'index.html',
   './',
-  '/manifest.json'
+  './manifest.json'
  
 ];
 
