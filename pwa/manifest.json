@@ -1,0 +1,17 @@
+{
+    "name": "Fiwii Test",
+    "short_name": "Fiwii",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Descripción ejemplo APP PWA",
+    
+    "icons": [
+        {
+            "src": "logo.PNG",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
