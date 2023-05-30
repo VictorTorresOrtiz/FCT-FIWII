@@ -311,7 +311,7 @@
                                                 <a href="#" class="btn btn-danger btn-sm">Averiado</a>
                                                 @endif
                                             </td>
-                                            <td><button type="submit" class="btn btn-success btn-sm"><i class="bi bi-eye"></td>
+                                            <td><a href="{{ route('sistema_editar', ['id' => $system->id]) }}" class="btn btn-success btn-sm"><i class="bi bi-eye"></td>
 
                                             <form action="{{ route('sistema_eliminar', $system->id) }}" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este sistema?')">
                                                 @csrf
