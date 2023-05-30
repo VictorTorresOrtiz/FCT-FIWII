@@ -60,18 +60,38 @@
                         <div class="form-col form-floating col-12 col-md-6">
                             <h3 class="title text-style-11 black">Status:</h3>
                             <select id="status" name="status" value="{{$sistema->status}}" required>
-                                <option value="Mantenimiento">Mantenimiento</option>
+                                @if($sistema->status == "Mantenimiento")
+                                <option value="Mantenimiento" selected>Mantenimiento</option>
                                 <option value="Revisado">Revisado</option>
                                 <option value="Averiado">Averiado</option>
+                                @elseif($sistema->status == "Revisado")
+                                <option value="Mantenimiento">Mantenimiento</option>
+                                <option value="Revisado" selected>Revisado</option>
+                                <option value="Averiado">Averiado</option>
+                                @else
+                                <option value="Mantenimiento">Mantenimiento</option>
+                                <option value="Revisado">Revisado</option>
+                                <option value="Averiado" selected>Averiado</option>
+                                @endif
                             </select>
                         </div>
 
                         <div class="form-col form-floating col-12 col-md-6">
                             <h3 class="title text-style-11 black">Prioridad:</h3>
                             <select id="prioridad" name="prioridad">
-                                <option value="Alta">Alta</option>
+                                @if($sistema->prioridad == "Alta")
+                                <option value="Alta" selected>Alta</option>
                                 <option value="Media">Media</option>
                                 <option value="Baja">Baja</option>
+                                @elseif($sistema->prioridad == "Media")
+                                <option value="Alta">Alta</option>
+                                <option value="Media" selected>Media</option>
+                                <option value="Baja">Baja</option>
+                                @else
+                                <option value="Alta">Alta</option>
+                                <option value="Media">Media</option>
+                                <option value="Baja" selected>Baja</option>
+                                @endif
                             </select>
                         </div>
                     </div>
