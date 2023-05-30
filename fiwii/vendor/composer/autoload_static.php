@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5d4f97954df6069208684bdfb3a9c686
+class ComposerStaticInite26e95410d49a835849a7cc953441dc5
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -347,8 +347,8 @@ class ComposerStaticInit5d4f97954df6069208684bdfb3a9c686
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -561,6 +561,7 @@ class ComposerStaticInit5d4f97954df6069208684bdfb3a9c686
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Mail\\WelcomeEmail' => __DIR__ . '/../..' . '/app/Mail/WelcomeEmail.php',
         'App\\Models\\Systems' => __DIR__ . '/../..' . '/app/Models/Systems.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -2381,6 +2382,7 @@ class ComposerStaticInit5d4f97954df6069208684bdfb3a9c686
         'Illuminate\\Mail\\PendingMail' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Mail/PendingMail.php',
         'Illuminate\\Mail\\SendQueuedMailable' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Mail/SendQueuedMailable.php',
         'Illuminate\\Mail\\SentMessage' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Mail/SentMessage.php',
+        'Illuminate\\Mail\\TextMessage' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Mail/TextMessage.php',
         'Illuminate\\Mail\\Transport\\ArrayTransport' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Mail/Transport/ArrayTransport.php',
         'Illuminate\\Mail\\Transport\\LogTransport' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Mail/Transport/LogTransport.php',
         'Illuminate\\Mail\\Transport\\SesTransport' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Mail/Transport/SesTransport.php',
@@ -2471,6 +2473,7 @@ class ComposerStaticInit5d4f97954df6069208684bdfb3a9c686
         'Illuminate\\Queue\\Events\\JobQueued' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobQueued.php',
         'Illuminate\\Queue\\Events\\JobReleasedAfterException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobReleasedAfterException.php',
         'Illuminate\\Queue\\Events\\JobRetryRequested' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobRetryRequested.php',
+        'Illuminate\\Queue\\Events\\JobTimedOut' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobTimedOut.php',
         'Illuminate\\Queue\\Events\\Looping' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/Looping.php',
         'Illuminate\\Queue\\Events\\QueueBusy' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/QueueBusy.php',
         'Illuminate\\Queue\\Events\\WorkerStopping' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/WorkerStopping.php',
@@ -6533,10 +6536,10 @@ class ComposerStaticInit5d4f97954df6069208684bdfb3a9c686
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5d4f97954df6069208684bdfb3a9c686::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5d4f97954df6069208684bdfb3a9c686::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit5d4f97954df6069208684bdfb3a9c686::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit5d4f97954df6069208684bdfb3a9c686::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite26e95410d49a835849a7cc953441dc5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite26e95410d49a835849a7cc953441dc5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite26e95410d49a835849a7cc953441dc5::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInite26e95410d49a835849a7cc953441dc5::$classMap;
 
         }, null, ClassLoader::class);
     }
