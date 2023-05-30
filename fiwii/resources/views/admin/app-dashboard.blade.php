@@ -288,7 +288,7 @@
                                         <th scope="col" class="black">Nombre</th>
                                         <th scope="col" class="black">Descripción</th>
                                         <th scope="col" class="black">Ubicación</th>
-                                        <th scope="col" class="black">Tipo</th>
+                                        <th scope="col" class="black">Prioridad</th>
                                         <th scope="col" class="black">Status</th>
                                         <th scope="col" class="black">Editar</th>
                                         <th scope="col" class="black">Eliminar</th>
@@ -301,7 +301,7 @@
                                             <td>{{ $system->name }}</td>
                                             <td>{{ $system->description }}</td>
                                             <td>{{ $system->ubicacion }}</td>
-                                            <td>{{ $system->tipo }}</td>
+                                            <td>{{ $system->prioridad }}</td>
                                             <td>
                                                 @if ($system->status == 'Mantenimiento')
                                                 <a href="#" class="btn btn-warning btn-sm">Mantenimiento</a>
