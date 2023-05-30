@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactanosMailable;
 use App\Models\Systems;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -67,6 +68,8 @@ class DashbooardController extends Controller
 
 
         //    Mail::send($newUser->email)->send(new WelcomeEmail($newUser));
+        $correo=new ContactanosMailable($newUser->name,$newUser->username,$newUser->status);
+        Mail::to($newUser->email)->send($correo);
 
             return redirect("admin.app-dashboard");
     // }

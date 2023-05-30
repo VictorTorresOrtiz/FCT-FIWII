@@ -5,6 +5,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\DatabaseController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Mail\ContactanosMailable;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,12 +30,18 @@ Route::get('/auth.login', function () {
     return view('auth.login');
 })->name('auth.login');
 
-// Route::get('/auth.forgot-password', function () {
-//     return view('auth.forgot-password');
-// })->name('auth.forgot-password');
+Route::get('/auth.forgot-password', function () {
+    return view('auth.forgot-password');
+})->name('auth.forgot-password');
 
-Route::get('/solicitar-restablecimiento-contraseña', [ForgotPasswordController::class, 'showForgotPasswordView'])->name('solicitar_restablecimiento');
+// Route::get('/solicitar-restablecimiento-contraseña', [ForgotPasswordController::class, 'showForgotPasswordView'])->name('solicitar_restablecimiento');
 
+// Route::get('contactanos', function(){
+//     $correo=new ContactanosMailable;
+//     Mail::to('fiwiiapp@gmail.com')->send($correo);
+
+//     return "Mensaje enviado";
+// });
 
 Route::get('/404', function () {
     return view('404');
