@@ -93,4 +93,33 @@ class DashbooardController extends Controller
             return redirect("admin.app-dashboard")->with('success', 'Usuario eliminado exitosamente');
         }
 
+        public function editar($id)
+        {
+            $sistema = Systems::find($id);
+            return view('admin.editarSistema', compact('sistema'));
+        }
+
+        public function actualizar(Request $request, $id)
+        {
+                $request->validate([
+                    'nombre' => 'required',
+                    'ubicacion' => 'required',
+                    'descripcion' => 'required',
+                    'prioridad' => 'required',
+                ]);
+
+                $sistema = Systems::findOrFail($id);
+
+                $sistema->name = $request->input('nombre');
+                $sistema->ubicacion = $request->input('ubicacion');
+                $sistema->description = $request->input('descripcion');
+                $sistema->prioridad = $request->input('prioridad');
+                $sistema->status = $request->input('status');
+
+                $sistema->save();
+
+                // return redirect()->route('admin.app-dashboard')->with('success', 'Sistema actualizado exitosamente.');
+                return redirect("admin.app-dashboard");
+        }
+
 }

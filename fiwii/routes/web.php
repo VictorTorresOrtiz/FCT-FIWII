@@ -89,6 +89,11 @@ Route::delete('/sistema/{id}',[ DashbooardController::class,'eliminar' ])->name(
 Route::delete('/eliminar_user', [DashbooardController::class, 'eliminar_user'])->name('eliminar_user');
 
 
+Route::get('/sistema/{id}',[ DashbooardController::class,'editar' ])->name('sistema_editar');
+
+Route::put('/sistema/{id}', [DashbooardController::class, 'actualizar'])->name('sistema_actualizar');
+
+
 
 
 
