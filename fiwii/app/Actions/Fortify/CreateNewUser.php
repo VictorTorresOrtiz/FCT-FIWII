@@ -35,8 +35,8 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             // 'country' => ['required', 'string', 'max:255'],
         ])->validate();
-        // $correo=new ContactanosMailable('name','username','status');
-        // Mail::to('email')->send($correo);
+        $correo=new ContactanosMailable($input['name'],$input['username'],$input['status']);
+        Mail::to($input['email'])->send($correo);
         return User::create([
             'name' => $input['name'],
             'username' => $input['username'],

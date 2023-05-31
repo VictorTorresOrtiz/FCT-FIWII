@@ -56,9 +56,9 @@
                                 <div class="navbar-right">
                                     <!-- Link -->
                                     <ul class="navbar-nav">
-                                        <li>
+                                        {{-- <li>
                                             <a href="{{ route('auth.forgot-password') }}" class="btn btn-primary">Ir a la ruta</a>
-                                        </li>
+                                        </li> --}}
                                         <li class="nav-item">
                                             <a href="https://goo.gl/maps/Lu3LjtCtgaxDCTrx9" class="nav-link has-icon" target="__blank">
                                                 <i class="fa-solid fa-location-dot icon"></i>

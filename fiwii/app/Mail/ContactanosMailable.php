@@ -27,9 +27,6 @@ class ContactanosMailable extends Mailable
         $this->rol=$rol;
     }
 
-    // public function build(){
-    //     return $this->view("Contactanos");
-    // }
     /**
      * Get the message envelope.
      */
