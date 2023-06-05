@@ -92,6 +92,11 @@ Route::put('/user/profile-information', [UpdateUser::class, 'update'])
 //Sistemas
 Route::get('/sistemas', [ SistemaController::class,'systems' ]);
 
+// Route::get('/systeminfo', function () {
+//     return view('systeminfo');
+// })->middleware('auth')->name('systeminfo');
+Route::get('/sistemas/{id}',  [ SistemaController::class,'mostrarDetalles' ])->name('sistemasInfo');
+
 
 Route::get('/user/edit', [UserController::class, 'edit'])->name('user.edit');
 Route::put('/user', [UserController::class, 'update'])->name('user.update');
