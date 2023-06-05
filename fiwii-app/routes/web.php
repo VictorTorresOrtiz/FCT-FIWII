@@ -85,7 +85,6 @@ Route::get('/walkthrow', function () {
 
 // PROFILE
 
-// Route::put('/profile/edit-profile', [ UpdateUser::class, 'updateUser' ]) -> name('edit-profile');
 Route::put('/user/profile-information', [UpdateUser::class, 'update'])
     ->middleware(['auth'])
     ->name('user-profile-information.update');
