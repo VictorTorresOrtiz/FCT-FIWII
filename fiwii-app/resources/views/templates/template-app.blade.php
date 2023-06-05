@@ -53,5 +53,6 @@
             @yield('compact')
             @yield('qr')
             @yield('generator')
+            @yield('detalles')
 </body>
 </html>
