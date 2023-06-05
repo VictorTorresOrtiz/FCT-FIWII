@@ -1,6 +1,6 @@
 @extends('templates.template-app')
 @section('fiwii')
-    <div id="footer-bar" class="footer-bar-5">
+    <div id="footer-bar" class="footer-bar-5" >
         <a href="{{ url('profile') }}"><i class="bi bi-person"></i><span>Perfil</span></a>
         <a href="{{ url('sistemas') }}"><i class="bi bi-list-nested"></i></i><span>Sistemas</span></a>
         <a href="{{ url('fiwii') }}" class="active-nav"><i class="bi bi-house"></i><span>Home</span></a>

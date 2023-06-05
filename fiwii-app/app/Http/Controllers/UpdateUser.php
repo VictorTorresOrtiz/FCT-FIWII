@@ -8,20 +8,12 @@ use Illuminate\Support\Facades\Auth;
 
 class UpdateUser extends Controller
 {
-    //Update profile settings
-    public function updateUser(Request $request)
+    public function update(Request $request)
     {
-        $userUpdate = User::find(Auth::id());
-        if ($request->name != null) {
-            $userUpdate->name = $request->name;
-        }
+        $request->user()->update(
+            $request->all()
+        );
 
-        if ($request->email != null) {
-            $userUpdate->email = $request->email;
-        }
-        //$userUpdate->phone = $request->phone;
-        $userUpdate->update();
-        smilify('success', 'User edit successfully!');
-        return back();
+        return redirect()->route('fiwii');
     }
 }

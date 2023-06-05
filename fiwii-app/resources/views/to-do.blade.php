@@ -13,7 +13,7 @@
 
     <div class="card card-style">
         <div class="content">
-            Trabajos asignados a NOMBRE USUARIO
+            Trabajos asignados a{{ Auth::user()->username }}
         </div>
     </div>
 

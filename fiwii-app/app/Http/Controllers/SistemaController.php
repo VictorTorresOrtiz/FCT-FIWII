@@ -12,4 +12,12 @@ class SistemaController extends Controller
         $systems = Systems::all(); // Nos saca todos los productos de la BBDD
         return view('/sistemas', @compact('systems'));
     }
+
+    public function mostrarDetalles($id)
+    {
+        $sistema = Systems::find($id);
+
+
+        return view('systeminfo', ['sistema' => $sistema]);
+    }
 }
