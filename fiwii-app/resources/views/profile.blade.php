@@ -20,9 +20,9 @@
 
     <div class="card card-style">
         <div class="content mb-0">
-            <h3 class="font-600">Información</h3>
+            <h3 class="font-600">Información personal</h3>
             <p>
-                Datos básicos sobre ti. Colócalos aquí.
+                Datos básicos sobre ti. Puedes sobreescribirlos para editarlos.
             </p>
             <form method="POST" action="{{ route('user-profile-information.update') }}">
                 @csrf
