@@ -15,7 +15,7 @@
                                 <h4 class="font-14 mt-n1 color-highlight">Bienvenido al Futuro</h4>
                             </div>
                             <div class="card-bottom mb-5 pb-4">
-                                <a href="#" class="slider-next btn btn-center-m btn-m bg-highlight rounded-sm font-900 text-uppercase scale-box">Comenzar</a>
+                                <a href="{{url('/auth.login')}}" class="slider-next btn btn-center-m btn-m bg-highlight rounded-sm font-900 text-uppercase scale-box">Comenzar</a>
                             </div>
                             <div class="card-overlay bg-theme opacity-95"></div>
                         </div>

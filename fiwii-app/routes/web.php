@@ -85,10 +85,17 @@ Route::get('/walkthrow', function () {
 
 // PROFILE
 
-Route::put('/profile/edit-profile', [ UpdateUser::class, 'updateUser' ]) -> name('edit-profile');
+Route::put('/user/profile-information', [UpdateUser::class, 'update'])
+    ->middleware(['auth'])
+    ->name('user-profile-information.update');
 
 //Sistemas
 Route::get('/sistemas', [ SistemaController::class,'systems' ]);
+
+// Route::get('/systeminfo', function () {
+//     return view('systeminfo');
+// })->middleware('auth')->name('systeminfo');
+Route::get('/sistemas/{id}',  [ SistemaController::class,'mostrarDetalles' ])->name('sistemasInfo');
 
 
 Route::get('/user/edit', [UserController::class, 'edit'])->name('user.edit');

@@ -62,7 +62,7 @@
         <p>
             {{ $system->description }}
         </p>
-        <a href="#" class="btn btn-m btn-full rounded-sm shadow-xl bg-highlight text-uppercase mb-3 font-900">Más información</a>
+        <a href="{{ route('sistemasInfo', ['id' => $system->id]) }}" class="btn btn-m btn-full rounded-sm shadow-xl bg-highlight text-uppercase mb-3 font-900">Más información</a>
     </div>
 </div>
 @endforeach
