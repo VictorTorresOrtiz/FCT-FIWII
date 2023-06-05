@@ -124,7 +124,7 @@
                                     <div class="card has-icon hover-up parent">
                                         <div class="card-body rounded-3 small-shadow bg-color white">
                                             <img class="card-image-icon primary"  src="{{ URL::asset('assets/custom-svg/camera.svg') }}"  alt="Icon name" data-shock-icon="32" />
-                                            <h3 class="title text-style-11 black">Sistemas de Vigilancía</h3>
+                                            <h3 class="title text-style-11 black">Sistemas de Vigilancía(Actualizar Plan)</h3>
                                             <p class="description">Añade un sistema de vigilancia.</p>
                                             <!-- Button -->
                                             <div class="button-wrapper align-h-right">
