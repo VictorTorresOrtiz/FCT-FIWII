@@ -1,0 +1,14 @@
+:root {
+  --accent-color: #5D9CEC;
+  --fondo: #5d9bec79;
+}
+
+@media (max-width:768px) {
+  body {
+    font-size: 232px;
+    font-family: "Roboto", sans-serif !important;
+    line-height: 24px !important;
+    color: #727272 !important;
+    background-color: #000000;
+  }
+}
